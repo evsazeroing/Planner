@@ -11,6 +11,9 @@ class TaskListController: UITableViewController, ActionResultDelegate {
     let categoryDAO = CategoryDaoDbImpl.current
     let priorityDAO = PriorityDaoDbImpl.current
 
+    var currentScopeIndex = 0 // текущая выбранная кнопка сортировки в search bar
+
+    var searchBarActive = false
 
     var searchController:UISearchController! // поисковая область, который будет добавляться поверх таблицы задач
 
@@ -38,6 +41,8 @@ class TaskListController: UITableViewController, ActionResultDelegate {
         dateFormatter = createDateFormatter()
 
         setupSearchController() // инициализаия поискового компонента
+
+        taskDAO.getAll(sortType: TaskSortType(rawValue: currentScopeIndex)!)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -190,7 +195,6 @@ class TaskListController: UITableViewController, ActionResultDelegate {
 
     }
 
-
     // какие строки можно редактировать, а какие нет
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         if indexPath.section == quickTaskSection{ //  для секции 0 не даем ничего делать (т.к. там текстовое поле для быстрого создания задачи)
@@ -199,8 +203,6 @@ class TaskListController: UITableViewController, ActionResultDelegate {
 
         return true
     }
-
-
 
     // удаление строки
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
@@ -223,7 +225,7 @@ class TaskListController: UITableViewController, ActionResultDelegate {
         }
 
         // переход в контроллер для редактирования задачи
-        if indexPath.section != quickTaskSection{ // чтобы не нажимали на ячейку, где быстрое создания задачи
+        if indexPath.section != quickTaskSection{ // чтобы не нажимали на ячейку, где быстрое создании задачи
             performSegue(withIdentifier: "UpdateTask", sender: tableView.cellForRow(at: indexPath))
         }
     }
@@ -328,16 +330,15 @@ class TaskListController: UITableViewController, ActionResultDelegate {
 
                 taskDAO.save() // сохраняем измененную задачу (сохраняет все изменения)
 
-                tableView.reloadRows(at: [selectedIndexPath], with: .fade) // обновляем ТОЛЬКО нужную строку (не всю таблицу)
-
             }else{ // новая задача (не обновление, а создание)
 
                 let task = data as! Task
 
                 createTask(task)
 
-
             }
+
+            updateTable()
 
         }
 
@@ -407,13 +408,14 @@ class TaskListController: UITableViewController, ActionResultDelegate {
 
         createTask(task)
 
+        updateTable()
+
         textQuickTask.text = ""
         
     }
 
     
     func completeTask(_ indexPath:IndexPath){
-
 
         // принимаем вызов только из TaskListCell
         guard (tableView.cellForRow(at: indexPath) as? TaskListCell) != nil else{
@@ -436,10 +438,30 @@ class TaskListController: UITableViewController, ActionResultDelegate {
         // индекс для того, чтобы задача вставилась в конец списка
         let indexPath = IndexPath(row: taskCount-1, section: taskListSection)
 
-        // вставляем новую задачу в конец списка
-        tableView.insertRows(at: [indexPath], with: .bottom)
     }
 
+
+    // MARK update table
+
+    // обновить все данные в таблице (с учетом поиска, сортировки и пр.)
+    func updateTable(){
+
+
+        let sortType = TaskSortType(rawValue: currentScopeIndex)! // определяем тип сортировки по текущему выбранному значение scope button из search bar
+
+        // если активен режим поиска (search bar) и текст не пустой
+        if searchBarActive && searchController.searchBar.text != nil && !(searchController.searchBar.text?.isEmpty)! {
+
+            taskDAO.search(text: searchController.searchBar.text!, sortType: sortType)
+
+        }else{ // найти все задачи с выбранными фильтрами, категориями, сортировкой
+            taskDAO.getAll(sortType:sortType)
+        }
+
+        tableView.reloadData() // обновить таблицу
+
+
+    }
 
 
 
@@ -490,6 +512,9 @@ extension TaskListController : UISearchBarDelegate {
         searchController.searchBar.placeholder = "Поиск по названию"
         searchController.searchBar.backgroundColor = .white
 
+        searchController.searchBar.scopeButtonTitles = ["А-Я", "Приоритет", "Дата"] // добавляем scope buttons
+
+
         // обработка действий поиска и работа с search bar - в этом же классе (без этих 2 строк не будет работать поиск)
 //        searchController.searchResultsUpdater = self // т.к. не используем
         searchController.searchBar.delegate = self
@@ -511,28 +536,52 @@ extension TaskListController : UISearchBarDelegate {
     }
 
 
+    // MARK: search delegate
+
 
     // обязываем пользователя нажимать enter для поиска (чтобы не искать после каждой введенной буквы - может подвисвать для больших объемов данных)
     func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool {
         return true
     }
 
-    // поиск после окончания ввода данных (нажатия на Search)
+    // начали редактировать текст поиска
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchBarActive = true // есть также метод searchBar.isActive - но значение в него может быть записано позднее, чем это нужно нам, поэтому используем ручной способ - как только пользователь нажал на строку поиска - сохраняем true в переменную searchBarActive
+    }
+
+    // закончили редактировать текст поиска (нажали на Search)
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-        if !(searchController.searchBar.text?.isEmpty)!{ // искать, только если есть текст
-            taskDAO.search(text: searchController.searchBar.text!) // берем текст из поля поиска
-            tableView.reloadData()  //  обновляем всю таблицу
-        }
+        updateTable()
     }
 
     // нажимаем на кнопку Cancel
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+
+        // при первом открытии и закрытии поиска на форме - активировать scope buttons (такой подход связан с глюком, когда компоненты налезают друг на друга при нажатии на Отмену)
+        if !searchController.searchBar.showsScopeBar{
+            searchController.searchBar.showsScopeBar = true
+        }
+
+        searchBarActive = false
         searchController.searchBar.text = ""
-        taskDAO.getAll() // возвращаем все записи
-        tableView.reloadData()
+
+        updateTable() // обновить список задач согласно тексту поиска (если есть), сортировке и пр.
+
     }
 
-    
+
+    // переключение между кнопками сортировки (кнопки могут называть по разному: segmented controls, scope buttons)
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+
+        if currentScopeIndex == selectedScope{ // если значение не изменилось (нажали уже активную кнопку) - ничего не делаем
+            return
+        }
+
+        currentScopeIndex = selectedScope // сохраняем выбранный scope button (способ сортировки списка задач)
+
+        updateTable() // обновить список задач согласно тексту поиска (если есть), сортировке и пр.
+
+    }
 
 
 

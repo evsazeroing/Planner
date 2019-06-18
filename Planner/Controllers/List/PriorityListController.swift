@@ -10,7 +10,7 @@ class PriorityListController: DictionaryController<PriorityDaoDbImpl> {
     override func viewDidLoad() {
         super.viewDidLoad()
         dao = PriorityDaoDbImpl.current
-        dao.getAll()
+        dao.getAll(sortType:PrioritySortType.index)
 
         dictTableView = tableView
     }
@@ -72,5 +72,18 @@ class PriorityListController: DictionaryController<PriorityDaoDbImpl> {
         // Pass the selected object to the new view controller.
     }
     */
+
+
+    // методы получения списков объектов - вызываются из родительского класса
+
+    // MARK: override
+    override func getAll() -> [Priority] {
+        return dao.getAll(sortType: PrioritySortType.index)
+    }
+
+    override func search(_ text: String) -> [Priority] {
+        return dao.search(text: text, sortType: PrioritySortType.index)
+    }
+
 
 }

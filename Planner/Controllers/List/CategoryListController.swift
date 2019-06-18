@@ -12,13 +12,13 @@ class CategoryListController: DictionaryController<CategoryDaoDbImpl> {
         super.viewDidLoad()
         dictTableView = tableView
         dao = CategoryDaoDbImpl.current
-        dao.getAll()
+        dao.getAll(sortType:CategorySortType.name)
 
     }
 
 
 
-    // заполнение таблицы данными
+    // заполнение таблицы данными 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cellCategory", for: indexPath) as?  CategoryListCell else{
@@ -66,6 +66,17 @@ class CategoryListController: DictionaryController<CategoryDaoDbImpl> {
         save()
     }
 
+
+    // методы получения списков объектов - вызываются из родительского класса
+
+    // MARK: override
+    override func getAll() -> [Category] {
+        return dao.getAll(sortType: CategorySortType.name)
+    }
+
+    override func search(_ text: String) -> [Category] {
+        return dao.search(text: text, sortType: CategorySortType.name)
+    }
 
 
 

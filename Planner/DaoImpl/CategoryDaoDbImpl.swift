@@ -4,29 +4,34 @@ import UIKit
 import Foundation
 
 // реализация DAO для работы с категориями
- class CategoryDaoDbImpl: CommonSearchDAO{
+class CategoryDaoDbImpl: CommonSearchDAO{
 
 
     // для наглядности - типы для generics (можно не указывать явно, т.к. компилятор автоматически получит их из методов)
     typealias Item = Category
+    typealias SortType = CategorySortType // enum для получения полей сортировки
 
 
     // паттерн синглтон
     static let current = CategoryDaoDbImpl()
-    private init(){
-//        items = getAll()
-    }
+    private init(){}
 
 
 
-    var items:[Item]!
+    var items:[Item]! // полученные из БД объекты
 
 
     // MARK: dao
 
-     func getAll() -> [Item] {
+    // получить все объекты
+    func getAll(sortType:SortType?) -> [Item] {
 
         let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest() // объект-контейнер для выборки данных
+
+        // добавляем поле для сортировки
+        if let sortType = sortType{
+            fetchRequest.sortDescriptors = [sortType.getDescriptor(sortType)] // в зависимости от значения sortType - получаем нужное поле для сортировки
+        }
 
         do {
             items = try context.fetch(fetchRequest) // выполнение выборки (select)
@@ -39,7 +44,8 @@ import Foundation
     }
 
 
-     func delete(_ item: Item) {
+    // удаление объекта
+    func delete(_ item: Item) {
         context.delete(item)
         // удаление из коллекции происходит в контроллере, т.к. там легче удалять по индексу
         save()
@@ -47,7 +53,8 @@ import Foundation
 
 
 
-     func addOrUpdate(_ item:Item){
+    // добавление или обновление объекта (если объект существует - обновить, если нет - добавить)
+    func addOrUpdate(_ item:Item){
 
         if !items.contains(item){
             items.append(item)
@@ -59,7 +66,7 @@ import Foundation
 
 
     // поиск по имени задачи
-    func search(text: String) -> [Item] {
+    func search(text: String, sortType:SortType?) -> [Item] {
 
         let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest() // объект-контейнер для выборки данных
 
@@ -77,6 +84,13 @@ import Foundation
 
         // можно создавать предикаты динамически и использовать нужный
 
+
+        // добавляем поле для сортировки
+        if let sortType = sortType{
+            fetchRequest.sortDescriptors = [sortType.getDescriptor(sortType)] // в зависимости от значения sortType - получаем нужное поле для сортировки
+        }
+
+        
         do {
             items = try context.fetch(fetchRequest) // выполняем запрос с предикатом
         } catch {
@@ -92,3 +106,16 @@ import Foundation
 
 }
 
+
+// возможные поля для сортировки списка категорий
+enum CategorySortType:Int{
+    case name = 0
+
+    // получить объект сортировки для добавления в fetchRequest
+    func getDescriptor(_ sortType:CategorySortType) -> NSSortDescriptor{
+        switch sortType {
+        case .name:
+            return NSSortDescriptor(key: #keyPath(Category.name), ascending: true, selector: #selector(NSString.caseInsensitiveCompare))
+        }
+    }
+}

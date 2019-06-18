@@ -53,11 +53,6 @@ class DictionaryController<T:CommonSearchDAO>: UIViewController, UITableViewDele
         return dao.items.count
     }
 
-    // этот метод должен реализовывать дочерний класс
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        fatalError("not implemented")
-    }
-
 
     // выделяет элемент в списке (галочка)
     func checkItem(_ sender:UIView){
@@ -105,9 +100,7 @@ class DictionaryController<T:CommonSearchDAO>: UIViewController, UITableViewDele
     }
 
     func save(){
-
         navigationController?.popViewController(animated: true) // закрыть контроллер и удалить из navigation stack
-
         delegate?.done(source: self, data: selectedItem) // уведомить делегата и передать выбранное значение
     }
 
@@ -117,7 +110,6 @@ class DictionaryController<T:CommonSearchDAO>: UIViewController, UITableViewDele
 
     // добавление search bar к таблице
     func setupSearchController() {
-
 
         searchController = UISearchController(searchResultsController: nil) // searchResultsController: nil - т.к. результаты будут сразу отображаться в этом же view
 
@@ -155,9 +147,29 @@ class DictionaryController<T:CommonSearchDAO>: UIViewController, UITableViewDele
             dictTableView.tableHeaderView = searchBar
         }
 
-
-
     }
+
+
+    // MARK: must implemented
+
+    // получение всех объектов с сортировкой
+    func getAll() -> [T.Item]{
+        fatalError("not implemented")
+    }
+
+    // поиск объектов с сортировкой
+    func search(_ text:String) -> [T.Item]{
+        fatalError("not implemented")
+    }
+
+    // этот метод должен реализовывать дочерний класс
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        fatalError("not implemented")
+    }
+
+
+    // Search Delegate
+
 
     // при активации текстового окна - записываем последний поисковый текст
     func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
@@ -173,12 +185,10 @@ class DictionaryController<T:CommonSearchDAO>: UIViewController, UITableViewDele
         }
     }
 
-
-
     // нажимаем на кнопку Cancel
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchBarText = ""
-        dao.getAll() // возвращаем все записи
+        getAll() // этот метод должен быть реализован в дочернем классе
         dictTableView.reloadData()
         searchBar.placeholder = "Начните набирать название"
     }
@@ -189,7 +199,7 @@ class DictionaryController<T:CommonSearchDAO>: UIViewController, UITableViewDele
 
         if !(searchBar.text?.isEmpty)!{ // искать, только если есть текст
             searchBarText = searchBar.text!
-            dao.search(text: searchBarText) // берем текст из поля поиска
+            search(searchBarText) // этот метод должен быть реализован в дочернем классе
             dictTableView.reloadData()  //  обновляем всю таблицу
             currentCheckedIndexPath = nil // чтобы не было двойного выделения значений
             searchBar.placeholder = searchBarText // сохраняем поисковый текст для отображения, если окно поиска будет неактивным

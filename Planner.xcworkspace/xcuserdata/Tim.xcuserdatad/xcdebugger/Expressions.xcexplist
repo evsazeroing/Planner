@@ -10,5 +10,13 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "CategoryListController.updateSearchResults(for:):CategoryListController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "searchBarText">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>
