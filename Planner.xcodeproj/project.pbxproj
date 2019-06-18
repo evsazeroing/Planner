@@ -14,6 +14,7 @@
 		2222BCE8202ABCFD00A06513 /* CategoryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2222BCE7202ABCFD00A06513 /* CategoryListCell.swift */; };
 		2222BCEA202ACB0100A06513 /* PriorityListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2222BCE9202ACB0100A06513 /* PriorityListController.swift */; };
 		2222BCEC202ACB5400A06513 /* PriorityListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2222BCEB202ACB5400A06513 /* PriorityListCell.swift */; };
+		222AB5B82033E82F00300334 /* CommonSearchDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222AB5B72033E82F00300334 /* CommonSearchDAO.swift */; };
 		222EBA7C202B281B00554EA3 /* DictionaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222EBA7B202B281B00554EA3 /* DictionaryController.swift */; };
 		222EBA80202C1A2300554EA3 /* AreaTapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222EBA7F202C1A2300554EA3 /* AreaTapButton.swift */; };
 		22759C711FDEA6E500E9A1E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22759C701FDEA6E500E9A1E0 /* AppDelegate.swift */; };
@@ -46,6 +47,7 @@
 		2222BCE7202ABCFD00A06513 /* CategoryListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListCell.swift; sourceTree = "<group>"; };
 		2222BCE9202ACB0100A06513 /* PriorityListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityListController.swift; sourceTree = "<group>"; };
 		2222BCEB202ACB5400A06513 /* PriorityListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityListCell.swift; sourceTree = "<group>"; };
+		222AB5B72033E82F00300334 /* CommonSearchDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSearchDAO.swift; sourceTree = "<group>"; };
 		222EBA7B202B281B00554EA3 /* DictionaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryController.swift; sourceTree = "<group>"; };
 		222EBA7F202C1A2300554EA3 /* AreaTapButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaTapButton.swift; sourceTree = "<group>"; };
 		22759C6D1FDEA6E500E9A1E0 /* Planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				22A98B76202589400051183B /* Crud.swift */,
+				222AB5B72033E82F00300334 /* CommonSearchDAO.swift */,
 			);
 			path = DAO;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				222EBA7C202B281B00554EA3 /* DictionaryController.swift in Sources */,
 				2222BCEC202ACB5400A06513 /* PriorityListCell.swift in Sources */,
 				2222BCE6202ABCB600A06513 /* CategoryListController.swift in Sources */,
+				222AB5B82033E82F00300334 /* CommonSearchDAO.swift in Sources */,
 				22759C731FDEA6E500E9A1E0 /* TaskDetailsController.swift in Sources */,
 				22A98B812025922E0051183B /* CategoryDaoDbImpl.swift in Sources */,
 				22A98BB72028905D0051183B /* TaskInfoCell.swift in Sources */,

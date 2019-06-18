@@ -4,7 +4,7 @@ import UIKit
 import CoreData
 
 // реализация DAO для работы с приоритетами
-class PriorityDaoDbImpl : Crud{
+class PriorityDaoDbImpl : CommonSearchDAO{
 
     // для наглядности - типы для generics (можно не указывать явно, т.к. компилятор автоматически получит их из методов)
     typealias Item = Priority
@@ -13,7 +13,7 @@ class PriorityDaoDbImpl : Crud{
     // паттерн синглтон
     static let current = PriorityDaoDbImpl()
     private init(){
-        items = getAll()
+//        items = getAll()
     }
 
 
@@ -25,10 +25,10 @@ class PriorityDaoDbImpl : Crud{
     // MARK: dao
 
     func getAll() -> [Item] {
-        let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest()
+        let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest() // объект-контейнер для выборки данных
 
         do {
-            items = try context.fetch(fetchRequest)
+            items = try context.fetch(fetchRequest) // выполнение выборки (select)
         } catch {
             fatalError("Fetching Failed")
         }
@@ -55,6 +55,36 @@ class PriorityDaoDbImpl : Crud{
 
 
 
+    
+    // поиск по имени задачи
+    func search(text: String) -> [Item] {
+
+        let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest() // объект-контейнер для выборки данных
+
+        var params = [Any]() // массив параметров любого типа
+
+        // прописываем только само условие (без where)
+        var sql = "name CONTAINS[c] %@" // начало запроса, [c] - case insensitive
+
+        params.append(text) // указываем значение параметра
+
+        // объект-контейнер для добавления условий
+        var predicate = NSPredicate(format: sql, argumentArray: params) // добавляем параметры в sql
+
+        fetchRequest.predicate = predicate // добавляем предикат в контейнер запроса
+
+        // можно создавать предикаты динамически и использовать нужный
+
+        do {
+            items = try context.fetch(fetchRequest) // выполняем запрос с предикатом
+        } catch {
+            fatalError("Fetching Failed")
+        }
+
+        return items
+
+
+    }
 
  
 }

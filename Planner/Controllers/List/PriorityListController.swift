@@ -10,6 +10,7 @@ class PriorityListController: DictionaryController<PriorityDaoDbImpl> {
     override func viewDidLoad() {
         super.viewDidLoad()
         dao = PriorityDaoDbImpl.current
+        dao.getAll()
 
         dictTableView = tableView
     }

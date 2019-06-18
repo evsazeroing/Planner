@@ -7,9 +7,14 @@ class TaskListController: UITableViewController, ActionResultDelegate {
 
     let dateFormatter = DateFormatter()
 
+    // dao
     let taskDAO = TaskDaoDbImpl.current
     let categoryDAO = CategoryDaoDbImpl.current
     let priorityDAO = PriorityDaoDbImpl.current
+
+
+    var searchController:UISearchController! // поисковая область, который будет добавляться поверх таблицы задач
+
 
     // секции таблицы
     let quickTaskSection = 0
@@ -32,6 +37,8 @@ class TaskListController: UITableViewController, ActionResultDelegate {
 
         dateFormatter.dateStyle = .short
         dateFormatter.timeStyle = .none
+
+        setupSearchController() // инициализаия поискового компонента
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -204,20 +211,10 @@ class TaskListController: UITableViewController, ActionResultDelegate {
 
     }
 
-    // какие строки можно редактировать, а какие нет
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        if indexPath.section == quickTaskSection{ //  для секции 0 не даем ничего делать (т.к. там текстовое поле для быстрого создания задачи)
-            return false
-        }
-
-        return true
-    }
-
-
     // удаление строки
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
 
-        if editingStyle == .delete{
+        if editingStyle == .delete {
 
             deleteTask(indexPath)
 
@@ -234,10 +231,10 @@ class TaskListController: UITableViewController, ActionResultDelegate {
             return
         }
 
+        // переход в контроллер для редактирования задачи
         if indexPath.section != quickTaskSection{ // чтобы не нажимали на ячейку, где быстрое создания задачи
             performSegue(withIdentifier: "UpdateTask", sender: tableView.cellForRow(at: indexPath))
         }
-
     }
 
    
@@ -465,5 +462,88 @@ class TaskListController: UITableViewController, ActionResultDelegate {
         taskDAO.items.remove(at: indexPath.row) // удалить саму строку и объект из коллекции (массива)
         tableView.deleteRows(at: [indexPath], with: .top) // удалить строку из tableView
     }
+
+}
+
+
+// настройка searchController и обработка действия при поиске
+// можно удалить, добавил для наглядности
+extension TaskListController : UISearchResultsUpdating {
+
+    // метод делегата - вызывается автоматически для каждой буквы поиска (или когда пользователь просто активирует поиск, еще не введя текст)
+    func updateSearchResults(for searchController: UISearchController) {
+
+        // не будем использовать этот метод для поиска, т.к. нам не нужно искать после каждой нажатой буквы (для больших объемов данных может подвисать)
+        // будем искать только после нажатия на enter
+
+
+    }
+
+}
+
+
+// обработка действия при поиске
+extension TaskListController : UISearchBarDelegate {
+
+    // добавление search bar к таблице
+    func setupSearchController() {
+
+        searchController = UISearchController(searchResultsController: nil) // searchResultsController: nil - т.к. результаты будут сразу отображаться в этом же view
+
+        searchController.dimsBackgroundDuringPresentation = false // затемнять фон или нет, при поиске (при затменении - не будет доступно выбирать найденную запись)
+        // строка поиска будет показываться только для списка (не будет переходить в другой контроллер)
+
+        // для правильного отображения внутри таблицы, подробнее http://www.thomasdenney.co.uk/blog/2014/10/5/uisearchcontroller-and-definespresentationcontext/
+        definesPresentationContext = true
+
+        searchController.searchBar.placeholder = "Поиск по названию"
+        searchController.searchBar.backgroundColor = .white
+
+        // обработка действий поиска и работа с search bar - в этом же классе (без этих 2 строк не будет работать поиск)
+//        searchController.searchResultsUpdater = self // т.к. не используем
+        searchController.searchBar.delegate = self
+
+        // сразу не показывать segmented controls для сортировки результата (такой подход связан с глюком, когда компоненты налезают друг на друга)
+        searchController.searchBar.showsScopeBar = false
+
+
+
+        // из-за бага в работе searchController - применяем разные способы добавления searchBar в зависимости от версии iOS
+        if #available(iOS 11.0, *) { // если версия iOS от 11 и выше
+            navigationItem.searchController = searchController
+            navigationItem.hidesSearchBarWhenScrolling = false
+        } else {
+            tableView.tableHeaderView = searchController.searchBar
+        }
+
+
+    }
+
+
+
+    // обязываем пользователя нажимать enter для поиска (чтобы не искать после каждой введенной буквы - может подвисвать для больших объемов данных)
+    func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool {
+        return true
+    }
+
+    // поиск после окончания ввода данных (нажатия на Search)
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        if !(searchController.searchBar.text?.isEmpty)!{ // искать, только если есть текст
+            taskDAO.search(text: searchController.searchBar.text!) // берем текст из поля поиска
+            tableView.reloadData()  //  обновляем всю таблицу
+        }
+    }
+
+    // нажимаем на кнопку Cancel
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchController.searchBar.text = ""
+        taskDAO.getAll() // возвращаем все записи
+        tableView.reloadData()
+    }
+
+    
+
+
+
 
 }

@@ -6,10 +6,34 @@
          contextName = "TaskInfoController.viewDidLoad():TaskInfoController.swift">
       </ContextState>
       <ContextState
+         contextName = "DictionaryController.searchBarShouldBeginEditing(_:):DictionaryController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "searchBarText">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "TaskDetailsController.prepare(for:sender:):TaskDetailsController.swift">
          <PersistentStrings>
             <PersistentString
                value = "segue.identifier">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DictionaryController.tableView(_:numberOfRowsInSection:):DictionaryController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "dao.items.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CategoryListController.tableView(_:cellForRowAt:):CategoryListController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedItem.name">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
