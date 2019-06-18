@@ -23,21 +23,21 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
     let taskDeadlineSection = 3
     let taskInfoSection = 4
 
-
-    let dateFormatter = DateFormatter()
+    var dateFormatter:DateFormatter!
 
     var delegate:ActionResultDelegate! // нужен будет для уведомления и вызова функции из контроллера списка задач
 
     // для хранения ссылок на компоненты
     var textTaskName:UITextField!
     var textviewTaskInfo:UITextView!
+    var buttonDatetimePicker:UIButton!
+
 
     // вызывается после инициализации
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        dateFormatter.dateStyle = .short
-        dateFormatter.timeStyle = .none
+        dateFormatter = createDateFormatter()
 
         // сохраняем в соотв. переменные все данные задачи
         if let task = task{ // если объект не пустой (значит режим редактирования, а не создания новой задачи)
@@ -152,20 +152,26 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
 
             cell.selectionStyle = .none
 
+            // сохраняем ссылки на компоненты, чтобы дальше в коде с ними работать
+            buttonDatetimePicker = cell.buttonDatetimePicker
+
             var value:String
 
             if let deadline = taskDeadline{
                 value = dateFormatter.string(from: deadline)
-                cell.labelTaskDeadline.textColor = UIColor.gray
+                cell.buttonDatetimePicker.setTitleColor(UIColor.darkText, for: .normal)
                 cell.buttonClearDeadline.isHidden = false // показать
             }else{
                 value = "(не указана)"
-                cell.labelTaskDeadline.textColor = UIColor.lightGray
+                cell.buttonDatetimePicker.setTitleColor(UIColor.lightGray, for: .normal)
                 cell.buttonClearDeadline.isHidden = true // скрыть
             }
 
             // заполняем компонент данными из задачи
-            cell.labelTaskDeadline.text = value
+            cell.buttonDatetimePicker.setTitle(value, for: .normal)
+
+            // текст для разницы в днях
+            handleDaysDiff(taskDeadline?.offsetFrom(date: Date().today), label: cell.labelDaysDiff)
 
             return cell
 
@@ -232,7 +238,7 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
 
     // закрытие контроллера без сохранения
     @IBAction func tapCancel(_ sender: UIBarButtonItem) {
-        navigationController?.popViewController(animated: true) // контроллер удаляется из стека контроллеров
+        closeController()
     }
 
     // нажали сохранить при редактировании/создании задачи
@@ -278,6 +284,17 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
 
     }
 
+
+    @IBAction func tapDatetimePicker(_ sender: UIButton) {
+        // если нужно провести доп. действия при нажатии на кнопку
+    }
+
+    // при любом изменении текста - он будет сохраняться в переменную
+    @IBAction func taskNameChanged(_ sender: UITextField) {
+        taskName = sender.text
+    }
+
+
     func confirmAction(text:String, segueName:String){
         // объект диалогового окна
         let dialogMessage = UIAlertController(title: "Подтверждение", message: text, preferredStyle: .actionSheet)
@@ -302,12 +319,11 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
     }
 
 
+
+
     // MARK: prepare
 
-    // при любом изменении текста - он будет сохраняться в переменную
-    @IBAction func taskNameChanged(_ sender: UITextField) {
-        taskName = sender.text
-    }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
@@ -319,14 +335,14 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
         case "SelectCategory": // переходим в контроллер для выбора категории
 
             if let controller = segue.destination as? CategoryListController{
-                controller.selectedItem = taskCategory // передаем текущее значение категории
+                controller.selectedItem = taskCategory // передаем текущее значение
                 controller.delegate = self
             }
 
         case "SelectPriority": // переходим в контроллер для выбора приоритета
 
             if let controller = segue.destination as?  PriorityListController{
-                controller.selectedItem = taskPriority // передаем текущее значение приоритета
+                controller.selectedItem = taskPriority // передаем текущее значение
                 controller.delegate = self
 
             }
@@ -334,7 +350,15 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
         case "EditTaskInfo": // переходим в контроллер для редактирования доп. инфо
 
             if let controller = segue.destination as?  TaskInfoController{
-                controller.taskInfo = taskInfo // передаем текущее значение приоритета
+                controller.taskInfo = taskInfo // передаем текущее значение
+                controller.delegate = self
+
+            }
+
+        case "SelectDatetime": // переходим в контроллер для выбора даты
+
+            if let controller = segue.destination as?  DatetimePickerController{
+                controller.initDeadline = taskDeadline // передаем текущее значение
                 controller.delegate = self
 
             }
@@ -368,6 +392,11 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
 
             textviewTaskInfo.text = taskInfo
 
+        case is DatetimePickerController: // возвращаемся после редактирования даты
+            taskDeadline = data as? Date
+
+            tableView.reloadRows(at: [IndexPath(row: 0, section: taskDeadlineSection)], with: .fade)
+
         default:
             print()
         }
@@ -375,6 +404,8 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
 
 
     }
+
+   
    
     
 }

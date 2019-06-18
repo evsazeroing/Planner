@@ -1,0 +1,15 @@
+PODS:
+  - GCCalendar (2.3.1)
+  - Presentr (1.3)
+
+DEPENDENCIES:
+  - GCCalendar
+  - Presentr
+
+SPEC CHECKSUMS:
+  GCCalendar: 0f88ab4331bfbfbc185e55a2451b8981b73f07ae
+  Presentr: 3f0825a42cb32ecd8fc6b6d0b0de87d7d0b42482
+
+PODFILE CHECKSUM: c9139f21d49fb8669ca5c75680a90d01ea13c3b8
+
+COCOAPODS: 1.4.0

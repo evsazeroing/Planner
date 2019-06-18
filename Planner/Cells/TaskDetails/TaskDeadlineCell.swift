@@ -4,8 +4,9 @@ import UIKit
 
 class TaskDeadlineCell: UITableViewCell {
 
-    @IBOutlet weak var labelTaskDeadline: UILabel!
     @IBOutlet weak var buttonClearDeadline: AreaTapButton!
+    @IBOutlet weak var buttonDatetimePicker: UIButton!
+    @IBOutlet weak var labelDaysDiff: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

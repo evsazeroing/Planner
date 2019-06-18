@@ -1,0 +1,6 @@
+framework module GCCalendar {
+  umbrella header "GCCalendar-umbrella.h"
+
+  export *
+  module * { export * }
+}

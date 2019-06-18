@@ -39,13 +39,13 @@ class TaskInfoController: UIViewController {
     }
     */
     @IBAction func tapCancel(_ sender: UIBarButtonItem) {
-        navigationController?.popViewController(animated: true) // закрыть контроллер и удалить из navigation stack
+        closeController()
 
     }
 
     @IBAction func tapSave(_ sender: UIBarButtonItem) {
 
-        navigationController?.popViewController(animated: true) // закрыть контроллер и удалить из navigation stack
+        closeController()
 
         delegate?.done(source: self, data: textviewTaskInfo.text) // уведомить делегата и передать выбранное значение
 

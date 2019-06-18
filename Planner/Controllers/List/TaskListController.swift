@@ -5,7 +5,6 @@ import CoreData
 // контроллер для отображения списка задач
 class TaskListController: UITableViewController, ActionResultDelegate {
 
-    let dateFormatter = DateFormatter()
 
     // dao
     let taskDAO = TaskDaoDbImpl.current
@@ -30,13 +29,13 @@ class TaskListController: UITableViewController, ActionResultDelegate {
         return taskDAO.items.count
     }
 
+    var dateFormatter:DateFormatter!
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        dateFormatter.dateStyle = .short
-        dateFormatter.timeStyle = .none
+        dateFormatter = createDateFormatter()
 
         setupSearchController() // инициализаия поискового компонента
 
@@ -141,29 +140,9 @@ class TaskListController: UITableViewController, ActionResultDelegate {
             }
 
 
-
-            // текст для отображения кол-ва дней по задаче
-            if let diff = task.daysLeft(){
-
-                switch diff {
-                case 0:
-                    cell.labelDeadline.text = "Сегодня" // TODO: локализация
-                case 1:
-                    cell.labelDeadline.text = "Завтра"
-                case 0...:
-                    cell.labelDeadline.text = "\(diff) дн."
-
-                case ..<0:
-                    cell.labelDeadline.textColor = .red
-                    cell.labelDeadline.text = "\(diff) дн."
-
-                default:
-                    cell.labelDeadline.text = ""
-                }
-
-            }else{
-                cell.labelDeadline.text = ""
-            }
+            // текст и стиль для отображения разницы в днях
+            handleDaysDiff(task.daysLeft(), label: cell.labelDeadline)
+          
 
 
             // стиль для завершенных задач
@@ -210,6 +189,18 @@ class TaskListController: UITableViewController, ActionResultDelegate {
 
 
     }
+
+
+    // какие строки можно редактировать, а какие нет
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        if indexPath.section == quickTaskSection{ //  для секции 0 не даем ничего делать (т.к. там текстовое поле для быстрого создания задачи)
+            return false
+        }
+
+        return true
+    }
+
+
 
     // удаление строки
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
