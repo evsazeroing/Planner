@@ -1,6 +1,7 @@
 
 import UIKit
 import CoreData
+import L10n_swift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -11,9 +12,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
-//        let urls = FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask)
-//        print(urls[urls.count-1] as URL) // получаем путь к папкам приложения
+        // определяем текущий язык системы
+        let currentLangCode = Locale.init(identifier: PrefsManager.current.lang).languageCode! // чтобы привести к единому двузначному коду все возможные языки (en_US = en, ru_RU = ru и т.д.)
 
+        // если язык системы не поддерживается приложением - показывать на английском
+        if !L10n.shared.supportedLanguages.contains(currentLangCode){
+            L10n.shared.language = "en"
+        }else{
+            L10n.shared.language = currentLangCode // используем существующую локаль
+        }
 
         return true
     }

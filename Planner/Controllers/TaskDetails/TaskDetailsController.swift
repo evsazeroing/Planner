@@ -47,7 +47,6 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
         dateFormatter = createDateFormatter()
 
         // сохраняем в соотв. переменные все данные задачи
-
         if mode == .update{
             taskName = task.name
             taskInfo = task.info
@@ -59,6 +58,7 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
         hideKeyboardWhenTappedAround() // скрывать клавиатуру, если нажать мимо нее
 
         initButtons()
+
     }
 
     // вызывается, если не хватает памяти (чтобы очистить ресурсы)
@@ -69,6 +69,8 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
 
 
     // MARK: init
+
+
 
     func initButtons(){
 
@@ -136,7 +138,7 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
                 value = name
                 cell.labelTaskCategory.textColor = UIColor.darkText
             }else{
-                value = "Не выбрано"
+                value = lsNotSelected
                 cell.labelTaskCategory.textColor = UIColor.lightGray
             }
 
@@ -160,7 +162,7 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
                 value = name
                 cell.labelTaskPriority.textColor = UIColor.darkText
             }else{
-                value = "Не выбрано"
+                value = lsNotSelected
                 cell.labelTaskPriority.textColor = UIColor.lightGray
             }
 
@@ -195,7 +197,7 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
                 cell.buttonDatetimePicker.setTitleColor(UIColor.darkText, for: .normal)
                 cell.buttonClearDeadline.isHidden = false // показать
             }else{
-                value = "(не указана)"
+                value = lsSelectDate
                 cell.buttonDatetimePicker.setTitleColor(UIColor.lightGray, for: .normal)
                 cell.buttonClearDeadline.isHidden = true // скрыть
             }
@@ -220,7 +222,7 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
                 cell.textviewTaskInfo.text = taskInfo
                 cell.textviewTaskInfo.textColor = UIColor.darkGray
             }else{ // либо пишем подсказку
-                cell.textviewTaskInfo.text = "Нажмите для заполнения"
+                cell.textviewTaskInfo.text = lsTapToFill
                 cell.textviewTaskInfo.textColor = UIColor.lightGray
             }
 
@@ -237,15 +239,15 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case taskNameSection:
-            return "Название"
+            return lsName
         case taskCategorySection:
-            return "Категория"
+            return lsCategory
         case taskPrioritySection:
-            return "Приоритет"
+            return lsPriority
         case taskDeadlineSection:
-            return "Дата"
+            return lsDate
         case taskInfoSection:
-            return "Доп. информация"
+            return lsInfo
 
         default:
             return ""
@@ -291,7 +293,7 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
         if !isEmptyTrim(taskName){
             task.name = taskName
         }else{
-            task.name = "Новая задача"
+            task.name = lsNewTask
         }
 
 
@@ -312,7 +314,7 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
     @IBAction func tapDeleteTask(_ sender: UIButton) {
 
         // подтвердить действие
-        confirmAction(text: "Действительно хотите удалить задачу?") {
+        confirmAction(text: lsConfirmDeleteTask) {
             self.performSegue(withIdentifier: "DeleteTaskFromDetails", sender: self) // реализация замыкания (trailing closure), которое передается как параметр
         }
 
@@ -323,7 +325,7 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
     @IBAction func tapCompleteTask(_ sender: UIButton) {
 
         // подтвердить действие
-        confirmAction(text: "Действительно хотите завершить задачу?") {
+        confirmAction(text: lsConfirmCompleteTask) {
             self.performSegue(withIdentifier: "CompleteTaskFromDetails", sender: self) // реализация замыкания (trailing closure), которое передается как параметр
         }
 
@@ -362,7 +364,7 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
                 controller.selectedItem = taskCategory // передаем текущее значение
                 controller.delegate = self // для возврата результата действий
                 controller.showMode = .select // режим выбора значения
-                controller.navigationTitle = "Выберите категорию"
+                controller.navigationTitle = lsSelectCategory
             }
 
         case "SelectPriority": // переходим в контроллер для выбора приоритета
@@ -371,7 +373,7 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
                 controller.selectedItem = taskPriority // передаем текущее значение
                 controller.delegate = self // для возврата результата действий
                 controller.showMode = .select // режим выбора значения
-                controller.navigationTitle = "Выберите приоритет"
+                controller.navigationTitle = lsSelectPriority
             }
 
         case "EditTaskInfo": // переходим в контроллер для редактирования доп. инфо
@@ -379,7 +381,7 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
             if let controller = segue.destination as?  TaskInfoController{
                 controller.taskInfo = taskInfo // передаем текущее значение
                 controller.delegate = self // для возврата результата действий
-                controller.navigationTitle = "Редактирование"
+                controller.navigationTitle = lsEdit
                 controller.taskInfoShowMode = .edit
             }
 

@@ -54,7 +54,7 @@ class SideMenuController: UITableViewController {
 
         // "Написать разработчику"
         if tableView.cellForRow(at: indexPath) === cellFeedback{
-            let email = "zhenyasalov@mail.ru" // TODO: вынести адрес в plist
+            let email = "zhenyasalov@mail.ru // TODO: вынести адрес в plist
             if let url = URL(string: "mailto:\(email)") {
                 UIApplication.shared.open(url)
             }
@@ -68,7 +68,7 @@ class SideMenuController: UITableViewController {
         // "Поделиться с друзьями"
         if tableView.cellForRow(at: indexPath) === cellShare{
 
-            let shareController = UIActivityViewController(activityItems: ["Создайте iOS приложение с нуля"], applicationActivities: nil)
+            let shareController = UIActivityViewController(activityItems: [lsShareText], applicationActivities: nil)
 
             shareController.popoverPresentationController?.sourceView = self.view
 
@@ -88,11 +88,11 @@ class SideMenuController: UITableViewController {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case commonSection:
-            return "Общие"
+            return lsMenuCommon
         case dictionarySection:
-            return "Справочники"
+            return lsMenuDictionaries
         case helpSection:
-            return "Помощь"
+            return lsMenuHelp
         default:
             return ""
         }
@@ -132,7 +132,7 @@ class SideMenuController: UITableViewController {
             }
 
             controller.showMode = .edit // режим редактирования (чтобы были доступны. доп. действия)
-            controller.navigationTitle = "Редактирование"
+            controller.navigationTitle = lsEdit
 
         case "EditPriorities": // открываем контроллер для редактирования категорий
             guard let controller = segue.destination as? PriorityListController else {
@@ -140,7 +140,7 @@ class SideMenuController: UITableViewController {
             }
 
             controller.showMode = .edit // режим редактирования (чтобы были доступны. доп. действия)
-            controller.navigationTitle = "Редактирование"
+            controller.navigationTitle = lsEdit
         default:
             return
         }

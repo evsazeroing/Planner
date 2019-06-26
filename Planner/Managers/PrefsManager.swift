@@ -1,5 +1,6 @@
 
 import Foundation
+import L10n_swift
 
 
 // класс для работы с настройками приложения (чтение, запись)
@@ -11,6 +12,7 @@ class PrefsManager{
     let showTasksWithoutDateKey = "showTasksWithoutDate"
     let showEmptyCategoriesKey = "showEmptyCategories"
     let sortTypeKey = "sortType"
+    let langKey = "lang"
 
     // синглтон
     static let current = PrefsManager()
@@ -22,7 +24,8 @@ class PrefsManager{
         UserDefaults.standard.register(defaults: [showEmptyPrioritiesKey : true])
         UserDefaults.standard.register(defaults: [showCompletedTasksKey : false]) // скрывать завершенные задачи
         UserDefaults.standard.register(defaults: [showTasksWithoutDateKey : true])
-        UserDefaults.standard.register(defaults: [sortTypeKey : 0]) // сортировка по имени
+        UserDefaults.standard.register(defaults: [sortTypeKey : 0]) // по-умолчанию сортировка по имени
+        UserDefaults.standard.register(defaults: [langKey : Locale.preferredLanguages[0]]) // по-умолчанию при первом запуске приложения записываем язык из системы
 
     }
 
@@ -82,6 +85,19 @@ class PrefsManager{
     }
 
 
+    // MARK: lang
+
+    //  текущий язык приложения
+    var lang:String{
+        get{
+            return UserDefaults.standard.string(forKey: langKey)!
+        }
+        set{
+            UserDefaults.standard.set(newValue, forKey: langKey)
+        }
+    }
+
+ 
 
 }
 

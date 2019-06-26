@@ -1,0 +1,161 @@
+// общие слова и выражения
+// storyboards будут автоматически искать значения в этом файле
+
+planner = "Планировщик";
+
+searchByName = "Поиск по названию";
+
+selectValue = "Выберите значение";  
+
+selectDate = "Выберите дату";
+
+nodata = "Нет данных";
+
+close = "Закрыть";
+
+name = "Название";
+
+fillName = "Введите название";
+
+A_Z = "А-Я";
+
+edit = "Редактирование";
+
+add = "Добавление";
+
+selectAll = "Все";
+
+deselectAll = "Снять";
+
+startTypingName = "Начните набирать название";
+
+cancel = "Отмена";
+
+save = "Сохранить";
+
+tapToFill = "Нажмите для заполнения";
+
+confirm = "Подтверждение";
+
+date = "Дата";
+
+shareText = "Создайте iOS приложение с нуля";
+
+today = "Сегодня";
+
+tomorrow = "Завтра";
+
+days = "д";
+
+notSelected = "не выбрано";
+
+info = "Дополнительная информация";
+
+selectColor = "Цвет";
+
+
+// категории
+
+newCategory = "Новая категория";
+
+category = "Категория";
+
+selectCategory = "Выберите категорию для данной задачи";
+
+noCategory = "без категории";
+
+categories = "Категории";
+
+
+// задачи
+
+taskList = "Список задач";
+
+newTask = "Новая задача";
+
+quickTask = "Быстрое добавление задачи";
+
+confirmDeleteTask = "Действительно хотите удалить задачу?";
+
+confirmCompleteTask = "Действительно хотите завершить задачу?";
+
+
+//  пункты меню
+
+menu.settings = "Настройки";
+
+menu.dictionaries = "Справочники";
+
+menu.help = "Помощь";
+
+menu.common = "Общее";
+
+menu.filters = "Фильтры";
+
+menu.feedback = "Написать автору";
+
+menu.share = "Поделиться с друзьями";
+
+menu.categories = "Категории";
+
+menu.priorities = "Приоритеты";
+
+
+
+// для приоритета
+
+priority = "Приоритет";
+
+newPriority = "Новый приоритет";
+
+selectPriority = "Выберите приоритет для задачи";
+
+noPriority = "без приоритета";
+
+priorities = "Приоритеты";
+
+
+
+
+// фильтрация задач
+
+selectedTasksWillShow = "Включенные задачи будут отображаться в общем списке";
+
+tasksWithEmptyCategory = "Задачи без категории";
+
+tasksWithEmptyPriority = "Задачи без приоритета";
+
+completedTasks = "Завершенные задачи";
+
+tasksWithoutDate = "Задачи без даты";
+
+canFilter = "Вы можете фильтровать задачи с помощью выбора галочек";
+
+
+
+// сообщения после создания/обновления задачи - если она не должна отображаться в общем списке
+
+notShowEmptyCategories = "НЕ показывать задачи с пустыми категорями";
+
+notShowEmptyPriorities = "НЕ показывать задачи с пустыми приоритетами";
+
+notShowWithoutDate = "НЕ показывать задачи без даты";
+
+notShowCategory = "НЕ показывать категорию";
+
+notShowPriority = "НЕ показывать приоритет";
+
+nameNotContains = "имя НЕ содержит";
+
+taskAddedButNotShow = "Задача добавлена, но не показывается \nиз-за фильтра:";
+
+taskUpdatedButNotShow = "Задача обновлена, но не показывается \nиз-за фильтра:";
+
+
+// язык
+
+lang = "Язык";
+
+langChanged = "Язык изменен";
+
+selectLang = "Выбериты язык";

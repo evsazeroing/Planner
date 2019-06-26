@@ -26,6 +26,13 @@
 		223207DC204935F3008F9D92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223207DE204935F3008F9D92 /* Main.storyboard */; };
 		223207E42049361A008F9D92 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 223207E62049361A008F9D92 /* Localizable.strings */; };
 		223207EA204936F8008F9D92 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 223207EC204936F8008F9D92 /* InfoPlist.strings */; };
+		223207FC20493CA4008F9D92 /* StringVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223207F620493CA4008F9D92 /* StringVars.swift */; };
+		2232081520493F3C008F9D92 /* L10n_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2232081620493F3C008F9D92 /* L10n_swift.framework */; };
+		2235E2FC204D7A4C0063785E /* LangListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235E2FB204D7A4C0063785E /* LangListController.swift */; };
+		2235E2FE204D7A5C0063785E /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235E2FD204D7A5C0063785E /* SettingsController.swift */; };
+		2235E300204D7C050063785E /* LangListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235E2FF204D7C050063785E /* LangListCell.swift */; };
+		2235E302204D7C520063785E /* CurrentLangCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235E301204D7C520063785E /* CurrentLangCell.swift */; };
+		2235E305204D7CD70063785E /* LangManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235E304204D7CD70063785E /* LangManager.swift */; };
 		22759C711FDEA6E500E9A1E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22759C701FDEA6E500E9A1E0 /* AppDelegate.swift */; };
 		22759C731FDEA6E500E9A1E0 /* TaskDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22759C721FDEA6E500E9A1E0 /* TaskDetailsController.swift */; };
 		22759C791FDEA6E500E9A1E0 /* Planner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22759C771FDEA6E500E9A1E0 /* Planner.xcdatamodeld */; };
@@ -61,6 +68,9 @@
 /* Begin PBXFileReference section */
 		220395352047B84100867D56 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		220395382047BB9C00867D56 /* SwiftIconFont.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftIconFont.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2204B80F204E702D00649947 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2204B810204E702D00649947 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2204B811204E702D00649947 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2208B9182043DC3300BA40BC /* Checkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkable.swift; sourceTree = "<group>"; };
 		2208B91A2043DD7500BA40BC /* DictDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictDAO.swift; sourceTree = "<group>"; };
 		220CD7DE201B5C97001B1D2D /* TaskExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskExtension.swift; sourceTree = "<group>"; };
@@ -75,18 +85,20 @@
 		222AB5B72033E82F00300334 /* CommonSearchDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSearchDAO.swift; sourceTree = "<group>"; };
 		222EBA7B202B281B00554EA3 /* DictionaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryController.swift; sourceTree = "<group>"; };
 		222EBA7F202C1A2300554EA3 /* AreaTapButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaTapButton.swift; sourceTree = "<group>"; };
-		223207DB204935E2008F9D92 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		223207DF204935F5008F9D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		223207E52049361A008F9D92 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		223207E72049361E008F9D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		223207EB204936F8008F9D92 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		223207ED20493715008F9D92 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		223207F620493CA4008F9D92 /* StringVars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringVars.swift; sourceTree = "<group>"; };
+		2232081620493F3C008F9D92 /* L10n_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = L10n_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2235E2FB204D7A4C0063785E /* LangListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LangListController.swift; sourceTree = "<group>"; };
+		2235E2FD204D7A5C0063785E /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		2235E2FF204D7C050063785E /* LangListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LangListCell.swift; sourceTree = "<group>"; };
+		2235E301204D7C520063785E /* CurrentLangCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLangCell.swift; sourceTree = "<group>"; };
+		2235E304204D7CD70063785E /* LangManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LangManager.swift; sourceTree = "<group>"; };
 		22759C6D1FDEA6E500E9A1E0 /* Planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22759C701FDEA6E500E9A1E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22759C721FDEA6E500E9A1E0 /* TaskDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailsController.swift; sourceTree = "<group>"; };
 		22759C781FDEA6E500E9A1E0 /* Planner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Planner.xcdatamodel; sourceTree = "<group>"; };
 		22759C7A1FDEA6E500E9A1E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		22759C7D1FDEA6E500E9A1E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22759C7F1FDEA6E500E9A1E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22818A37203D9D2100A1EBBA /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22818A3B203DA1A200A1EBBA /* SideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuController.swift; sourceTree = "<group>"; };
@@ -122,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2232081520493F3C008F9D92 /* L10n_swift.framework in Frameworks */,
 				22C44FAA2047CB43009FF865 /* Toaster.framework in Frameworks */,
 				220395372047BB9C00867D56 /* SwiftIconFont.framework in Frameworks */,
 				22DE17792046A9BA00F8BBD7 /* SwiftReorder.framework in Frameworks */,
@@ -138,6 +151,7 @@
 		097E08353C79E1C83DFFCA0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2232081620493F3C008F9D92 /* L10n_swift.framework */,
 				22C44FAB2047CB43009FF865 /* Toaster.framework */,
 				220395382047BB9C00867D56 /* SwiftIconFont.framework */,
 				22DE177A2046A9BA00F8BBD7 /* SwiftReorder.framework */,
@@ -168,6 +182,8 @@
 				2222BCE4202ABC8E00A06513 /* TaskDetails */,
 				22162C412011D5D4000AAED5 /* List */,
 				22921251203EC7AB00635313 /* FiltersController.swift */,
+				2235E2FB204D7A4C0063785E /* LangListController.swift */,
+				2235E2FD204D7A5C0063785E /* SettingsController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -213,17 +229,19 @@
 		223207E020493603008F9D92 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
-				223207E12049360B008F9D92 /* Strings */,
+				223207F620493CA4008F9D92 /* StringVars.swift */,
+				223207E62049361A008F9D92 /* Localizable.strings */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
 		};
-		223207E12049360B008F9D92 /* Strings */ = {
+		2235E303204D7C580063785E /* Lang */ = {
 			isa = PBXGroup;
 			children = (
-				223207E62049361A008F9D92 /* Localizable.strings */,
+				2235E2FF204D7C050063785E /* LangListCell.swift */,
+				2235E301204D7C520063785E /* CurrentLangCell.swift */,
 			);
-			path = Strings;
+			path = Lang;
 			sourceTree = "<group>";
 		};
 		22759C641FDEA6E500E9A1E0 = {
@@ -286,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				22921254203EDE2E00635313 /* PrefsManager.swift */,
+				2235E304204D7CD70063785E /* LangManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -327,6 +346,7 @@
 		22A98BC0202982C70051183B /* List */ = {
 			isa = PBXGroup;
 			children = (
+				2235E303204D7C580063785E /* Lang */,
 				22E01EC72014C2FB004B5989 /* TaskListCell.swift */,
 				2222BCE7202ABCFD00A06513 /* CategoryListCell.swift */,
 				2222BCEB202ACB5400A06513 /* PriorityListCell.swift */,
@@ -415,7 +435,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
+				ru,
 			);
 			mainGroup = 22759C641FDEA6E500E9A1E0;
 			productRefGroup = 22759C6E1FDEA6E500E9A1E0 /* Products */;
@@ -484,7 +504,9 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Planner/Pods-Planner-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ChromaColorPicker/ChromaColorPicker.framework",
+				"${BUILT_PRODUCTS_DIR}/FlagKit/FlagKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GCCalendar/GCCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/L10n-swift/L10n_swift.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftIconFont/SwiftIconFont.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftReorder/SwiftReorder.framework",
@@ -493,7 +515,9 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChromaColorPicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlagKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/L10n_swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftIconFont.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftReorder.framework",
@@ -513,6 +537,7 @@
 			files = (
 				222EBA80202C1A2300554EA3 /* AreaTapButton.swift in Sources */,
 				2228DA362036DF99002B624E /* UIVIewControllerExtension.swift in Sources */,
+				2235E300204D7C050063785E /* LangListCell.swift in Sources */,
 				22818A3F203DA1D800A1EBBA /* SideMenuCell.swift in Sources */,
 				22AEC5D0202DB30600EEF0F6 /* TaskInfoController.swift in Sources */,
 				220CD7DF201B5C97001B1D2D /* TaskExtension.swift in Sources */,
@@ -527,16 +552,21 @@
 				22A98BB1202874CD0051183B /* TaskCategoryCell.swift in Sources */,
 				222EBA7C202B281B00554EA3 /* DictionaryController.swift in Sources */,
 				2222BCEC202ACB5400A06513 /* PriorityListCell.swift in Sources */,
+				2235E2FE204D7A5C0063785E /* SettingsController.swift in Sources */,
 				22921252203EC7AB00635313 /* FiltersController.swift in Sources */,
 				2222BCE6202ABCB600A06513 /* CategoryListController.swift in Sources */,
 				222AB5B82033E82F00300334 /* CommonSearchDAO.swift in Sources */,
+				2235E302204D7C520063785E /* CurrentLangCell.swift in Sources */,
 				22759C731FDEA6E500E9A1E0 /* TaskDetailsController.swift in Sources */,
 				2208B91B2043DD7500BA40BC /* DictDAO.swift in Sources */,
 				22A98B812025922E0051183B /* CategoryDaoDbImpl.swift in Sources */,
+				2235E305204D7CD70063785E /* LangManager.swift in Sources */,
 				22A98BB72028905D0051183B /* TaskInfoCell.swift in Sources */,
 				22759C711FDEA6E500E9A1E0 /* AppDelegate.swift in Sources */,
+				223207FC20493CA4008F9D92 /* StringVars.swift in Sources */,
 				22A98B822025922E0051183B /* TaskDaoDbImpl.swift in Sources */,
 				22A98BB5202890540051183B /* TaskDeadlineCell.swift in Sources */,
+				2235E2FC204D7A4C0063785E /* LangListController.swift in Sources */,
 				22A98B802025922E0051183B /* PriorityDaoDbImpl.swift in Sources */,
 				22162C442011D694000AAED5 /* TaskListController.swift in Sources */,
 				22921255203EDE2E00635313 /* PrefsManager.swift in Sources */,
@@ -557,8 +587,7 @@
 		223207DE204935F3008F9D92 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				223207DF204935F5008F9D92 /* Base */,
-				223207ED20493715008F9D92 /* ru */,
+				2204B80F204E702D00649947 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -567,7 +596,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				223207E52049361A008F9D92 /* ru */,
-				223207E72049361E008F9D92 /* Base */,
+				2204B811204E702D00649947 /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -583,8 +612,7 @@
 		22759C7C1FDEA6E500E9A1E0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				22759C7D1FDEA6E500E9A1E0 /* Base */,
-				223207DB204935E2008F9D92 /* ru */,
+				2204B810204E702D00649947 /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

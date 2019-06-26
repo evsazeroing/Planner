@@ -7,287 +7,394 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0170B6741FABBFA17237CD25B587525D /* GCCalendarWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7904AA3C8DB63D1A4ABBDCF0616E0F71 /* GCCalendarWeekView.swift */; };
-		037474CCC93BC72BE909957C1EE66BAB /* ReorderController+SnapshotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E697007FCFAB63B853C99F25BDAA76C /* ReorderController+SnapshotView.swift */; };
-		06C05B7F3E97EC9CCBE9FF88CF6FB4E6 /* themify.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E15676020F98DA4535DCB9B3ABAF4BB7 /* themify.ttf */; };
-		0A5D7F4875059FE9CA7BE986DEC3A035 /* SwiftIconStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93AF08850D4AA15852CA7063AE11ADF /* SwiftIconStepper.swift */; };
-		0D715B40B30C1C828256ED8CF927034B /* GCCalendarConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB2868815C84F9E338947C674D4AD2F /* GCCalendarConfiguration.swift */; };
-		139900880B4D799A2C1DBC581275CD0B /* SwiftIconLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E77C8AD41E3A4746AB391BAA72502A /* SwiftIconLabel.swift */; };
-		149D7AED320DC8E9C769CFA795BFE147 /* SwiftIconFont+NSRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = A653C42799239C55F2A1043A23939E3C /* SwiftIconFont+NSRange.swift */; };
-		14D65317BA51FD4D1EE26CA69914DFDD /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 316938978E6AC8D1730FD8E6F5087DBD /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		160300A8473E4991792240E188B9901E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7751D4D791D1183FB66D3CCA52CD8E /* QuartzCore.framework */; };
-		1DCCEB4106E40D354FC4D1263D5CE70B /* SwiftIconFont-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2201FBB75F9DFB70D0BF978481D6A038 /* SwiftIconFont-dummy.m */; };
-		1E9A76092B4B24B03BB1E43ABB025D52 /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6E976A7F4DE28E19147309F54F9403 /* SideMenu-dummy.m */; };
-		211DD111B7ADFC0C516A5E78495C7B72 /* SwiftIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF51D822C3103CCBA1FB321C60713A0F /* SwiftIconButton.swift */; };
-		22F57652A81D474A10EED6C8C3FBC75E /* SwiftIconFont+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BB31E75E740857DD4FB4C4BFFE5B7D /* SwiftIconFont+UIImage.swift */; };
-		23B13C2AFFAA65C3DA28C2D6E3BD71A3 /* Pods-Planner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 587895E2F425B1960DA4AF6BD1ABFB0B /* Pods-Planner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		27245A78AF268050D94988B92F87C62F /* SwiftReorder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B87691597E590DD34504CCF9E3E99D8 /* SwiftReorder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0170B6741FABBFA17237CD25B587525D /* GCCalendarWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51938EC18102D19E3EAFEF61649D66EB /* GCCalendarWeekView.swift */; };
+		0458DD60DDAA6EE6852C50B16091E1A3 /* SwiftIconFont+UITabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA575C9510B4BDDD515FE6FDE03153A /* SwiftIconFont+UITabBarItem.swift */; };
+		0A577E55527C0E2EC80194C5A8DD4FA9 /* SwiftReorder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 036BF8F4EB0EE102F4077D4FFF5EB1B4 /* SwiftReorder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C73338732313C0F76F393339EA8A585 /* SwiftIconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE1E9CED221E567E7978FBC8D0A9A2F /* SwiftIconFont.swift */; };
+		0D715B40B30C1C828256ED8CF927034B /* GCCalendarConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70166782358A35F3009E51EF59560233 /* GCCalendarConfiguration.swift */; };
+		0E7248A2C683CA210A81D58F1D8DB23F /* L10n+static.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07F8CACFE05B526B2BB207585D68E45 /* L10n+static.swift */; };
+		0E79C6E9935C4F941D0D9B7D6706C1F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3917A50EB224EEDBC66971700D698782 /* UIKit.framework */; };
+		111E2217CADACD0B5E5675621C668E03 /* SwiftIconBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45364E33FA912F4CB243F8E1880EC38 /* SwiftIconBarButtonItem.swift */; };
+		1137AA100C56D0890BA381994302A9D4 /* SwiftIconFont+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63D192326A656D5645C029CF0BA459E /* SwiftIconFont+UILabel.swift */; };
+		14147826F142F0C66437AB40B21857D1 /* NSNumber+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200F0D981E6F70F0BAB01955B7CFE88 /* NSNumber+Localizable.swift */; };
+		14EA8796CAC2F9A5FF7D68AC87605877 /* SwiftIconFont-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE81AB04E8BBEE67CE6DC650A357F8A /* SwiftIconFont-dummy.m */; };
+		16CCA29F2BD2B6D6427BC00189C8BC8A /* NotificationName+L10nLanguageChanged.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B84A5D0B9A11436731FED375EC4324 /* NotificationName+L10nLanguageChanged.swift */; };
+		186DCC703F0E6BCB2B22A7E0D0701A20 /* ResourceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B58004FFA74673DA265BABE50A6A6A /* ResourceContainer.swift */; };
+		1D4AEA3DB8207C4919814F137EDD4E14 /* Toaster-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FCBC3C4F0CFED274D29674ED95B084 /* Toaster-dummy.m */; };
+		2137783E6379F8386A2AAD2DAD0FE20B /* SwiftIconFont-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CEDC0FB5D2F181FDF5B157B998938C0 /* SwiftIconFont-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2189DF4BE15A55BFC11FE43751682CF5 /* UIDatePicker+IBL10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58EA0D64EED9BF97BF94E49DCF0432F /* UIDatePicker+IBL10n.swift */; };
+		2212097A17C09C4177550A5574BD1D61 /* FlagKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3498AA3B3DC02C47B487A0772CCC40A9 /* FlagKit-dummy.m */; };
+		243BC2551F3786983D1CE9351DD4C5D8 /* UIViewController+IBL10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2ABCCA5B736EC15D7BF01CC489DE5A /* UIViewController+IBL10n.swift */; };
+		2524C011659164E641BEC6A7648494C3 /* L10n-swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F5AD0CEB8F8EB714FA3886E6BE72DC5 /* L10n-swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26FCE3577E67325CA0786848D1D4E56B /* ThemifyIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2DA58DDBC18FE12293E76D4941616B /* ThemifyIcon.swift */; };
 		27EF4858AB36AE3654C8DCBCDCDB6A9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
-		2A8E68D9C2B8CE011C1A9B60654C4178 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4411FB62CD9E0BB7FE804E73AF95D64C /* ToastView.swift */; };
-		2C3AD82C2BF6193E91519B1928E44442 /* SwiftIconBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7523359DAB41AD8500C906EEC3B06C68 /* SwiftIconBarButtonItem.swift */; };
+		28CA30955BEA90964C1A5113ED17BA2F /* UILabel+IBL10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72DB53B57A46217094D858CD64987E /* UILabel+IBL10n.swift */; };
+		2C37E00A9ADF3DC2A8EAAF4856CDA90F /* Plural.stringsdict in Sources */ = {isa = PBXBuildFile; fileRef = BC87C349A6B6238BD66325E68891692A /* Plural.stringsdict */; };
 		2CCA81B9BFAFFA78C63594B01881EAE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
-		2CD7BD2F25A728501BCA2B2226271982 /* ChromaColorPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 08244E08332C5715195E657FD760A7F8 /* ChromaColorPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E32A45F5FA784DA017F42D7415BDE7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
-		2F6CDE3B2BA4DA36386508A448EB8C1D /* ChromaColorPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = CB7B4B100050A424B29606F7BD064929 /* ChromaColorPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3809FE86691A05B36AFD28824FA31874 /* MaterialIcons-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D79FD83B421374BFECFBDBC9FA475FF /* MaterialIcons-Regular.ttf */; };
-		3BE6751BDD0E366E7780302DADE25DFD /* SwiftIconFont+UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E3FDE8F914B73D7AE81DC35C3B149A /* SwiftIconFont+UIBarButtonItem.swift */; };
-		40035A7E409B83DCFF7FEB781C2EED00 /* ChromaColorPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88939482520345DB213CE46675F08626 /* ChromaColorPicker-dummy.m */; };
-		4278EA94ED7EEBAD14C94CFEB1944929 /* UITableView+Reorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0588A3506471F2F59EF54783C596B6C7 /* UITableView+Reorder.swift */; };
-		46BE6075A78FD94B44FA92245C2486A4 /* ChromaAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E94F8811D3492C04ADEAEA041FA1C20 /* ChromaAddButton.swift */; };
-		484F60F5949C12AE3CDED8B14BCC538A /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0639A5D3247A0F8C5E59E44B9C33BD8C /* Ionicons.ttf */; };
-		48BDE2E39F680C430CC3BB89889FC72A /* MaterialIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABC58403B0FDC4E25A67D2D2D78B065 /* MaterialIcon.swift */; };
-		4C2D3362441CDA1D87EDEA8FDC07198A /* Toaster-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CDEC978664C1E0ACF420318047DA88B8 /* Toaster-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D1BF16B0348EFE992D0D8BD012193F5 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CC708CF4AD33FF26A9154FC80D51FD /* FontAwesome.swift */; };
-		56F5CDA641220AFCDBDDD51AAA2BAD88 /* SwiftIconFont+UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1849C5FEE2A5FE5707AA7DE5B2E177C /* SwiftIconFont+UITextView.swift */; };
-		61F03919A4673FA71A48CB182D6162F2 /* ReorderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF581FA1B2BAE83E7F5E492C4ED4893E /* ReorderController.swift */; };
-		666BC1392712EA449A753620920A1985 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4EEFB261637CEC695F259BB3BD97D5E7 /* FontAwesome.ttf */; };
-		67BB40F98079FA57DFA207E4C6D73D0D /* SwiftIconFont+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD7FB88AC09952E06A3DEC83DD2E302 /* SwiftIconFont+UIImageView.swift */; };
-		6E23CFAC4459028B2E874F6896E54305 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
-		6F266B5981FB4B667C0549DAD7F65F42 /* SwiftReorder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C98547C84C2F9364A33CF832F2A3BD6D /* SwiftReorder-dummy.m */; };
-		7081C658A02B195F61888B79F5300A1C /* MapIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B04E8C81E803F91391F71A8BEBBD162 /* MapIcon.swift */; };
-		7120211D60464DFD2E3194A6C2A29E5C /* Toaster.h in Headers */ = {isa = PBXBuildFile; fileRef = 979C83AB150068C03CB584009A00D4CF /* Toaster.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		75137DE0080B1AAB452DE2868FC42D5F /* ReorderController+GestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C121FAB75976BA70A0F989AB1EF11336 /* ReorderController+GestureRecognizer.swift */; };
-		7786EE19FC7C0536E18EFF0F6BC9D876 /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D423A66B2007AEB70DB71BE03DCED1F /* UITableViewVibrantCell.swift */; };
-		78342AC938794C23B80146611E213DE5 /* SwiftIconFont+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63F9FAD617517F6727DC0C27192FF2 /* SwiftIconFont+String.swift */; };
-		7DCCC7E197154F712C27ED48D7591823 /* SwiftIconTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FA25F7BE94DB410C8B8CE8CD41AE4C /* SwiftIconTextField.swift */; };
-		7FF9E3A47CC09DC9026F35A16DF55B08 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3917A50EB224EEDBC66971700D698782 /* UIKit.framework */; };
-		84FB16557A7D1FA8DBCEEC3E3F5D0DB4 /* Iconic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664E36E1CFA1234CC720E321C9432DF5 /* Iconic.swift */; };
-		8B9FACFFA5EC7D6D91922F3771FB57F0 /* ThemifyIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897D5116E0B14C0F5B79DFBC7721A88F /* ThemifyIcon.swift */; };
-		8C81A1CEF8720A2EEE2BE86779865157 /* UIColor+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E165CB87E90DF48B5C8197CD4EE75DB /* UIColor+Utilities.swift */; };
-		8F12AFD7FD1CC63DA5A99E97AB469CFB /* ToastCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A125AE5B3FFC2B501247E2940672DCB3 /* ToastCenter.swift */; };
-		92F8161F4E07A53E57E3EB2E1FA62238 /* ColorModeToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FAE4583172B828F78574D7C069F97 /* ColorModeToggleButton.swift */; };
-		935C558B73F21823BA84CD837C9944FE /* ReorderController+AutoScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5AFE66358472BC6008D9C5B8189321 /* ReorderController+AutoScroll.swift */; };
-		938EBA738B924BB288DF508E3F0DF643 /* Toaster-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6038F90D828D3AB45E7F2DBA947AF995 /* Toaster-dummy.m */; };
-		95329D0DFD07219FC44EEF1DF66A4025 /* octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6841B36C01AE03F154EA33068EE4E9D /* octicons.ttf */; };
-		9CC879E79F72A3F5D5D30CC401299988 /* GCCalendarViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18320DAA3BB5388578FA3EF0CDCEC272 /* GCCalendarViewDelegate.swift */; };
-		9D947400D1B1168CD4B3FD4EE76599D4 /* IonIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30AED86075E4D768FC472BE11EF3098 /* IonIcons.swift */; };
-		9F90DB6CA811C69276D7E0D9EDD78D99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
-		A1F53C6FCD66815656137585D3A623CA /* SwiftIconTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FF1FE6481268B5D9F04C3709AA721D /* SwiftIconTextView.swift */; };
-		A667D986D18692F6C9A09CA730C3369E /* open-iconic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67E9307143D6CE32B30BF57EF7C59ED6 /* open-iconic.ttf */; };
-		A7E36350344CF2C8F25877CBCE917093 /* UISideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6C4DD35FD92537CC47FE9E9C3C78BD /* UISideMenuNavigationController.swift */; };
-		A8A9F31523392878909A54C0F37CE031 /* SwiftIconFont+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588F0CF6D022A819BB3539F0F847DB06 /* SwiftIconFont+UITextField.swift */; };
-		A949F06998E211D9F4DE272014688003 /* ReorderController+DestinationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47EBA6F980E640CBC57E925EB0CCB46 /* ReorderController+DestinationRow.swift */; };
-		ACB4361545570E44215A54565301E561 /* GCCalendarMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2A6244595FE0203BE7730E7E734F70 /* GCCalendarMonthView.swift */; };
-		B1D0327B4012B840B9E90D7730C413EE /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3929AC61B40803854EADA9D048241B4 /* Toast.swift */; };
-		B4961C0A97B2A6B840F59D028A5595D6 /* GCCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 34296A4592286EE95076CAB1246349FE /* GCCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6BEB28F78DE14DAE76AC51F6FCAD84D /* SwiftIconFont-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03CDE545438F7403B524A7FA14A74127 /* SwiftIconFont-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6E618ECC11AF45677B7D77F1988DC02 /* SwiftIconFont+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777018C90F3527F9629685B3B966102D /* SwiftIconFont+UIButton.swift */; };
-		B85AB24A9C9D417909AC777380C0F2FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3917A50EB224EEDBC66971700D698782 /* UIKit.framework */; };
-		BDFC1CEDE0671282CD566D740A35E42D /* SwiftIconFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C0B9894AA03406321E0AA17901E7C7 /* SwiftIconFontView.swift */; };
-		C73D4CCD4896F3289C74FA1F296E7793 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
-		C94BBA0DBE99BA812638B556F12FDA2D /* GCCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BDCA7E4DDB37E41CAF0DCD2732A238F /* GCCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CF264CDB3100B4C274326F95F32BC88B /* ChromaColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99BA60E7BD16766C2D728B70573237A /* ChromaColorPicker.swift */; };
-		CFF336FDE85C5D84D6666CAE5E2FEAC5 /* Octicon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B05644535EA15FD3EBF350A128717B /* Octicon.swift */; };
-		D3545E475BA1E8DFC06ACEE060499827 /* FontLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4390BDB05537FC85EFCAC3772EA93070 /* FontLoader.swift */; };
-		D5BB03601866910E3B609E97EA4BD603 /* GCCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC15294EBD095E79EB81BDA0F03DC4A /* GCCalendarView.swift */; };
-		D7A6ACF69BE9941A49E04D91D2F9DA84 /* ToastWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD24E99F9E85E4E8B4558120BE2654E /* ToastWindow.swift */; };
-		DB804F98F00D9C73B1450B031A808F06 /* SwiftIconFont+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE367CA631F0D6D43E55DE132B299BA /* SwiftIconFont+UILabel.swift */; };
-		E787CB82D67707A33F4EF78CF68C85D9 /* SwiftIconFont+UITabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B87ACAAB4EE126E15243617A605437 /* SwiftIconFont+UITabBarItem.swift */; };
-		EB82E7DA872E98A1B0B1F66C7CE15702 /* ChromaHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF3A0A0442EDFA3F2EBC27585546545 /* ChromaHandle.swift */; };
-		EB9017D5BDA4D5B9CB5E320899ABB622 /* SwiftIconTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CE3EBCE4741E02271D8B3DFA72A4CF /* SwiftIconTabBarItem.swift */; };
-		ECB3F92E988B203B6FE3B44F87BAB1CA /* Pods-Planner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DBE33EFEEC9FB9B54FE98C8CB8F537 /* Pods-Planner-dummy.m */; };
-		F2A831A2B33D1343DC8419C658BE5DED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
-		F4275810576B01BC16CE6AAAE2201A0A /* GCCalendarDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278A1CCADAA1BE8259D25C36E41D8CFA /* GCCalendarDayView.swift */; };
-		F5081450AD96E59262D4AB40F7CF286A /* map-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21A689C477C2D4B7815193A3A5BCA373 /* map-icons.ttf */; };
-		F7A74B8B97FE6E18FA5731D1A95F246E /* SideMenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC56FBFBBD314254C8080940E922AE6 /* SideMenuTransition.swift */; };
-		FA7B33E06217203FAF6E2DA3C8B9C788 /* GCCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E441632ED6E65F8E07069595709E2B3 /* GCCalendar-dummy.m */; };
-		FB24018F9DFDC79925597D4878E12FD4 /* ChromaShadeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134F535865DF467F5169AE68E72262C5 /* ChromaShadeSlider.swift */; };
-		FEFA26DB63ED6D438629A8A1B7285134 /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAAF4FF6ABE5BB6CA96CF1D8430A40F /* SideMenuManager.swift */; };
-		FF830D559128983C709F956488A868A3 /* SwiftIconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712530D90A8D33069721A68493D15702 /* SwiftIconFont.swift */; };
+		2CD7BD2F25A728501BCA2B2226271982 /* ChromaColorPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E4881D0F2B76A879506A323C3DF2AF7B /* ChromaColorPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F6CDE3B2BA4DA36386508A448EB8C1D /* ChromaColorPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = DFAF258EB2ACBE0BE38AA49F8E488E39 /* ChromaColorPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		302EE1A99375F986E2B1E2A4C75F961E /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98CACEBCDBB6977E8A968B4ED33B162 /* String+Localizable.swift */; };
+		3138B9A363FC31D5CC890117AC34CB73 /* Double+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CDD04D2F0DA52034F3DAE3F716C47B /* Double+Localizable.swift */; };
+		32A896000BC6415502284AB0B00A5208 /* SwiftIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09AA7DF53034EF3879D4639E72AFB77 /* SwiftIconButton.swift */; };
+		351E4295122B159BD754C0534A60F5D9 /* Pods-Planner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 587895E2F425B1960DA4AF6BD1ABFB0B /* Pods-Planner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36A94199D408767E251E35E7F3A9A57C /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E7C82955F1FE2E55610AF673F13301 /* L10n.swift */; };
+		37C21BDB80EC59E51E109DA01051B84C /* ReorderController+GestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D3197BD88DF34EDC81A5640F2985 /* ReorderController+GestureRecognizer.swift */; };
+		3BE37217490820944B8E7E9F784F3E5A /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CE9AA29DD2F4CABFDA36330E92D4557 /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FAAC699DAAFFB5581E64155408C46D8 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BC120B9FF66C0DB2D623EA9952A884 /* Resource.swift */; };
+		40035A7E409B83DCFF7FEB781C2EED00 /* ChromaColorPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC81241F4772C7F3293CAFDAC74A573 /* ChromaColorPicker-dummy.m */; };
+		415057E07BD0140E4E02E93D22A296D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
+		41E58181166B2B8C55355E8D9091ED82 /* UITextField+IBL10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAAF6660A8E5217B673F9907C57C690 /* UITextField+IBL10n.swift */; };
+		4426A9A9AC835270C5776D8DC63ED3E3 /* themify.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7639B5AD89A39EAC8983229C886C13E /* themify.ttf */; };
+		46BE6075A78FD94B44FA92245C2486A4 /* ChromaAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2384392AD27733B7AEADEC8D319DC200 /* ChromaAddButton.swift */; };
+		4BF7FA4B2C0E1AC30C6562574A36B381 /* ToastCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0924F4002FB6497175CA2DD4626F7A7 /* ToastCenter.swift */; };
+		4D1DB8F6CB5ED80C4795522291907876 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
+		4EAF11969F5D43ADAF4E108D43A16563 /* SwiftIconFont+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7D7CAD01E21B6C6C8EFC12F4674A30 /* SwiftIconFont+UIButton.swift */; };
+		4F7302AADE19D2F4E0FF7C16BC557108 /* SwiftIconFont+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602C20DDB8ACB30A7AE25A061F9324B9 /* SwiftIconFont+UIImageView.swift */; };
+		574DA2FD3A22700FE13BB52D031584C2 /* UINavigationItem+IBL10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4419FF3506F407A01DB0BFD0C984A0 /* UINavigationItem+IBL10n.swift */; };
+		5872AEBDB58C52616466B6BD72DF70AB /* open-iconic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB67FE3A230D2D7052C94F1A327B3491 /* open-iconic.ttf */; };
+		5DFA753EC2F37F9E9D0A71A13DE5D173 /* L10n-swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C94D6C886F6846B07F2E60CCE87C9200 /* L10n-swift-dummy.m */; };
+		5E761885393EBCAA4490C7073822D5E4 /* Toaster.h in Headers */ = {isa = PBXBuildFile; fileRef = 24D4C0A32E94BB9F9FB51C15BEAF4BFE /* Toaster.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ED62FEA192FE805FAAAC6DA21B3C5A4 /* FlagKit.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0B7BA6AF8E2D76A64249D3D61842FB1 /* FlagKit.xcassets */; };
+		608C96777EC6788A7F672A93B847DAD3 /* DictionaryResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573BCC540E38A244A5723448B6549628 /* DictionaryResource.swift */; };
+		62999687A9E99335BE157BB5C3ACD17B /* SwiftIconStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDD4BBA3DB815819A28CCB734D3507B /* SwiftIconStepper.swift */; };
+		63BBCC0D42B26F3A504C55F87EA3EB8A /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 179C8F1BA5A9F6BEE4EA19ABEBF0DE3B /* FontAwesome.ttf */; };
+		67BBD42FEA7D8CC33C53D243A85DA7D4 /* SideMenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECCFE473467FC98008539969A7B21CF /* SideMenuTransition.swift */; };
+		6A6D3A2F3310E571BAAFD13E57D28942 /* FlagStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7C661293C0B263915B2A4FB87D2E95 /* FlagStyle.swift */; };
+		6A8ADA5F8FC4924EC052C916208CAA8F /* octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E020548D2AE407C5A3CEAF11C4701FA2 /* octicons.ttf */; };
+		6B293CDDA889A2B9057BB93E3E36DF0F /* MaterialIcons-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2476EF87D588F5CEACC790A5C2CCE2A3 /* MaterialIcons-Regular.ttf */; };
+		6BA93E28934D3B40442D4DC316699EC6 /* SwiftIconFont+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B33F9A50D28D8C301239499772D58F9 /* SwiftIconFont+UITextField.swift */; };
+		6C7703689E9AB5E691B71143280B0296 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7751D4D791D1183FB66D3CCA52CD8E /* QuartzCore.framework */; };
+		706A27BF1FD31D6C1B70D489451ABB97 /* IBL10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3AE2D7F30116870AF4E54FB68F1C4C /* IBL10n.swift */; };
+		713A4A2F1D93E4AFD6298A715BF28B0E /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FFB1006FB74E0CFB2ABCABCE36985A /* UITableViewVibrantCell.swift */; };
+		7280DCBB506C537D278E5F0EF92FC3CC /* L10n+stringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4EC7962529508639F521E23846CAE /* L10n+stringConvertible.swift */; };
+		7447E02C5A01716380A18EFF62AB0325 /* UISegmentedControl+IBL10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA43A9828F79BE60B6729B4EB6283D /* UISegmentedControl+IBL10n.swift */; };
+		7787CD13E0DD5586B2B0169C265120E6 /* UISideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596AF8DCC67E6445A11E84562EBE6D0A /* UISideMenuNavigationController.swift */; };
+		7A2464EC62D063A8E32C67FC105A6E86 /* SwiftIconFont+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60504852DD1C07A78050F078E1435855 /* SwiftIconFont+UIImage.swift */; };
+		7C1D762BB15D354DDAE81B36A932F979 /* UIButton+IBL10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D48164A5A75F27B40BCF677F50ECB /* UIButton+IBL10n.swift */; };
+		7C1DC06B198C9A0A97656E2DDC019F21 /* UIBarItem+IBL10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646F0538C40C1055B278D26D8F8B6E4F /* UIBarItem+IBL10n.swift */; };
+		7D82B4B038303C2AB7C13F579ECD8421 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
+		7DB503C64A4446A4C4BE2CA3C7E86BC5 /* StringResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1ACF87546C2A445A32A7D03580EC7CA /* StringResource.swift */; };
+		8660401C2E7867E8489B9B31736C8054 /* IonIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB037A94FB10D884AEEE3DBAA7CAED9 /* IonIcons.swift */; };
+		892C01E54EB3013226C8D5A451CF1939 /* MaterialIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE871C92A504467FFA7ACFCF2212BA1 /* MaterialIcon.swift */; };
+		8C81A1CEF8720A2EEE2BE86779865157 /* UIColor+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CBC6668477110A00C0F022AC44C135 /* UIColor+Utilities.swift */; };
+		8DE1BA217AD27E179482CC14951680CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
+		8F671E8A0D03E975979EC4C9015E4AF6 /* SwiftIconFont+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368431A383F18D29943D7BDF06C028F0 /* SwiftIconFont+String.swift */; };
+		8FE94C82137C31499110F1DE38BB78B8 /* Toaster-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB902F8E247CE6AC0E491905CCC117E4 /* Toaster-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91A88031B90A102ACF1E172689AC38D6 /* SwiftIconLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115068285FE0BD9BFF10B706D6537C1B /* SwiftIconLabel.swift */; };
+		91AD01924FF9F6A73ADC33C340AE9169 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B3FD893D881F524E0F50E6FD6E169C /* Flag.swift */; };
+		92F8161F4E07A53E57E3EB2E1FA62238 /* ColorModeToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C22827796462A6B75DDA73B0A606CF2 /* ColorModeToggleButton.swift */; };
+		94D747881FC1F71C7282EADA0E7638EE /* ReorderController+AutoScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E62F7C9E65C6C84BF8064583539F8C3 /* ReorderController+AutoScroll.swift */; };
+		95489C9A256A0F6E5C344735B01F55B5 /* SwiftIconFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C69A3AECB00144549E98173A0D564F4 /* SwiftIconFontView.swift */; };
+		972501077D4726D1724912BDE7FA66F7 /* ToastWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2204D322F3FE074E0F59AC9AE31BFB0A /* ToastWindow.swift */; };
+		98B33B42A22167C9DE1393AF4DDDAF7B /* ReorderController+SnapshotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1354E92EC21673AA5B225DF3549E73 /* ReorderController+SnapshotView.swift */; };
+		9907C07307E090EAAAA6D7E710E8C69D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3917A50EB224EEDBC66971700D698782 /* UIKit.framework */; };
+		9C86F0C8765FF944B344A78F54312A7F /* NSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E278DA725B6B14F3AC14A650A195AB3 /* NSImage.swift */; };
+		9CC879E79F72A3F5D5D30CC401299988 /* GCCalendarViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40932BECB8120BE3FB891BD7A1BED4CA /* GCCalendarViewDelegate.swift */; };
+		A1D64B1E800D64E0DBE38D4FCD34D5D4 /* SwiftIconTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F294B79B35E37B87F8FC0453E082E61 /* SwiftIconTextView.swift */; };
+		A3FD838EE21A933A163CFB4BACDEC5FD /* SwiftIconFont+NSRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7707142BE3EC182BDBCB2507498DF71 /* SwiftIconFont+NSRange.swift */; };
+		A5BECD3DCFBAA5F98AC2C08E1A23F1C2 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55240B9CBE4D69F8328C7E2D9C1AB2 /* Toast.swift */; };
+		A668F02C120C3D4D312F84AA8CFD4634 /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3263CFA35402568D286BB7EFA7ACDA3 /* SideMenu-dummy.m */; };
+		A8A0B6C4A8F7AD0842104E34EB138289 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF92A314F85323E0F8D5775939EE543A /* ToastView.swift */; };
+		AAF8BC0F01874F1F571F0AD2F9E2C1F0 /* ReorderController+DestinationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BDFC938950FA7D71D05B4C19CED6A2 /* ReorderController+DestinationRow.swift */; };
+		ACB4361545570E44215A54565301E561 /* GCCalendarMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D228B850C5873C5A62FC21D714E89 /* GCCalendarMonthView.swift */; };
+		AEDB26A4934C4F082FE3AA07F099E1DA /* SwiftIconFont+UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525016E11B5EBCC16602EDB3D339156E /* SwiftIconFont+UIBarButtonItem.swift */; };
+		B073AA20F76BD727E7300AE693714A72 /* SwiftIconTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C350B50777ABEC64D0DC9BF8983E1B /* SwiftIconTextField.swift */; };
+		B2D2D761153C186AC89130465A7A4E81 /* UITableView+Reorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AECA4A543C2C94E13F50C203AFE32BA /* UITableView+Reorder.swift */; };
+		B4961C0A97B2A6B840F59D028A5595D6 /* GCCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B9E9E675BF08C5E1F82ACD80C989623 /* GCCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B76160CA27718E4797E901117A168143 /* Octicon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD91BE8670B33356D69069FE7E73A3A /* Octicon.swift */; };
+		BCFF82110593F8B22B4A2F926016193F /* FontLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BB93A1DC9DE938B571E63746B444E3 /* FontLoader.swift */; };
+		BE780375E91E5464A2FC129CE8C33BB9 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 017D7B75C7C8673085A69F5B0AB49FB7 /* Ionicons.ttf */; };
+		C0B3A0BCA7CF19BCDAD2ED55B37A9B73 /* ReorderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DB805D2246F40CEADD2F1C9DBAC4BF /* ReorderController.swift */; };
+		C37108742AE3BC5A58FA70A4B446911C /* SwiftIconFont+UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5133C1642A568C00425FA061889C15 /* SwiftIconFont+UITextView.swift */; };
+		C473F45B0D6D72D1CA23E3993ED1B5EB /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75731A79A98CD688FADCC9C467794BFB /* FontAwesome.swift */; };
+		C66338ADEBFE0AA17307C60F06BD6748 /* Int+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3724A1A923A8D389ED532D5E0E9581B4 /* Int+Localizable.swift */; };
+		C89E6C881AEE3F95AB90E1B94DB41E38 /* UITabBarItem+IBL10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76B5C5C9271D602D557CC6C6F8FCBD7 /* UITabBarItem+IBL10n.swift */; };
+		C94BBA0DBE99BA812638B556F12FDA2D /* GCCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 08E26E2E64E1DAC0DF837A0D34FD8FB9 /* GCCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9ADA514B107AE9C97BDBD9D7BAB3BFB /* UISearchBar+IBL10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A7158CD294040BAAA4D24E94810B6 /* UISearchBar+IBL10n.swift */; };
+		CA4A64D4D5634DCF4E525A5D47D5B533 /* EmptyResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ABB56D981A4DB4958F253D2B779B5F /* EmptyResource.swift */; };
+		CB0B86A901A48F8278EEB936C6ABE9C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
+		CB5BBEA021ED20A8BEAF5F412AF27B9F /* Iconic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B440AB1E3AF8691727095AB909CFE0D6 /* Iconic.swift */; };
+		CCB9BD73F4FB8CDEE7BCA20CE4B9CBE7 /* FlagKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 53D12CB0288FB0F5DED6E70DE565EDAC /* FlagKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE038A5EC8BCB8F2233E8CB0938647D4 /* FlagKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7CF941F2A3B07B0E1B5CFA7BECDA7F /* FlagKit.swift */; };
+		CE26D8258806F8FB312FF8FA77875C61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3917A50EB224EEDBC66971700D698782 /* UIKit.framework */; };
+		CE9591502CCFCC6EE958C2F2B8AD82FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
+		CF264CDB3100B4C274326F95F32BC88B /* ChromaColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0312F953D40A7152C4EA18751E20A773 /* ChromaColorPicker.swift */; };
+		CF5F2FFDE2E8E9BDB5FD21CAF619FF48 /* MapIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463CBF7C55688AB4848230B9BD641E60 /* MapIcon.swift */; };
+		D357514C5308DCD5096C70D0577DE1E0 /* L10n+localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47897692FB89648F6578DC4AE74CDFC /* L10n+localizable.swift */; };
+		D3E0B66B515128B1E3A68C169093D4AB /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3FA2E694562F51CA5B5B1B0ADD2B0 /* Localizable.swift */; };
+		D5BB03601866910E3B609E97EA4BD603 /* GCCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C477F6BAE0976D491C46DAFA1D7075A /* GCCalendarView.swift */; };
+		DA493E0D158662EA5C978B572DC6F8AC /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E521BF4F0BB654CD4D8EB055383E602B /* Logger.swift */; };
+		DD4E359891086CD3013A28D02F8CF68D /* map-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 947C52E086595A603B8FC553AB7B03ED /* map-icons.ttf */; };
+		E071CF0264928CC67EAF71605D4F7BEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */; };
+		E1C9949993D3D80AF1EEBA75F65FD493 /* Date+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816751DA76C3C97D09EC74567143396A /* Date+Localizable.swift */; };
+		E596C8ED6D2525C8E69FE5CD569BE0D1 /* Pods-Planner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DBE33EFEEC9FB9B54FE98C8CB8F537 /* Pods-Planner-dummy.m */; };
+		EB82E7DA872E98A1B0B1F66C7CE15702 /* ChromaHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1FBBD69DDCF7C6CBA437CCD0197AE9 /* ChromaHandle.swift */; };
+		EC439D75811FF6A459A922238E4B7739 /* Plural.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA7E6652000E5A5C8A30BE6F137B10 /* Plural.swift */; };
+		EC66041ECCCB7F61A5CA12C9907730A9 /* SwiftReorder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B22DD4F69DE71EC1F69B0CE27B40F98A /* SwiftReorder-dummy.m */; };
+		F4275810576B01BC16CE6AAAE2201A0A /* GCCalendarDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983AAE17E19A6904A62A43905673876 /* GCCalendarDayView.swift */; };
+		FA7B33E06217203FAF6E2DA3C8B9C788 /* GCCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 071B2101B58DA149DE621BC8958236DA /* GCCalendar-dummy.m */; };
+		FA92EBB9D7BDB7746287DB2CE59ECFBE /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1557C65DAD69A029982875D7DCAF4D /* UIImage.swift */; };
+		FB24018F9DFDC79925597D4878E12FD4 /* ChromaShadeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E8F29C38416BB97F5E09511F029C47 /* ChromaShadeSlider.swift */; };
+		FDAD6E7A542ECE6701DCAB6522010C8A /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFD43EB11A07FED6B0073C2681FC6D2 /* SideMenuManager.swift */; };
+		FF89E8DA08C2690CB59781CE8C314779 /* SwiftIconTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14CC8B44598C5A6A2E0B3833BAE8E1A /* SwiftIconTabBarItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0786BACEAAA511950DC999078E6BA9F4 /* PBXContainerItemProxy */ = {
+		0D67C402898ABAAA6C957222CBBF057C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33DF14505F36AF9F6FF97063882702E0;
+			remoteInfo = FlagKit;
+		};
+		1752736E109512A017223B74B76375B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF552D5E869A18076B883965F3641359;
+			remoteInfo = SwiftReorder;
+		};
+		1CC06FB5D3E19002246FC8B4A9C60D0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F14D77B0A00B0C43E5358F7458689DD8;
+			remoteInfo = "L10n-swift";
+		};
+		3EB2C5602E3BD1FFEAA405E6B1E6D317 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C1D5697F336E95BECD269A3DD51F86A;
+			remoteInfo = Toaster;
+		};
+		8E1BF5A90B95CBF07D6EB73B627E240E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53C05B2B545C17D6B1F1B46A77CC1098;
+			remoteInfo = SideMenu;
+		};
+		B5F32AE49438C2FD198F4926BA90FCDF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 99AA48135ECB557858428F797600458F;
 			remoteInfo = ChromaColorPicker;
 		};
-		1A1BF4E1193AD771959881DFD2091CF3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AD8CD4C677343A90405866EBF822FE1B;
-			remoteInfo = SideMenu;
-		};
-		79580C48DC120D3C8852AD0F06A52CDE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1CA31E7064B2611D47376F915613062F;
-			remoteInfo = SwiftIconFont;
-		};
-		806D96720951FD57AB7E302012DF4158 /* PBXContainerItemProxy */ = {
+		C39CD19D2B91CF0762336AF6712B315A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EB11F443CE4B3DDE0556E1D7A6169D9F;
 			remoteInfo = GCCalendar;
 		};
-		C86D639D631375B75A403558CF4C42E9 /* PBXContainerItemProxy */ = {
+		ECB51DD8FB126F4F2D9A19A1F868B0B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BCA38300740BDA0D17A9BCF2108FBCDE;
-			remoteInfo = Toaster;
-		};
-		FC1D33CFFE45AE0213FAC22023242C36 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 29D34AA50A144D18273772DAC6C30F11;
-			remoteInfo = SwiftReorder;
+			remoteGlobalIDString = 669A57B25BD26D89933B4D89CC3A6517;
+			remoteInfo = SwiftIconFont;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00847315DE69C8C198E2F53AA55C196D /* Pods-Planner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Planner.release.xcconfig"; sourceTree = "<group>"; };
-		009D810B9C68D249889EEA1149F664C6 /* SwiftReorder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftReorder-prefix.pch"; sourceTree = "<group>"; };
-		02B87ACAAB4EE126E15243617A605437 /* SwiftIconFont+UITabBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftIconFont+UITabBarItem.swift"; path = "SwiftIconFont/Classes/Extensions/SwiftIconFont+UITabBarItem.swift"; sourceTree = "<group>"; };
-		03CDE545438F7403B524A7FA14A74127 /* SwiftIconFont-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftIconFont-umbrella.h"; sourceTree = "<group>"; };
-		0588A3506471F2F59EF54783C596B6C7 /* UITableView+Reorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Reorder.swift"; path = "Source/UITableView+Reorder.swift"; sourceTree = "<group>"; };
-		0639A5D3247A0F8C5E59E44B9C33BD8C /* Ionicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = Ionicons.ttf; path = SwiftIconFont/Resources/Ionicons.ttf; sourceTree = "<group>"; };
-		08244E08332C5715195E657FD760A7F8 /* ChromaColorPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChromaColorPicker-umbrella.h"; sourceTree = "<group>"; };
-		09628D9B90982B31E6E3F4BF0CB153AC /* GCCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GCCalendar.xcconfig; sourceTree = "<group>"; };
-		0CD24E99F9E85E4E8B4558120BE2654E /* ToastWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastWindow.swift; path = Sources/ToastWindow.swift; sourceTree = "<group>"; };
-		10A53ECADE65AF960CE2D2072EE6CDC1 /* GCCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GCCalendar.framework; path = GCCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		12C0B9894AA03406321E0AA17901E7C7 /* SwiftIconFontView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftIconFontView.swift; path = SwiftIconFont/Classes/UI/SwiftIconFontView.swift; sourceTree = "<group>"; };
-		134F535865DF467F5169AE68E72262C5 /* ChromaShadeSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaShadeSlider.swift; path = ChromaColorPicker/ChromaShadeSlider.swift; sourceTree = "<group>"; };
+		017D7B75C7C8673085A69F5B0AB49FB7 /* Ionicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = Ionicons.ttf; path = SwiftIconFont/Resources/Ionicons.ttf; sourceTree = "<group>"; };
+		0312F953D40A7152C4EA18751E20A773 /* ChromaColorPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaColorPicker.swift; path = ChromaColorPicker/ChromaColorPicker.swift; sourceTree = "<group>"; };
+		036BF8F4EB0EE102F4077D4FFF5EB1B4 /* SwiftReorder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftReorder-umbrella.h"; sourceTree = "<group>"; };
+		06CBC6668477110A00C0F022AC44C135 /* UIColor+Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Utilities.swift"; path = "ChromaColorPicker/UIColor+Utilities.swift"; sourceTree = "<group>"; };
+		06DB4C5F0C3DACDD1AABF87CEBA0EB12 /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SideMenu.modulemap; sourceTree = "<group>"; };
+		071B2101B58DA149DE621BC8958236DA /* GCCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GCCalendar-dummy.m"; sourceTree = "<group>"; };
+		08E26E2E64E1DAC0DF837A0D34FD8FB9 /* GCCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCCalendar.h; path = GCCalendar/GCCalendar.h; sourceTree = "<group>"; };
+		09BC120B9FF66C0DB2D623EA9952A884 /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Source/Core/Resource/Resource.swift; sourceTree = "<group>"; };
+		0C55240B9CBE4D69F8328C7E2D9C1AB2 /* Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = Sources/Toast.swift; sourceTree = "<group>"; };
+		115068285FE0BD9BFF10B706D6537C1B /* SwiftIconLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftIconLabel.swift; path = SwiftIconFont/Classes/UI/SwiftIconLabel.swift; sourceTree = "<group>"; };
 		13D62CDADEC8223364B4EB9CC276BA62 /* Pods-Planner-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Planner-resources.sh"; sourceTree = "<group>"; };
+		147DCAE3E9A591B5129114B77D53BBEA /* SwiftReorder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftReorder-prefix.pch"; sourceTree = "<group>"; };
 		160128278EBDB58226DBECE6445E4E76 /* Pods-Planner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Planner.debug.xcconfig"; sourceTree = "<group>"; };
-		18320DAA3BB5388578FA3EF0CDCEC272 /* GCCalendarViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCCalendarViewDelegate.swift; path = GCCalendar/GCCalendarViewDelegate.swift; sourceTree = "<group>"; };
-		190B45CE69EDB4CE550BBE6C0C5E2D77 /* Toaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toaster.framework; path = Toaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A6C4DD35FD92537CC47FE9E9C3C78BD /* UISideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UISideMenuNavigationController.swift; path = Pod/Classes/UISideMenuNavigationController.swift; sourceTree = "<group>"; };
-		1BDCA7E4DDB37E41CAF0DCD2732A238F /* GCCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCCalendar.h; path = GCCalendar/GCCalendar.h; sourceTree = "<group>"; };
-		1DF3A0A0442EDFA3F2EBC27585546545 /* ChromaHandle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaHandle.swift; path = ChromaColorPicker/ChromaHandle.swift; sourceTree = "<group>"; };
-		20BB31E75E740857DD4FB4C4BFFE5B7D /* SwiftIconFont+UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftIconFont+UIImage.swift"; path = "SwiftIconFont/Classes/Extensions/SwiftIconFont+UIImage.swift"; sourceTree = "<group>"; };
-		21A689C477C2D4B7815193A3A5BCA373 /* map-icons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "map-icons.ttf"; path = "SwiftIconFont/Resources/map-icons.ttf"; sourceTree = "<group>"; };
-		2201FBB75F9DFB70D0BF978481D6A038 /* SwiftIconFont-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftIconFont-dummy.m"; sourceTree = "<group>"; };
+		179C8F1BA5A9F6BEE4EA19ABEBF0DE3B /* FontAwesome.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = FontAwesome.ttf; path = SwiftIconFont/Resources/FontAwesome.ttf; sourceTree = "<group>"; };
+		17B3FD893D881F524E0F50E6FD6E169C /* Flag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flag.swift; path = Sources/Swift/FlagKit/Flag.swift; sourceTree = "<group>"; };
+		191BA6A78A105414D916587C42F505EC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B9E9E675BF08C5E1F82ACD80C989623 /* GCCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCCalendar-umbrella.h"; sourceTree = "<group>"; };
+		1C22827796462A6B75DDA73B0A606CF2 /* ColorModeToggleButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorModeToggleButton.swift; path = ChromaColorPicker/ColorModeToggleButton.swift; sourceTree = "<group>"; };
+		1D4D228B850C5873C5A62FC21D714E89 /* GCCalendarMonthView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCCalendarMonthView.swift; path = GCCalendar/GCCalendarMonthView.swift; sourceTree = "<group>"; };
+		1E62F7C9E65C6C84BF8064583539F8C3 /* ReorderController+AutoScroll.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ReorderController+AutoScroll.swift"; path = "Source/ReorderController+AutoScroll.swift"; sourceTree = "<group>"; };
+		2204D322F3FE074E0F59AC9AE31BFB0A /* ToastWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastWindow.swift; path = Sources/ToastWindow.swift; sourceTree = "<group>"; };
+		2384392AD27733B7AEADEC8D319DC200 /* ChromaAddButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaAddButton.swift; path = ChromaColorPicker/ChromaAddButton.swift; sourceTree = "<group>"; };
+		2476EF87D588F5CEACC790A5C2CCE2A3 /* MaterialIcons-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "MaterialIcons-Regular.ttf"; path = "SwiftIconFont/Resources/MaterialIcons-Regular.ttf"; sourceTree = "<group>"; };
+		24D4C0A32E94BB9F9FB51C15BEAF4BFE /* Toaster.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Toaster.h; path = Sources/Toaster.h; sourceTree = "<group>"; };
 		25DBE33EFEEC9FB9B54FE98C8CB8F537 /* Pods-Planner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Planner-dummy.m"; sourceTree = "<group>"; };
-		278A1CCADAA1BE8259D25C36E41D8CFA /* GCCalendarDayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCCalendarDayView.swift; path = GCCalendar/GCCalendarDayView.swift; sourceTree = "<group>"; };
-		2B0E73F640B06F0350AEF28178C13963 /* GCCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCCalendar-prefix.pch"; sourceTree = "<group>"; };
-		2C5AFE66358472BC6008D9C5B8189321 /* ReorderController+AutoScroll.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ReorderController+AutoScroll.swift"; path = "Source/ReorderController+AutoScroll.swift"; sourceTree = "<group>"; };
-		316938978E6AC8D1730FD8E6F5087DBD /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
-		328F4272FAAB2A95F16DE9C5D8C20BE7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D1354E92EC21673AA5B225DF3549E73 /* ReorderController+SnapshotView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ReorderController+SnapshotView.swift"; path = "Source/ReorderController+SnapshotView.swift"; sourceTree = "<group>"; };
+		2F7CF941F2A3B07B0E1B5CFA7BECDA7F /* FlagKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlagKit.swift; path = Sources/Swift/FlagKit/FlagKit.swift; sourceTree = "<group>"; };
+		30FFB1006FB74E0CFB2ABCABCE36985A /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
 		33083C616C9CA8AF16FA7C690BC673C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		34296A4592286EE95076CAB1246349FE /* GCCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCCalendar-umbrella.h"; sourceTree = "<group>"; };
+		3451A2102B41CD7545E7E2EA066DD46E /* L10n-swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "L10n-swift.xcconfig"; sourceTree = "<group>"; };
+		3498AA3B3DC02C47B487A0772CCC40A9 /* FlagKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlagKit-dummy.m"; sourceTree = "<group>"; };
+		35923F723417E822D356977336229C8B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		368431A383F18D29943D7BDF06C028F0 /* SwiftIconFont+String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftIconFont+String.swift"; path = "SwiftIconFont/Classes/Extensions/SwiftIconFont+String.swift"; sourceTree = "<group>"; };
+		3724A1A923A8D389ED532D5E0E9581B4 /* Int+Localizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Int+Localizable.swift"; path = "Source/Extensions/Int+Localizable.swift"; sourceTree = "<group>"; };
 		3917A50EB224EEDBC66971700D698782 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		3975AFE72E6622429485BDCA1C631205 /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
-		3AAAF4FF6ABE5BB6CA96CF1D8430A40F /* SideMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuManager.swift; path = Pod/Classes/SideMenuManager.swift; sourceTree = "<group>"; };
-		3B04E8C81E803F91391F71A8BEBBD162 /* MapIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapIcon.swift; path = SwiftIconFont/Classes/Fonts/MapIcon.swift; sourceTree = "<group>"; };
-		3CD7FB88AC09952E06A3DEC83DD2E302 /* SwiftIconFont+UIImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftIconFont+UIImageView.swift"; path = "SwiftIconFont/Classes/Extensions/SwiftIconFont+UIImageView.swift"; sourceTree = "<group>"; };
-		3CE367CA631F0D6D43E55DE132B299BA /* SwiftIconFont+UILabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftIconFont+UILabel.swift"; path = "SwiftIconFont/Classes/Extensions/SwiftIconFont+UILabel.swift"; sourceTree = "<group>"; };
-		3E94F8811D3492C04ADEAEA041FA1C20 /* ChromaAddButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaAddButton.swift; path = ChromaColorPicker/ChromaAddButton.swift; sourceTree = "<group>"; };
-		412C5D21A1135B84E53D5D545E97E2FB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4390BDB05537FC85EFCAC3772EA93070 /* FontLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontLoader.swift; path = SwiftIconFont/Classes/FontLoader.swift; sourceTree = "<group>"; };
-		4411FB62CD9E0BB7FE804E73AF95D64C /* ToastView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastView.swift; path = Sources/ToastView.swift; sourceTree = "<group>"; };
-		465F18CF77D30F5713BAB558858DD107 /* SwiftReorder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftReorder.framework; path = SwiftReorder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4EEFB261637CEC695F259BB3BD97D5E7 /* FontAwesome.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = FontAwesome.ttf; path = SwiftIconFont/Resources/FontAwesome.ttf; sourceTree = "<group>"; };
-		548FA2D2CDB48692F6A8567E3396F4C8 /* SwiftIconFont-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftIconFont-prefix.pch"; sourceTree = "<group>"; };
-		56E915F4C24F34BFF7AD5D0C18258A0E /* SwiftReorder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftReorder.modulemap; sourceTree = "<group>"; };
+		3AECA4A543C2C94E13F50C203AFE32BA /* UITableView+Reorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Reorder.swift"; path = "Source/UITableView+Reorder.swift"; sourceTree = "<group>"; };
+		3CE9AA29DD2F4CABFDA36330E92D4557 /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
+		3F2DA58DDBC18FE12293E76D4941616B /* ThemifyIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThemifyIcon.swift; path = SwiftIconFont/Classes/Fonts/ThemifyIcon.swift; sourceTree = "<group>"; };
+		3F5AD0CEB8F8EB714FA3886E6BE72DC5 /* L10n-swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "L10n-swift-umbrella.h"; sourceTree = "<group>"; };
+		40932BECB8120BE3FB891BD7A1BED4CA /* GCCalendarViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCCalendarViewDelegate.swift; path = GCCalendar/GCCalendarViewDelegate.swift; sourceTree = "<group>"; };
+		40C42A65AC4D065D2D89745F401EE589 /* ChromaColorPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChromaColorPicker.xcconfig; sourceTree = "<group>"; };
+		411EF8220E45B638A6A19184ECA466B1 /* SwiftIconFont-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftIconFont-prefix.pch"; sourceTree = "<group>"; };
+		41CA7E6652000E5A5C8A30BE6F137B10 /* Plural.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Plural.swift; path = Source/Core/Plural/Plural.swift; sourceTree = "<group>"; };
+		43921D04F822C4D11F19F6FFD4038A06 /* GCCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GCCalendar.xcconfig; sourceTree = "<group>"; };
+		447E444DC81C90E5AF8C9DA26982853F /* Toaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toaster.framework; path = Toaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44ABB56D981A4DB4958F253D2B779B5F /* EmptyResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmptyResource.swift; path = Source/Core/Resource/EmptyResource.swift; sourceTree = "<group>"; };
+		4578B6EE950C87584149C642B2B07ED8 /* FlagKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlagKit.modulemap; sourceTree = "<group>"; };
+		463CBF7C55688AB4848230B9BD641E60 /* MapIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapIcon.swift; path = SwiftIconFont/Classes/Fonts/MapIcon.swift; sourceTree = "<group>"; };
+		4983AAE17E19A6904A62A43905673876 /* GCCalendarDayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCCalendarDayView.swift; path = GCCalendar/GCCalendarDayView.swift; sourceTree = "<group>"; };
+		4D3AE2D7F30116870AF4E54FB68F1C4C /* IBL10n.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IBL10n.swift; path = Source/IBInspectables/Core/IBL10n.swift; sourceTree = "<group>"; };
+		4DB037A94FB10D884AEEE3DBAA7CAED9 /* IonIcons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IonIcons.swift; path = SwiftIconFont/Classes/Fonts/IonIcons.swift; sourceTree = "<group>"; };
+		51938EC18102D19E3EAFEF61649D66EB /* GCCalendarWeekView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCCalendarWeekView.swift; path = GCCalendar/GCCalendarWeekView.swift; sourceTree = "<group>"; };
+		525016E11B5EBCC16602EDB3D339156E /* SwiftIconFont+UIBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftIconFont+UIBarButtonItem.swift"; path = "SwiftIconFont/Classes/Extensions/SwiftIconFont+UIBarButtonItem.swift"; sourceTree = "<group>"; };
+		53CDD04D2F0DA52034F3DAE3F716C47B /* Double+Localizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Double+Localizable.swift"; path = "Source/Extensions/Double+Localizable.swift"; sourceTree = "<group>"; };
+		53D12CB0288FB0F5DED6E70DE565EDAC /* FlagKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlagKit-umbrella.h"; sourceTree = "<group>"; };
+		570B0D6D70E0D260E123630D9DC27679 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		573BCC540E38A244A5723448B6549628 /* DictionaryResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryResource.swift; path = Source/Core/Resource/DictionaryResource.swift; sourceTree = "<group>"; };
 		587895E2F425B1960DA4AF6BD1ABFB0B /* Pods-Planner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Planner-umbrella.h"; sourceTree = "<group>"; };
-		588F0CF6D022A819BB3539F0F847DB06 /* SwiftIconFont+UITextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftIconFont+UITextField.swift"; path = "SwiftIconFont/Classes/Extensions/SwiftIconFont+UITextField.swift"; sourceTree = "<group>"; };
-		5EC15294EBD095E79EB81BDA0F03DC4A /* GCCalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCCalendarView.swift; path = GCCalendar/GCCalendarView.swift; sourceTree = "<group>"; };
-		6038F90D828D3AB45E7F2DBA947AF995 /* Toaster-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toaster-dummy.m"; sourceTree = "<group>"; };
-		62CC708CF4AD33FF26A9154FC80D51FD /* FontAwesome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesome.swift; path = SwiftIconFont/Classes/Fonts/FontAwesome.swift; sourceTree = "<group>"; };
-		664E36E1CFA1234CC720E321C9432DF5 /* Iconic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Iconic.swift; path = SwiftIconFont/Classes/Fonts/Iconic.swift; sourceTree = "<group>"; };
-		67E9307143D6CE32B30BF57EF7C59ED6 /* open-iconic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "open-iconic.ttf"; path = "SwiftIconFont/Resources/open-iconic.ttf"; sourceTree = "<group>"; };
-		6A2A6244595FE0203BE7730E7E734F70 /* GCCalendarMonthView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCCalendarMonthView.swift; path = GCCalendar/GCCalendarMonthView.swift; sourceTree = "<group>"; };
+		58DB805D2246F40CEADD2F1C9DBAC4BF /* ReorderController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReorderController.swift; path = Source/ReorderController.swift; sourceTree = "<group>"; };
+		596AF8DCC67E6445A11E84562EBE6D0A /* UISideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UISideMenuNavigationController.swift; path = Pod/Classes/UISideMenuNavigationController.swift; sourceTree = "<group>"; };
+		5BE871C92A504467FFA7ACFCF2212BA1 /* MaterialIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaterialIcon.swift; path = SwiftIconFont/Classes/Fonts/MaterialIcon.swift; sourceTree = "<group>"; };
+		5C69A3AECB00144549E98173A0D564F4 /* SwiftIconFontView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftIconFontView.swift; path = SwiftIconFont/Classes/UI/SwiftIconFontView.swift; sourceTree = "<group>"; };
+		602C20DDB8ACB30A7AE25A061F9324B9 /* SwiftIconFont+UIImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftIconFont+UIImageView.swift"; path = "SwiftIconFont/Classes/Extensions/SwiftIconFont+UIImageView.swift"; sourceTree = "<group>"; };
+		60504852DD1C07A78050F078E1435855 /* SwiftIconFont+UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftIconFont+UIImage.swift"; path = "SwiftIconFont/Classes/Extensions/SwiftIconFont+UIImage.swift"; sourceTree = "<group>"; };
+		646F0538C40C1055B278D26D8F8B6E4F /* UIBarItem+IBL10n.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIBarItem+IBL10n.swift"; path = "Source/IBInspectables/UIKit/Common/UIBarItem+IBL10n.swift"; sourceTree = "<group>"; };
+		674D7D2814EEB24E48EFBD5CEF647A77 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67EA0DE37C06F697FEE4C160F71C2086 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		693B83610E8DEB0646A6D2ED48448A7E /* L10n-swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "L10n-swift.modulemap"; sourceTree = "<group>"; };
+		6AF1F6684C0981D9D99C0C04C0AD7170 /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
 		6CC8DA823269BA61F89163C13DF8FBE6 /* Pods-Planner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Planner-acknowledgements.plist"; sourceTree = "<group>"; };
-		6D79FD83B421374BFECFBDBC9FA475FF /* MaterialIcons-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "MaterialIcons-Regular.ttf"; path = "SwiftIconFont/Resources/MaterialIcons-Regular.ttf"; sourceTree = "<group>"; };
-		6DB2868815C84F9E338947C674D4AD2F /* GCCalendarConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCCalendarConfiguration.swift; path = GCCalendar/GCCalendarConfiguration.swift; sourceTree = "<group>"; };
-		6E165CB87E90DF48B5C8197CD4EE75DB /* UIColor+Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Utilities.swift"; path = "ChromaColorPicker/UIColor+Utilities.swift"; sourceTree = "<group>"; };
+		6F7C661293C0B263915B2A4FB87D2E95 /* FlagStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlagStyle.swift; path = Sources/Swift/FlagKit/FlagStyle.swift; sourceTree = "<group>"; };
+		6F7D48164A5A75F27B40BCF677F50ECB /* UIButton+IBL10n.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+IBL10n.swift"; path = "Source/IBInspectables/UIKit/Common/UIButton+IBL10n.swift"; sourceTree = "<group>"; };
+		70166782358A35F3009E51EF59560233 /* GCCalendarConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCCalendarConfiguration.swift; path = GCCalendar/GCCalendarConfiguration.swift; sourceTree = "<group>"; };
 		71210FB850709C768F04FCB4F701007C /* Pods-Planner-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Planner-frameworks.sh"; sourceTree = "<group>"; };
-		712530D90A8D33069721A68493D15702 /* SwiftIconFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftIconFont.swift; path = SwiftIconFont/Classes/SwiftIconFont.swift; sourceTree = "<group>"; };
-		72E77C8AD41E3A4746AB391BAA72502A /* SwiftIconLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftIconLabel.swift; path = SwiftIconFont/Classes/UI/SwiftIconLabel.swift; sourceTree = "<group>"; };
-		7523359DAB41AD8500C906EEC3B06C68 /* SwiftIconBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftIconBarButtonItem.swift; path = SwiftIconFont/Classes/UI/SwiftIconBarButtonItem.swift; sourceTree = "<group>"; };
-		75F1CFE65BE151BB040449077B8F7BE1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		777018C90F3527F9629685B3B966102D /* SwiftIconFont+UIButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftIconFont+UIButton.swift"; path = "SwiftIconFont/Classes/Extensions/SwiftIconFont+UIButton.swift"; sourceTree = "<group>"; };
-		782EF20BF93507C7B622727A50216070 /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SideMenu.modulemap; sourceTree = "<group>"; };
-		78FA25F7BE94DB410C8B8CE8CD41AE4C /* SwiftIconTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftIconTextField.swift; path = SwiftIconFont/Classes/UI/SwiftIconTextField.swift; sourceTree = "<group>"; };
-		7904AA3C8DB63D1A4ABBDCF0616E0F71 /* GCCalendarWeekView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCCalendarWeekView.swift; path = GCCalendar/GCCalendarWeekView.swift; sourceTree = "<group>"; };
-		7B87691597E590DD34504CCF9E3E99D8 /* SwiftReorder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftReorder-umbrella.h"; sourceTree = "<group>"; };
-		7E697007FCFAB63B853C99F25BDAA76C /* ReorderController+SnapshotView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ReorderController+SnapshotView.swift"; path = "Source/ReorderController+SnapshotView.swift"; sourceTree = "<group>"; };
-		81D9533D35F73DAFB4E8E3112AA506B5 /* SwiftIconFont.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftIconFont.framework; path = SwiftIconFont.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		82CE3EBCE4741E02271D8B3DFA72A4CF /* SwiftIconTabBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftIconTabBarItem.swift; path = SwiftIconFont/Classes/UI/SwiftIconTabBarItem.swift; sourceTree = "<group>"; };
-		88939482520345DB213CE46675F08626 /* ChromaColorPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChromaColorPicker-dummy.m"; sourceTree = "<group>"; };
-		897D5116E0B14C0F5B79DFBC7721A88F /* ThemifyIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThemifyIcon.swift; path = SwiftIconFont/Classes/Fonts/ThemifyIcon.swift; sourceTree = "<group>"; };
-		8D423A66B2007AEB70DB71BE03DCED1F /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
-		8FF5C85AFD6337E0EE4780C6C6F093EF /* GCCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GCCalendar.modulemap; sourceTree = "<group>"; };
+		72DD2E7D5809EF1308EC1C04478FBA47 /* SwiftIconFont.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftIconFont.xcconfig; sourceTree = "<group>"; };
+		75731A79A98CD688FADCC9C467794BFB /* FontAwesome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesome.swift; path = SwiftIconFont/Classes/Fonts/FontAwesome.swift; sourceTree = "<group>"; };
+		77A3FA2E694562F51CA5B5B1B0ADD2B0 /* Localizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Localizable.swift; path = Source/Core/Localizable.swift; sourceTree = "<group>"; };
+		785DD65ED808F0936AE414312E19FFD7 /* ChromaColorPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ChromaColorPicker.modulemap; sourceTree = "<group>"; };
+		7AD91BE8670B33356D69069FE7E73A3A /* Octicon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Octicon.swift; path = SwiftIconFont/Classes/Fonts/Octicon.swift; sourceTree = "<group>"; };
+		7BF2BBD6CC19196B9258791897E5EA9B /* Toaster.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Toaster.xcconfig; sourceTree = "<group>"; };
+		7F294B79B35E37B87F8FC0453E082E61 /* SwiftIconTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftIconTextView.swift; path = SwiftIconFont/Classes/UI/SwiftIconTextView.swift; sourceTree = "<group>"; };
+		7FAD9F834ED9034FD10A43C619A73B2A /* SwiftIconFont.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftIconFont.modulemap; sourceTree = "<group>"; };
+		7FC239D6C19AC33B9A37A2639F8BB67C /* ChromaColorPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChromaColorPicker-prefix.pch"; sourceTree = "<group>"; };
+		816751DA76C3C97D09EC74567143396A /* Date+Localizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Localizable.swift"; path = "Source/Extensions/Date+Localizable.swift"; sourceTree = "<group>"; };
+		83C350B50777ABEC64D0DC9BF8983E1B /* SwiftIconTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftIconTextField.swift; path = SwiftIconFont/Classes/UI/SwiftIconTextField.swift; sourceTree = "<group>"; };
+		87B58004FFA74673DA265BABE50A6A6A /* ResourceContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceContainer.swift; path = Source/Core/Resource/ResourceContainer.swift; sourceTree = "<group>"; };
+		8B33F9A50D28D8C301239499772D58F9 /* SwiftIconFont+UITextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftIconFont+UITextField.swift"; path = "SwiftIconFont/Classes/Extensions/SwiftIconFont+UITextField.swift"; sourceTree = "<group>"; };
+		8B3A7158CD294040BAAA4D24E94810B6 /* UISearchBar+IBL10n.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISearchBar+IBL10n.swift"; path = "Source/IBInspectables/UIKit/iOS/UISearchBar+IBL10n.swift"; sourceTree = "<group>"; };
+		8B7D7CAD01E21B6C6C8EFC12F4674A30 /* SwiftIconFont+UIButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftIconFont+UIButton.swift"; path = "SwiftIconFont/Classes/Extensions/SwiftIconFont+UIButton.swift"; sourceTree = "<group>"; };
+		8DDB6281289A837A414A7C1A714A0274 /* Pods_Planner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Planner.framework; path = "Pods-Planner.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E278DA725B6B14F3AC14A650A195AB3 /* NSImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSImage.swift; path = Sources/Swift/FlagKit/NSImage.swift; sourceTree = "<group>"; };
+		8F7F16708214F43B78D1385AD6DEED55 /* SideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.xcconfig; sourceTree = "<group>"; };
+		8FDD4BBA3DB815819A28CCB734D3507B /* SwiftIconStepper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftIconStepper.swift; path = SwiftIconFont/Classes/UI/SwiftIconStepper.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		979C83AB150068C03CB584009A00D4CF /* Toaster.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Toaster.h; path = Sources/Toaster.h; sourceTree = "<group>"; };
-		9B956BAB82F0BAA681FEA7CF4068174E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9E441632ED6E65F8E07069595709E2B3 /* GCCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GCCalendar-dummy.m"; sourceTree = "<group>"; };
-		A125AE5B3FFC2B501247E2940672DCB3 /* ToastCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastCenter.swift; path = Sources/ToastCenter.swift; sourceTree = "<group>"; };
-		A653C42799239C55F2A1043A23939E3C /* SwiftIconFont+NSRange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftIconFont+NSRange.swift"; path = "SwiftIconFont/Classes/Extensions/SwiftIconFont+NSRange.swift"; sourceTree = "<group>"; };
-		A6841B36C01AE03F154EA33068EE4E9D /* octicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = octicons.ttf; path = SwiftIconFont/Resources/octicons.ttf; sourceTree = "<group>"; };
-		AA8FAE4583172B828F78574D7C069F97 /* ColorModeToggleButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorModeToggleButton.swift; path = ChromaColorPicker/ColorModeToggleButton.swift; sourceTree = "<group>"; };
-		AC7EB93DDCDA29314A48D4003D90FE7A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE63F9FAD617517F6727DC0C27192FF2 /* SwiftIconFont+String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftIconFont+String.swift"; path = "SwiftIconFont/Classes/Extensions/SwiftIconFont+String.swift"; sourceTree = "<group>"; };
-		AF6E976A7F4DE28E19147309F54F9403 /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
-		B3929AC61B40803854EADA9D048241B4 /* Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = Sources/Toast.swift; sourceTree = "<group>"; };
-		B47EBA6F980E640CBC57E925EB0CCB46 /* ReorderController+DestinationRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ReorderController+DestinationRow.swift"; path = "Source/ReorderController+DestinationRow.swift"; sourceTree = "<group>"; };
-		B514FC9201046D4C6F4F860B091213C6 /* SideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.xcconfig; sourceTree = "<group>"; };
-		B7C54858D37B22E0BD74108B34D706CC /* SwiftIconFont.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftIconFont.xcconfig; sourceTree = "<group>"; };
-		B8FAAD37FF2581F49761A9647E90882D /* ChromaColorPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ChromaColorPicker.modulemap; sourceTree = "<group>"; };
-		B9FF1FE6481268B5D9F04C3709AA721D /* SwiftIconTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftIconTextView.swift; path = SwiftIconFont/Classes/UI/SwiftIconTextView.swift; sourceTree = "<group>"; };
-		C121FAB75976BA70A0F989AB1EF11336 /* ReorderController+GestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ReorderController+GestureRecognizer.swift"; path = "Source/ReorderController+GestureRecognizer.swift"; sourceTree = "<group>"; };
-		C1849C5FEE2A5FE5707AA7DE5B2E177C /* SwiftIconFont+UITextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftIconFont+UITextView.swift"; path = "SwiftIconFont/Classes/Extensions/SwiftIconFont+UITextView.swift"; sourceTree = "<group>"; };
-		C269DB95002D6E2CB0E6206C28799FF2 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SideMenu.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C29B0C5670E1ACABF22C6447440A0DBD /* Pods_Planner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Planner.framework; path = "Pods-Planner.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2E4D5CAB12D87C8A1C0BAED4010D925 /* ChromaColorPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChromaColorPicker.xcconfig; sourceTree = "<group>"; };
-		C67A2F9DF9AA020E7C4D2E1CCB79A863 /* ChromaColorPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ChromaColorPicker.framework; path = ChromaColorPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C98547C84C2F9364A33CF832F2A3BD6D /* SwiftReorder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftReorder-dummy.m"; sourceTree = "<group>"; };
-		CB7B4B100050A424B29606F7BD064929 /* ChromaColorPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChromaColorPicker.h; path = ChromaColorPicker/ChromaColorPicker.h; sourceTree = "<group>"; };
-		CCC56FBFBBD314254C8080940E922AE6 /* SideMenuTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransition.swift; path = Pod/Classes/SideMenuTransition.swift; sourceTree = "<group>"; };
-		CDEC978664C1E0ACF420318047DA88B8 /* Toaster-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toaster-umbrella.h"; sourceTree = "<group>"; };
-		CF51D822C3103CCBA1FB321C60713A0F /* SwiftIconButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftIconButton.swift; path = SwiftIconFont/Classes/UI/SwiftIconButton.swift; sourceTree = "<group>"; };
-		CF581FA1B2BAE83E7F5E492C4ED4893E /* ReorderController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReorderController.swift; path = Source/ReorderController.swift; sourceTree = "<group>"; };
+		941BD17AA134A62EF57955D98D57C670 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SideMenu.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		947C52E086595A603B8FC553AB7B03ED /* map-icons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "map-icons.ttf"; path = "SwiftIconFont/Resources/map-icons.ttf"; sourceTree = "<group>"; };
+		9A474D90462B2AD7C1169CFEB5B04C09 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C477F6BAE0976D491C46DAFA1D7075A /* GCCalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCCalendarView.swift; path = GCCalendar/GCCalendarView.swift; sourceTree = "<group>"; };
+		9CB2F59B6BFE006BB92147554EE009C3 /* SwiftReorder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftReorder.modulemap; sourceTree = "<group>"; };
+		9CEDC0FB5D2F181FDF5B157B998938C0 /* SwiftIconFont-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftIconFont-umbrella.h"; sourceTree = "<group>"; };
+		9FAAF6660A8E5217B673F9907C57C690 /* UITextField+IBL10n.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+IBL10n.swift"; path = "Source/IBInspectables/UIKit/Common/UITextField+IBL10n.swift"; sourceTree = "<group>"; };
+		9FE1E9CED221E567E7978FBC8D0A9A2F /* SwiftIconFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftIconFont.swift; path = SwiftIconFont/Classes/SwiftIconFont.swift; sourceTree = "<group>"; };
+		A0EAF3FA81EEA2AAC04DF62C83E19561 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A14CC8B44598C5A6A2E0B3833BAE8E1A /* SwiftIconTabBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftIconTabBarItem.swift; path = SwiftIconFont/Classes/UI/SwiftIconTabBarItem.swift; sourceTree = "<group>"; };
+		A433D3197BD88DF34EDC81A5640F2985 /* ReorderController+GestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ReorderController+GestureRecognizer.swift"; path = "Source/ReorderController+GestureRecognizer.swift"; sourceTree = "<group>"; };
+		A4B5AED3C2CCB94F8EE8032B8F883989 /* GCCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GCCalendar.framework; path = GCCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABFD43EB11A07FED6B0073C2681FC6D2 /* SideMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuManager.swift; path = Pod/Classes/SideMenuManager.swift; sourceTree = "<group>"; };
+		AC4419FF3506F407A01DB0BFD0C984A0 /* UINavigationItem+IBL10n.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationItem+IBL10n.swift"; path = "Source/IBInspectables/UIKit/iOS/UINavigationItem+IBL10n.swift"; sourceTree = "<group>"; };
+		AFA07D34226D295A910CDC591C891C19 /* FlagKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlagKit-prefix.pch"; sourceTree = "<group>"; };
+		B0B7BA6AF8E2D76A64249D3D61842FB1 /* FlagKit.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = FlagKit.xcassets; path = Assets/FlagKit.xcassets; sourceTree = "<group>"; };
+		B22DD4F69DE71EC1F69B0CE27B40F98A /* SwiftReorder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftReorder-dummy.m"; sourceTree = "<group>"; };
+		B236B9F92CA8D31D65296F60204B2319 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B24399A313DD06C14EAE668B3FA34C1A /* Toaster.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Toaster.modulemap; sourceTree = "<group>"; };
+		B3BDFC938950FA7D71D05B4C19CED6A2 /* ReorderController+DestinationRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ReorderController+DestinationRow.swift"; path = "Source/ReorderController+DestinationRow.swift"; sourceTree = "<group>"; };
+		B440AB1E3AF8691727095AB909CFE0D6 /* Iconic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Iconic.swift; path = SwiftIconFont/Classes/Fonts/Iconic.swift; sourceTree = "<group>"; };
+		B64F919797386407B9DC5FC2581E5CEF /* SwiftIconFont.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftIconFont.framework; path = SwiftIconFont.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7639B5AD89A39EAC8983229C886C13E /* themify.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = themify.ttf; path = SwiftIconFont/Resources/themify.ttf; sourceTree = "<group>"; };
+		B7707142BE3EC182BDBCB2507498DF71 /* SwiftIconFont+NSRange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftIconFont+NSRange.swift"; path = "SwiftIconFont/Classes/Extensions/SwiftIconFont+NSRange.swift"; sourceTree = "<group>"; };
+		BA2ABCCA5B736EC15D7BF01CC489DE5A /* UIViewController+IBL10n.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+IBL10n.swift"; path = "Source/IBInspectables/UIKit/Common/UIViewController+IBL10n.swift"; sourceTree = "<group>"; };
+		BB4F1D393FD678671C6D47FC9CF672D5 /* FlagKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlagKit.framework; path = FlagKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5133C1642A568C00425FA061889C15 /* SwiftIconFont+UITextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftIconFont+UITextView.swift"; path = "SwiftIconFont/Classes/Extensions/SwiftIconFont+UITextView.swift"; sourceTree = "<group>"; };
+		BB902F8E247CE6AC0E491905CCC117E4 /* Toaster-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toaster-umbrella.h"; sourceTree = "<group>"; };
+		BC87C349A6B6238BD66325E68891692A /* Plural.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Plural.stringsdict; path = Source/Core/Plural/Plural.stringsdict; sourceTree = "<group>"; };
+		BD1FBBD69DDCF7C6CBA437CCD0197AE9 /* ChromaHandle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaHandle.swift; path = ChromaColorPicker/ChromaHandle.swift; sourceTree = "<group>"; };
+		BD262598C8F83CB222F0F15D9F05D1A6 /* ChromaColorPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ChromaColorPicker.framework; path = ChromaColorPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDCA43A9828F79BE60B6729B4EB6283D /* UISegmentedControl+IBL10n.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISegmentedControl+IBL10n.swift"; path = "Source/IBInspectables/UIKit/Common/UISegmentedControl+IBL10n.swift"; sourceTree = "<group>"; };
+		C2FCBC3C4F0CFED274D29674ED95B084 /* Toaster-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toaster-dummy.m"; sourceTree = "<group>"; };
+		C63D192326A656D5645C029CF0BA459E /* SwiftIconFont+UILabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftIconFont+UILabel.swift"; path = "SwiftIconFont/Classes/Extensions/SwiftIconFont+UILabel.swift"; sourceTree = "<group>"; };
+		C94D6C886F6846B07F2E60CCE87C9200 /* L10n-swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "L10n-swift-dummy.m"; sourceTree = "<group>"; };
+		CD72DB53B57A46217094D858CD64987E /* UILabel+IBL10n.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+IBL10n.swift"; path = "Source/IBInspectables/UIKit/Common/UILabel+IBL10n.swift"; sourceTree = "<group>"; };
+		CDE81AB04E8BBEE67CE6DC650A357F8A /* SwiftIconFont-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftIconFont-dummy.m"; sourceTree = "<group>"; };
+		CFA4B4D5969F526FD2168CFFD0DC5A64 /* Toaster-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toaster-prefix.pch"; sourceTree = "<group>"; };
 		D037C97968E454965729B0F2A9F3BE57 /* Pods-Planner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Planner-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D30AED86075E4D768FC472BE11EF3098 /* IonIcons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IonIcons.swift; path = SwiftIconFont/Classes/Fonts/IonIcons.swift; sourceTree = "<group>"; };
-		D3B05644535EA15FD3EBF350A128717B /* Octicon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Octicon.swift; path = SwiftIconFont/Classes/Fonts/Octicon.swift; sourceTree = "<group>"; };
-		D99BA60E7BD16766C2D728B70573237A /* ChromaColorPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaColorPicker.swift; path = ChromaColorPicker/ChromaColorPicker.swift; sourceTree = "<group>"; };
-		D9CE8B4170BBA4D5A5E28F61786273DA /* Toaster.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Toaster.modulemap; sourceTree = "<group>"; };
-		DABC58403B0FDC4E25A67D2D2D78B065 /* MaterialIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaterialIcon.swift; path = SwiftIconFont/Classes/Fonts/MaterialIcon.swift; sourceTree = "<group>"; };
-		DCF5CE4228BC969E02762C8E73B7E0B9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD79D2266C277391C3B4387C86AF6A7D /* Toaster.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Toaster.xcconfig; sourceTree = "<group>"; };
-		E15676020F98DA4535DCB9B3ABAF4BB7 /* themify.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = themify.ttf; path = SwiftIconFont/Resources/themify.ttf; sourceTree = "<group>"; };
+		D07F8CACFE05B526B2BB207585D68E45 /* L10n+static.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "L10n+static.swift"; path = "Source/Core/L10n+static.swift"; sourceTree = "<group>"; };
+		D2A4EC7962529508639F521E23846CAE /* L10n+stringConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "L10n+stringConvertible.swift"; path = "Source/Core/L10n+stringConvertible.swift"; sourceTree = "<group>"; };
+		D3B7EB4F7F2DBDE144BA10963FDD8499 /* SwiftReorder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftReorder.framework; path = SwiftReorder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D427D436C652DDCC5C72B4A8B8763F05 /* L10n-swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "L10n-swift-prefix.pch"; sourceTree = "<group>"; };
+		DB67FE3A230D2D7052C94F1A327B3491 /* open-iconic.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "open-iconic.ttf"; path = "SwiftIconFont/Resources/open-iconic.ttf"; sourceTree = "<group>"; };
+		DCC81241F4772C7F3293CAFDAC74A573 /* ChromaColorPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChromaColorPicker-dummy.m"; sourceTree = "<group>"; };
+		DF92A314F85323E0F8D5775939EE543A /* ToastView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastView.swift; path = Sources/ToastView.swift; sourceTree = "<group>"; };
+		DFAF258EB2ACBE0BE38AA49F8E488E39 /* ChromaColorPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChromaColorPicker.h; path = ChromaColorPicker/ChromaColorPicker.h; sourceTree = "<group>"; };
+		E020548D2AE407C5A3CEAF11C4701FA2 /* octicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = octicons.ttf; path = SwiftIconFont/Resources/octicons.ttf; sourceTree = "<group>"; };
+		E0924F4002FB6497175CA2DD4626F7A7 /* ToastCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastCenter.swift; path = Sources/ToastCenter.swift; sourceTree = "<group>"; };
+		E1ACF87546C2A445A32A7D03580EC7CA /* StringResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringResource.swift; path = Source/Core/Resource/StringResource.swift; sourceTree = "<group>"; };
+		E3263CFA35402568D286BB7EFA7ACDA3 /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
 		E33DA83B83EFFFF5C81AAE231C3568CD /* Pods-Planner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Planner.modulemap"; sourceTree = "<group>"; };
-		F4359A43D31B898664E3DF61BFEC230E /* ChromaColorPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChromaColorPicker-prefix.pch"; sourceTree = "<group>"; };
-		F46A3BD333F99931E93C9F5E363182F5 /* SwiftIconFont.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftIconFont.modulemap; sourceTree = "<group>"; };
-		F496A4081A5E48F5C49B10FB081B8FC0 /* Toaster-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toaster-prefix.pch"; sourceTree = "<group>"; };
-		F6E3FDE8F914B73D7AE81DC35C3B149A /* SwiftIconFont+UIBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftIconFont+UIBarButtonItem.swift"; path = "SwiftIconFont/Classes/Extensions/SwiftIconFont+UIBarButtonItem.swift"; sourceTree = "<group>"; };
+		E47897692FB89648F6578DC4AE74CDFC /* L10n+localizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "L10n+localizable.swift"; path = "Source/Core/L10n+localizable.swift"; sourceTree = "<group>"; };
+		E4881D0F2B76A879506A323C3DF2AF7B /* ChromaColorPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChromaColorPicker-umbrella.h"; sourceTree = "<group>"; };
+		E4E7C82955F1FE2E55610AF673F13301 /* L10n.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = L10n.swift; path = Source/Core/L10n.swift; sourceTree = "<group>"; };
+		E521BF4F0BB654CD4D8EB055383E602B /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Source/Core/Logger.swift; sourceTree = "<group>"; };
+		E58EA0D64EED9BF97BF94E49DCF0432F /* UIDatePicker+IBL10n.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIDatePicker+IBL10n.swift"; path = "Source/IBInspectables/UIKit/iOS/UIDatePicker+IBL10n.swift"; sourceTree = "<group>"; };
+		E6B84A5D0B9A11436731FED375EC4324 /* NotificationName+L10nLanguageChanged.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NotificationName+L10nLanguageChanged.swift"; path = "Source/Core/NotificationName+L10nLanguageChanged.swift"; sourceTree = "<group>"; };
+		E98CACEBCDBB6977E8A968B4ED33B162 /* String+Localizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Localizable.swift"; path = "Source/Extensions/String+Localizable.swift"; sourceTree = "<group>"; };
+		EA1557C65DAD69A029982875D7DCAF4D /* UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImage.swift; path = Sources/Swift/FlagKit/UIImage.swift; sourceTree = "<group>"; };
+		EAA575C9510B4BDDD515FE6FDE03153A /* SwiftIconFont+UITabBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftIconFont+UITabBarItem.swift"; path = "SwiftIconFont/Classes/Extensions/SwiftIconFont+UITabBarItem.swift"; sourceTree = "<group>"; };
+		F043410EC72ECA8214A70849E17924C6 /* GCCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GCCalendar.modulemap; sourceTree = "<group>"; };
+		F09AA7DF53034EF3879D4639E72AFB77 /* SwiftIconButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftIconButton.swift; path = SwiftIconFont/Classes/UI/SwiftIconButton.swift; sourceTree = "<group>"; };
+		F10A3DB28DC4525FD0DB328394B0A59F /* L10n_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = L10n_swift.framework; path = "L10n-swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1BB93A1DC9DE938B571E63746B444E3 /* FontLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontLoader.swift; path = SwiftIconFont/Classes/FontLoader.swift; sourceTree = "<group>"; };
+		F200F0D981E6F70F0BAB01955B7CFE88 /* NSNumber+Localizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSNumber+Localizable.swift"; path = "Source/Extensions/NSNumber+Localizable.swift"; sourceTree = "<group>"; };
+		F2EFC654E7098DCB0E6676E36E8A773F /* SwiftReorder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftReorder.xcconfig; sourceTree = "<group>"; };
+		F45364E33FA912F4CB243F8E1880EC38 /* SwiftIconBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftIconBarButtonItem.swift; path = SwiftIconFont/Classes/UI/SwiftIconBarButtonItem.swift; sourceTree = "<group>"; };
+		F4E8F29C38416BB97F5E09511F029C47 /* ChromaShadeSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaShadeSlider.swift; path = ChromaColorPicker/ChromaShadeSlider.swift; sourceTree = "<group>"; };
+		F76B5C5C9271D602D557CC6C6F8FCBD7 /* UITabBarItem+IBL10n.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITabBarItem+IBL10n.swift"; path = "Source/IBInspectables/UIKit/Common/UITabBarItem+IBL10n.swift"; sourceTree = "<group>"; };
+		F87693F986AC50313D291A4D6234DD05 /* FlagKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlagKit.xcconfig; sourceTree = "<group>"; };
 		F8A5E104112BE530194C6D1A7FBD9F19 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F93AF08850D4AA15852CA7063AE11ADF /* SwiftIconStepper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftIconStepper.swift; path = SwiftIconFont/Classes/UI/SwiftIconStepper.swift; sourceTree = "<group>"; };
 		FB7751D4D791D1183FB66D3CCA52CD8E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		FEFDC345B803EF6897CF76B40A7DE4EF /* SwiftReorder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftReorder.xcconfig; sourceTree = "<group>"; };
+		FECCFE473467FC98008539969A7B21CF /* SideMenuTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransition.swift; path = Pod/Classes/SideMenuTransition.swift; sourceTree = "<group>"; };
+		FFC11396B934DF2C650E7C68AC5EEEF1 /* GCCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCCalendar-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		558E06546E1AB3D5B8B91C3440C4FEEB /* Frameworks */ = {
+		0467BCE29222ACBDB95746CEBA0E05E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C73D4CCD4896F3289C74FA1F296E7793 /* Foundation.framework in Frameworks */,
-				160300A8473E4991792240E188B9901E /* QuartzCore.framework in Frameworks */,
-				B85AB24A9C9D417909AC777380C0F2FC /* UIKit.framework in Frameworks */,
+				CE9591502CCFCC6EE958C2F2B8AD82FD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7369A9CC0D513C43EA75787282B29E83 /* Frameworks */ = {
+		49C0E5A7C7BF96694C185976FDDBDB3B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E23CFAC4459028B2E874F6896E54305 /* Foundation.framework in Frameworks */,
+				CB0B86A901A48F8278EEB936C6ABE9C3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7C110650DAA74F8A35000327C62DE45E /* Frameworks */ = {
+		4C639779E24DC2284F0AB03694611F9C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E32A45F5FA784DA017F42D7415BDE7C /* Foundation.framework in Frameworks */,
+				8DE1BA217AD27E179482CC14951680CC /* Foundation.framework in Frameworks */,
+				6C7703689E9AB5E691B71143280B0296 /* QuartzCore.framework in Frameworks */,
+				0E79C6E9935C4F941D0D9B7D6706C1F3 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,20 +406,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D5FB9EEFF21718E24A18DA22A1272157 /* Frameworks */ = {
+		B1C087906D339C084B61862E00DAB839 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F90DB6CA811C69276D7E0D9EDD78D99 /* Foundation.framework in Frameworks */,
-				7FF9E3A47CC09DC9026F35A16DF55B08 /* UIKit.framework in Frameworks */,
+				4D1DB8F6CB5ED80C4795522291907876 /* Foundation.framework in Frameworks */,
+				9907C07307E090EAAAA6D7E710E8C69D /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA19E1339A6966906A678D2BB5C05AD1 /* Frameworks */ = {
+		E4C139631F455E14FBE9358EE0D68FA0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2A831A2B33D1343DC8419C658BE5DED /* Foundation.framework in Frameworks */,
+				415057E07BD0140E4E02E93D22A296D0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,20 +431,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8459C2A681114F8BD98300739FCD5D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D82B4B038303C2AB7C13F579ECD8421 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB4DD0FE3186370EC4E76DE71431EBE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E071CF0264928CC67EAF71605D4F7BEB /* Foundation.framework in Frameworks */,
+				CE26D8258806F8FB312FF8FA77875C61 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		116EBBAE3F303EB0EC31D943425A1D4E /* Pods */ = {
+		06EF64BF0EA2AFE79635CE42C22B5BB8 /* Toaster */ = {
 			isa = PBXGroup;
 			children = (
-				CA0D485FC9CEDC0771C7C13DC3C812CC /* ChromaColorPicker */,
-				F469B631793C6B848FD62E0A538A00B8 /* GCCalendar */,
-				C86039DC4F319AB14F938B1CC97D9634 /* SideMenu */,
-				389519D0B7209E8AE111B00A394302CF /* SwiftIconFont */,
-				F14CF1379783D08196B5017B62D43FAD /* SwiftReorder */,
-				918D0855FBBED40BBCE278321DF7BAB2 /* Toaster */,
+				0C55240B9CBE4D69F8328C7E2D9C1AB2 /* Toast.swift */,
+				E0924F4002FB6497175CA2DD4626F7A7 /* ToastCenter.swift */,
+				24D4C0A32E94BB9F9FB51C15BEAF4BFE /* Toaster.h */,
+				DF92A314F85323E0F8D5775939EE543A /* ToastView.swift */,
+				2204D322F3FE074E0F59AC9AE31BFB0A /* ToastWindow.swift */,
+				472EF14647C297DFB812AE8BE24AFA53 /* Support Files */,
 			);
-			name = Pods;
+			name = Toaster;
+			path = Toaster;
+			sourceTree = "<group>";
+		};
+		11C63AFE2A735DFF24A4D5FA3E9D644A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				570B0D6D70E0D260E123630D9DC27679 /* Info.plist */,
+				7FAD9F834ED9034FD10A43C619A73B2A /* SwiftIconFont.modulemap */,
+				72DD2E7D5809EF1308EC1C04478FBA47 /* SwiftIconFont.xcconfig */,
+				CDE81AB04E8BBEE67CE6DC650A357F8A /* SwiftIconFont-dummy.m */,
+				411EF8220E45B638A6A19184ECA466B1 /* SwiftIconFont-prefix.pch */,
+				9CEDC0FB5D2F181FDF5B157B998938C0 /* SwiftIconFont-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftIconFont";
 			sourceTree = "<group>";
 		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
@@ -348,97 +487,177 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		17E5BA3D5A68CD4210EE905BDE601684 /* Support Files */ = {
+		29AACA4508D29D007B92800E4DEA475A /* L10n-swift */ = {
 			isa = PBXGroup;
 			children = (
-				328F4272FAAB2A95F16DE9C5D8C20BE7 /* Info.plist */,
-				56E915F4C24F34BFF7AD5D0C18258A0E /* SwiftReorder.modulemap */,
-				FEFDC345B803EF6897CF76B40A7DE4EF /* SwiftReorder.xcconfig */,
-				C98547C84C2F9364A33CF832F2A3BD6D /* SwiftReorder-dummy.m */,
-				009D810B9C68D249889EEA1149F664C6 /* SwiftReorder-prefix.pch */,
-				7B87691597E590DD34504CCF9E3E99D8 /* SwiftReorder-umbrella.h */,
+				2D5ADADECF4AF2BB784D4CEDB3D1BD0D /* Core */,
+				CD47576418AFC322A2E43ADE832AF011 /* Extension */,
+				D2CCC41464D4BD62DAFB32D4DC374751 /* IBInspectable */,
+				E3637EEACB5D26D073285BAE42108EF9 /* Support Files */,
+			);
+			name = "L10n-swift";
+			path = "L10n-swift";
+			sourceTree = "<group>";
+		};
+		2D5ADADECF4AF2BB784D4CEDB3D1BD0D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				573BCC540E38A244A5723448B6549628 /* DictionaryResource.swift */,
+				44ABB56D981A4DB4958F253D2B779B5F /* EmptyResource.swift */,
+				E4E7C82955F1FE2E55610AF673F13301 /* L10n.swift */,
+				E47897692FB89648F6578DC4AE74CDFC /* L10n+localizable.swift */,
+				D07F8CACFE05B526B2BB207585D68E45 /* L10n+static.swift */,
+				D2A4EC7962529508639F521E23846CAE /* L10n+stringConvertible.swift */,
+				77A3FA2E694562F51CA5B5B1B0ADD2B0 /* Localizable.swift */,
+				E521BF4F0BB654CD4D8EB055383E602B /* Logger.swift */,
+				E6B84A5D0B9A11436731FED375EC4324 /* NotificationName+L10nLanguageChanged.swift */,
+				BC87C349A6B6238BD66325E68891692A /* Plural.stringsdict */,
+				41CA7E6652000E5A5C8A30BE6F137B10 /* Plural.swift */,
+				09BC120B9FF66C0DB2D623EA9952A884 /* Resource.swift */,
+				87B58004FFA74673DA265BABE50A6A6A /* ResourceContainer.swift */,
+				E1ACF87546C2A445A32A7D03580EC7CA /* StringResource.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		2D6195C5D6D8262247CAC8DFC876367C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F043410EC72ECA8214A70849E17924C6 /* GCCalendar.modulemap */,
+				43921D04F822C4D11F19F6FFD4038A06 /* GCCalendar.xcconfig */,
+				071B2101B58DA149DE621BC8958236DA /* GCCalendar-dummy.m */,
+				FFC11396B934DF2C650E7C68AC5EEEF1 /* GCCalendar-prefix.pch */,
+				1B9E9E675BF08C5E1F82ACD80C989623 /* GCCalendar-umbrella.h */,
+				674D7D2814EEB24E48EFBD5CEF647A77 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GCCalendar";
+			sourceTree = "<group>";
+		};
+		3B9483F27FFA1036DB87B71592214616 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B0B7BA6AF8E2D76A64249D3D61842FB1 /* FlagKit.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3C61B0959D5B2FBAD96492B9E14F370A /* FlagKit */ = {
+			isa = PBXGroup;
+			children = (
+				17B3FD893D881F524E0F50E6FD6E169C /* Flag.swift */,
+				2F7CF941F2A3B07B0E1B5CFA7BECDA7F /* FlagKit.swift */,
+				6F7C661293C0B263915B2A4FB87D2E95 /* FlagStyle.swift */,
+				8E278DA725B6B14F3AC14A650A195AB3 /* NSImage.swift */,
+				EA1557C65DAD69A029982875D7DCAF4D /* UIImage.swift */,
+				3B9483F27FFA1036DB87B71592214616 /* Resources */,
+				4014D606EC7A2E00B6690C75ADD2FF96 /* Support Files */,
+			);
+			name = FlagKit;
+			path = FlagKit;
+			sourceTree = "<group>";
+		};
+		4014D606EC7A2E00B6690C75ADD2FF96 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4578B6EE950C87584149C642B2B07ED8 /* FlagKit.modulemap */,
+				F87693F986AC50313D291A4D6234DD05 /* FlagKit.xcconfig */,
+				3498AA3B3DC02C47B487A0772CCC40A9 /* FlagKit-dummy.m */,
+				AFA07D34226D295A910CDC591C891C19 /* FlagKit-prefix.pch */,
+				53D12CB0288FB0F5DED6E70DE565EDAC /* FlagKit-umbrella.h */,
+				35923F723417E822D356977336229C8B /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FlagKit";
+			sourceTree = "<group>";
+		};
+		437B562C4C7FE1DE0321DDE8E5982CC4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				191BA6A78A105414D916587C42F505EC /* Info.plist */,
+				9CB2F59B6BFE006BB92147554EE009C3 /* SwiftReorder.modulemap */,
+				F2EFC654E7098DCB0E6676E36E8A773F /* SwiftReorder.xcconfig */,
+				B22DD4F69DE71EC1F69B0CE27B40F98A /* SwiftReorder-dummy.m */,
+				147DCAE3E9A591B5129114B77D53BBEA /* SwiftReorder-prefix.pch */,
+				036BF8F4EB0EE102F4077D4FFF5EB1B4 /* SwiftReorder-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftReorder";
 			sourceTree = "<group>";
 		};
-		389519D0B7209E8AE111B00A394302CF /* SwiftIconFont */ = {
+		472EF14647C297DFB812AE8BE24AFA53 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				62CC708CF4AD33FF26A9154FC80D51FD /* FontAwesome.swift */,
-				4390BDB05537FC85EFCAC3772EA93070 /* FontLoader.swift */,
-				664E36E1CFA1234CC720E321C9432DF5 /* Iconic.swift */,
-				D30AED86075E4D768FC472BE11EF3098 /* IonIcons.swift */,
-				3B04E8C81E803F91391F71A8BEBBD162 /* MapIcon.swift */,
-				DABC58403B0FDC4E25A67D2D2D78B065 /* MaterialIcon.swift */,
-				D3B05644535EA15FD3EBF350A128717B /* Octicon.swift */,
-				7523359DAB41AD8500C906EEC3B06C68 /* SwiftIconBarButtonItem.swift */,
-				CF51D822C3103CCBA1FB321C60713A0F /* SwiftIconButton.swift */,
-				712530D90A8D33069721A68493D15702 /* SwiftIconFont.swift */,
-				A653C42799239C55F2A1043A23939E3C /* SwiftIconFont+NSRange.swift */,
-				AE63F9FAD617517F6727DC0C27192FF2 /* SwiftIconFont+String.swift */,
-				F6E3FDE8F914B73D7AE81DC35C3B149A /* SwiftIconFont+UIBarButtonItem.swift */,
-				777018C90F3527F9629685B3B966102D /* SwiftIconFont+UIButton.swift */,
-				20BB31E75E740857DD4FB4C4BFFE5B7D /* SwiftIconFont+UIImage.swift */,
-				3CD7FB88AC09952E06A3DEC83DD2E302 /* SwiftIconFont+UIImageView.swift */,
-				3CE367CA631F0D6D43E55DE132B299BA /* SwiftIconFont+UILabel.swift */,
-				02B87ACAAB4EE126E15243617A605437 /* SwiftIconFont+UITabBarItem.swift */,
-				588F0CF6D022A819BB3539F0F847DB06 /* SwiftIconFont+UITextField.swift */,
-				C1849C5FEE2A5FE5707AA7DE5B2E177C /* SwiftIconFont+UITextView.swift */,
-				12C0B9894AA03406321E0AA17901E7C7 /* SwiftIconFontView.swift */,
-				72E77C8AD41E3A4746AB391BAA72502A /* SwiftIconLabel.swift */,
-				F93AF08850D4AA15852CA7063AE11ADF /* SwiftIconStepper.swift */,
-				82CE3EBCE4741E02271D8B3DFA72A4CF /* SwiftIconTabBarItem.swift */,
-				78FA25F7BE94DB410C8B8CE8CD41AE4C /* SwiftIconTextField.swift */,
-				B9FF1FE6481268B5D9F04C3709AA721D /* SwiftIconTextView.swift */,
-				897D5116E0B14C0F5B79DFBC7721A88F /* ThemifyIcon.swift */,
-				FEAA689F48AB3B6E232905F60C87982D /* Resources */,
-				7ADFFE03739AE01471B57207D1018F2D /* Support Files */,
+				A0EAF3FA81EEA2AAC04DF62C83E19561 /* Info.plist */,
+				B24399A313DD06C14EAE668B3FA34C1A /* Toaster.modulemap */,
+				7BF2BBD6CC19196B9258791897E5EA9B /* Toaster.xcconfig */,
+				C2FCBC3C4F0CFED274D29674ED95B084 /* Toaster-dummy.m */,
+				CFA4B4D5969F526FD2168CFFD0DC5A64 /* Toaster-prefix.pch */,
+				BB902F8E247CE6AC0E491905CCC117E4 /* Toaster-umbrella.h */,
 			);
-			name = SwiftIconFont;
-			path = SwiftIconFont;
+			name = "Support Files";
+			path = "../Target Support Files/Toaster";
 			sourceTree = "<group>";
 		};
-		3E8273BC1D40DDFA1AE19E071244B636 /* Support Files */ = {
+		488EA6B4F9BB4DB4E457BD3781CD28D8 /* ChromaColorPicker */ = {
 			isa = PBXGroup;
 			children = (
-				AC7EB93DDCDA29314A48D4003D90FE7A /* Info.plist */,
-				782EF20BF93507C7B622727A50216070 /* SideMenu.modulemap */,
-				B514FC9201046D4C6F4F860B091213C6 /* SideMenu.xcconfig */,
-				AF6E976A7F4DE28E19147309F54F9403 /* SideMenu-dummy.m */,
-				3975AFE72E6622429485BDCA1C631205 /* SideMenu-prefix.pch */,
-				316938978E6AC8D1730FD8E6F5087DBD /* SideMenu-umbrella.h */,
+				2384392AD27733B7AEADEC8D319DC200 /* ChromaAddButton.swift */,
+				DFAF258EB2ACBE0BE38AA49F8E488E39 /* ChromaColorPicker.h */,
+				0312F953D40A7152C4EA18751E20A773 /* ChromaColorPicker.swift */,
+				BD1FBBD69DDCF7C6CBA437CCD0197AE9 /* ChromaHandle.swift */,
+				F4E8F29C38416BB97F5E09511F029C47 /* ChromaShadeSlider.swift */,
+				1C22827796462A6B75DDA73B0A606CF2 /* ColorModeToggleButton.swift */,
+				06CBC6668477110A00C0F022AC44C135 /* UIColor+Utilities.swift */,
+				ED8D2413CA7733F3853741B6583BF409 /* Support Files */,
+			);
+			name = ChromaColorPicker;
+			path = ChromaColorPicker;
+			sourceTree = "<group>";
+		};
+		52068E144634C05C0736D738EC541863 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				488EA6B4F9BB4DB4E457BD3781CD28D8 /* ChromaColorPicker */,
+				3C61B0959D5B2FBAD96492B9E14F370A /* FlagKit */,
+				7102D72DFC8C57BFB9728F02F0D3A469 /* GCCalendar */,
+				29AACA4508D29D007B92800E4DEA475A /* L10n-swift */,
+				BDDA190E53DBC51910500FCF45686332 /* SideMenu */,
+				932EB2A5CDAD22C17C1D53B3B0C87DA0 /* SwiftIconFont */,
+				D2EA5D3A7420285F4EA103EA0FF80538 /* SwiftReorder */,
+				06EF64BF0EA2AFE79635CE42C22B5BB8 /* Toaster */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		525459D7B9DD45B79E25696D001CD78E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A474D90462B2AD7C1169CFEB5B04C09 /* Info.plist */,
+				06DB4C5F0C3DACDD1AABF87CEBA0EB12 /* SideMenu.modulemap */,
+				8F7F16708214F43B78D1385AD6DEED55 /* SideMenu.xcconfig */,
+				E3263CFA35402568D286BB7EFA7ACDA3 /* SideMenu-dummy.m */,
+				6AF1F6684C0981D9D99C0C04C0AD7170 /* SideMenu-prefix.pch */,
+				3CE9AA29DD2F4CABFDA36330E92D4557 /* SideMenu-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SideMenu";
 			sourceTree = "<group>";
 		};
-		40758F98B9A2845CD83A1F409213947F /* Support Files */ = {
+		7102D72DFC8C57BFB9728F02F0D3A469 /* GCCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				B8FAAD37FF2581F49761A9647E90882D /* ChromaColorPicker.modulemap */,
-				C2E4D5CAB12D87C8A1C0BAED4010D925 /* ChromaColorPicker.xcconfig */,
-				88939482520345DB213CE46675F08626 /* ChromaColorPicker-dummy.m */,
-				F4359A43D31B898664E3DF61BFEC230E /* ChromaColorPicker-prefix.pch */,
-				08244E08332C5715195E657FD760A7F8 /* ChromaColorPicker-umbrella.h */,
-				DCF5CE4228BC969E02762C8E73B7E0B9 /* Info.plist */,
+				08E26E2E64E1DAC0DF837A0D34FD8FB9 /* GCCalendar.h */,
+				70166782358A35F3009E51EF59560233 /* GCCalendarConfiguration.swift */,
+				4983AAE17E19A6904A62A43905673876 /* GCCalendarDayView.swift */,
+				1D4D228B850C5873C5A62FC21D714E89 /* GCCalendarMonthView.swift */,
+				9C477F6BAE0976D491C46DAFA1D7075A /* GCCalendarView.swift */,
+				40932BECB8120BE3FB891BD7A1BED4CA /* GCCalendarViewDelegate.swift */,
+				51938EC18102D19E3EAFEF61649D66EB /* GCCalendarWeekView.swift */,
+				2D6195C5D6D8262247CAC8DFC876367C /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/ChromaColorPicker";
-			sourceTree = "<group>";
-		};
-		7ADFFE03739AE01471B57207D1018F2D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				75F1CFE65BE151BB040449077B8F7BE1 /* Info.plist */,
-				F46A3BD333F99931E93C9F5E363182F5 /* SwiftIconFont.modulemap */,
-				B7C54858D37B22E0BD74108B34D706CC /* SwiftIconFont.xcconfig */,
-				2201FBB75F9DFB70D0BF978481D6A038 /* SwiftIconFont-dummy.m */,
-				548FA2D2CDB48692F6A8567E3396F4C8 /* SwiftIconFont-prefix.pch */,
-				03CDE545438F7403B524A7FA14A74127 /* SwiftIconFont-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftIconFont";
+			name = GCCalendar;
+			path = GCCalendar;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -446,38 +665,47 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				116EBBAE3F303EB0EC31D943425A1D4E /* Pods */,
-				A2190916F7892C6E0695EA27D83AA40C /* Products */,
+				52068E144634C05C0736D738EC541863 /* Pods */,
+				9F597219DE63C1A461E9CC01436CD4FA /* Products */,
 				D2C2F28A4A380D37CBC064F1C1603E10 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		85501D26F3514F3FDE9B3589396F3163 /* Support Files */ = {
+		932EB2A5CDAD22C17C1D53B3B0C87DA0 /* SwiftIconFont */ = {
 			isa = PBXGroup;
 			children = (
-				8FF5C85AFD6337E0EE4780C6C6F093EF /* GCCalendar.modulemap */,
-				09628D9B90982B31E6E3F4BF0CB153AC /* GCCalendar.xcconfig */,
-				9E441632ED6E65F8E07069595709E2B3 /* GCCalendar-dummy.m */,
-				2B0E73F640B06F0350AEF28178C13963 /* GCCalendar-prefix.pch */,
-				34296A4592286EE95076CAB1246349FE /* GCCalendar-umbrella.h */,
-				9B956BAB82F0BAA681FEA7CF4068174E /* Info.plist */,
+				75731A79A98CD688FADCC9C467794BFB /* FontAwesome.swift */,
+				F1BB93A1DC9DE938B571E63746B444E3 /* FontLoader.swift */,
+				B440AB1E3AF8691727095AB909CFE0D6 /* Iconic.swift */,
+				4DB037A94FB10D884AEEE3DBAA7CAED9 /* IonIcons.swift */,
+				463CBF7C55688AB4848230B9BD641E60 /* MapIcon.swift */,
+				5BE871C92A504467FFA7ACFCF2212BA1 /* MaterialIcon.swift */,
+				7AD91BE8670B33356D69069FE7E73A3A /* Octicon.swift */,
+				F45364E33FA912F4CB243F8E1880EC38 /* SwiftIconBarButtonItem.swift */,
+				F09AA7DF53034EF3879D4639E72AFB77 /* SwiftIconButton.swift */,
+				9FE1E9CED221E567E7978FBC8D0A9A2F /* SwiftIconFont.swift */,
+				B7707142BE3EC182BDBCB2507498DF71 /* SwiftIconFont+NSRange.swift */,
+				368431A383F18D29943D7BDF06C028F0 /* SwiftIconFont+String.swift */,
+				525016E11B5EBCC16602EDB3D339156E /* SwiftIconFont+UIBarButtonItem.swift */,
+				8B7D7CAD01E21B6C6C8EFC12F4674A30 /* SwiftIconFont+UIButton.swift */,
+				60504852DD1C07A78050F078E1435855 /* SwiftIconFont+UIImage.swift */,
+				602C20DDB8ACB30A7AE25A061F9324B9 /* SwiftIconFont+UIImageView.swift */,
+				C63D192326A656D5645C029CF0BA459E /* SwiftIconFont+UILabel.swift */,
+				EAA575C9510B4BDDD515FE6FDE03153A /* SwiftIconFont+UITabBarItem.swift */,
+				8B33F9A50D28D8C301239499772D58F9 /* SwiftIconFont+UITextField.swift */,
+				BB5133C1642A568C00425FA061889C15 /* SwiftIconFont+UITextView.swift */,
+				5C69A3AECB00144549E98173A0D564F4 /* SwiftIconFontView.swift */,
+				115068285FE0BD9BFF10B706D6537C1B /* SwiftIconLabel.swift */,
+				8FDD4BBA3DB815819A28CCB734D3507B /* SwiftIconStepper.swift */,
+				A14CC8B44598C5A6A2E0B3833BAE8E1A /* SwiftIconTabBarItem.swift */,
+				83C350B50777ABEC64D0DC9BF8983E1B /* SwiftIconTextField.swift */,
+				7F294B79B35E37B87F8FC0453E082E61 /* SwiftIconTextView.swift */,
+				3F2DA58DDBC18FE12293E76D4941616B /* ThemifyIcon.swift */,
+				D0DDE6063E8E08FA6DEC881E40CC282D /* Resources */,
+				11C63AFE2A735DFF24A4D5FA3E9D644A /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/GCCalendar";
-			sourceTree = "<group>";
-		};
-		918D0855FBBED40BBCE278321DF7BAB2 /* Toaster */ = {
-			isa = PBXGroup;
-			children = (
-				B3929AC61B40803854EADA9D048241B4 /* Toast.swift */,
-				A125AE5B3FFC2B501247E2940672DCB3 /* ToastCenter.swift */,
-				979C83AB150068C03CB584009A00D4CF /* Toaster.h */,
-				4411FB62CD9E0BB7FE804E73AF95D64C /* ToastView.swift */,
-				0CD24E99F9E85E4E8B4558120BE2654E /* ToastWindow.swift */,
-				BC61A879C9931933BA3E8AB7F7954097 /* Support Files */,
-			);
-			name = Toaster;
-			path = Toaster;
+			name = SwiftIconFont;
+			path = SwiftIconFont;
 			sourceTree = "<group>";
 		};
 		93A319F2C1969B7AA0B17444A3F8BA22 /* iOS */ = {
@@ -488,6 +716,22 @@
 				3917A50EB224EEDBC66971700D698782 /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		9F597219DE63C1A461E9CC01436CD4FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD262598C8F83CB222F0F15D9F05D1A6 /* ChromaColorPicker.framework */,
+				BB4F1D393FD678671C6D47FC9CF672D5 /* FlagKit.framework */,
+				A4B5AED3C2CCB94F8EE8032B8F883989 /* GCCalendar.framework */,
+				F10A3DB28DC4525FD0DB328394B0A59F /* L10n_swift.framework */,
+				8DDB6281289A837A414A7C1A714A0274 /* Pods_Planner.framework */,
+				941BD17AA134A62EF57955D98D57C670 /* SideMenu.framework */,
+				B64F919797386407B9DC5FC2581E5CEF /* SwiftIconFont.framework */,
+				D3B7EB4F7F2DBDE144BA10963FDD8499 /* SwiftReorder.framework */,
+				447E444DC81C90E5AF8C9DA26982853F /* Toaster.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		9FA1EF751F4005120C1D7345F2654D21 /* Pods-Planner */ = {
@@ -508,61 +752,43 @@
 			path = "Target Support Files/Pods-Planner";
 			sourceTree = "<group>";
 		};
-		A2190916F7892C6E0695EA27D83AA40C /* Products */ = {
+		BDDA190E53DBC51910500FCF45686332 /* SideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				C67A2F9DF9AA020E7C4D2E1CCB79A863 /* ChromaColorPicker.framework */,
-				10A53ECADE65AF960CE2D2072EE6CDC1 /* GCCalendar.framework */,
-				C29B0C5670E1ACABF22C6447440A0DBD /* Pods_Planner.framework */,
-				C269DB95002D6E2CB0E6206C28799FF2 /* SideMenu.framework */,
-				81D9533D35F73DAFB4E8E3112AA506B5 /* SwiftIconFont.framework */,
-				465F18CF77D30F5713BAB558858DD107 /* SwiftReorder.framework */,
-				190B45CE69EDB4CE550BBE6C0C5E2D77 /* Toaster.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		BC61A879C9931933BA3E8AB7F7954097 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				412C5D21A1135B84E53D5D545E97E2FB /* Info.plist */,
-				D9CE8B4170BBA4D5A5E28F61786273DA /* Toaster.modulemap */,
-				DD79D2266C277391C3B4387C86AF6A7D /* Toaster.xcconfig */,
-				6038F90D828D3AB45E7F2DBA947AF995 /* Toaster-dummy.m */,
-				F496A4081A5E48F5C49B10FB081B8FC0 /* Toaster-prefix.pch */,
-				CDEC978664C1E0ACF420318047DA88B8 /* Toaster-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Toaster";
-			sourceTree = "<group>";
-		};
-		C86039DC4F319AB14F938B1CC97D9634 /* SideMenu */ = {
-			isa = PBXGroup;
-			children = (
-				3AAAF4FF6ABE5BB6CA96CF1D8430A40F /* SideMenuManager.swift */,
-				CCC56FBFBBD314254C8080940E922AE6 /* SideMenuTransition.swift */,
-				1A6C4DD35FD92537CC47FE9E9C3C78BD /* UISideMenuNavigationController.swift */,
-				8D423A66B2007AEB70DB71BE03DCED1F /* UITableViewVibrantCell.swift */,
-				3E8273BC1D40DDFA1AE19E071244B636 /* Support Files */,
+				ABFD43EB11A07FED6B0073C2681FC6D2 /* SideMenuManager.swift */,
+				FECCFE473467FC98008539969A7B21CF /* SideMenuTransition.swift */,
+				596AF8DCC67E6445A11E84562EBE6D0A /* UISideMenuNavigationController.swift */,
+				30FFB1006FB74E0CFB2ABCABCE36985A /* UITableViewVibrantCell.swift */,
+				525459D7B9DD45B79E25696D001CD78E /* Support Files */,
 			);
 			name = SideMenu;
 			path = SideMenu;
 			sourceTree = "<group>";
 		};
-		CA0D485FC9CEDC0771C7C13DC3C812CC /* ChromaColorPicker */ = {
+		CD47576418AFC322A2E43ADE832AF011 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				3E94F8811D3492C04ADEAEA041FA1C20 /* ChromaAddButton.swift */,
-				CB7B4B100050A424B29606F7BD064929 /* ChromaColorPicker.h */,
-				D99BA60E7BD16766C2D728B70573237A /* ChromaColorPicker.swift */,
-				1DF3A0A0442EDFA3F2EBC27585546545 /* ChromaHandle.swift */,
-				134F535865DF467F5169AE68E72262C5 /* ChromaShadeSlider.swift */,
-				AA8FAE4583172B828F78574D7C069F97 /* ColorModeToggleButton.swift */,
-				6E165CB87E90DF48B5C8197CD4EE75DB /* UIColor+Utilities.swift */,
-				40758F98B9A2845CD83A1F409213947F /* Support Files */,
+				816751DA76C3C97D09EC74567143396A /* Date+Localizable.swift */,
+				53CDD04D2F0DA52034F3DAE3F716C47B /* Double+Localizable.swift */,
+				3724A1A923A8D389ED532D5E0E9581B4 /* Int+Localizable.swift */,
+				F200F0D981E6F70F0BAB01955B7CFE88 /* NSNumber+Localizable.swift */,
+				E98CACEBCDBB6977E8A968B4ED33B162 /* String+Localizable.swift */,
 			);
-			name = ChromaColorPicker;
-			path = ChromaColorPicker;
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		D0DDE6063E8E08FA6DEC881E40CC282D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				179C8F1BA5A9F6BEE4EA19ABEBF0DE3B /* FontAwesome.ttf */,
+				017D7B75C7C8673085A69F5B0AB49FB7 /* Ionicons.ttf */,
+				947C52E086595A603B8FC553AB7B03ED /* map-icons.ttf */,
+				2476EF87D588F5CEACC790A5C2CCE2A3 /* MaterialIcons-Regular.ttf */,
+				E020548D2AE407C5A3CEAF11C4701FA2 /* octicons.ttf */,
+				DB67FE3A230D2D7052C94F1A327B3491 /* open-iconic.ttf */,
+				B7639B5AD89A39EAC8983229C886C13E /* themify.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		D2C2F28A4A380D37CBC064F1C1603E10 /* Targets Support Files */ = {
@@ -573,59 +799,83 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		F14CF1379783D08196B5017B62D43FAD /* SwiftReorder */ = {
+		D2CCC41464D4BD62DAFB32D4DC374751 /* IBInspectable */ = {
 			isa = PBXGroup;
 			children = (
-				CF581FA1B2BAE83E7F5E492C4ED4893E /* ReorderController.swift */,
-				2C5AFE66358472BC6008D9C5B8189321 /* ReorderController+AutoScroll.swift */,
-				B47EBA6F980E640CBC57E925EB0CCB46 /* ReorderController+DestinationRow.swift */,
-				C121FAB75976BA70A0F989AB1EF11336 /* ReorderController+GestureRecognizer.swift */,
-				7E697007FCFAB63B853C99F25BDAA76C /* ReorderController+SnapshotView.swift */,
-				0588A3506471F2F59EF54783C596B6C7 /* UITableView+Reorder.swift */,
-				17E5BA3D5A68CD4210EE905BDE601684 /* Support Files */,
+				4D3AE2D7F30116870AF4E54FB68F1C4C /* IBL10n.swift */,
+				646F0538C40C1055B278D26D8F8B6E4F /* UIBarItem+IBL10n.swift */,
+				6F7D48164A5A75F27B40BCF677F50ECB /* UIButton+IBL10n.swift */,
+				E58EA0D64EED9BF97BF94E49DCF0432F /* UIDatePicker+IBL10n.swift */,
+				CD72DB53B57A46217094D858CD64987E /* UILabel+IBL10n.swift */,
+				AC4419FF3506F407A01DB0BFD0C984A0 /* UINavigationItem+IBL10n.swift */,
+				8B3A7158CD294040BAAA4D24E94810B6 /* UISearchBar+IBL10n.swift */,
+				BDCA43A9828F79BE60B6729B4EB6283D /* UISegmentedControl+IBL10n.swift */,
+				F76B5C5C9271D602D557CC6C6F8FCBD7 /* UITabBarItem+IBL10n.swift */,
+				9FAAF6660A8E5217B673F9907C57C690 /* UITextField+IBL10n.swift */,
+				BA2ABCCA5B736EC15D7BF01CC489DE5A /* UIViewController+IBL10n.swift */,
+			);
+			name = IBInspectable;
+			sourceTree = "<group>";
+		};
+		D2EA5D3A7420285F4EA103EA0FF80538 /* SwiftReorder */ = {
+			isa = PBXGroup;
+			children = (
+				58DB805D2246F40CEADD2F1C9DBAC4BF /* ReorderController.swift */,
+				1E62F7C9E65C6C84BF8064583539F8C3 /* ReorderController+AutoScroll.swift */,
+				B3BDFC938950FA7D71D05B4C19CED6A2 /* ReorderController+DestinationRow.swift */,
+				A433D3197BD88DF34EDC81A5640F2985 /* ReorderController+GestureRecognizer.swift */,
+				2D1354E92EC21673AA5B225DF3549E73 /* ReorderController+SnapshotView.swift */,
+				3AECA4A543C2C94E13F50C203AFE32BA /* UITableView+Reorder.swift */,
+				437B562C4C7FE1DE0321DDE8E5982CC4 /* Support Files */,
 			);
 			name = SwiftReorder;
 			path = SwiftReorder;
 			sourceTree = "<group>";
 		};
-		F469B631793C6B848FD62E0A538A00B8 /* GCCalendar */ = {
+		E3637EEACB5D26D073285BAE42108EF9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1BDCA7E4DDB37E41CAF0DCD2732A238F /* GCCalendar.h */,
-				6DB2868815C84F9E338947C674D4AD2F /* GCCalendarConfiguration.swift */,
-				278A1CCADAA1BE8259D25C36E41D8CFA /* GCCalendarDayView.swift */,
-				6A2A6244595FE0203BE7730E7E734F70 /* GCCalendarMonthView.swift */,
-				5EC15294EBD095E79EB81BDA0F03DC4A /* GCCalendarView.swift */,
-				18320DAA3BB5388578FA3EF0CDCEC272 /* GCCalendarViewDelegate.swift */,
-				7904AA3C8DB63D1A4ABBDCF0616E0F71 /* GCCalendarWeekView.swift */,
-				85501D26F3514F3FDE9B3589396F3163 /* Support Files */,
+				B236B9F92CA8D31D65296F60204B2319 /* Info.plist */,
+				693B83610E8DEB0646A6D2ED48448A7E /* L10n-swift.modulemap */,
+				3451A2102B41CD7545E7E2EA066DD46E /* L10n-swift.xcconfig */,
+				C94D6C886F6846B07F2E60CCE87C9200 /* L10n-swift-dummy.m */,
+				D427D436C652DDCC5C72B4A8B8763F05 /* L10n-swift-prefix.pch */,
+				3F5AD0CEB8F8EB714FA3886E6BE72DC5 /* L10n-swift-umbrella.h */,
 			);
-			name = GCCalendar;
-			path = GCCalendar;
+			name = "Support Files";
+			path = "../Target Support Files/L10n-swift";
 			sourceTree = "<group>";
 		};
-		FEAA689F48AB3B6E232905F60C87982D /* Resources */ = {
+		ED8D2413CA7733F3853741B6583BF409 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4EEFB261637CEC695F259BB3BD97D5E7 /* FontAwesome.ttf */,
-				0639A5D3247A0F8C5E59E44B9C33BD8C /* Ionicons.ttf */,
-				21A689C477C2D4B7815193A3A5BCA373 /* map-icons.ttf */,
-				6D79FD83B421374BFECFBDBC9FA475FF /* MaterialIcons-Regular.ttf */,
-				A6841B36C01AE03F154EA33068EE4E9D /* octicons.ttf */,
-				67E9307143D6CE32B30BF57EF7C59ED6 /* open-iconic.ttf */,
-				E15676020F98DA4535DCB9B3ABAF4BB7 /* themify.ttf */,
+				785DD65ED808F0936AE414312E19FFD7 /* ChromaColorPicker.modulemap */,
+				40C42A65AC4D065D2D89745F401EE589 /* ChromaColorPicker.xcconfig */,
+				DCC81241F4772C7F3293CAFDAC74A573 /* ChromaColorPicker-dummy.m */,
+				7FC239D6C19AC33B9A37A2639F8BB67C /* ChromaColorPicker-prefix.pch */,
+				E4881D0F2B76A879506A323C3DF2AF7B /* ChromaColorPicker-umbrella.h */,
+				67EA0DE37C06F697FEE4C160F71C2086 /* Info.plist */,
 			);
-			name = Resources;
+			name = "Support Files";
+			path = "../Target Support Files/ChromaColorPicker";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3265A315B82B4EAB27AC58238205F7FE /* Headers */ = {
+		08B77BA924D21C9F222D67F05ABEAE52 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6BEB28F78DE14DAE76AC51F6FCAD84D /* SwiftIconFont-umbrella.h in Headers */,
+				CCB9BD73F4FB8CDEE7BCA20CE4B9CBE7 /* FlagKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B2BC51E96381337E55FA36E5CD85FA1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A577E55527C0E2EC80194C5A8DD4FA9 /* SwiftReorder-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,6 +888,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4A0747E7F8E1A162B371B18DE74CF1C4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				351E4295122B159BD754C0534A60F5D9 /* Pods-Planner-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		537E3AFB9460117F3179E3397FA5A563 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -647,50 +905,110 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		780E3DA063611E7B57F275B43EF25FCE /* Headers */ = {
+		6C024C06553B776BFB79C53290FEFBF9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C2D3362441CDA1D87EDEA8FDC07198A /* Toaster-umbrella.h in Headers */,
-				7120211D60464DFD2E3194A6C2A29E5C /* Toaster.h in Headers */,
+				8FE94C82137C31499110F1DE38BB78B8 /* Toaster-umbrella.h in Headers */,
+				5E761885393EBCAA4490C7073822D5E4 /* Toaster.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7E581627DEFD8388AFFD85B4E7DAC711 /* Headers */ = {
+		9303AA18CD7632C9F5FEFF3919CD63B5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23B13C2AFFAA65C3DA28C2D6E3BD71A3 /* Pods-Planner-umbrella.h in Headers */,
+				3BE37217490820944B8E7E9F784F3E5A /* SideMenu-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FABA397A83B5FE1207BA97C61877AF67 /* Headers */ = {
+		FC3AD3183E38855B9B47369062B28B67 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14D65317BA51FD4D1EE26CA69914DFDD /* SideMenu-umbrella.h in Headers */,
+				2137783E6379F8386A2AAD2DAD0FE20B /* SwiftIconFont-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FCF6E31F93B2E0A9876B8318EFCDDFE5 /* Headers */ = {
+		FF51EE6E12DC193FEA81B0CE0BA77896 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27245A78AF268050D94988B92F87C62F /* SwiftReorder-umbrella.h in Headers */,
+				2524C011659164E641BEC6A7648494C3 /* L10n-swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1CA31E7064B2611D47376F915613062F /* SwiftIconFont */ = {
+		33DF14505F36AF9F6FF97063882702E0 /* FlagKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9800F51D06EE96DCF019B93327E7074 /* Build configuration list for PBXNativeTarget "SwiftIconFont" */;
+			buildConfigurationList = C62AA67FE82F064C08E9D924360BADAE /* Build configuration list for PBXNativeTarget "FlagKit" */;
 			buildPhases = (
-				04EFAAEEFAE07B0EC7CD5EFA200A73D1 /* Sources */,
-				D5FB9EEFF21718E24A18DA22A1272157 /* Frameworks */,
-				958F36DBED08D231B9A1699DD2133C98 /* Resources */,
-				3265A315B82B4EAB27AC58238205F7FE /* Headers */,
+				CECA6982504543F53FEEAD95701310B6 /* Sources */,
+				E4C139631F455E14FBE9358EE0D68FA0 /* Frameworks */,
+				9A6AC8EE6B943A1525D65A6BF50AED49 /* Resources */,
+				08B77BA924D21C9F222D67F05ABEAE52 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlagKit;
+			productName = FlagKit;
+			productReference = BB4F1D393FD678671C6D47FC9CF672D5 /* FlagKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		53C05B2B545C17D6B1F1B46A77CC1098 /* SideMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25D6D0D4E1546254286FB9F0DADF1413 /* Build configuration list for PBXNativeTarget "SideMenu" */;
+			buildPhases = (
+				902AC51C47E5AD65DDABF11ADDF7ADAB /* Sources */,
+				E8459C2A681114F8BD98300739FCD5D8 /* Frameworks */,
+				9303AA18CD7632C9F5FEFF3919CD63B5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SideMenu;
+			productName = SideMenu;
+			productReference = 941BD17AA134A62EF57955D98D57C670 /* SideMenu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5DB1C8D84EBB7658CAD5B1A94FED3D17 /* Pods-Planner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6587C16758A6BE72352CB7BFA25E9269 /* Build configuration list for PBXNativeTarget "Pods-Planner" */;
+			buildPhases = (
+				7442E7DE6E9582DD3E26C73465D7AF01 /* Sources */,
+				0467BCE29222ACBDB95746CEBA0E05E9 /* Frameworks */,
+				4A0747E7F8E1A162B371B18DE74CF1C4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E48EF04D879DA71ACF55A86231F64AE /* PBXTargetDependency */,
+				F07688B533B852B0A188E79D41276D5E /* PBXTargetDependency */,
+				1044FAE3895EACC5E1C47EF5E5329050 /* PBXTargetDependency */,
+				E1DEAC6FE54146E02FA7575EC02D0D87 /* PBXTargetDependency */,
+				57A04129FDDA00981FA041BF00FBF21B /* PBXTargetDependency */,
+				F66BF67986E47A527E0579ED0CACDC93 /* PBXTargetDependency */,
+				025E08EDD76847B5576F923AD8913E3D /* PBXTargetDependency */,
+				C0A5008EA8E1C9E4ED1C705B563F8A7B /* PBXTargetDependency */,
+			);
+			name = "Pods-Planner";
+			productName = "Pods-Planner";
+			productReference = 8DDB6281289A837A414A7C1A714A0274 /* Pods_Planner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		669A57B25BD26D89933B4D89CC3A6517 /* SwiftIconFont */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9D52020AE61C0B9D39A464983C86FDB /* Build configuration list for PBXNativeTarget "SwiftIconFont" */;
+			buildPhases = (
+				A3607F81FB7B462C3A8379A89ECC8D95 /* Sources */,
+				FB4DD0FE3186370EC4E76DE71431EBE1 /* Frameworks */,
+				B75B199D86EFA9DDE34E15E81E688BC8 /* Resources */,
+				FC3AD3183E38855B9B47369062B28B67 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -698,24 +1016,24 @@
 			);
 			name = SwiftIconFont;
 			productName = SwiftIconFont;
-			productReference = 81D9533D35F73DAFB4E8E3112AA506B5 /* SwiftIconFont.framework */;
+			productReference = B64F919797386407B9DC5FC2581E5CEF /* SwiftIconFont.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		29D34AA50A144D18273772DAC6C30F11 /* SwiftReorder */ = {
+		7C1D5697F336E95BECD269A3DD51F86A /* Toaster */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93278B1D58F7FB85BBF48DF20C1CA1EB /* Build configuration list for PBXNativeTarget "SwiftReorder" */;
+			buildConfigurationList = 6679D4F807D2723FE8CD404994BF4AD9 /* Build configuration list for PBXNativeTarget "Toaster" */;
 			buildPhases = (
-				A6E1548D0FFB1ECBEF54A66D23C91155 /* Sources */,
-				7C110650DAA74F8A35000327C62DE45E /* Frameworks */,
-				FCF6E31F93B2E0A9876B8318EFCDDFE5 /* Headers */,
+				CDABA4F95F07A62A1214AA122A225E59 /* Sources */,
+				4C639779E24DC2284F0AB03694611F9C /* Frameworks */,
+				6C024C06553B776BFB79C53290FEFBF9 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SwiftReorder;
-			productName = SwiftReorder;
-			productReference = 465F18CF77D30F5713BAB558858DD107 /* SwiftReorder.framework */;
+			name = Toaster;
+			productName = Toaster;
+			productReference = 447E444DC81C90E5AF8C9DA26982853F /* Toaster.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		99AA48135ECB557858428F797600458F /* ChromaColorPicker */ = {
@@ -732,41 +1050,7 @@
 			);
 			name = ChromaColorPicker;
 			productName = ChromaColorPicker;
-			productReference = C67A2F9DF9AA020E7C4D2E1CCB79A863 /* ChromaColorPicker.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		AD8CD4C677343A90405866EBF822FE1B /* SideMenu */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 55E14B81E74CD920C76CAE3E96BF5678 /* Build configuration list for PBXNativeTarget "SideMenu" */;
-			buildPhases = (
-				EBE6AD3C8B68432DBE407B009F791510 /* Sources */,
-				7369A9CC0D513C43EA75787282B29E83 /* Frameworks */,
-				FABA397A83B5FE1207BA97C61877AF67 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SideMenu;
-			productName = SideMenu;
-			productReference = C269DB95002D6E2CB0E6206C28799FF2 /* SideMenu.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		BCA38300740BDA0D17A9BCF2108FBCDE /* Toaster */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 325BE99917501B395E2CF602955F8DCA /* Build configuration list for PBXNativeTarget "Toaster" */;
-			buildPhases = (
-				E52B5163CB4322F3935DD98BC83029C5 /* Sources */,
-				558E06546E1AB3D5B8B91C3440C4FEEB /* Frameworks */,
-				780E3DA063611E7B57F275B43EF25FCE /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Toaster;
-			productName = Toaster;
-			productReference = 190B45CE69EDB4CE550BBE6C0C5E2D77 /* Toaster.framework */;
+			productReference = BD262598C8F83CB222F0F15D9F05D1A6 /* ChromaColorPicker.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EB11F443CE4B3DDE0556E1D7A6169D9F /* GCCalendar */ = {
@@ -783,30 +1067,41 @@
 			);
 			name = GCCalendar;
 			productName = GCCalendar;
-			productReference = 10A53ECADE65AF960CE2D2072EE6CDC1 /* GCCalendar.framework */;
+			productReference = A4B5AED3C2CCB94F8EE8032B8F883989 /* GCCalendar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FC123E299CAC9EE0E34A7C8FEA5713AB /* Pods-Planner */ = {
+		EF552D5E869A18076B883965F3641359 /* SwiftReorder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3E009597CD8A8DBA2B910A516798A5D0 /* Build configuration list for PBXNativeTarget "Pods-Planner" */;
+			buildConfigurationList = A523348BF8726CC2E1513346824A4F41 /* Build configuration list for PBXNativeTarget "SwiftReorder" */;
 			buildPhases = (
-				CA53D41B6235731CA02C35A89D79CA37 /* Sources */,
-				DA19E1339A6966906A678D2BB5C05AD1 /* Frameworks */,
-				7E581627DEFD8388AFFD85B4E7DAC711 /* Headers */,
+				6A7BC152EAA3077444F4F36D1CA4ECFC /* Sources */,
+				49C0E5A7C7BF96694C185976FDDBDB3B /* Frameworks */,
+				0B2BC51E96381337E55FA36E5CD85FA1 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				101D5AA2CB860D240A79957734CE3196 /* PBXTargetDependency */,
-				D02203A54B1290991501DE4E8AA800DF /* PBXTargetDependency */,
-				0743B7B807AAE7E4759F19DBAF9D590F /* PBXTargetDependency */,
-				7D91D635F58E6FCC2BA6F7A21449B29C /* PBXTargetDependency */,
-				4F39CF7C8892DC9DDB15916468B81DC1 /* PBXTargetDependency */,
-				81D75FFAA3ECEE07AAC273903B0F3C7D /* PBXTargetDependency */,
 			);
-			name = "Pods-Planner";
-			productName = "Pods-Planner";
-			productReference = C29B0C5670E1ACABF22C6447440A0DBD /* Pods_Planner.framework */;
+			name = SwiftReorder;
+			productName = SwiftReorder;
+			productReference = D3B7EB4F7F2DBDE144BA10963FDD8499 /* SwiftReorder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F14D77B0A00B0C43E5358F7458689DD8 /* L10n-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E56417F628CD7E0E575E2D55EF5EE3B0 /* Build configuration list for PBXNativeTarget "L10n-swift" */;
+			buildPhases = (
+				AB62E6A5644239E4D344D985B05D4E6E /* Sources */,
+				B1C087906D339C084B61862E00DAB839 /* Frameworks */,
+				FF51EE6E12DC193FEA81B0CE0BA77896 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "L10n-swift";
+			productName = "L10n-swift";
+			productReference = F10A3DB28DC4525FD0DB328394B0A59F /* L10n_swift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -826,117 +1121,178 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = A2190916F7892C6E0695EA27D83AA40C /* Products */;
+			productRefGroup = 9F597219DE63C1A461E9CC01436CD4FA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				99AA48135ECB557858428F797600458F /* ChromaColorPicker */,
+				33DF14505F36AF9F6FF97063882702E0 /* FlagKit */,
 				EB11F443CE4B3DDE0556E1D7A6169D9F /* GCCalendar */,
-				FC123E299CAC9EE0E34A7C8FEA5713AB /* Pods-Planner */,
-				AD8CD4C677343A90405866EBF822FE1B /* SideMenu */,
-				1CA31E7064B2611D47376F915613062F /* SwiftIconFont */,
-				29D34AA50A144D18273772DAC6C30F11 /* SwiftReorder */,
-				BCA38300740BDA0D17A9BCF2108FBCDE /* Toaster */,
+				F14D77B0A00B0C43E5358F7458689DD8 /* L10n-swift */,
+				5DB1C8D84EBB7658CAD5B1A94FED3D17 /* Pods-Planner */,
+				53C05B2B545C17D6B1F1B46A77CC1098 /* SideMenu */,
+				669A57B25BD26D89933B4D89CC3A6517 /* SwiftIconFont */,
+				EF552D5E869A18076B883965F3641359 /* SwiftReorder */,
+				7C1D5697F336E95BECD269A3DD51F86A /* Toaster */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		958F36DBED08D231B9A1699DD2133C98 /* Resources */ = {
+		9A6AC8EE6B943A1525D65A6BF50AED49 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				666BC1392712EA449A753620920A1985 /* FontAwesome.ttf in Resources */,
-				484F60F5949C12AE3CDED8B14BCC538A /* Ionicons.ttf in Resources */,
-				F5081450AD96E59262D4AB40F7CF286A /* map-icons.ttf in Resources */,
-				3809FE86691A05B36AFD28824FA31874 /* MaterialIcons-Regular.ttf in Resources */,
-				95329D0DFD07219FC44EEF1DF66A4025 /* octicons.ttf in Resources */,
-				A667D986D18692F6C9A09CA730C3369E /* open-iconic.ttf in Resources */,
-				06C05B7F3E97EC9CCBE9FF88CF6FB4E6 /* themify.ttf in Resources */,
+				5ED62FEA192FE805FAAAC6DA21B3C5A4 /* FlagKit.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B75B199D86EFA9DDE34E15E81E688BC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63BBCC0D42B26F3A504C55F87EA3EB8A /* FontAwesome.ttf in Resources */,
+				BE780375E91E5464A2FC129CE8C33BB9 /* Ionicons.ttf in Resources */,
+				DD4E359891086CD3013A28D02F8CF68D /* map-icons.ttf in Resources */,
+				6B293CDDA889A2B9057BB93E3E36DF0F /* MaterialIcons-Regular.ttf in Resources */,
+				6A8ADA5F8FC4924EC052C916208CAA8F /* octicons.ttf in Resources */,
+				5872AEBDB58C52616466B6BD72DF70AB /* open-iconic.ttf in Resources */,
+				4426A9A9AC835270C5776D8DC63ED3E3 /* themify.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		04EFAAEEFAE07B0EC7CD5EFA200A73D1 /* Sources */ = {
+		6A7BC152EAA3077444F4F36D1CA4ECFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D1BF16B0348EFE992D0D8BD012193F5 /* FontAwesome.swift in Sources */,
-				D3545E475BA1E8DFC06ACEE060499827 /* FontLoader.swift in Sources */,
-				84FB16557A7D1FA8DBCEEC3E3F5D0DB4 /* Iconic.swift in Sources */,
-				9D947400D1B1168CD4B3FD4EE76599D4 /* IonIcons.swift in Sources */,
-				7081C658A02B195F61888B79F5300A1C /* MapIcon.swift in Sources */,
-				48BDE2E39F680C430CC3BB89889FC72A /* MaterialIcon.swift in Sources */,
-				CFF336FDE85C5D84D6666CAE5E2FEAC5 /* Octicon.swift in Sources */,
-				2C3AD82C2BF6193E91519B1928E44442 /* SwiftIconBarButtonItem.swift in Sources */,
-				211DD111B7ADFC0C516A5E78495C7B72 /* SwiftIconButton.swift in Sources */,
-				149D7AED320DC8E9C769CFA795BFE147 /* SwiftIconFont+NSRange.swift in Sources */,
-				78342AC938794C23B80146611E213DE5 /* SwiftIconFont+String.swift in Sources */,
-				3BE6751BDD0E366E7780302DADE25DFD /* SwiftIconFont+UIBarButtonItem.swift in Sources */,
-				B6E618ECC11AF45677B7D77F1988DC02 /* SwiftIconFont+UIButton.swift in Sources */,
-				22F57652A81D474A10EED6C8C3FBC75E /* SwiftIconFont+UIImage.swift in Sources */,
-				67BB40F98079FA57DFA207E4C6D73D0D /* SwiftIconFont+UIImageView.swift in Sources */,
-				DB804F98F00D9C73B1450B031A808F06 /* SwiftIconFont+UILabel.swift in Sources */,
-				E787CB82D67707A33F4EF78CF68C85D9 /* SwiftIconFont+UITabBarItem.swift in Sources */,
-				A8A9F31523392878909A54C0F37CE031 /* SwiftIconFont+UITextField.swift in Sources */,
-				56F5CDA641220AFCDBDDD51AAA2BAD88 /* SwiftIconFont+UITextView.swift in Sources */,
-				1DCCEB4106E40D354FC4D1263D5CE70B /* SwiftIconFont-dummy.m in Sources */,
-				FF830D559128983C709F956488A868A3 /* SwiftIconFont.swift in Sources */,
-				BDFC1CEDE0671282CD566D740A35E42D /* SwiftIconFontView.swift in Sources */,
-				139900880B4D799A2C1DBC581275CD0B /* SwiftIconLabel.swift in Sources */,
-				0A5D7F4875059FE9CA7BE986DEC3A035 /* SwiftIconStepper.swift in Sources */,
-				EB9017D5BDA4D5B9CB5E320899ABB622 /* SwiftIconTabBarItem.swift in Sources */,
-				7DCCC7E197154F712C27ED48D7591823 /* SwiftIconTextField.swift in Sources */,
-				A1F53C6FCD66815656137585D3A623CA /* SwiftIconTextView.swift in Sources */,
-				8B9FACFFA5EC7D6D91922F3771FB57F0 /* ThemifyIcon.swift in Sources */,
+				94D747881FC1F71C7282EADA0E7638EE /* ReorderController+AutoScroll.swift in Sources */,
+				AAF8BC0F01874F1F571F0AD2F9E2C1F0 /* ReorderController+DestinationRow.swift in Sources */,
+				37C21BDB80EC59E51E109DA01051B84C /* ReorderController+GestureRecognizer.swift in Sources */,
+				98B33B42A22167C9DE1393AF4DDDAF7B /* ReorderController+SnapshotView.swift in Sources */,
+				C0B3A0BCA7CF19BCDAD2ED55B37A9B73 /* ReorderController.swift in Sources */,
+				EC66041ECCCB7F61A5CA12C9907730A9 /* SwiftReorder-dummy.m in Sources */,
+				B2D2D761153C186AC89130465A7A4E81 /* UITableView+Reorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A6E1548D0FFB1ECBEF54A66D23C91155 /* Sources */ = {
+		7442E7DE6E9582DD3E26C73465D7AF01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				935C558B73F21823BA84CD837C9944FE /* ReorderController+AutoScroll.swift in Sources */,
-				A949F06998E211D9F4DE272014688003 /* ReorderController+DestinationRow.swift in Sources */,
-				75137DE0080B1AAB452DE2868FC42D5F /* ReorderController+GestureRecognizer.swift in Sources */,
-				037474CCC93BC72BE909957C1EE66BAB /* ReorderController+SnapshotView.swift in Sources */,
-				61F03919A4673FA71A48CB182D6162F2 /* ReorderController.swift in Sources */,
-				6F266B5981FB4B667C0549DAD7F65F42 /* SwiftReorder-dummy.m in Sources */,
-				4278EA94ED7EEBAD14C94CFEB1944929 /* UITableView+Reorder.swift in Sources */,
+				E596C8ED6D2525C8E69FE5CD569BE0D1 /* Pods-Planner-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA53D41B6235731CA02C35A89D79CA37 /* Sources */ = {
+		902AC51C47E5AD65DDABF11ADDF7ADAB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECB3F92E988B203B6FE3B44F87BAB1CA /* Pods-Planner-dummy.m in Sources */,
+				A668F02C120C3D4D312F84AA8CFD4634 /* SideMenu-dummy.m in Sources */,
+				FDAD6E7A542ECE6701DCAB6522010C8A /* SideMenuManager.swift in Sources */,
+				67BBD42FEA7D8CC33C53D243A85DA7D4 /* SideMenuTransition.swift in Sources */,
+				7787CD13E0DD5586B2B0169C265120E6 /* UISideMenuNavigationController.swift in Sources */,
+				713A4A2F1D93E4AFD6298A715BF28B0E /* UITableViewVibrantCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E52B5163CB4322F3935DD98BC83029C5 /* Sources */ = {
+		A3607F81FB7B462C3A8379A89ECC8D95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1D0327B4012B840B9E90D7730C413EE /* Toast.swift in Sources */,
-				8F12AFD7FD1CC63DA5A99E97AB469CFB /* ToastCenter.swift in Sources */,
-				938EBA738B924BB288DF508E3F0DF643 /* Toaster-dummy.m in Sources */,
-				2A8E68D9C2B8CE011C1A9B60654C4178 /* ToastView.swift in Sources */,
-				D7A6ACF69BE9941A49E04D91D2F9DA84 /* ToastWindow.swift in Sources */,
+				C473F45B0D6D72D1CA23E3993ED1B5EB /* FontAwesome.swift in Sources */,
+				BCFF82110593F8B22B4A2F926016193F /* FontLoader.swift in Sources */,
+				CB5BBEA021ED20A8BEAF5F412AF27B9F /* Iconic.swift in Sources */,
+				8660401C2E7867E8489B9B31736C8054 /* IonIcons.swift in Sources */,
+				CF5F2FFDE2E8E9BDB5FD21CAF619FF48 /* MapIcon.swift in Sources */,
+				892C01E54EB3013226C8D5A451CF1939 /* MaterialIcon.swift in Sources */,
+				B76160CA27718E4797E901117A168143 /* Octicon.swift in Sources */,
+				111E2217CADACD0B5E5675621C668E03 /* SwiftIconBarButtonItem.swift in Sources */,
+				32A896000BC6415502284AB0B00A5208 /* SwiftIconButton.swift in Sources */,
+				A3FD838EE21A933A163CFB4BACDEC5FD /* SwiftIconFont+NSRange.swift in Sources */,
+				8F671E8A0D03E975979EC4C9015E4AF6 /* SwiftIconFont+String.swift in Sources */,
+				AEDB26A4934C4F082FE3AA07F099E1DA /* SwiftIconFont+UIBarButtonItem.swift in Sources */,
+				4EAF11969F5D43ADAF4E108D43A16563 /* SwiftIconFont+UIButton.swift in Sources */,
+				7A2464EC62D063A8E32C67FC105A6E86 /* SwiftIconFont+UIImage.swift in Sources */,
+				4F7302AADE19D2F4E0FF7C16BC557108 /* SwiftIconFont+UIImageView.swift in Sources */,
+				1137AA100C56D0890BA381994302A9D4 /* SwiftIconFont+UILabel.swift in Sources */,
+				0458DD60DDAA6EE6852C50B16091E1A3 /* SwiftIconFont+UITabBarItem.swift in Sources */,
+				6BA93E28934D3B40442D4DC316699EC6 /* SwiftIconFont+UITextField.swift in Sources */,
+				C37108742AE3BC5A58FA70A4B446911C /* SwiftIconFont+UITextView.swift in Sources */,
+				14EA8796CAC2F9A5FF7D68AC87605877 /* SwiftIconFont-dummy.m in Sources */,
+				0C73338732313C0F76F393339EA8A585 /* SwiftIconFont.swift in Sources */,
+				95489C9A256A0F6E5C344735B01F55B5 /* SwiftIconFontView.swift in Sources */,
+				91A88031B90A102ACF1E172689AC38D6 /* SwiftIconLabel.swift in Sources */,
+				62999687A9E99335BE157BB5C3ACD17B /* SwiftIconStepper.swift in Sources */,
+				FF89E8DA08C2690CB59781CE8C314779 /* SwiftIconTabBarItem.swift in Sources */,
+				B073AA20F76BD727E7300AE693714A72 /* SwiftIconTextField.swift in Sources */,
+				A1D64B1E800D64E0DBE38D4FCD34D5D4 /* SwiftIconTextView.swift in Sources */,
+				26FCE3577E67325CA0786848D1D4E56B /* ThemifyIcon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EBE6AD3C8B68432DBE407B009F791510 /* Sources */ = {
+		AB62E6A5644239E4D344D985B05D4E6E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E9A76092B4B24B03BB1E43ABB025D52 /* SideMenu-dummy.m in Sources */,
-				FEFA26DB63ED6D438629A8A1B7285134 /* SideMenuManager.swift in Sources */,
-				F7A74B8B97FE6E18FA5731D1A95F246E /* SideMenuTransition.swift in Sources */,
-				A7E36350344CF2C8F25877CBCE917093 /* UISideMenuNavigationController.swift in Sources */,
-				7786EE19FC7C0536E18EFF0F6BC9D876 /* UITableViewVibrantCell.swift in Sources */,
+				E1C9949993D3D80AF1EEBA75F65FD493 /* Date+Localizable.swift in Sources */,
+				608C96777EC6788A7F672A93B847DAD3 /* DictionaryResource.swift in Sources */,
+				3138B9A363FC31D5CC890117AC34CB73 /* Double+Localizable.swift in Sources */,
+				CA4A64D4D5634DCF4E525A5D47D5B533 /* EmptyResource.swift in Sources */,
+				706A27BF1FD31D6C1B70D489451ABB97 /* IBL10n.swift in Sources */,
+				C66338ADEBFE0AA17307C60F06BD6748 /* Int+Localizable.swift in Sources */,
+				D357514C5308DCD5096C70D0577DE1E0 /* L10n+localizable.swift in Sources */,
+				0E7248A2C683CA210A81D58F1D8DB23F /* L10n+static.swift in Sources */,
+				7280DCBB506C537D278E5F0EF92FC3CC /* L10n+stringConvertible.swift in Sources */,
+				5DFA753EC2F37F9E9D0A71A13DE5D173 /* L10n-swift-dummy.m in Sources */,
+				36A94199D408767E251E35E7F3A9A57C /* L10n.swift in Sources */,
+				D3E0B66B515128B1E3A68C169093D4AB /* Localizable.swift in Sources */,
+				DA493E0D158662EA5C978B572DC6F8AC /* Logger.swift in Sources */,
+				16CCA29F2BD2B6D6427BC00189C8BC8A /* NotificationName+L10nLanguageChanged.swift in Sources */,
+				14147826F142F0C66437AB40B21857D1 /* NSNumber+Localizable.swift in Sources */,
+				2C37E00A9ADF3DC2A8EAAF4856CDA90F /* Plural.stringsdict in Sources */,
+				EC439D75811FF6A459A922238E4B7739 /* Plural.swift in Sources */,
+				3FAAC699DAAFFB5581E64155408C46D8 /* Resource.swift in Sources */,
+				186DCC703F0E6BCB2B22A7E0D0701A20 /* ResourceContainer.swift in Sources */,
+				302EE1A99375F986E2B1E2A4C75F961E /* String+Localizable.swift in Sources */,
+				7DB503C64A4446A4C4BE2CA3C7E86BC5 /* StringResource.swift in Sources */,
+				7C1DC06B198C9A0A97656E2DDC019F21 /* UIBarItem+IBL10n.swift in Sources */,
+				7C1D762BB15D354DDAE81B36A932F979 /* UIButton+IBL10n.swift in Sources */,
+				2189DF4BE15A55BFC11FE43751682CF5 /* UIDatePicker+IBL10n.swift in Sources */,
+				28CA30955BEA90964C1A5113ED17BA2F /* UILabel+IBL10n.swift in Sources */,
+				574DA2FD3A22700FE13BB52D031584C2 /* UINavigationItem+IBL10n.swift in Sources */,
+				C9ADA514B107AE9C97BDBD9D7BAB3BFB /* UISearchBar+IBL10n.swift in Sources */,
+				7447E02C5A01716380A18EFF62AB0325 /* UISegmentedControl+IBL10n.swift in Sources */,
+				C89E6C881AEE3F95AB90E1B94DB41E38 /* UITabBarItem+IBL10n.swift in Sources */,
+				41E58181166B2B8C55355E8D9091ED82 /* UITextField+IBL10n.swift in Sources */,
+				243BC2551F3786983D1CE9351DD4C5D8 /* UIViewController+IBL10n.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDABA4F95F07A62A1214AA122A225E59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5BECD3DCFBAA5F98AC2C08E1A23F1C2 /* Toast.swift in Sources */,
+				4BF7FA4B2C0E1AC30C6562574A36B381 /* ToastCenter.swift in Sources */,
+				1D4AEA3DB8207C4919814F137EDD4E14 /* Toaster-dummy.m in Sources */,
+				A8A0B6C4A8F7AD0842104E34EB138289 /* ToastView.swift in Sources */,
+				972501077D4726D1724912BDE7FA66F7 /* ToastWindow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CECA6982504543F53FEEAD95701310B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91AD01924FF9F6A73ADC33C340AE9169 /* Flag.swift in Sources */,
+				2212097A17C09C4177550A5574BD1D61 /* FlagKit-dummy.m in Sources */,
+				CE038A5EC8BCB8F2233E8CB0938647D4 /* FlagKit.swift in Sources */,
+				6A6D3A2F3310E571BAAFD13E57D28942 /* FlagStyle.swift in Sources */,
+				9C86F0C8765FF944B344A78F54312A7F /* NSImage.swift in Sources */,
+				FA92EBB9D7BDB7746287DB2CE59ECFBE /* UIImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -971,79 +1327,60 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0743B7B807AAE7E4759F19DBAF9D590F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SideMenu;
-			target = AD8CD4C677343A90405866EBF822FE1B /* SideMenu */;
-			targetProxy = 1A1BF4E1193AD771959881DFD2091CF3 /* PBXContainerItemProxy */;
-		};
-		101D5AA2CB860D240A79957734CE3196 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ChromaColorPicker;
-			target = 99AA48135ECB557858428F797600458F /* ChromaColorPicker */;
-			targetProxy = 0786BACEAAA511950DC999078E6BA9F4 /* PBXContainerItemProxy */;
-		};
-		4F39CF7C8892DC9DDB15916468B81DC1 /* PBXTargetDependency */ = {
+		025E08EDD76847B5576F923AD8913E3D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftReorder;
-			target = 29D34AA50A144D18273772DAC6C30F11 /* SwiftReorder */;
-			targetProxy = FC1D33CFFE45AE0213FAC22023242C36 /* PBXContainerItemProxy */;
+			target = EF552D5E869A18076B883965F3641359 /* SwiftReorder */;
+			targetProxy = 1752736E109512A017223B74B76375B8 /* PBXContainerItemProxy */;
 		};
-		7D91D635F58E6FCC2BA6F7A21449B29C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftIconFont;
-			target = 1CA31E7064B2611D47376F915613062F /* SwiftIconFont */;
-			targetProxy = 79580C48DC120D3C8852AD0F06A52CDE /* PBXContainerItemProxy */;
-		};
-		81D75FFAA3ECEE07AAC273903B0F3C7D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Toaster;
-			target = BCA38300740BDA0D17A9BCF2108FBCDE /* Toaster */;
-			targetProxy = C86D639D631375B75A403558CF4C42E9 /* PBXContainerItemProxy */;
-		};
-		D02203A54B1290991501DE4E8AA800DF /* PBXTargetDependency */ = {
+		1044FAE3895EACC5E1C47EF5E5329050 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GCCalendar;
 			target = EB11F443CE4B3DDE0556E1D7A6169D9F /* GCCalendar */;
-			targetProxy = 806D96720951FD57AB7E302012DF4158 /* PBXContainerItemProxy */;
+			targetProxy = C39CD19D2B91CF0762336AF6712B315A /* PBXContainerItemProxy */;
+		};
+		57A04129FDDA00981FA041BF00FBF21B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SideMenu;
+			target = 53C05B2B545C17D6B1F1B46A77CC1098 /* SideMenu */;
+			targetProxy = 8E1BF5A90B95CBF07D6EB73B627E240E /* PBXContainerItemProxy */;
+		};
+		6E48EF04D879DA71ACF55A86231F64AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ChromaColorPicker;
+			target = 99AA48135ECB557858428F797600458F /* ChromaColorPicker */;
+			targetProxy = B5F32AE49438C2FD198F4926BA90FCDF /* PBXContainerItemProxy */;
+		};
+		C0A5008EA8E1C9E4ED1C705B563F8A7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Toaster;
+			target = 7C1D5697F336E95BECD269A3DD51F86A /* Toaster */;
+			targetProxy = 3EB2C5602E3BD1FFEAA405E6B1E6D317 /* PBXContainerItemProxy */;
+		};
+		E1DEAC6FE54146E02FA7575EC02D0D87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "L10n-swift";
+			target = F14D77B0A00B0C43E5358F7458689DD8 /* L10n-swift */;
+			targetProxy = 1CC06FB5D3E19002246FC8B4A9C60D0D /* PBXContainerItemProxy */;
+		};
+		F07688B533B852B0A188E79D41276D5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlagKit;
+			target = 33DF14505F36AF9F6FF97063882702E0 /* FlagKit */;
+			targetProxy = 0D67C402898ABAAA6C957222CBBF057C /* PBXContainerItemProxy */;
+		};
+		F66BF67986E47A527E0579ED0CACDC93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftIconFont;
+			target = 669A57B25BD26D89933B4D89CC3A6517 /* SwiftIconFont */;
+			targetProxy = ECB51DD8FB126F4F2D9A19A1F868B0B9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		03C5C976E49B3FCD8DDD7524C9F172A8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7C54858D37B22E0BD74108B34D706CC /* SwiftIconFont.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftIconFont/SwiftIconFont-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftIconFont/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftIconFont/SwiftIconFont.modulemap";
-				PRODUCT_NAME = SwiftIconFont;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		066BA102A4AFCBF1248A0DD9BD54258A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09628D9B90982B31E6E3F4BF0CB153AC /* GCCalendar.xcconfig */;
+			baseConfigurationReference = 43921D04F822C4D11F19F6FFD4038A06 /* GCCalendar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1072,9 +1409,72 @@
 			};
 			name = Debug;
 		};
-		11436445DDC021670CCD824967A81949 /* Debug */ = {
+		1234945AAD5AB5E6A5C314CFA556C8B1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B514FC9201046D4C6F4F860B091213C6 /* SideMenu.xcconfig */;
+			baseConfigurationReference = 7BF2BBD6CC19196B9258791897E5EA9B /* Toaster.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Toaster/Toaster-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Toaster/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Toaster/Toaster.modulemap";
+				PRODUCT_NAME = Toaster;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1826CDBB23C3DC74BF825A394ACC7FF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72DD2E7D5809EF1308EC1C04478FBA47 /* SwiftIconFont.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftIconFont/SwiftIconFont-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftIconFont/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftIconFont/SwiftIconFont.modulemap";
+				PRODUCT_NAME = SwiftIconFont;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1F8337B33C24AC7A02EF0A15E93C337A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F7F16708214F43B78D1385AD6DEED55 /* SideMenu.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1105,7 +1505,7 @@
 		};
 		206EFE5129D09FFB6113AC2563BBE1EC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2E4D5CAB12D87C8A1C0BAED4010D925 /* ChromaColorPicker.xcconfig */;
+			baseConfigurationReference = 40C42A65AC4D065D2D89745F401EE589 /* ChromaColorPicker.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1134,6 +1534,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		20A3C26937D44F3B9DE4276069D5B64F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2EFC654E7098DCB0E6676E36E8A773F /* SwiftReorder.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftReorder/SwiftReorder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftReorder/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftReorder/SwiftReorder.modulemap";
+				PRODUCT_NAME = SwiftReorder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		323A24856F1A4871A780301AF5C02A2A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1198,10 +1629,11 @@
 			};
 			name = Debug;
 		};
-		39CD08266AF76EB7E6B4E57052A58DEC /* Release */ = {
+		363150F720701C9B7AC2B0C468772C2B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD79D2266C277391C3B4387C86AF6A7D /* Toaster.xcconfig */;
+			baseConfigurationReference = F87693F986AC50313D291A4D6234DD05 /* FlagKit.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1211,13 +1643,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Toaster/Toaster-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Toaster/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FlagKit/FlagKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlagKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Toaster/Toaster.modulemap";
-				PRODUCT_NAME = Toaster;
+				MODULEMAP_FILE = "Target Support Files/FlagKit/FlagKit.modulemap";
+				PRODUCT_NAME = FlagKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1232,7 +1664,7 @@
 		};
 		3A97F4A08D8FBA1D5B260C7151C28FE2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09628D9B90982B31E6E3F4BF0CB153AC /* GCCalendar.xcconfig */;
+			baseConfigurationReference = 43921D04F822C4D11F19F6FFD4038A06 /* GCCalendar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1264,7 +1696,7 @@
 		};
 		4FE9CCD48174E19715DFA0C4E1C03274 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2E4D5CAB12D87C8A1C0BAED4010D925 /* ChromaColorPicker.xcconfig */;
+			baseConfigurationReference = 40C42A65AC4D065D2D89745F401EE589 /* ChromaColorPicker.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1293,7 +1725,137 @@
 			};
 			name = Debug;
 		};
-		7B31F83C5D45BDABEF915686E38BBDE6 /* Debug */ = {
+		6338B133AAD23051C075C0C6BAF6ED6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00847315DE69C8C198E2F53AA55C196D /* Pods-Planner.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Planner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Planner/Pods-Planner.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Planner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7A4B8CF16FF04304B355A9C9B194BF00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2EFC654E7098DCB0E6676E36E8A773F /* SwiftReorder.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftReorder/SwiftReorder-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftReorder/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftReorder/SwiftReorder.modulemap";
+				PRODUCT_NAME = SwiftReorder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8316128A851D8C86490F2F9DA77875DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F87693F986AC50313D291A4D6234DD05 /* FlagKit.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FlagKit/FlagKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlagKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FlagKit/FlagKit.modulemap";
+				PRODUCT_NAME = FlagKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		839278ECBBA0FB053551F8030993D06C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3451A2102B41CD7545E7E2EA066DD46E /* L10n-swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/L10n-swift/L10n-swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/L10n-swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/L10n-swift/L10n-swift.modulemap";
+				PRODUCT_NAME = L10n_swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C092EE85C7F955A7FDF30FE632266090 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 160128278EBDB58226DBECE6445E4E76 /* Pods-Planner.debug.xcconfig */;
 			buildSettings = {
@@ -1322,37 +1884,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7BA7CC842C997A686DF6CA4947DB7CCE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEFDC345B803EF6897CF76B40A7DE4EF /* SwiftReorder.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftReorder/SwiftReorder-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftReorder/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftReorder/SwiftReorder.modulemap";
-				PRODUCT_NAME = SwiftReorder;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1417,139 +1948,9 @@
 			};
 			name = Release;
 		};
-		D1985128972BB03706A7325518A00880 /* Release */ = {
+		D32E0ACB736CA283C9F393FAE07831E7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7C54858D37B22E0BD74108B34D706CC /* SwiftIconFont.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftIconFont/SwiftIconFont-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftIconFont/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftIconFont/SwiftIconFont.modulemap";
-				PRODUCT_NAME = SwiftIconFont;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D886972D338B00D7E8A269A6B2117992 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEFDC345B803EF6897CF76B40A7DE4EF /* SwiftReorder.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftReorder/SwiftReorder-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftReorder/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftReorder/SwiftReorder.modulemap";
-				PRODUCT_NAME = SwiftReorder;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E820F35F4B7CDA5459D1E20A1E0F4C37 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00847315DE69C8C198E2F53AA55C196D /* Pods-Planner.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Planner/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Planner/Pods-Planner.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Planner;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		EDD039F38E614DA485CB34DA5984333F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD79D2266C277391C3B4387C86AF6A7D /* Toaster.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Toaster/Toaster-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Toaster/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Toaster/Toaster.modulemap";
-				PRODUCT_NAME = Toaster;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FC0F71BC1CAD29ABB76598D6354E77AD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B514FC9201046D4C6F4F860B091213C6 /* SideMenu.xcconfig */;
+			baseConfigurationReference = 8F7F16708214F43B78D1385AD6DEED55 /* SideMenu.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1579,6 +1980,101 @@
 			};
 			name = Release;
 		};
+		E24DBC4C397B457A5BD6B1B305E3BA87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BF2BBD6CC19196B9258791897E5EA9B /* Toaster.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Toaster/Toaster-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Toaster/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Toaster/Toaster.modulemap";
+				PRODUCT_NAME = Toaster;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4854398C28254B2237523CA8476EFCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72DD2E7D5809EF1308EC1C04478FBA47 /* SwiftIconFont.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftIconFont/SwiftIconFont-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftIconFont/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftIconFont/SwiftIconFont.modulemap";
+				PRODUCT_NAME = SwiftIconFont;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FC042FF0C33B8D349C0964FC9F76EC05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3451A2102B41CD7545E7E2EA066DD46E /* L10n-swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/L10n-swift/L10n-swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/L10n-swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/L10n-swift/L10n-swift.modulemap";
+				PRODUCT_NAME = L10n_swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1587,6 +2083,15 @@
 			buildConfigurations = (
 				066BA102A4AFCBF1248A0DD9BD54258A /* Debug */,
 				3A97F4A08D8FBA1D5B260C7151C28FE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25D6D0D4E1546254286FB9F0DADF1413 /* Build configuration list for PBXNativeTarget "SideMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F8337B33C24AC7A02EF0A15E93C337A /* Debug */,
+				D32E0ACB736CA283C9F393FAE07831E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1600,24 +2105,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		325BE99917501B395E2CF602955F8DCA /* Build configuration list for PBXNativeTarget "Toaster" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EDD039F38E614DA485CB34DA5984333F /* Debug */,
-				39CD08266AF76EB7E6B4E57052A58DEC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3E009597CD8A8DBA2B910A516798A5D0 /* Build configuration list for PBXNativeTarget "Pods-Planner" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7B31F83C5D45BDABEF915686E38BBDE6 /* Debug */,
-				E820F35F4B7CDA5459D1E20A1E0F4C37 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		543A042E3FD27E013465D142854479E1 /* Build configuration list for PBXNativeTarget "ChromaColorPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1627,29 +2114,56 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		55E14B81E74CD920C76CAE3E96BF5678 /* Build configuration list for PBXNativeTarget "SideMenu" */ = {
+		6587C16758A6BE72352CB7BFA25E9269 /* Build configuration list for PBXNativeTarget "Pods-Planner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				11436445DDC021670CCD824967A81949 /* Debug */,
-				FC0F71BC1CAD29ABB76598D6354E77AD /* Release */,
+				C092EE85C7F955A7FDF30FE632266090 /* Debug */,
+				6338B133AAD23051C075C0C6BAF6ED6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		93278B1D58F7FB85BBF48DF20C1CA1EB /* Build configuration list for PBXNativeTarget "SwiftReorder" */ = {
+		6679D4F807D2723FE8CD404994BF4AD9 /* Build configuration list for PBXNativeTarget "Toaster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7BA7CC842C997A686DF6CA4947DB7CCE /* Debug */,
-				D886972D338B00D7E8A269A6B2117992 /* Release */,
+				E24DBC4C397B457A5BD6B1B305E3BA87 /* Debug */,
+				1234945AAD5AB5E6A5C314CFA556C8B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9800F51D06EE96DCF019B93327E7074 /* Build configuration list for PBXNativeTarget "SwiftIconFont" */ = {
+		A523348BF8726CC2E1513346824A4F41 /* Build configuration list for PBXNativeTarget "SwiftReorder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				03C5C976E49B3FCD8DDD7524C9F172A8 /* Debug */,
-				D1985128972BB03706A7325518A00880 /* Release */,
+				20A3C26937D44F3B9DE4276069D5B64F /* Debug */,
+				7A4B8CF16FF04304B355A9C9B194BF00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C62AA67FE82F064C08E9D924360BADAE /* Build configuration list for PBXNativeTarget "FlagKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8316128A851D8C86490F2F9DA77875DB /* Debug */,
+				363150F720701C9B7AC2B0C468772C2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9D52020AE61C0B9D39A464983C86FDB /* Build configuration list for PBXNativeTarget "SwiftIconFont" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1826CDBB23C3DC74BF825A394ACC7FF4 /* Debug */,
+				E4854398C28254B2237523CA8476EFCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E56417F628CD7E0E575E2D55EF5EE3B0 /* Build configuration list for PBXNativeTarget "L10n-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				839278ECBBA0FB053551F8030993D06C /* Debug */,
+				FC042FF0C33B8D349C0964FC9F76EC05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

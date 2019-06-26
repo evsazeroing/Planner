@@ -73,21 +73,6 @@ extension Crud{
         save()
     }
 
-    // получить все объекты без сортировки
-    func getAll() -> [Item] {
-
-        let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest() as! NSFetchRequest<Self.Item> // объект-контейнер для выборки данных
-
-        do {
-            items = try context.fetch(fetchRequest) // выполнение выборки (select)
-        } catch {
-            fatalError("Fetching Failed")
-        }
-
-        return items
-
-    }
-
 
 }
 

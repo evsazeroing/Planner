@@ -135,7 +135,9 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ChromaColorPicker/ChromaColorPicker.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FlagKit/FlagKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GCCalendar/GCCalendar.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/L10n-swift/L10n_swift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftIconFont/SwiftIconFont.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftReorder/SwiftReorder.framework"
@@ -143,7 +145,9 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ChromaColorPicker/ChromaColorPicker.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FlagKit/FlagKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GCCalendar/GCCalendar.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/L10n-swift/L10n_swift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftIconFont/SwiftIconFont.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftReorder/SwiftReorder.framework"

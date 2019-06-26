@@ -25,7 +25,20 @@ class TaskDaoDbImpl: TaskSearchDAO{
 
     // MARK: dao
 
-  
+    // получить все объекты
+    func getAll() -> [Item] {
+
+        let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest() // объект-контейнер для выборки данных
+
+        do {
+            items = try context.fetch(fetchRequest) // выполнение выборки (select)
+        } catch {
+            fatalError("Fetching Failed")
+        }
+
+        return items
+
+    }
 
     // получить все объекты
     func getAll(sortType:SortType?) -> [Item] {
