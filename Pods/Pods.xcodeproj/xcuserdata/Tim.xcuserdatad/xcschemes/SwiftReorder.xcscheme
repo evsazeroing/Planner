@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EF552D5E869A18076B883965F3641359"
+               BlueprintIdentifier = "ABB593583DB8F83752BEE5B6B8BC4CA9"
                BlueprintName = "SwiftReorder"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "SwiftReorder.framework">

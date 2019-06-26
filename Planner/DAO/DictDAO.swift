@@ -1,5 +1,6 @@
 
 import Foundation
+import CoreData
 
 // справочные значения с возможностью выделения элементов (для фильтрации задач или других целей)
 protocol DictDAO: Crud where Item: Checkable{
@@ -10,9 +11,25 @@ protocol DictDAO: Crud where Item: Checkable{
 
 extension DictDAO{
 
-    // все выделенные элементы из коллекции
+    // вернуть выбранные значения справочников (для сортировки списка задач)
     func checkedItems() -> [Item]{
-        return getAll().filter(){$0.checked == true}
+
+        let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest() as! NSFetchRequest<Self.Item> // объект-контейнер для выборки данных
+
+        // объект-контейнер для добавления условий
+        var predicate = NSPredicate(format: "checked=true")
+
+        fetchRequest.predicate = predicate // добавляем предикат в контейнер запроса
+
+        var tmpItems:[Item]
+
+        do {
+            tmpItems = try context.fetch(fetchRequest) // выполняем запрос с предикатом
+        } catch {
+            fatalError("Fetching Failed")
+        }
+
+        return tmpItems
     }
 
 }

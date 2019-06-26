@@ -21,24 +21,43 @@ class CategoryDaoDbImpl: DictDAO, CommonSearchDAO{
     var items:[Item]! // полученные из БД объекты
 
 
-    // MARK: dao
+    // MARK: demo data
 
-    // получить все объекты
-    func getAll() -> [Item] {
 
-        let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest() // объект-контейнер для выборки данных
+    func initDemoCategories(){
+        let cat1 = Category(context:context)
+        cat1.name = lsDemoCat1
+        cat1.checked = true
 
-        do {
-            items = try context.fetch(fetchRequest) // выполнение выборки (select)
-        } catch {
-            fatalError("Fetching Failed")
-        }
+        let cat2 = Category(context:context)
+        cat2.name = lsDemoCat2
+        cat2.checked = true
 
-        return items
+        let cat3 = Category(context:context)
+        cat3.name = lsDemoCat3
+        cat3.checked = true
 
+        let cat4 = Category(context:context)
+        cat4.name = lsDemoCat4
+        cat4.checked = true
+
+        let cat5 = Category(context:context)
+        cat5.name = lsDemoCat5
+        cat5.checked = true
+
+        add(cat1)
+        add(cat2)
+        add(cat3)
+        add(cat4)
+        add(cat5)
     }
 
-    // получить все объекты
+
+
+    // MARK: dao
+
+
+    // получить все объекты  с сортировкой
     func getAll(sortType:SortType?) -> [Item] {
 
         let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest() // объект-контейнер для выборки данных
@@ -68,11 +87,6 @@ class CategoryDaoDbImpl: DictDAO, CommonSearchDAO{
         var predicate = NSPredicate(format: "name CONTAINS[c] %@", text) // [c] - case insensitive
 
         fetchRequest.predicate = predicate // добавляем предикат в контейнер запроса
-
-        fetchRequest.predicate = predicate // добавляем предикат в контейнер запроса
-
-        // можно создавать предикаты динамически и использовать нужный
-
 
         // добавляем поле для сортировки
         if let sortType = sortType{

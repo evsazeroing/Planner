@@ -54,7 +54,7 @@ class SideMenuController: UITableViewController {
 
         // "Написать разработчику"
         if tableView.cellForRow(at: indexPath) === cellFeedback{
-            let email = "zhenyasalov@mail.ru // TODO: вынести адрес в plist
+            let email = "zhenyasalov@mail.ru" // TODO: вынести адрес в plist
             if let url = URL(string: "mailto:\(email)") {
                 UIApplication.shared.open(url)
             }

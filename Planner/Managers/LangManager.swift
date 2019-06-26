@@ -14,6 +14,7 @@ class LangManager{
     static let current = LangManager()
 
     private init(){
+
         initLanguages()
     }
 
@@ -48,9 +49,24 @@ class LangManager{
     // загрузка доступны языков
     func initLanguages(){
 
+        if !langArray.isEmpty{
+            return
+        }
+
+        // определяем текущий язык системы
+        let currentLangCode = Locale.init(identifier: PrefsManager.current.lang).languageCode! // чтобы привести к единому коду все возможные языки (en_US, ru_RU)
+
+        // если язык системы не поддерживается приложением - показывать на английском
+        if !L10n.shared.supportedLanguages.contains(currentLangCode){
+            L10n.shared.language = "en"
+        }else{
+            L10n.shared.language = currentLangCode // используем существующую локаль
+        }
+
+
         langArray = L10n.supportedLanguages // доступные языки для приложения
 
-
+        // заполнение массива флагов
         for langCode in langArray{
 
             let flag: Flag

@@ -47,7 +47,7 @@ tomorrow = "Завтра";
 
 days = "д";
 
-notSelected = "не выбрано";
+notSelected = "Не выбрано";
 
 info = "Дополнительная информация";
 
@@ -159,3 +159,47 @@ lang = "Язык";
 langChanged = "Язык изменен";
 
 selectLang = "Выбериты язык";
+
+
+// демо данные
+
+demoPriorityLow = "Низкий";
+demoPriorityNormal = "Нормальный";
+demoPriorityHigh = "Высокий";
+
+demoCat1 = "Спорт";
+demoCat2 = "Семья";
+demoCat3 = "Работа";
+demoCat4 = "Отдых";
+demoCat5 = "Встречи";
+
+demoTask1 = "Сходить в кино";
+demoTask2 = "Футбол с сотрудниками";
+demoTask3 = "Завершить проект";
+demoTask4 = "Встретиться с Дэвидом";
+demoTask5 = "Покормить собаку";
+demoTask6 = "Залить бензин";
+demoTask7 = "Пообедать в столовой";
+demoTask8 = "В детский садик";
+demoTask9 = "Отдаль долг";
+demoTask10 = "Купить хлеб";
+
+demoInfo1 = "Поискать фильм на kinopoisk.ru";
+demoInfo4 = "Сначала проверить все документы";
+demoInfo5 = "pedegree";
+demoInfo6 = "95";
+demoInfo9 = "900$";
+
+
+// intro
+
+next = "Далее";
+skip = "Пропустить";
+begin = "Начать работу";
+
+introTaskList = "Список задач \nс быстрым созданием";
+introFilter = "Фильтрация отображения \nзадач из списка";
+introSearch = "Поиск и сортировка \nкатегорий";
+introDict = "Работа со справочными \nзначениями";
+introColors = "Цветовое выделение \nэлементов";
+

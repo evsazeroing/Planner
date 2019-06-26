@@ -33,6 +33,10 @@
 		2235E300204D7C050063785E /* LangListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235E2FF204D7C050063785E /* LangListCell.swift */; };
 		2235E302204D7C520063785E /* CurrentLangCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235E301204D7C520063785E /* CurrentLangCell.swift */; };
 		2235E305204D7CD70063785E /* LangManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235E304204D7CD70063785E /* LangManager.swift */; };
+		226D73C320505E0E0091B587 /* VCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226D73C220505E0E0091B587 /* VCManager.swift */; };
+		226D73C520505F690091B587 /* IntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226D73C420505F690091B587 /* IntroController.swift */; };
+		226D73C6205060360091B587 /* FlagKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226D73C7205060360091B587 /* FlagKit.framework */; };
+		226D73C8205060F40091B587 /* SwiftyOnboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226D73C9205060F40091B587 /* SwiftyOnboard.framework */; };
 		22759C711FDEA6E500E9A1E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22759C701FDEA6E500E9A1E0 /* AppDelegate.swift */; };
 		22759C731FDEA6E500E9A1E0 /* TaskDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22759C721FDEA6E500E9A1E0 /* TaskDetailsController.swift */; };
 		22759C791FDEA6E500E9A1E0 /* Planner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22759C771FDEA6E500E9A1E0 /* Planner.xcdatamodeld */; };
@@ -94,6 +98,10 @@
 		2235E2FF204D7C050063785E /* LangListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LangListCell.swift; sourceTree = "<group>"; };
 		2235E301204D7C520063785E /* CurrentLangCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLangCell.swift; sourceTree = "<group>"; };
 		2235E304204D7CD70063785E /* LangManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LangManager.swift; sourceTree = "<group>"; };
+		226D73C220505E0E0091B587 /* VCManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCManager.swift; sourceTree = "<group>"; };
+		226D73C420505F690091B587 /* IntroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroController.swift; sourceTree = "<group>"; };
+		226D73C7205060360091B587 /* FlagKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FlagKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		226D73C9205060F40091B587 /* SwiftyOnboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyOnboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22759C6D1FDEA6E500E9A1E0 /* Planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22759C701FDEA6E500E9A1E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22759C721FDEA6E500E9A1E0 /* TaskDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailsController.swift; sourceTree = "<group>"; };
@@ -108,6 +116,7 @@
 		22921251203EC7AB00635313 /* FiltersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersController.swift; sourceTree = "<group>"; };
 		22921254203EDE2E00635313 /* PrefsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefsManager.swift; sourceTree = "<group>"; };
 		22921256203EDF7500635313 /* TaskSearchDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSearchDAO.swift; sourceTree = "<group>"; };
+		2297F4B520543D7300ECC165 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22A98B76202589400051183B /* Crud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crud.swift; sourceTree = "<group>"; };
 		22A98B7D2025922E0051183B /* PriorityDaoDbImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriorityDaoDbImpl.swift; sourceTree = "<group>"; };
 		22A98B7E2025922E0051183B /* CategoryDaoDbImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryDaoDbImpl.swift; sourceTree = "<group>"; };
@@ -134,6 +143,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				226D73C8205060F40091B587 /* SwiftyOnboard.framework in Frameworks */,
+				226D73C6205060360091B587 /* FlagKit.framework in Frameworks */,
 				2232081520493F3C008F9D92 /* L10n_swift.framework in Frameworks */,
 				22C44FAA2047CB43009FF865 /* Toaster.framework in Frameworks */,
 				220395372047BB9C00867D56 /* SwiftIconFont.framework in Frameworks */,
@@ -151,6 +162,8 @@
 		097E08353C79E1C83DFFCA0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				226D73C9205060F40091B587 /* SwiftyOnboard.framework */,
+				226D73C7205060360091B587 /* FlagKit.framework */,
 				2232081620493F3C008F9D92 /* L10n_swift.framework */,
 				22C44FAB2047CB43009FF865 /* Toaster.framework */,
 				220395382047BB9C00867D56 /* SwiftIconFont.framework */,
@@ -184,6 +197,7 @@
 				22921251203EC7AB00635313 /* FiltersController.swift */,
 				2235E2FB204D7A4C0063785E /* LangListController.swift */,
 				2235E2FD204D7A5C0063785E /* SettingsController.swift */,
+				226D73C420505F690091B587 /* IntroController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -305,6 +319,7 @@
 			children = (
 				22921254203EDE2E00635313 /* PrefsManager.swift */,
 				2235E304204D7CD70063785E /* LangManager.swift */,
+				226D73C220505E0E0091B587 /* VCManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -510,6 +525,7 @@
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftIconFont/SwiftIconFont.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftReorder/SwiftReorder.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyOnboard/SwiftyOnboard.framework",
 				"${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -521,6 +537,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftIconFont.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftReorder.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyOnboard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toaster.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,6 +566,7 @@
 				220CD7E1201B5CDC001B1D2D /* DateExtension.swift in Sources */,
 				22CA32212032BA8B00752357 /* QuickTaskCell.swift in Sources */,
 				22A98BAF202874420051183B /* TaskNameCell.swift in Sources */,
+				226D73C320505E0E0091B587 /* VCManager.swift in Sources */,
 				22A98BB1202874CD0051183B /* TaskCategoryCell.swift in Sources */,
 				222EBA7C202B281B00554EA3 /* DictionaryController.swift in Sources */,
 				2222BCEC202ACB5400A06513 /* PriorityListCell.swift in Sources */,
@@ -573,6 +591,7 @@
 				2222BCEA202ACB0100A06513 /* PriorityListController.swift in Sources */,
 				22DE177620453FC600F8BBD7 /* EditPriorityController.swift in Sources */,
 				22818A3C203DA1A200A1EBBA /* SideMenuController.swift in Sources */,
+				226D73C520505F690091B587 /* IntroController.swift in Sources */,
 				22E01EC82014C2FB004B5989 /* TaskListCell.swift in Sources */,
 				22759C791FDEA6E500E9A1E0 /* Planner.xcdatamodeld in Sources */,
 				22A98BB3202890440051183B /* TaskPriorityCell.swift in Sources */,
@@ -613,6 +632,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				2204B810204E702D00649947 /* en */,
+				2297F4B520543D7300ECC165 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

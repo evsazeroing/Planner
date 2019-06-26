@@ -141,6 +141,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftIconFont/SwiftIconFont.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftReorder/SwiftReorder.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftyOnboard/SwiftyOnboard.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -151,6 +152,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftIconFont/SwiftIconFont.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftReorder/SwiftReorder.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftyOnboard/SwiftyOnboard.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

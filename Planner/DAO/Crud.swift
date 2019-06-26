@@ -21,7 +21,7 @@ protocol Crud: class { // class указываем для того, чтобы �
     func getAll(sortType:SortType?) -> [Item] // получение списка с сортировкой (если значение sortType = nil, выборка без сортировки)
 
     func getAll() -> [Item] // получить все значения без сортировки
-    
+
     func delete(_ item: Item) // удаление объекта
 
 }
@@ -50,7 +50,7 @@ extension Crud{
         save()
     }
 
-
+  
     // добавление или обновление объекта (если объект существует - обновить, если нет - добавить)
     func addOrUpdate(_ item: Item){
         if !items.contains(item){
@@ -64,6 +64,7 @@ extension Crud{
     // добавление объекта
     func add(_ item:Item){
         items.append(item)
+
         // описание возможной проблемы https://www.bignerdranch.com/blog/protocol-oriented-problems-and-the-immutable-self-error/
         save()
     }
@@ -71,6 +72,21 @@ extension Crud{
     // добавление объекта
     func update(_ item:Item){
         save()
+    }
+
+    // получить все объекты без сортировки
+    func getAll() -> [Item] {
+
+        let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest() as! NSFetchRequest<Self.Item> // объект-контейнер для выборки данных
+
+        do {
+            items = try context.fetch(fetchRequest) // выполнение выборки (select)
+        } catch {
+            fatalError("Fetching Failed")
+        }
+
+        return items
+
     }
 
 

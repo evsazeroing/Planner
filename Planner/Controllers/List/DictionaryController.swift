@@ -466,9 +466,12 @@ class DictionaryController<T:DictDAO>: UIViewController, UITableViewDelegate, UI
 
 
     // каждое изменение текста
+    // в отличие от метода updateSearchResults, здесь пока пользователь не начнет набирать символы (или удалять их) - этот метод не сработает 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty{
             searchBar.placeholder = lsStartTypingName
+            getAll() // этот метод должен быть реализован в дочернем классе
+            tableViewDict.reloadData()
         }
     }
 

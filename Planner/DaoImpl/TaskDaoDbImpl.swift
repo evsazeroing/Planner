@@ -20,27 +20,132 @@ class TaskDaoDbImpl: TaskSearchDAO{
 
     // синглтон
     static let current = TaskDaoDbImpl()
-    private init(){}
+    private init(){
+
+        if !PrefsManager.current.launched{ // если приложение ни разу на запускалось
+            items = [Item]()
+            PrefsManager.current.launched = true // записать true, т.к. первый запуск произошел
+            initDemoData()
+        }
+
+    }
+
+
+    // MARK: demo data
+
+    // добавить демо данные (при самом первом запуске приложения)
+    func initDemoData(){
+
+        // проверка, что все коллекции пустые (чтобы не удалить уже введенные данные)
+
+        if items.count > 0 || categoryDAO.items.count > 0 || priorityDAO.items.count > 0{
+            return
+        }
+
+
+        priorityDAO.initDemoPriorities()
+        categoryDAO.initDemoCategories()
+
+        initDemoTasks()
+        
+    }
+
+
+
+    func initDemoTasks(){
+        let task1 = Task(context:context)
+        task1.category = categoryDAO.items[1]
+        task1.name = lsDemoTask1
+        task1.priority = priorityDAO.items[2]
+        task1.info = lsDemoInfo1
+        task1.deadline = Date().today
+
+        let task2 = Task(context:context)
+        task2.category = categoryDAO.items[3]
+        task2.name = lsDemoTask2
+        task2.priority = priorityDAO.items[0]
+        task2.deadline = Date().rewindDays(1)
+
+
+        let task3 = Task(context:context)
+        task3.category = categoryDAO.items[0]
+        task3.name = lsDemoTask3
+        task3.priority = priorityDAO.items[2]
+        task3.deadline = Date().rewindDays(15)
+
+
+        let task4 = Task(context:context)
+        task4.category = categoryDAO.items[2]
+        task4.name = lsDemoTask4
+        task4.info = lsDemoInfo4
+        task4.priority = priorityDAO.items[1]
+        task4.deadline = Date().rewindDays(-10)
+
+        let task5 = Task(context:context)
+        task5.category = categoryDAO.items[0]
+        task5.name = lsDemoTask5
+        task5.info = lsDemoInfo5
+        task5.priority = priorityDAO.items[1]
+        task5.deadline = Date().rewindDays(2)
+
+        let task6 = Task(context:context)
+        task6.category = categoryDAO.items[1]
+        task6.name = lsDemoTask6
+        task6.info = lsDemoInfo6
+        task6.priority = priorityDAO.items[1]
+        task6.deadline = Date().rewindDays(2)
+
+
+        let task7 = Task(context:context)
+        task7.category = categoryDAO.items[0]
+        task7.name = lsDemoTask7
+        task7.priority = priorityDAO.items[1]
+        task7.deadline = Date().rewindDays(2)
+
+
+
+        let task8 = Task(context:context)
+        task8.category = categoryDAO.items[4]
+        task8.name = lsDemoTask8
+        task8.priority = priorityDAO.items[2]
+        task8.deadline = Date().rewindDays(2)
+
+
+        let task9 = Task(context:context)
+        task9.category = categoryDAO.items[3]
+        task9.name = lsDemoTask9
+        task9.info = lsDemoInfo9
+        task9.priority = priorityDAO.items[0]
+        task9.deadline = Date().rewindDays(2)
+
+
+        let task10 = Task(context:context)
+        task10.category = categoryDAO.items[3]
+        task10.name = lsDemoTask10
+        task10.priority = priorityDAO.items[2]
+        task10.deadline = Date().rewindDays(2)
+
+
+        add(task1)
+        add(task2)
+        add(task3)
+        add(task4)
+        add(task5)
+        add(task6)
+        add(task7)
+        add(task8)
+        add(task9)
+        add(task10)
+
+
+    }
 
 
     // MARK: dao
 
-    // получить все объекты
-    func getAll() -> [Item] {
 
-        let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest() // объект-контейнер для выборки данных
-
-        do {
-            items = try context.fetch(fetchRequest) // выполнение выборки (select)
-        } catch {
-            fatalError("Fetching Failed")
-        }
-
-        return items
-
-    }
-
-    // получить все объекты
+  
+    // получить все объекты с сортировкой
     func getAll(sortType:SortType?) -> [Item] {
 
         let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest() // объект-контейнер для выборки данных

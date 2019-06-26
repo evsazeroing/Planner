@@ -54,10 +54,11 @@ class LangListController: UITableViewController {
             // переходим в корневой контроллер с анимацией и сменой языка UI
             UIView.transition(with: UIApplication.shared.windows[0], duration: 0.5, options: .transitionFlipFromRight, animations: {
 
+                // открываем первый контроллер со списком задач
                 UIApplication.shared.windows[0].rootViewController = UIStoryboard(
                     name: "Main",
                     bundle: nil
-                    ).instantiateInitialViewController()}, completion: nil)
+                    ).instantiateViewController(withIdentifier: "FirstNavigationController")}, completion: nil)
 
 
             Toast(text: lsLangChanged, delay: 0, duration: Delay.short).show() // сообщение пользователю о том, что язык сменился

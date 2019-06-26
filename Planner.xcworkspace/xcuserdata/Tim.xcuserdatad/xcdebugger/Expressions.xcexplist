@@ -3,26 +3,36 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "TaskListController.done(source:data:):TaskListController.swift">
+         contextName = "TaskListController.createTask(_:):TaskListController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "tableView.indexPathForSelectedRow">
-            </PersistentString>
-            <PersistentString
-               value = "task.priority.name">
+               value = "task.category">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #1 in TaskListController.completeTask(_:):TaskListController.swift">
+         contextName = "CategoryListController.tableView(_:cellForRowAt:):CategoryListController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "taskDAO.items.isEmpty">
+               value = "dao.checkedItems()">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "TaskListController.taskWillShow(_:):TaskListController.swift">
+         contextName = "DictionaryController.initNavBar():DictionaryController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "showMode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CategoryListController.viewDidLoad():CategoryListController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "CategoryDaoDbImpl.current">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "LangManager.name(_:):LangManager.swift">
@@ -39,83 +49,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "PriorityListController.viewDidLoad():PriorityListController.swift">
+         contextName = "DictionaryController.searchBar(_:textDidChange:):DictionaryController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "dao">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "TaskDetailsController.done(source:data:):TaskDetailsController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "taskPriority.color">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "CategoryListController.viewDidLoad():CategoryListController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "CategoryDaoDbImpl.current">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "DatetimePickerController.tapSave(_:):DatetimePickerController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "selectedDate">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "TaskInfoController.viewDidLoad():TaskInfoController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "taskInfoShowMode">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "LangManager.initLanguages():LangManager.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "L10n.supportedLanguages">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "TaskListController.quickTaskAdd(_:):TaskListController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "isEmptyTrim(textQuickTask.text)">
-            </PersistentString>
-            <PersistentString
-               value = "textQuickTask.text">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "LangListController.tableView(_:cellForRowAt:):LangListController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "selectedLang">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "TaskListController.updateTable():TaskListController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "categoryDAO">
-            </PersistentString>
-            <PersistentString
-               value = "priorityDAO">
-            </PersistentString>
-            <PersistentString
-               value = "priorityDAO.checkedItems()">
+               value = "dao.checkedItems()">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -134,47 +71,93 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "TaskListController.updateTasks(segue:):TaskListController.swift">
+         contextName = "LangListController.tableView(_:cellForRowAt:):LangListController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "source.changed">
-            </PersistentString>
-            <PersistentString
-               value = "segue.source as? CategoryListController">
+               value = "selectedLang">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "DictionaryController.checkItem(_:):DictionaryController.swift">
+         contextName = "TaskListController.quickTaskAdd(_:):TaskListController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "dictTableView">
+               value = "isEmptyTrim(textQuickTask.text)">
             </PersistentString>
             <PersistentString
-               value = "selectedItem">
+               value = "textQuickTask.text">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "AppDelegate.application(_:didFinishLaunchingWithOptions:):AppDelegate.swift">
+         contextName = "TaskDetailsController.done(source:data:):TaskDetailsController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "Locale.current.identifier">
+               value = "taskPriority.color">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "main:AppDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Bundle.main.object(forInfoDictionaryKey: &quot;UIMainStoryboardFile&quot;) as? String&#10;">
             </PersistentString>
             <PersistentString
-               value = "Locale.current.languageCode">
+               value = "UIApplication.shared.value(forKey: &quot;UIMainStoryboardFile&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TaskListController.taskWillShow(_:):TaskListController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "Crud.add(_:):Crud.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "item as? NSManagedObject">
             </PersistentString>
             <PersistentString
-               value = "L10n.shared.language">
+               value = "item.context">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PriorityListController.viewDidLoad():PriorityListController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "dao">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AppDelegate.application(_:supportedInterfaceOrientationsFor:):AppDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.window?.rootViewController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TaskListController.updateTable():TaskListController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "categoryDAO.checkedItems()">
             </PersistentString>
             <PersistentString
-               value = "PrefsManager.current.lang">
+               value = "priorityDAO">
             </PersistentString>
             <PersistentString
-               value = "Locale.current.localizedString(forLanguageCode: PrefsManager.current.lang)">
+               value = "categories">
             </PersistentString>
             <PersistentString
-               value = "Locale.init(identifier: PrefsManager.current.lang).languageCode">
+               value = "priorityDAO.checkedItems()">
+            </PersistentString>
+            <PersistentString
+               value = "categoryDAO">
+            </PersistentString>
+            <PersistentString
+               value = "categoryDAO.checkedItems()[0].name">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -187,10 +170,22 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "DictionaryController.initNavBar():DictionaryController.swift">
+         contextName = "TaskDaoDbImpl.add(_:):TaskDaoDbImpl.swift">
          <PersistentStrings>
             <PersistentString
-               value = "showMode">
+               value = "item.objectID">
+            </PersistentString>
+            <PersistentString
+               value = "items[43].info">
+            </PersistentString>
+            <PersistentString
+               value = "items">
+            </PersistentString>
+            <PersistentString
+               value = "item.name">
+            </PersistentString>
+            <PersistentString
+               value = "item.objectId">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -199,6 +194,98 @@
          <PersistentStrings>
             <PersistentString
                value = "searchBarText">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DictionaryController.checkItem(_:):DictionaryController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "dao.checkedItems()">
+            </PersistentString>
+            <PersistentString
+               value = "dictTableView">
+            </PersistentString>
+            <PersistentString
+               value = "selectedItem">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TaskListController.deleteTask(_:):TaskListController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+            <PersistentString
+               value = "taskDAO.items">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LangManager.initLanguages():LangManager.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "L10n.supportedLanguages">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TaskDetailsController.initButtons():TaskDetailsController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "task.name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TaskDaoDbImpl.initDemoTasks():TaskDaoDbImpl.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "priorityDAO.items">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TaskListController.done(source:data:):TaskListController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tableView.indexPathForSelectedRow">
+            </PersistentString>
+            <PersistentString
+               value = "task.completed">
+            </PersistentString>
+            <PersistentString
+               value = "task.name">
+            </PersistentString>
+            <PersistentString
+               value = "task.priority.name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AppDelegate.application(_:didFinishLaunchingWithOptions:):AppDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Locale.current.identifier">
+            </PersistentString>
+            <PersistentString
+               value = "PrefsManager.current.lang">
+            </PersistentString>
+            <PersistentString
+               value = "Locale.current.localizedString(forLanguageCode: PrefsManager.current.lang)">
+            </PersistentString>
+            <PersistentString
+               value = "Locale.init(identifier: PrefsManager.current.lang).languageCode">
+            </PersistentString>
+            <PersistentString
+               value = "L10n.shared.language">
+            </PersistentString>
+            <PersistentString
+               value = "Bundle.main.object(forInfoDictionaryKey: &quot;UIMainStoryboardFile&quot;) as? String">
+            </PersistentString>
+            <PersistentString
+               value = "Locale.current.languageCode">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -214,10 +301,89 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "TaskListController.updateTasks(segue:):TaskListController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "source.changed">
+            </PersistentString>
+            <PersistentString
+               value = "segue.source as? CategoryListController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "TaskDetailsController.tapSave(_:):TaskDetailsController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "task.priority.name">
+               value = "task.name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TaskInfoController.viewDidLoad():TaskInfoController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "taskInfoShowMode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DictionaryController.updateSearchResults(for:):DictionaryController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "dao.checkedItems()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Crud.save():Crud.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "app">
+            </PersistentString>
+            <PersistentString
+               value = "UIApplication.shared.delegate as! AppDelegate">
+            </PersistentString>
+            <PersistentString
+               value = "(UIApplication.shared.delegate as! AppDelegate).saveContext()">
+            </PersistentString>
+            <PersistentString
+               value = "app.saveContext()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TaskDetailsController.tapCancel(_:):TaskDetailsController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "task">
+            </PersistentString>
+            <PersistentString
+               value = "task.name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CategoryDaoDbImpl.search(text:sortType:):CategoryDaoDbImpl.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "checkedItems()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in TaskListController.completeTask(_:):TaskListController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "taskDAO.items.isEmpty">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DatetimePickerController.tapSave(_:):DatetimePickerController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedDate">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

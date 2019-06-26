@@ -13,7 +13,34 @@ class PriorityDaoDbImpl : DictDAO, CommonSearchDAO{
 
     // паттерн синглтон
     static let current = PriorityDaoDbImpl()
-    private init(){getAll(sortType: PrioritySortType.index)}
+    private init(){
+        getAll(sortType: PrioritySortType.index)
+
+    }
+
+
+    // MARK: demo data
+
+    func initDemoPriorities(){
+        let p1 = Priority(context:context)
+        p1.name = lsLowPriority
+        p1.index = 1
+        p1.color = UIColor.init(red: 104/255, green: 143/255, blue: 173/255, alpha: 1.0) // в формате RGBA
+
+        let p2 = Priority(context:context)
+        p2.name = lsNormalPriority
+        p2.index = 2
+        p2.color = UIColor.init(red: 0/255, green: 197/255, blue: 144/255, alpha: 1.0)
+
+        let p3 = Priority(context:context)
+        p3.name = lsHighPriority
+        p3.index = 3
+        p3.color = UIColor.init(red: 236/255, green: 100/255, blue: 75/255, alpha: 1.0)
+
+        add(p1)
+        add(p2)
+        add(p3)
+    }
 
 
     
@@ -23,20 +50,7 @@ class PriorityDaoDbImpl : DictDAO, CommonSearchDAO{
 
     // MARK: dao
 
-    // получить все объекты
-    func getAll() -> [Item] {
-
-        let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest() // объект-контейнер для выборки данных
-
-        do {
-            items = try context.fetch(fetchRequest) // выполнение выборки (select)
-        } catch {
-            fatalError("Fetching Failed")
-        }
-
-        return items
-
-    }
+    
 
     // получить все объекты
     func getAll(sortType:SortType?) -> [Item] {

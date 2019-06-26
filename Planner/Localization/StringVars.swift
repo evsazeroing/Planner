@@ -105,5 +105,52 @@ var lsLangChanged:String{return "langChanged".l10n()}
 var lsSelectLang:String{return "selectLang".l10n()}
 
 
+// демо данные (при первом запуске приложения)
+
+// приоритеты
+var lsLowPriority:String{return "demoPriorityLow".l10n()}
+var lsNormalPriority:String{return "demoPriorityNormal".l10n()}
+var lsHighPriority:String{return "demoPriorityHigh".l10n()}
+
+
+// категории
+var lsDemoCat1:String{return "demoCat1".l10n()}
+var lsDemoCat2:String{return "demoCat2".l10n()}
+var lsDemoCat3:String{return "demoCat3".l10n()}
+var lsDemoCat4:String{return "demoCat4".l10n()}
+var lsDemoCat5:String{return "demoCat5".l10n()}
+
+// задания
+var lsDemoTask1:String{return "demoTask1".l10n()}
+var lsDemoTask2:String{return "demoTask2".l10n()}
+var lsDemoTask3:String{return "demoTask3".l10n()}
+var lsDemoTask4:String{return "demoTask4".l10n()}
+var lsDemoTask5:String{return "demoTask5".l10n()}
+var lsDemoTask6:String{return "demoTask6".l10n()}
+var lsDemoTask7:String{return "demoTask7".l10n()}
+var lsDemoTask8:String{return "demoTask8".l10n()}
+var lsDemoTask9:String{return "demoTask9".l10n()}
+var lsDemoTask10:String{return "demoTask10".l10n()}
+
+// доп. инфо
+var lsDemoInfo1:String{return "demoInfo1".l10n()}
+var lsDemoInfo4:String{return "demoInfo4".l10n()}
+var lsDemoInfo5:String{return "demoInfo5".l10n()}
+var lsDemoInfo6:String{return "demoInfo6".l10n()}
+var lsDemoInfo9:String{return "demoInfo9".l10n()}
+
+
+
+// intro
+var lsNext:String{return "next".l10n()}
+var lsSkip:String{return "skip".l10n()}
+var lsBegin:String{return "begin".l10n()}
+
+
+var lsIntroTaskList:String{return "introTaskList".l10n()}
+var lsIntroFilter:String{return "introFilter".l10n()}
+var lsIntroSearch:String{return "introSearch".l10n()}
+var lsIntroDict:String{return "introDict".l10n()}
+var lsIntroColors:String{return "introColors".l10n()}
 
 

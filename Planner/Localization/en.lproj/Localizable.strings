@@ -49,7 +49,7 @@ tomorrow = "Tomorrow";
 
 days = "d";
 
-notSelected = "not selected";
+notSelected = "Not selected";
 
 info = "Additional info";
 
@@ -160,5 +160,51 @@ lang = "Language";
 langChanged = "Language changed";
 
 selectLang = "Select language";
+
+
+
+
+// демо данные
+
+demoPriorityLow = "Low";
+demoPriorityNormal = "Normal";
+demoPriorityHigh = "High";
+
+demoCat1 = "Sport";
+demoCat2 = "Family";
+demoCat3 = "Work";
+demoCat4 = "Relax";
+demoCat5 = "Meeting";
+
+demoTask1 = "Go to the cinema";
+demoTask2 = "Play football with friends";
+demoTask3 = "Сomplete the project";
+demoTask4 = "Meet with David";
+demoTask5 = "Feed the dog";
+demoTask6 = "Buy oil";
+demoTask7 = "Get food";
+demoTask8 = "Childroom";
+demoTask9 = "Take money";
+demoTask10 = "Buy bread";
+
+
+demoInfo1 = "Search ya.ru";
+demoInfo4 = "Check documents first";
+demoInfo5 = "pedegree";
+demoInfo6 = "95";
+demoInfo9 = "900$";
+
+
+// intro
+
+next = "Next";
+skip = "Skip";
+begin = "Begin";
+
+introTaskList = "Task list with quick task";
+introFilter = "Filters";
+introSearch = "Search and sort";
+introDict = "Dictionaries";
+introColors = "Colors";
 
 
