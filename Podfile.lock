@@ -1,15 +1,18 @@
 PODS:
+  - ChromaColorPicker (1.7)
   - GCCalendar (2.3.1)
-  - Presentr (1.3)
+  - SideMenu (3.1.5)
 
 DEPENDENCIES:
+  - ChromaColorPicker
   - GCCalendar
-  - Presentr
+  - SideMenu
 
 SPEC CHECKSUMS:
+  ChromaColorPicker: 33efa67b17cca51dd253689d18b83ac7e05642c2
   GCCalendar: 0f88ab4331bfbfbc185e55a2451b8981b73f07ae
-  Presentr: 3f0825a42cb32ecd8fc6b6d0b0de87d7d0b42482
+  SideMenu: 47dbf9e4d878062d8994aed43f6e4bf6c1fea30b
 
-PODFILE CHECKSUM: c9139f21d49fb8669ca5c75680a90d01ea13c3b8
+PODFILE CHECKSUM: db2d8a38720ae1567e131b722056425da85b5ee9
 
 COCOAPODS: 1.4.0

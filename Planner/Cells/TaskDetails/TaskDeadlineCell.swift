@@ -2,6 +2,7 @@
 
 import UIKit
 
+// ячейка для отображения даты завершения задачи (редактирование/создание)
 class TaskDeadlineCell: UITableViewCell {
 
     @IBOutlet weak var buttonClearDeadline: AreaTapButton!

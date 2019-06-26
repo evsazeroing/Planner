@@ -1,6 +1,7 @@
 
 import UIKit
 
+// ячейка для отображения доп. инфо задачи (редактирование/создание)
 class TaskInfoCell: UITableViewCell {
 
     @IBOutlet weak var textviewTaskInfo: UITextView!

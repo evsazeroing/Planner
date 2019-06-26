@@ -4,7 +4,7 @@ import UIKit
 import CoreData
 
 // реализация DAO для работы с задачами
-class TaskDaoDbImpl: CommonSearchDAO{
+class TaskDaoDbImpl: TaskSearchDAO{
 
     // для наглядности - типы для generics (можно нуказывать явно, т.к. компилятор автоматически получит их из методов)
     typealias Item = Task
@@ -46,41 +46,91 @@ class TaskDaoDbImpl: CommonSearchDAO{
     }
 
 
-    // удаление объекта
-    func delete(_ item: Item) {
-        context.delete(item)
-        save()
-    }
-
-
-    // добавление или обновление объекта (если объект существует - обновить, если нет - добавить)
-    func addOrUpdate(_ item: Item)  {
-        if !items.contains(item){
-            items.append(item)
-        }
-
-        save()
-    }
-
-
-    // поиск по имени задачи
-    func search(text: String, sortType:SortType?) -> [Item] {
+    // поиск по имени задачи с учетом фильтрации, сортировки и пр.
+    func search(text:String?, categories:[Category], priorities:[Priority],  sortType:SortType?, showTasksEmptyCategories:Bool, showTasksEmptyPriorities:Bool, showCompletedTasks:Bool, showTasksWithoutDate:Bool) -> [Item]{
 
         let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest() // объект-контейнер для выборки данных
 
-        var params = [Any]() // массив параметров любого типа
+        var predicates = [NSPredicate]()  // будет хранить все условия
 
-        // прописываем только само условие (без where)
-        var sql = "name CONTAINS[c] %@" // начало запроса, [c] - case insensitive
+        if let text = text{
 
-        params.append(text) // указываем значение параметра
+            // упрощенная запись предиаката (без массива параметров и отдельной переменной для SQL)
+            predicates.append(NSPredicate(format: "name CONTAINS[c] %@", text)) // [c] = Case Insensitive, текст SQL в синтаксисе Swift
+
+        }
+
+        // фильтрация по категориям
+
+        if !categoryDAO.items.isEmpty{ // если есть записи (может быть так, что все удалены) - иначе категории не будут участвовать в фильтрации
+
+            if categories.isEmpty{ // все значения "отжаты" (на сами категории существуют)
+
+                if showTasksEmptyCategories{ // если нужно показывать задачи с пустой категорией
+                    predicates.append(NSPredicate(format: "(NOT (category IN %@) or category==nil)", categoryDAO.items)) // показывать задачи, которые не включают ни одну из категорий (т.к. все значения "отжаты")
+                }else{
+                    predicates.append(NSPredicate(format: "(NOT (category IN %@) and category!=nil)", categoryDAO.items))
+                }
+
+            }else{ // выбраны какие-либо значения для фильтрации (не все "отжато")
+                if showTasksEmptyCategories{
+                    predicates.append(NSPredicate(format: "(category IN %@ or category==nil)", categories))
+                }else{
+                    predicates.append(NSPredicate(format: "(category IN %@ and category!=nil)", categories))
+                }
+            }
+
+        }
+
+        // фильтрация по приоритетам
+
+        if !priorityDAO.items.isEmpty{
+
+            if priorities.isEmpty{
+
+                if showTasksEmptyPriorities{
+                    predicates.append(NSPredicate(format: "(NOT (priority IN %@) or priority==nil)", priorityDAO.items))
+                }else{
+                    predicates.append(NSPredicate(format: "(NOT (priority IN %@) and priority!=nil)", priorityDAO.items))
+                }
+
+            }else{
+                if showTasksEmptyPriorities{
+                    predicates.append(NSPredicate(format: "(priority IN %@ or priority==nil)", priorities))
+                }else{
+                    predicates.append(NSPredicate(format: "(priority IN %@ and priority!=nil)", priorities))
+                }
+            }
+
+        }
+
+
+
+        // не показывать задачи без приоритета
+        if !showTasksEmptyPriorities{
+            predicates.append(NSPredicate(format: "priority != nil"))
+        }
+
+        // не показывать завершенные задачи
+        if !showCompletedTasks{
+            predicates.append(NSPredicate(format: "completed != true"))
+        }
+
+        // не показывать задачи без даты
+        if !showTasksWithoutDate{
+            predicates.append(NSPredicate(format: "deadline != nil"))
+        }
+
+
+
+
+        // собираем все предикаты (условия)
+        // where добавлять вручную нигде добавлять не нужно (Core Data сам построит правильный запрос)
+        let allPredicates = NSCompoundPredicate(type: NSCompoundPredicate.LogicalType.and, subpredicates: predicates) // все предикаты будут с условием И (AND)
+
 
         // объект-контейнер для добавления условий
-        var predicate = NSPredicate(format: sql, argumentArray: params) // добавляем параметры в sql
-
-        fetchRequest.predicate = predicate // добавляем предикат в контейнер запроса
-
-        // можно создавать предикаты динамически и использовать нужный
+        fetchRequest.predicate = allPredicates // добавляем все предикаты в контейнер запроса
 
 
         // добавляем поле для сортировки
@@ -91,7 +141,7 @@ class TaskDaoDbImpl: CommonSearchDAO{
         
 
         do {
-            items = try context.fetch(fetchRequest) // выполняем запрос с предикатом
+            items = try context.fetch(fetchRequest) // выполняем окончательный запрос (с предикатами и сортировками, если есть)
         } catch {
             fatalError("Fetching Failed")
         }
@@ -125,5 +175,6 @@ enum TaskSortType:Int{
     }
 
 }
+
 
 

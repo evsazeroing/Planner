@@ -1,6 +1,7 @@
 
 import UIKit
 
+// контроллер для редактирования/создания задачи
 class TaskDetailsController: UIViewController, UITableViewDataSource, UITableViewDelegate, ActionResultDelegate {
 
     @IBOutlet weak var tableView: UITableView! // ссылка на компонент
@@ -16,7 +17,7 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
     var taskCategory:Category?
     var taskDeadline:Date?
 
-    // в какой секции какие данные будут храниться (во избежание антипаттерна magic number)
+    // в какой секции какие данные будут храниться (во избежание антипаттерна magic numbers)
     let taskNameSection = 0
     let taskCategorySection = 1
     let taskPrioritySection = 2
@@ -47,6 +48,8 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
             taskCategory = task.category
             taskDeadline = task.deadline
         }
+
+        hideKeyboardWhenTappedAround() // скрывать клавиатуру, если нажать мимо нее
     }
 
     // вызывается, если не хватает памяти (чтобы очистить ресурсы)
@@ -136,6 +139,13 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
             }else{
                 value = "Не выбрано"
                 cell.labelTaskPriority.textColor = UIColor.lightGray
+            }
+
+            // задаем цвет по приоритету
+            if let priority = taskPriority{
+                cell.labelTaskPriorityColor.backgroundColor = priority.color as? UIColor
+            }else{
+                cell.labelTaskPriorityColor.backgroundColor = UIColor.white
             }
 
             // заполняем компонент данными из задачи
@@ -247,8 +257,8 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
         // присвоим изменнные значения из компонентов
 
         // удаляем лишние пробелы и если не пусто - присваиваем
-        if let name = taskName?.trimmingCharacters(in: .whitespacesAndNewlines), !name.isEmpty{
-            task.name = name
+        if !isEmptyTrim(taskName){
+            task.name = taskName
         }else{
             task.name = "Новая задача"
         }
@@ -271,7 +281,9 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
     @IBAction func tapDeleteTask(_ sender: UIButton) {
 
         // подтвердить действие
-        confirmAction(text: "Действительно хотите удалить задачу?", segueName: "DeleteTaskFromDetails")
+        confirmAction(text: "Действительно хотите удалить задачу?") {
+            self.performSegue(withIdentifier: "DeleteTaskFromDetails", sender: self) // реализация замыкания (trailing closure), которое передается как параметр
+        }
 
     }
 
@@ -280,11 +292,13 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
     @IBAction func tapCompleteTask(_ sender: UIButton) {
 
         // подтвердить действие
-        confirmAction(text: "Действительно хотите завершить задачу?", segueName: "CompleteTaskFromDetails")
+        confirmAction(text: "Действительно хотите завершить задачу?") {
+            self.performSegue(withIdentifier: "CompleteTaskFromDetails", sender: self) // реализация замыкания (trailing closure), которое передается как параметр
+        }
 
     }
 
-
+    // нажали на выбор даты (отображение календаря)
     @IBAction func tapDatetimePicker(_ sender: UIButton) {
         // если нужно провести доп. действия при нажатии на кнопку
     }
@@ -294,64 +308,46 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
         taskName = sender.text
     }
 
-
-    func confirmAction(text:String, segueName:String){
-        // объект диалогового окна
-        let dialogMessage = UIAlertController(title: "Подтверждение", message: text, preferredStyle: .actionSheet)
-
-        // создания объектов для действий (ок, отмена)
-
-        // действие ОК
-        let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
-            self.performSegue(withIdentifier: segueName, sender: self) // вызов segue по идентификатору
-        })
-
-        // действие Отмена
-        let cancel = UIAlertAction(title: "Отмена", style: .cancel) { (action) -> Void in
-        }
-
-        // добавить действия в диалоговое окно
-        dialogMessage.addAction(ok) // закроется диалоговое окно и вызовется segue
-        dialogMessage.addAction(cancel) // просто закроется диалоговое окно
-
-        // показать диалоговое окно
-        present(dialogMessage, animated: true, completion: nil)
-    }
+    
 
 
 
 
     // MARK: prepare
 
-
-    
+    // выполняется перед переходом в другой контроллер
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
+        // исключить сигвеи без идентификатора (чтобы не было ошибки в строке segue.identifier! )
         if segue.identifier == nil{
             return
         }
 
+        // какой segue был выполнен
         switch segue.identifier! {
         case "SelectCategory": // переходим в контроллер для выбора категории
 
             if let controller = segue.destination as? CategoryListController{
                 controller.selectedItem = taskCategory // передаем текущее значение
-                controller.delegate = self
+                controller.delegate = self // для возврата результата действий
+                controller.showMode = .select // режим выбора значения
+                controller.navigationTitle = "Выберите категорию"
             }
 
         case "SelectPriority": // переходим в контроллер для выбора приоритета
 
             if let controller = segue.destination as?  PriorityListController{
                 controller.selectedItem = taskPriority // передаем текущее значение
-                controller.delegate = self
-
+                controller.delegate = self // для возврата результата действий
+                controller.showMode = .select // режим выбора значения
+                controller.navigationTitle = "Выберите приоритет"
             }
 
         case "EditTaskInfo": // переходим в контроллер для редактирования доп. инфо
 
             if let controller = segue.destination as?  TaskInfoController{
                 controller.taskInfo = taskInfo // передаем текущее значение
-                controller.delegate = self
+                controller.delegate = self // для возврата результата действий
 
             }
 
@@ -359,7 +355,7 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
 
             if let controller = segue.destination as?  DatetimePickerController{
                 controller.initDeadline = taskDeadline // передаем текущее значение
-                controller.delegate = self
+                controller.delegate = self // для возврата результата действий
 
             }
 
@@ -371,6 +367,7 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
 
     // MARK: ActionResultDelegate
 
+    // обрабатываем действия при возврате из контроллера
     func done(source: UIViewController, data: Any?) {
 
         // если пришел ответ от нужного контроллера

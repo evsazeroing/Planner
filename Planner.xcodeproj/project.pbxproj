@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2208B9192043DC3300BA40BC /* Checkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208B9182043DC3300BA40BC /* Checkable.swift */; };
+		2208B91B2043DD7500BA40BC /* DictDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208B91A2043DD7500BA40BC /* DictDAO.swift */; };
 		220CD7DF201B5C97001B1D2D /* TaskExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CD7DE201B5C97001B1D2D /* TaskExtension.swift */; };
 		220CD7E1201B5CDC001B1D2D /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CD7E0201B5CDC001B1D2D /* DateExtension.swift */; };
 		22162C442011D694000AAED5 /* TaskListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22162C432011D694000AAED5 /* TaskListController.swift */; };
@@ -24,13 +26,18 @@
 		22759C791FDEA6E500E9A1E0 /* Planner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22759C771FDEA6E500E9A1E0 /* Planner.xcdatamodeld */; };
 		22759C7B1FDEA6E500E9A1E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22759C7A1FDEA6E500E9A1E0 /* Assets.xcassets */; };
 		22759C7E1FDEA6E500E9A1E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22759C7C1FDEA6E500E9A1E0 /* LaunchScreen.storyboard */; };
+		22818A36203D9D2100A1EBBA /* SideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22818A37203D9D2100A1EBBA /* SideMenu.framework */; };
+		22818A3C203DA1A200A1EBBA /* SideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22818A3B203DA1A200A1EBBA /* SideMenuController.swift */; };
+		22818A3F203DA1D800A1EBBA /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22818A3E203DA1D800A1EBBA /* SideMenuCell.swift */; };
 		22879A112036B82500D39C82 /* Pods_Planner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22879A122036B82500D39C82 /* Pods_Planner.framework */; };
 		22879A132036B84F00D39C82 /* GCCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22879A142036B84F00D39C82 /* GCCalendar.framework */; };
+		22921252203EC7AB00635313 /* FiltersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22921251203EC7AB00635313 /* FiltersController.swift */; };
+		22921255203EDE2E00635313 /* PrefsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22921254203EDE2E00635313 /* PrefsManager.swift */; };
+		22921257203EDF7500635313 /* TaskSearchDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22921256203EDF7500635313 /* TaskSearchDAO.swift */; };
 		22A98B77202589400051183B /* Crud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A98B76202589400051183B /* Crud.swift */; };
 		22A98B802025922E0051183B /* PriorityDaoDbImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A98B7D2025922E0051183B /* PriorityDaoDbImpl.swift */; };
 		22A98B812025922E0051183B /* CategoryDaoDbImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A98B7E2025922E0051183B /* CategoryDaoDbImpl.swift */; };
 		22A98B822025922E0051183B /* TaskDaoDbImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A98B7F2025922E0051183B /* TaskDaoDbImpl.swift */; };
-		22A98B872025AE420051183B /* CrudExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A98B862025AE420051183B /* CrudExtension.swift */; };
 		22A98BAF202874420051183B /* TaskNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A98BAE202874420051183B /* TaskNameCell.swift */; };
 		22A98BB1202874CD0051183B /* TaskCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A98BB0202874CD0051183B /* TaskCategoryCell.swift */; };
 		22A98BB3202890440051183B /* TaskPriorityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A98BB2202890440051183B /* TaskPriorityCell.swift */; };
@@ -39,11 +46,15 @@
 		22A98BC52029A3820051183B /* ActionResultDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A98BC42029A3820051183B /* ActionResultDelegate.swift */; };
 		22AEC5D0202DB30600EEF0F6 /* TaskInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AEC5CF202DB30600EEF0F6 /* TaskInfoController.swift */; };
 		22CA32212032BA8B00752357 /* QuickTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA32202032BA8B00752357 /* QuickTaskCell.swift */; };
+		22DE177620453FC600F8BBD7 /* EditPriorityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DE177520453FC600F8BBD7 /* EditPriorityController.swift */; };
+		22DE17772045401800F8BBD7 /* ChromaColorPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DE17782045401800F8BBD7 /* ChromaColorPicker.framework */; };
 		22E01EC82014C2FB004B5989 /* TaskListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E01EC72014C2FB004B5989 /* TaskListCell.swift */; };
 		22E92C751FE16FC3001F8493 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E92C741FE16FC3001F8493 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2208B9182043DC3300BA40BC /* Checkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkable.swift; sourceTree = "<group>"; };
+		2208B91A2043DD7500BA40BC /* DictDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictDAO.swift; sourceTree = "<group>"; };
 		220CD7DE201B5C97001B1D2D /* TaskExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskExtension.swift; sourceTree = "<group>"; };
 		220CD7E0201B5CDC001B1D2D /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		22162C432011D694000AAED5 /* TaskListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListController.swift; sourceTree = "<group>"; };
@@ -63,13 +74,18 @@
 		22759C7A1FDEA6E500E9A1E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22759C7D1FDEA6E500E9A1E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22759C7F1FDEA6E500E9A1E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22818A37203D9D2100A1EBBA /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22818A3B203DA1A200A1EBBA /* SideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuController.swift; sourceTree = "<group>"; };
+		22818A3E203DA1D800A1EBBA /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
 		22879A122036B82500D39C82 /* Pods_Planner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Planner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22879A142036B84F00D39C82 /* GCCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GCCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22921251203EC7AB00635313 /* FiltersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersController.swift; sourceTree = "<group>"; };
+		22921254203EDE2E00635313 /* PrefsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefsManager.swift; sourceTree = "<group>"; };
+		22921256203EDF7500635313 /* TaskSearchDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSearchDAO.swift; sourceTree = "<group>"; };
 		22A98B76202589400051183B /* Crud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crud.swift; sourceTree = "<group>"; };
 		22A98B7D2025922E0051183B /* PriorityDaoDbImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriorityDaoDbImpl.swift; sourceTree = "<group>"; };
 		22A98B7E2025922E0051183B /* CategoryDaoDbImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryDaoDbImpl.swift; sourceTree = "<group>"; };
 		22A98B7F2025922E0051183B /* TaskDaoDbImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDaoDbImpl.swift; sourceTree = "<group>"; };
-		22A98B862025AE420051183B /* CrudExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrudExtension.swift; sourceTree = "<group>"; };
 		22A98BAE202874420051183B /* TaskNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskNameCell.swift; sourceTree = "<group>"; };
 		22A98BB0202874CD0051183B /* TaskCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCategoryCell.swift; sourceTree = "<group>"; };
 		22A98BB2202890440051183B /* TaskPriorityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskPriorityCell.swift; sourceTree = "<group>"; };
@@ -78,6 +94,8 @@
 		22A98BC42029A3820051183B /* ActionResultDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionResultDelegate.swift; sourceTree = "<group>"; };
 		22AEC5CF202DB30600EEF0F6 /* TaskInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInfoController.swift; sourceTree = "<group>"; };
 		22CA32202032BA8B00752357 /* QuickTaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickTaskCell.swift; sourceTree = "<group>"; };
+		22DE177520453FC600F8BBD7 /* EditPriorityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPriorityController.swift; sourceTree = "<group>"; };
+		22DE17782045401800F8BBD7 /* ChromaColorPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ChromaColorPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E01EC72014C2FB004B5989 /* TaskListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListCell.swift; sourceTree = "<group>"; };
 		22E92C741FE16FC3001F8493 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		295494373315A5A4CF980A13 /* Pods-Planner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planner.release.xcconfig"; path = "Pods/Target Support Files/Pods-Planner/Pods-Planner.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +107,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22DE17772045401800F8BBD7 /* ChromaColorPicker.framework in Frameworks */,
+				22818A36203D9D2100A1EBBA /* SideMenu.framework in Frameworks */,
 				22879A132036B84F00D39C82 /* GCCalendar.framework in Frameworks */,
 				22879A112036B82500D39C82 /* Pods_Planner.framework in Frameworks */,
 			);
@@ -100,6 +120,8 @@
 		097E08353C79E1C83DFFCA0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22DE17782045401800F8BBD7 /* ChromaColorPicker.framework */,
+				22818A37203D9D2100A1EBBA /* SideMenu.framework */,
 				22879A142036B84F00D39C82 /* GCCalendar.framework */,
 				22879A122036B82500D39C82 /* Pods_Planner.framework */,
 			);
@@ -109,7 +131,6 @@
 		220CD7DD201B5C86001B1D2D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				22A98B862025AE420051183B /* CrudExtension.swift */,
 				220CD7DE201B5C97001B1D2D /* TaskExtension.swift */,
 				220CD7E0201B5CDC001B1D2D /* DateExtension.swift */,
 				2228DA352036DF99002B624E /* UIVIewControllerExtension.swift */,
@@ -120,8 +141,11 @@
 		22162C402011D5C0000AAED5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				22DE177420453F9100F8BBD7 /* PriorityDetails */,
+				22818A38203DA10C00A1EBBA /* Menu */,
 				2222BCE4202ABC8E00A06513 /* TaskDetails */,
 				22162C412011D5D4000AAED5 /* List */,
+				22921251203EC7AB00635313 /* FiltersController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -185,6 +209,7 @@
 		22759C6F1FDEA6E500E9A1E0 /* Planner */ = {
 			isa = PBXGroup;
 			children = (
+				22921253203EDE1D00635313 /* Managers */,
 				222EBA7E202C1A0800554EA3 /* UIViews */,
 				22A98BC32029A3750051183B /* Delegates */,
 				22A98B7C202592090051183B /* DaoImpl */,
@@ -201,11 +226,38 @@
 			path = Planner;
 			sourceTree = "<group>";
 		};
+		22818A38203DA10C00A1EBBA /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				22818A3B203DA1A200A1EBBA /* SideMenuController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		22818A3D203DA1C400A1EBBA /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				22818A3E203DA1D800A1EBBA /* SideMenuCell.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		22921253203EDE1D00635313 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				22921254203EDE2E00635313 /* PrefsManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		22A98B75202588790051183B /* DAO */ = {
 			isa = PBXGroup;
 			children = (
 				22A98B76202589400051183B /* Crud.swift */,
 				222AB5B72033E82F00300334 /* CommonSearchDAO.swift */,
+				22921256203EDF7500635313 /* TaskSearchDAO.swift */,
+				2208B9182043DC3300BA40BC /* Checkable.swift */,
+				2208B91A2043DD7500BA40BC /* DictDAO.swift */,
 			);
 			path = DAO;
 			sourceTree = "<group>";
@@ -251,9 +303,18 @@
 			path = Delegates;
 			sourceTree = "<group>";
 		};
+		22DE177420453F9100F8BBD7 /* PriorityDetails */ = {
+			isa = PBXGroup;
+			children = (
+				22DE177520453FC600F8BBD7 /* EditPriorityController.swift */,
+			);
+			path = PriorityDetails;
+			sourceTree = "<group>";
+		};
 		22E01EC62014C2A5004B5989 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				22818A3D203DA1C400A1EBBA /* Menu */,
 				22A98BBF202982BE0051183B /* TaskDetails */,
 				22A98BC0202982C70051183B /* List */,
 			);
@@ -380,13 +441,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Planner/Pods-Planner-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChromaColorPicker/ChromaColorPicker.framework",
 				"${BUILT_PRODUCTS_DIR}/GCCalendar/GCCalendar.framework",
-				"${BUILT_PRODUCTS_DIR}/Presentr/Presentr.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChromaColorPicker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCCalendar.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Presentr.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -402,8 +465,10 @@
 			files = (
 				222EBA80202C1A2300554EA3 /* AreaTapButton.swift in Sources */,
 				2228DA362036DF99002B624E /* UIVIewControllerExtension.swift in Sources */,
+				22818A3F203DA1D800A1EBBA /* SideMenuCell.swift in Sources */,
 				22AEC5D0202DB30600EEF0F6 /* TaskInfoController.swift in Sources */,
 				220CD7DF201B5C97001B1D2D /* TaskExtension.swift in Sources */,
+				22921257203EDF7500635313 /* TaskSearchDAO.swift in Sources */,
 				22A98BC52029A3820051183B /* ActionResultDelegate.swift in Sources */,
 				2228DA322036DC46002B624E /* DatetimePickerController.swift in Sources */,
 				22A98B77202589400051183B /* Crud.swift in Sources */,
@@ -411,12 +476,13 @@
 				22CA32212032BA8B00752357 /* QuickTaskCell.swift in Sources */,
 				22A98BAF202874420051183B /* TaskNameCell.swift in Sources */,
 				22A98BB1202874CD0051183B /* TaskCategoryCell.swift in Sources */,
-				22A98B872025AE420051183B /* CrudExtension.swift in Sources */,
 				222EBA7C202B281B00554EA3 /* DictionaryController.swift in Sources */,
 				2222BCEC202ACB5400A06513 /* PriorityListCell.swift in Sources */,
+				22921252203EC7AB00635313 /* FiltersController.swift in Sources */,
 				2222BCE6202ABCB600A06513 /* CategoryListController.swift in Sources */,
 				222AB5B82033E82F00300334 /* CommonSearchDAO.swift in Sources */,
 				22759C731FDEA6E500E9A1E0 /* TaskDetailsController.swift in Sources */,
+				2208B91B2043DD7500BA40BC /* DictDAO.swift in Sources */,
 				22A98B812025922E0051183B /* CategoryDaoDbImpl.swift in Sources */,
 				22A98BB72028905D0051183B /* TaskInfoCell.swift in Sources */,
 				22759C711FDEA6E500E9A1E0 /* AppDelegate.swift in Sources */,
@@ -424,10 +490,14 @@
 				22A98BB5202890540051183B /* TaskDeadlineCell.swift in Sources */,
 				22A98B802025922E0051183B /* PriorityDaoDbImpl.swift in Sources */,
 				22162C442011D694000AAED5 /* TaskListController.swift in Sources */,
+				22921255203EDE2E00635313 /* PrefsManager.swift in Sources */,
 				2222BCEA202ACB0100A06513 /* PriorityListController.swift in Sources */,
+				22DE177620453FC600F8BBD7 /* EditPriorityController.swift in Sources */,
+				22818A3C203DA1A200A1EBBA /* SideMenuController.swift in Sources */,
 				22E01EC82014C2FB004B5989 /* TaskListCell.swift in Sources */,
 				22759C791FDEA6E500E9A1E0 /* Planner.xcdatamodeld in Sources */,
 				22A98BB3202890440051183B /* TaskPriorityCell.swift in Sources */,
+				2208B9192043DC3300BA40BC /* Checkable.swift in Sources */,
 				2222BCE8202ABCFD00A06513 /* CategoryListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

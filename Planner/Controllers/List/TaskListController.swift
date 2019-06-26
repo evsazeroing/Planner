@@ -1,6 +1,7 @@
 
 import UIKit
 import CoreData
+import SideMenu
 
 // контроллер для отображения списка задач
 class TaskListController: UITableViewController, ActionResultDelegate {
@@ -40,9 +41,15 @@ class TaskListController: UITableViewController, ActionResultDelegate {
 
         dateFormatter = createDateFormatter()
 
+        currentScopeIndex = PrefsManager.current.sortType // сохраненный тип сортировки
+
         setupSearchController() // инициализаия поискового компонента
 
-        taskDAO.getAll(sortType: TaskSortType(rawValue: currentScopeIndex)!)
+        initSlideMenu() // загрузить боковое меню
+
+        updateTable()
+
+        hideKeyboardWhenTappedAround() // скрывать клавиатуру, если нажать мимо нее
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -51,11 +58,29 @@ class TaskListController: UITableViewController, ActionResultDelegate {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+
+
+    // MARK: Side Menu
+
+    func initSlideMenu(){
+        SideMenuManager.default.menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "SideMenu") as? UISideMenuNavigationController
+
+        //        SideMenuManager.default.menuAddPanGestureToPresent(toView: self.view)
+        //        SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.view)
+
+        //        SideMenuManager.default.menuEnableSwipeGestures = false
+
+        // чтобы не затемнялся верхний статус бар
+        SideMenuManager.default.menuFadeStatusBar = false
+
+
+    }
 
 
 
@@ -118,18 +143,7 @@ class TaskListController: UITableViewController, ActionResultDelegate {
 
             // задаем цвет по приоритету
             if let priority = task.priority{
-
-                switch priority.index{
-                case 1:
-                    cell.labelPriority.backgroundColor = UIColor(named: "low")
-                case 2:
-                    cell.labelPriority.backgroundColor = UIColor(named: "normal")
-                case 3:
-                    cell.labelPriority.backgroundColor = UIColor(named: "high")
-                default:
-                    cell.labelPriority.backgroundColor = UIColor.white
-                }
-
+                cell.labelPriority.backgroundColor = priority.color as? UIColor
             }else{
                 cell.labelPriority.backgroundColor = UIColor.white
             }
@@ -273,43 +287,47 @@ class TaskListController: UITableViewController, ActionResultDelegate {
     // при выполнении навигации этот метод будет выполнен автоматически
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
-        switch segue.identifier! { // сверяем название segue (с помощью какого segue происходит навигация)
-        case "UpdateTask":
+        if let identificator = segue.identifier{ // если идентификатор на nil
 
-            // приведение sender к типу ячейки (получаем доступ к нажатой ячейке, чтобы определить выбранную задачу)
-            let selectedCell = sender as! TaskListCell
+            switch identificator { // сверяем название segue (с помощью какого segue происходит навигация)
+            case "UpdateTask":
 
-            // выбранный индекс (номер строки, на которую нажали)
-            let selectedIndex = (tableView.indexPath(for: selectedCell)?.row)!
+                // приведение sender к типу ячейки (получаем доступ к нажатой ячейке, чтобы определить выбранную задачу)
+                let selectedCell = sender as! TaskListCell
 
-            // выбранная задача для редактирования
-            let selectedTask = taskDAO.items[selectedIndex]
+                // выбранный индекс (номер строки, на которую нажали)
+                let selectedIndex = (tableView.indexPath(for: selectedCell)?.row)!
+
+                // выбранная задача для редактирования
+                let selectedTask = taskDAO.items[selectedIndex]
 
 
-            // получаем доступ к целевому контроллеру
-            guard let controller = segue.destination as? TaskDetailsController else { // segue.destination - целевой контроллер
-                fatalError("error")
+                // получаем доступ к целевому контроллеру
+                guard let controller = segue.destination as? TaskDetailsController else { // segue.destination - целевой контроллер
+                    fatalError("error")
+                }
+
+                controller.title = "Редактирование" // меняем заголовок
+                controller.task = selectedTask // передаем задачу в целевой контроллер
+                controller.delegate = self
+
+
+            case "CreateTask":
+
+                // получаем доступ к целевому контроллеру
+                guard let controller = segue.destination as? TaskDetailsController else { // segue.destination - целевой контроллер
+                    fatalError("error")
+                }
+
+                controller.title = "Новая задача" // меняем заголовок
+                controller.task = Task(context: taskDAO.context) // передаем задачу в целевой контроллер
+                controller.delegate = self
+
+            default:
+                return
             }
-
-            controller.title = "Редактирование" // меняем заголовок
-            controller.task = selectedTask // передаем задачу в целевой контроллер
-            controller.delegate = self
-
-
-        case "CreateTask":
-
-            // получаем доступ к целевому контроллеру
-            guard let controller = segue.destination as? TaskDetailsController else { // segue.destination - целевой контроллер
-                fatalError("error")
-            }
-
-            controller.title = "Новая задача" // меняем заголовок
-            controller.task = Task(context: taskDAO.context) // передаем задачу в целевой контроллер
-            controller.delegate = self
-
-        default:
-            return
         }
+
 
 
 
@@ -328,13 +346,15 @@ class TaskListController: UITableViewController, ActionResultDelegate {
             // редактирование, т.е. обновление (т.к. selectedIndexPath != nil, потому что нажимали на строку для открытия окна редактирования)
             if let selectedIndexPath = tableView.indexPathForSelectedRow{ // определяем выбранную до этого строку (если была нажата какая-либо строка)
 
-                taskDAO.save() // сохраняем измененную задачу (сохраняет все изменения)
+                let task = data as! Task
+
+                taskDAO.update(task) // обновляем  задачу
 
             }else{ // новая задача (не обновление, а создание)
 
                 let task = data as! Task
 
-                createTask(task)
+                createTask(task) // создаем новую задачу
 
             }
 
@@ -349,6 +369,22 @@ class TaskListController: UITableViewController, ActionResultDelegate {
     // MARK: actions
 
 
+    // нажали Удалить при редактировании задачи
+    @IBAction func updateTasks(segue: UIStoryboardSegue) {
+
+        if let source = segue.source as? FiltersController, source.changed, segue.identifier == "FilterTasks" { // если были изменения в фильтрации
+                updateTable()
+        }
+
+        if let source = segue.source as? CategoryListController, source.changed, segue.identifier == "UpdateTasksCategories" { // если были изменения при редактировании категорий
+            updateTable()
+        }
+
+        if let source = segue.source as? PriorityListController, source.changed, segue.identifier == "UpdateTasksPriorities" { // если были изменения при редактировании приоритетов
+            updateTable()
+        }
+
+    }
 
     // нажали Удалить при редактировании задачи
     @IBAction func deleteFromTaskDetails(segue: UIStoryboardSegue) {
@@ -386,9 +422,7 @@ class TaskListController: UITableViewController, ActionResultDelegate {
 
     @IBAction func tapCreateTask(_ sender: UIBarButtonItem) {
 
-        // есть возможность реализовать любой код перед созданием задачи
-
-        // переход в контроллер для редактирования задачи
+        // переход в контроллер для создания задачи
         performSegue(withIdentifier: "CreateTask", sender: tableView)
 
     }
@@ -397,11 +431,11 @@ class TaskListController: UITableViewController, ActionResultDelegate {
 
     @IBAction func quickTaskAdd(_ sender: UITextField) {
 
-        var task = Task(context:taskDAO.context)
+        let task = Task(context:taskDAO.context)
 
         // название берем из текстового компонента - удаляем лишние пробелы и если не пусто - присваиваем
-        if let name = textQuickTask.text?.trimmingCharacters(in: .whitespacesAndNewlines), !name.isEmpty{
-            task.name = name
+        if !isEmptyTrim(textQuickTask.text){
+            task.name = textQuickTask.text
         }else{
             task.name = "Новая задача"
         }
@@ -414,7 +448,7 @@ class TaskListController: UITableViewController, ActionResultDelegate {
         
     }
 
-    
+    // завершить задачу
     func completeTask(_ indexPath:IndexPath){
 
         // принимаем вызов только из TaskListCell
@@ -429,9 +463,32 @@ class TaskListController: UITableViewController, ActionResultDelegate {
 
         taskDAO.addOrUpdate(task)
 
-        tableView.reloadRows(at: [indexPath], with: .fade)
+        tableView.reloadRows(at: [indexPath], with: .fade) // чтобы вызвать метод tableView для заполнения строки
+
+
+        // показать анимацию обновления строки с задержкой, и только затем скрыть строку (если необходимо)
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(400)) { // если пользователь будет быстро нажимать на разные завершения задач - все будет выполняться параллельно
+
+            if !PrefsManager.current.showCompletedTasks{ // если отключен показ завершенных задач
+
+                // ВАЖНО! нужно одновременно удалять задачу из коллекции и из таблицы, чтобы было синхронизировано
+
+                //  удалить задачу из коллекции и таблицы
+                self.taskDAO.items.remove(at: indexPath.row)
+
+                if self.taskDAO.items.isEmpty{ // если это последняя запись - удаляем всю секцию, иначе будет ошибка при попытке отображения таблицы
+                    self.tableView.deleteSections( IndexSet([self.taskListSection]), with: .top)
+                }else{
+                    self.tableView.deleteRows(at: [indexPath], with: .top)
+                }
+            }
+        }
+
+
+
     }
 
+    // добавить новую задачу
     func createTask(_ task:Task){
         taskDAO.addOrUpdate(task)
 
@@ -446,19 +503,21 @@ class TaskListController: UITableViewController, ActionResultDelegate {
     // обновить все данные в таблице (с учетом поиска, сортировки и пр.)
     func updateTable(){
 
-
         let sortType = TaskSortType(rawValue: currentScopeIndex)! // определяем тип сортировки по текущему выбранному значение scope button из search bar
 
         // если активен режим поиска (search bar) и текст не пустой
         if searchBarActive && searchController.searchBar.text != nil && !(searchController.searchBar.text?.isEmpty)! {
 
-            taskDAO.search(text: searchController.searchBar.text!, sortType: sortType)
+            // найти все задачи с выбранными фильтрами, категориями, сортировкой (c поиском по тексту)
+            taskDAO.search(text: searchController.searchBar.text!, categories: categoryDAO.checkedItems(), priorities: priorityDAO.checkedItems(), sortType: sortType, showTasksEmptyCategories:PrefsManager.current.showEmptyCategories, showTasksEmptyPriorities: PrefsManager.current.showEmptyPriorities, showCompletedTasks: PrefsManager.current.showCompletedTasks, showTasksWithoutDate: PrefsManager.current.showTasksWithoutDate)
 
-        }else{ // найти все задачи с выбранными фильтрами, категориями, сортировкой
-            taskDAO.getAll(sortType:sortType)
+        }else{ // найти все задачи с выбранными фильтрами, категориями, сортировкой (без поиска по тексту)
+             taskDAO.search(text: nil, categories: categoryDAO.checkedItems(), priorities: priorityDAO.checkedItems(), sortType: sortType, showTasksEmptyCategories:PrefsManager.current.showEmptyCategories, showTasksEmptyPriorities: PrefsManager.current.showEmptyPriorities, showCompletedTasks: PrefsManager.current.showCompletedTasks, showTasksWithoutDate: PrefsManager.current.showTasksWithoutDate)
         }
 
         tableView.reloadData() // обновить таблицу
+
+        updateTableBackground(tableView, count:taskCount)
 
 
     }
@@ -473,7 +532,15 @@ class TaskListController: UITableViewController, ActionResultDelegate {
         let task = taskDAO.items[indexPath.row]
         taskDAO.delete(task) // удалить задачу из БД
         taskDAO.items.remove(at: indexPath.row) // удалить саму строку и объект из коллекции (массива)
-        tableView.deleteRows(at: [indexPath], with: .top) // удалить строку из tableView
+
+        if taskDAO.items.isEmpty{ // если это последняя запись - удаляем всю секцию, иначе будет ошибка при попытке отображения таблицы
+            tableView.deleteSections( IndexSet([taskListSection]), with: .left)
+        }else{
+            tableView.deleteRows(at: [indexPath], with: .left)
+        }
+
+        
+
     }
 
 }
@@ -513,6 +580,8 @@ extension TaskListController : UISearchBarDelegate {
         searchController.searchBar.backgroundColor = .white
 
         searchController.searchBar.scopeButtonTitles = ["А-Я", "Приоритет", "Дата"] // добавляем scope buttons
+        searchController.searchBar.selectedScopeButtonIndex = currentScopeIndex // выделяем выбранную кнопку
+
 
 
         // обработка действий поиска и работа с search bar - в этом же классе (без этих 2 строк не будет работать поиск)
@@ -579,11 +648,15 @@ extension TaskListController : UISearchBarDelegate {
 
         currentScopeIndex = selectedScope // сохраняем выбранный scope button (способ сортировки списка задач)
 
+        PrefsManager.current.sortType = currentScopeIndex // сохраняем в настройки приложения
+
+
         updateTable() // обновить список задач согласно тексту поиска (если есть), сортировке и пр.
 
     }
 
-
-
-
 }
+
+
+
+

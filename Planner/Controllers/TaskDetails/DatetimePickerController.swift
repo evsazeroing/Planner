@@ -2,7 +2,7 @@
 import UIKit
 import GCCalendar // обязательно надо импортировать, чтобы работать с календарем
 
-// контроллер для выбора даты с помощьюе компонента GCCalendar
+// контроллер для выбора даты с помощью компонента GCCalendar
 class DatetimePickerController: UIViewController, GCCalendarViewDelegate {
 
     var delegate: ActionResultDelegate! // для возврата выбранной даты

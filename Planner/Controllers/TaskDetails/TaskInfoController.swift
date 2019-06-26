@@ -1,6 +1,7 @@
 
 import UIKit
 
+// контроллер для создания/редактирования доп. инфо задачи
 class TaskInfoController: UIViewController {
 
     @IBOutlet weak var textviewTaskInfo: UITextView!

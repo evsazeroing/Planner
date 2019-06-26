@@ -7,122 +7,123 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0170B6741FABBFA17237CD25B587525D /* GCCalendarWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0213F07F126A32F472F126A1FE9458 /* GCCalendarWeekView.swift */; };
-		07D785CBDB09F3EBBD709C6E6E5B4009 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		0D715B40B30C1C828256ED8CF927034B /* GCCalendarConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF567C885BE44E474536A53BA5F5F51D /* GCCalendarConfiguration.swift */; };
-		15358B9A592F7A22CEB2D5BF0938B33A /* Presentr.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BBACF5321436F0348B65170112C6BC /* Presentr.swift */; };
-		2082126F909360518055664D234FA607 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C10562DD05B8DAE846BE17378AA58F0 /* AlertViewController.swift */; };
+		0170B6741FABBFA17237CD25B587525D /* GCCalendarWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CDD34F31A550AC4AC5E911B246E774 /* GCCalendarWeekView.swift */; };
+		0D715B40B30C1C828256ED8CF927034B /* GCCalendarConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E337BBD6DB5FBF1C6EE5354C6C52B25 /* GCCalendarConfiguration.swift */; };
+		0F63FBEDADCC4AF6AECDEB622CE8A19B /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E3CBC6420226587E5409A1A1AD98C40 /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19C1C1F7147E20F1FD2EB9A8F98F4B6C /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50E8CD93823F1FB8F7FB231F11615A4 /* UITableViewVibrantCell.swift */; };
 		27EF4858AB36AE3654C8DCBCDCDB6A9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		2B44754530989DE49F0B58BDC6F2BF01 /* PresentationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7403DAA5FEDDB8D37B8216CCF69A12 /* PresentationType.swift */; };
-		3004473EE263824E3FE7D0DBE4FAC1AC /* CrossDissolveAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E26E16E8187E1A8535F1174A4EFDC2 /* CrossDissolveAnimation.swift */; };
-		350D6211C54DBCFE6B6D390D0B38C1D0 /* PresentrShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C60A5CCCF606A171F70A88BAE802E85 /* PresentrShadow.swift */; };
-		3B80CFCFF135DF748E59DFC79A426805 /* Presentr-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A54B9B2E18E9BB5EF6E19CBA2E697103 /* Presentr-dummy.m */; };
-		51838108D999784FC5C918EA2DF7EE46 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B4AADCD6173153EB17A02009367272 /* BackgroundView.swift */; };
-		52C5894C1E3C05FFCC740C8DA00DF719 /* Pods-Planner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 587895E2F425B1960DA4AF6BD1ABFB0B /* Pods-Planner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		72FAF64FDE35D7D31052C197545F2675 /* KeyboardTranslation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EE0ADBDDF5AF8C5B97C7244C96AA33 /* KeyboardTranslation.swift */; };
-		74F97319A3210FF392AFF16A5F5346F4 /* Pods-Planner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DBE33EFEEC9FB9B54FE98C8CB8F537 /* Pods-Planner-dummy.m */; };
-		79280901D485BDF242F5450406002B5F /* PresentrController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CDC165BF897FE4B5A962EA409BD725 /* PresentrController.swift */; };
-		7DBF144BB15F20EF0193DD95F1AFCFC5 /* ModalSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502A55EBA56A01A53160227DBC30030 /* ModalSize.swift */; };
-		8BE740C0B8736519AFCD273EDFFDA790 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 265311FEB007023A449DCD88BBE6A764 /* SourceSansPro-Regular.ttf */; };
-		994EEC1F19689502F2661E87288A5D9F /* PresentrAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C13EFDEC2DAB977350636C41B7AC38 /* PresentrAnimation.swift */; };
-		9CC879E79F72A3F5D5D30CC401299988 /* GCCalendarViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B2464D67CC2257FC51740179D6F0F1 /* GCCalendarViewDelegate.swift */; };
-		A017E03D3AAC31B905777AA8D836F08B /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3236D92D58BBE27EC1EE301E569A7039 /* AlertViewController.xib */; };
-		A936065991E5B204B6EEF9F1DC80EBF0 /* TransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA834738E981C3872BE862F6856016E9 /* TransitionType.swift */; };
-		ACB4361545570E44215A54565301E561 /* GCCalendarMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F123FFF8DB31E613EB60C9A1C4FE688D /* GCCalendarMonthView.swift */; };
-		B0796B1AFA1CBD697151DAB4FAC3FCD5 /* CoverVerticalFromTopAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D008AF936D2F80E7475E60B4781B5C9 /* CoverVerticalFromTopAnimation.swift */; };
-		B4961C0A97B2A6B840F59D028A5595D6 /* GCCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50C10B11435164F168DDA4F0B4B2C308 /* GCCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B55F8BE423C34DE72CF191327799758A /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F0F8C16992AF7F67D19B473E4A31940 /* Montserrat-Regular.ttf */; };
-		B62E1EC1F1C5F9105C0772D426600C13 /* Presentr+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3C42816F928F70C9F9F1B988961E3A /* Presentr+Equatable.swift */; };
-		C94BBA0DBE99BA812638B556F12FDA2D /* GCCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 112A8C7BDBBC8F7BDBFB62DFB2A2CB1A /* GCCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CA71FF91F3E561C43675E25FE8F0CC45 /* CoverHorizontalAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2349339202736D5EDD80B4205D46F3E /* CoverHorizontalAnimation.swift */; };
-		D5BB03601866910E3B609E97EA4BD603 /* GCCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB452D6D50EA0892CB1566CB8595E06D /* GCCalendarView.swift */; };
-		D5BD45344CE7DA7515E20292A956797F /* ModalCenterPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6CF6E6DC134A55F612733DDE346B7A /* ModalCenterPosition.swift */; };
-		D6CC04FA380AB25C1C3BFFCFF8A1D8B1 /* CoverVerticalAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D9A19806F7C476AE78222A99597DDF /* CoverVerticalAnimation.swift */; };
-		E24CCAA17A5BCBCC1CAB7EA4F4FA1B18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		E99B5FA99C985C8EE23F8531D60E9EEC /* Presentr-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C7B66D735E1E7EBB40D0EE24EAD79FCA /* Presentr-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F4275810576B01BC16CE6AAAE2201A0A /* GCCalendarDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FC53EC37AE8C8023EB86190BACC392 /* GCCalendarDayView.swift */; };
-		FA7B33E06217203FAF6E2DA3C8B9C788 /* GCCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF7BB8205A273CE424371CCC0D338B /* GCCalendar-dummy.m */; };
+		2CCA81B9BFAFFA78C63594B01881EAE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		2CD7BD2F25A728501BCA2B2226271982 /* ChromaColorPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 70F9C73708D17910239046780B545142 /* ChromaColorPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F6CDE3B2BA4DA36386508A448EB8C1D /* ChromaColorPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = B0673DE796C3380CD08F826DBF4E621C /* ChromaColorPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40035A7E409B83DCFF7FEB781C2EED00 /* ChromaColorPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B4C3CE3FD8D898AEC487456D90285C /* ChromaColorPicker-dummy.m */; };
+		46BE6075A78FD94B44FA92245C2486A4 /* ChromaAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3CC9219D5ECDB87D9D8675DECAB039 /* ChromaAddButton.swift */; };
+		8C81A1CEF8720A2EEE2BE86779865157 /* UIColor+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F55D61D3C52C691D72A095A34E3FBC /* UIColor+Utilities.swift */; };
+		8D0BBEAE3C38E86B87BFB944823B105A /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602767F1F4D89C0684546CEC3D2DBE70 /* SideMenuManager.swift */; };
+		92F8161F4E07A53E57E3EB2E1FA62238 /* ColorModeToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA81EAADBE28F2C0B18E7CBE112D3E8D /* ColorModeToggleButton.swift */; };
+		96A4608F8906D981466E302B01BBB1C6 /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B56696A473F607941DDC15B0A7E6AD5C /* SideMenu-dummy.m */; };
+		9B2E9D6DC6FC06780610E76323704936 /* UISideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CFA5A1E39D0B7E5BDD486C0168C0E5 /* UISideMenuNavigationController.swift */; };
+		9CC879E79F72A3F5D5D30CC401299988 /* GCCalendarViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7418E299AE135008CC3C4D950E9E62 /* GCCalendarViewDelegate.swift */; };
+		ACB4361545570E44215A54565301E561 /* GCCalendarMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6066507FCF153AD111B4B55F889453DA /* GCCalendarMonthView.swift */; };
+		B4961C0A97B2A6B840F59D028A5595D6 /* GCCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A78F1ADAB8A9C5B4448698DD7E087D75 /* GCCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9B12ED0E3A60D473CA4A6750B0AB6B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C94BBA0DBE99BA812638B556F12FDA2D /* GCCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 48A839CF7E7D1D1376566B0038CD9B80 /* GCCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C977D89C3AFC2F08F975E8302ABBC631 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		CF264CDB3100B4C274326F95F32BC88B /* ChromaColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A411CDB56DF060D962AAC9FAB7DC8F1 /* ChromaColorPicker.swift */; };
+		D5BB03601866910E3B609E97EA4BD603 /* GCCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F93D5581FCC4E9255338F117E530EC /* GCCalendarView.swift */; };
+		DB91D9BB2F00D211C7E64B1FC371A61D /* SideMenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525006EEED7404636164CC03AFBD614A /* SideMenuTransition.swift */; };
+		E0B45DF428571CC8CEE441D91A9EDB3B /* Pods-Planner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 587895E2F425B1960DA4AF6BD1ABFB0B /* Pods-Planner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3BDD0359FB8370930D632716756A079 /* Pods-Planner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DBE33EFEEC9FB9B54FE98C8CB8F537 /* Pods-Planner-dummy.m */; };
+		EB82E7DA872E98A1B0B1F66C7CE15702 /* ChromaHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB30E0BE1E90F907005F7702921E2C4 /* ChromaHandle.swift */; };
+		F4275810576B01BC16CE6AAAE2201A0A /* GCCalendarDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C211735F316ADE54BB7FF59F14C6943 /* GCCalendarDayView.swift */; };
+		FA7B33E06217203FAF6E2DA3C8B9C788 /* GCCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1BADB142C44957670A20AFF8D19EB /* GCCalendar-dummy.m */; };
+		FB24018F9DFDC79925597D4878E12FD4 /* ChromaShadeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A95983D9F1A81277329205D7A8DA532 /* ChromaShadeSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		93108464B41162B21D13E5519CAF501B /* PBXContainerItemProxy */ = {
+		8F8563E9B9DD2F73AD62582DEB7C8BBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99AA48135ECB557858428F797600458F;
+			remoteInfo = ChromaColorPicker;
+		};
+		D025E2CA288314B59F3DB83F4C44F52C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EB11F443CE4B3DDE0556E1D7A6169D9F;
 			remoteInfo = GCCalendar;
 		};
-		ADE67EFCA2033C2AB45FBEBDC1E3E9A6 /* PBXContainerItemProxy */ = {
+		FA24B35A1F4971ACF8BAF3C2FAC58105 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 026B805234C610BFAD67F27C2E8357FC;
-			remoteInfo = Presentr;
+			remoteGlobalIDString = D431F6EB07D8634101282F3A7AC0A1AA;
+			remoteInfo = SideMenu;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00847315DE69C8C198E2F53AA55C196D /* Pods-Planner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Planner.release.xcconfig"; sourceTree = "<group>"; };
-		0A336B8B28EA2DD09E2C18A8F661CDA4 /* Presentr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Presentr.framework; path = Presentr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		112A8C7BDBBC8F7BDBFB62DFB2A2CB1A /* GCCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCCalendar.h; path = GCCalendar/GCCalendar.h; sourceTree = "<group>"; };
+		040446D0B5FA75BB11E6167B1736982F /* ChromaColorPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ChromaColorPicker.modulemap; sourceTree = "<group>"; };
+		0523600A9BCC6DC70248CAE585190021 /* GCCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCCalendar-prefix.pch"; sourceTree = "<group>"; };
+		0E337BBD6DB5FBF1C6EE5354C6C52B25 /* GCCalendarConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCCalendarConfiguration.swift; path = GCCalendar/GCCalendarConfiguration.swift; sourceTree = "<group>"; };
+		0E3CBC6420226587E5409A1A1AD98C40 /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
 		13D62CDADEC8223364B4EB9CC276BA62 /* Pods-Planner-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Planner-resources.sh"; sourceTree = "<group>"; };
-		1502A55EBA56A01A53160227DBC30030 /* ModalSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModalSize.swift; path = Presentr/ModalSize.swift; sourceTree = "<group>"; };
 		160128278EBDB58226DBECE6445E4E76 /* Pods-Planner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Planner.debug.xcconfig"; sourceTree = "<group>"; };
-		1B7403DAA5FEDDB8D37B8216CCF69A12 /* PresentationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationType.swift; path = Presentr/PresentationType.swift; sourceTree = "<group>"; };
 		25DBE33EFEEC9FB9B54FE98C8CB8F537 /* Pods-Planner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Planner-dummy.m"; sourceTree = "<group>"; };
-		265311FEB007023A449DCD88BBE6A764 /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "SourceSansPro-Regular.ttf"; path = "Presentr/SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
-		2AFF7BB8205A273CE424371CCC0D338B /* GCCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GCCalendar-dummy.m"; sourceTree = "<group>"; };
-		2D008AF936D2F80E7475E60B4781B5C9 /* CoverVerticalFromTopAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoverVerticalFromTopAnimation.swift; path = Presentr/CoverVerticalFromTopAnimation.swift; sourceTree = "<group>"; };
-		3236D92D58BBE27EC1EE301E569A7039 /* AlertViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = AlertViewController.xib; path = Presentr/AlertViewController.xib; sourceTree = "<group>"; };
-		33EE0ADBDDF5AF8C5B97C7244C96AA33 /* KeyboardTranslation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardTranslation.swift; path = Presentr/KeyboardTranslation.swift; sourceTree = "<group>"; };
-		39CDC165BF897FE4B5A962EA409BD725 /* PresentrController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentrController.swift; path = Presentr/PresentrController.swift; sourceTree = "<group>"; };
-		487E8DC24B699D2301659C42BBC3621D /* GCCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GCCalendar.framework; path = GCCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C60A5CCCF606A171F70A88BAE802E85 /* PresentrShadow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentrShadow.swift; path = Presentr/PresentrShadow.swift; sourceTree = "<group>"; };
-		4F6CF6E6DC134A55F612733DDE346B7A /* ModalCenterPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModalCenterPosition.swift; path = Presentr/ModalCenterPosition.swift; sourceTree = "<group>"; };
-		50C10B11435164F168DDA4F0B4B2C308 /* GCCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCCalendar-umbrella.h"; sourceTree = "<group>"; };
-		52689DC63A499B8C2A8B336429314F31 /* Presentr.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Presentr.xcconfig; sourceTree = "<group>"; };
-		53D9A19806F7C476AE78222A99597DDF /* CoverVerticalAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoverVerticalAnimation.swift; path = Presentr/CoverVerticalAnimation.swift; sourceTree = "<group>"; };
-		56B2464D67CC2257FC51740179D6F0F1 /* GCCalendarViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCCalendarViewDelegate.swift; path = GCCalendar/GCCalendarViewDelegate.swift; sourceTree = "<group>"; };
+		42A120DC0F0CB618461CFB2EE1912C4D /* GCCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GCCalendar.xcconfig; sourceTree = "<group>"; };
+		48A839CF7E7D1D1376566B0038CD9B80 /* GCCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCCalendar.h; path = GCCalendar/GCCalendar.h; sourceTree = "<group>"; };
+		4A95983D9F1A81277329205D7A8DA532 /* ChromaShadeSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaShadeSlider.swift; path = ChromaColorPicker/ChromaShadeSlider.swift; sourceTree = "<group>"; };
+		4C211735F316ADE54BB7FF59F14C6943 /* GCCalendarDayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCCalendarDayView.swift; path = GCCalendar/GCCalendarDayView.swift; sourceTree = "<group>"; };
+		51B0BB49093BE610C22C924F7099549F /* GCCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GCCalendar.framework; path = GCCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		525006EEED7404636164CC03AFBD614A /* SideMenuTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransition.swift; path = Pod/Classes/SideMenuTransition.swift; sourceTree = "<group>"; };
+		57091F582AFDA39CBBCBDD00F76818A5 /* GCCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GCCalendar.modulemap; sourceTree = "<group>"; };
 		587895E2F425B1960DA4AF6BD1ABFB0B /* Pods-Planner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Planner-umbrella.h"; sourceTree = "<group>"; };
-		5CC7DB8E5C74E69F5802D9E7C3168D71 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6326BC71CD3E32C0193DC4B1C508B154 /* GCCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCCalendar-prefix.pch"; sourceTree = "<group>"; };
+		58F55D61D3C52C691D72A095A34E3FBC /* UIColor+Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Utilities.swift"; path = "ChromaColorPicker/UIColor+Utilities.swift"; sourceTree = "<group>"; };
+		602767F1F4D89C0684546CEC3D2DBE70 /* SideMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuManager.swift; path = Pod/Classes/SideMenuManager.swift; sourceTree = "<group>"; };
+		6066507FCF153AD111B4B55F889453DA /* GCCalendarMonthView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCCalendarMonthView.swift; path = GCCalendar/GCCalendarMonthView.swift; sourceTree = "<group>"; };
+		614543BFD01CABF5754AA136C90589B9 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SideMenu.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		671F65D730CDFA3D2AD1F4C5ADFC9600 /* Presentr-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Presentr-prefix.pch"; sourceTree = "<group>"; };
 		6CC8DA823269BA61F89163C13DF8FBE6 /* Pods-Planner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Planner-acknowledgements.plist"; sourceTree = "<group>"; };
-		6F83C75C84190233DADC57E5367088F8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FFB3A646D108BDAF51C0D8079AF3F12 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70F9C73708D17910239046780B545142 /* ChromaColorPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChromaColorPicker-umbrella.h"; sourceTree = "<group>"; };
 		71210FB850709C768F04FCB4F701007C /* Pods-Planner-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Planner-frameworks.sh"; sourceTree = "<group>"; };
-		73B4AADCD6173153EB17A02009367272 /* BackgroundView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackgroundView.swift; path = Presentr/BackgroundView.swift; sourceTree = "<group>"; };
-		7EE3093BBA0E77133F84C445B3AA6665 /* GCCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GCCalendar.xcconfig; sourceTree = "<group>"; };
-		83820066C88A1475385C8EF64C965F26 /* Pods_Planner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Planner.framework; path = "Pods-Planner.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		84067CA5AE02DEB40E313841B5F69185 /* GCCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GCCalendar.modulemap; sourceTree = "<group>"; };
-		8A0213F07F126A32F472F126A1FE9458 /* GCCalendarWeekView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCCalendarWeekView.swift; path = GCCalendar/GCCalendarWeekView.swift; sourceTree = "<group>"; };
-		8C10562DD05B8DAE846BE17378AA58F0 /* AlertViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertViewController.swift; path = Presentr/AlertViewController.swift; sourceTree = "<group>"; };
+		7226F3258CD23B2E7B5EDEFBF018A9C6 /* ChromaColorPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChromaColorPicker.xcconfig; sourceTree = "<group>"; };
+		79E1BADB142C44957670A20AFF8D19EB /* GCCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GCCalendar-dummy.m"; sourceTree = "<group>"; };
+		7A411CDB56DF060D962AAC9FAB7DC8F1 /* ChromaColorPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaColorPicker.swift; path = ChromaColorPicker/ChromaColorPicker.swift; sourceTree = "<group>"; };
+		8D647712BB3305541CB287F2C0DA7F28 /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SideMenu.modulemap; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96C13EFDEC2DAB977350636C41B7AC38 /* PresentrAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentrAnimation.swift; path = Presentr/PresentrAnimation.swift; sourceTree = "<group>"; };
-		9F0F8C16992AF7F67D19B473E4A31940 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Montserrat-Regular.ttf"; path = "Presentr/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
-		A54B9B2E18E9BB5EF6E19CBA2E697103 /* Presentr-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Presentr-dummy.m"; sourceTree = "<group>"; };
-		B8E26E16E8187E1A8535F1174A4EFDC2 /* CrossDissolveAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CrossDissolveAnimation.swift; path = Presentr/CrossDissolveAnimation.swift; sourceTree = "<group>"; };
-		C2BBACF5321436F0348B65170112C6BC /* Presentr.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Presentr.swift; path = Presentr/Presentr.swift; sourceTree = "<group>"; };
-		C7B66D735E1E7EBB40D0EE24EAD79FCA /* Presentr-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Presentr-umbrella.h"; sourceTree = "<group>"; };
-		CF567C885BE44E474536A53BA5F5F51D /* GCCalendarConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCCalendarConfiguration.swift; path = GCCalendar/GCCalendarConfiguration.swift; sourceTree = "<group>"; };
+		A17FE088EE485334AAAC22903AB16407 /* Pods_Planner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Planner.framework; path = "Pods-Planner.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A50E8CD93823F1FB8F7FB231F11615A4 /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
+		A78F1ADAB8A9C5B4448698DD7E087D75 /* GCCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCCalendar-umbrella.h"; sourceTree = "<group>"; };
+		AB7418E299AE135008CC3C4D950E9E62 /* GCCalendarViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCCalendarViewDelegate.swift; path = GCCalendar/GCCalendarViewDelegate.swift; sourceTree = "<group>"; };
+		ABB30E0BE1E90F907005F7702921E2C4 /* ChromaHandle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaHandle.swift; path = ChromaColorPicker/ChromaHandle.swift; sourceTree = "<group>"; };
+		ABE719F9730B17075EE84742457C9C8B /* ChromaColorPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ChromaColorPicker.framework; path = ChromaColorPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0673DE796C3380CD08F826DBF4E621C /* ChromaColorPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChromaColorPicker.h; path = ChromaColorPicker/ChromaColorPicker.h; sourceTree = "<group>"; };
+		B56696A473F607941DDC15B0A7E6AD5C /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
+		B6CDD34F31A550AC4AC5E911B246E774 /* GCCalendarWeekView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCCalendarWeekView.swift; path = GCCalendar/GCCalendarWeekView.swift; sourceTree = "<group>"; };
+		B7E58B37094416897AA8C6F941B10935 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC3CC9219D5ECDB87D9D8675DECAB039 /* ChromaAddButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChromaAddButton.swift; path = ChromaColorPicker/ChromaAddButton.swift; sourceTree = "<group>"; };
+		C2A01E6BA6DCEA7610DC21BFEA750F18 /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
+		C5B4C3CE3FD8D898AEC487456D90285C /* ChromaColorPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChromaColorPicker-dummy.m"; sourceTree = "<group>"; };
+		C854040B91E5C96EC42F36C490CE1B34 /* ChromaColorPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChromaColorPicker-prefix.pch"; sourceTree = "<group>"; };
 		D037C97968E454965729B0F2A9F3BE57 /* Pods-Planner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Planner-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D106944113DE1DEAA2C465695CBB2149 /* Presentr.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Presentr.modulemap; sourceTree = "<group>"; };
-		E1FC53EC37AE8C8023EB86190BACC392 /* GCCalendarDayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCCalendarDayView.swift; path = GCCalendar/GCCalendarDayView.swift; sourceTree = "<group>"; };
-		E2349339202736D5EDD80B4205D46F3E /* CoverHorizontalAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoverHorizontalAnimation.swift; path = Presentr/CoverHorizontalAnimation.swift; sourceTree = "<group>"; };
+		D8CFA5A1E39D0B7E5BDD486C0168C0E5 /* UISideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UISideMenuNavigationController.swift; path = Pod/Classes/UISideMenuNavigationController.swift; sourceTree = "<group>"; };
 		E33DA83B83EFFFF5C81AAE231C3568CD /* Pods-Planner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Planner.modulemap"; sourceTree = "<group>"; };
-		EA834738E981C3872BE862F6856016E9 /* TransitionType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionType.swift; path = Presentr/TransitionType.swift; sourceTree = "<group>"; };
-		EB452D6D50EA0892CB1566CB8595E06D /* GCCalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCCalendarView.swift; path = GCCalendar/GCCalendarView.swift; sourceTree = "<group>"; };
-		EF3C42816F928F70C9F9F1B988961E3A /* Presentr+Equatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Presentr+Equatable.swift"; path = "Presentr/Presentr+Equatable.swift"; sourceTree = "<group>"; };
-		F123FFF8DB31E613EB60C9A1C4FE688D /* GCCalendarMonthView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCCalendarMonthView.swift; path = GCCalendar/GCCalendarMonthView.swift; sourceTree = "<group>"; };
+		EA97937E88456DB529120A92CB32D5E7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6B51D9144E837254A86155E6D0840BF /* SideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.xcconfig; sourceTree = "<group>"; };
+		F7F93D5581FCC4E9255338F117E530EC /* GCCalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCCalendarView.swift; path = GCCalendar/GCCalendarView.swift; sourceTree = "<group>"; };
 		F8A5E104112BE530194C6D1A7FBD9F19 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA81EAADBE28F2C0B18E7CBE112D3E8D /* ColorModeToggleButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorModeToggleButton.swift; path = ChromaColorPicker/ColorModeToggleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		78DBEBDDF1AA0D0F03E1D06CDD444DA8 /* Frameworks */ = {
+		717E39038AB00C896EF464342B72C414 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07D785CBDB09F3EBBD709C6E6E5B4009 /* Foundation.framework in Frameworks */,
+				C977D89C3AFC2F08F975E8302ABBC631 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,77 +135,69 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E6FA226D2D807B22A9D87DCA619844A1 /* Frameworks */ = {
+		BBDB2C31187B8ABCF84E6EFC9DBEF006 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E24CCAA17A5BCBCC1CAB7EA4F4FA1B18 /* Foundation.framework in Frameworks */,
+				B9B12ED0E3A60D473CA4A6750B0AB6B6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4C778F22C161741FB18E99032D63B84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CCA81B9BFAFFA78C63594B01881EAE9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		202DC1F7FB1B08038E194C0375C9DCC3 /* GCCalendar */ = {
+		0FF8EBC619A954B3DFC615612B75A4D1 /* ChromaColorPicker */ = {
 			isa = PBXGroup;
 			children = (
-				112A8C7BDBBC8F7BDBFB62DFB2A2CB1A /* GCCalendar.h */,
-				CF567C885BE44E474536A53BA5F5F51D /* GCCalendarConfiguration.swift */,
-				E1FC53EC37AE8C8023EB86190BACC392 /* GCCalendarDayView.swift */,
-				F123FFF8DB31E613EB60C9A1C4FE688D /* GCCalendarMonthView.swift */,
-				EB452D6D50EA0892CB1566CB8595E06D /* GCCalendarView.swift */,
-				56B2464D67CC2257FC51740179D6F0F1 /* GCCalendarViewDelegate.swift */,
-				8A0213F07F126A32F472F126A1FE9458 /* GCCalendarWeekView.swift */,
-				B17B5E2587E7AAEC08C2F777FB5BF5EF /* Support Files */,
+				BC3CC9219D5ECDB87D9D8675DECAB039 /* ChromaAddButton.swift */,
+				B0673DE796C3380CD08F826DBF4E621C /* ChromaColorPicker.h */,
+				7A411CDB56DF060D962AAC9FAB7DC8F1 /* ChromaColorPicker.swift */,
+				ABB30E0BE1E90F907005F7702921E2C4 /* ChromaHandle.swift */,
+				4A95983D9F1A81277329205D7A8DA532 /* ChromaShadeSlider.swift */,
+				FA81EAADBE28F2C0B18E7CBE112D3E8D /* ColorModeToggleButton.swift */,
+				58F55D61D3C52C691D72A095A34E3FBC /* UIColor+Utilities.swift */,
+				5084FC1C5EEA11245DD80AB4AD60D847 /* Support Files */,
+			);
+			name = ChromaColorPicker;
+			path = ChromaColorPicker;
+			sourceTree = "<group>";
+		};
+		1172602E632C18BA1C819EAE0FE05CBF /* GCCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				48A839CF7E7D1D1376566B0038CD9B80 /* GCCalendar.h */,
+				0E337BBD6DB5FBF1C6EE5354C6C52B25 /* GCCalendarConfiguration.swift */,
+				4C211735F316ADE54BB7FF59F14C6943 /* GCCalendarDayView.swift */,
+				6066507FCF153AD111B4B55F889453DA /* GCCalendarMonthView.swift */,
+				F7F93D5581FCC4E9255338F117E530EC /* GCCalendarView.swift */,
+				AB7418E299AE135008CC3C4D950E9E62 /* GCCalendarViewDelegate.swift */,
+				B6CDD34F31A550AC4AC5E911B246E774 /* GCCalendarWeekView.swift */,
+				F93B77B917DB2C4AE7D33D29127FCB08 /* Support Files */,
 			);
 			name = GCCalendar;
 			path = GCCalendar;
 			sourceTree = "<group>";
 		};
-		3D96CBD79924247A7030E0207AF5155E /* Resources */ = {
+		5084FC1C5EEA11245DD80AB4AD60D847 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3236D92D58BBE27EC1EE301E569A7039 /* AlertViewController.xib */,
-				9F0F8C16992AF7F67D19B473E4A31940 /* Montserrat-Regular.ttf */,
-				265311FEB007023A449DCD88BBE6A764 /* SourceSansPro-Regular.ttf */,
+				040446D0B5FA75BB11E6167B1736982F /* ChromaColorPicker.modulemap */,
+				7226F3258CD23B2E7B5EDEFBF018A9C6 /* ChromaColorPicker.xcconfig */,
+				C5B4C3CE3FD8D898AEC487456D90285C /* ChromaColorPicker-dummy.m */,
+				C854040B91E5C96EC42F36C490CE1B34 /* ChromaColorPicker-prefix.pch */,
+				70F9C73708D17910239046780B545142 /* ChromaColorPicker-umbrella.h */,
+				B7E58B37094416897AA8C6F941B10935 /* Info.plist */,
 			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		405B2BE8524F3C61EAEBE04A05132F40 /* Presentr */ = {
-			isa = PBXGroup;
-			children = (
-				8C10562DD05B8DAE846BE17378AA58F0 /* AlertViewController.swift */,
-				73B4AADCD6173153EB17A02009367272 /* BackgroundView.swift */,
-				E2349339202736D5EDD80B4205D46F3E /* CoverHorizontalAnimation.swift */,
-				53D9A19806F7C476AE78222A99597DDF /* CoverVerticalAnimation.swift */,
-				2D008AF936D2F80E7475E60B4781B5C9 /* CoverVerticalFromTopAnimation.swift */,
-				B8E26E16E8187E1A8535F1174A4EFDC2 /* CrossDissolveAnimation.swift */,
-				33EE0ADBDDF5AF8C5B97C7244C96AA33 /* KeyboardTranslation.swift */,
-				4F6CF6E6DC134A55F612733DDE346B7A /* ModalCenterPosition.swift */,
-				1502A55EBA56A01A53160227DBC30030 /* ModalSize.swift */,
-				1B7403DAA5FEDDB8D37B8216CCF69A12 /* PresentationType.swift */,
-				C2BBACF5321436F0348B65170112C6BC /* Presentr.swift */,
-				EF3C42816F928F70C9F9F1B988961E3A /* Presentr+Equatable.swift */,
-				96C13EFDEC2DAB977350636C41B7AC38 /* PresentrAnimation.swift */,
-				39CDC165BF897FE4B5A962EA409BD725 /* PresentrController.swift */,
-				4C60A5CCCF606A171F70A88BAE802E85 /* PresentrShadow.swift */,
-				EA834738E981C3872BE862F6856016E9 /* TransitionType.swift */,
-				3D96CBD79924247A7030E0207AF5155E /* Resources */,
-				B342374F49BB8468EE4C91B90F9302DB /* Support Files */,
-			);
-			name = Presentr;
-			path = Presentr;
-			sourceTree = "<group>";
-		};
-		48646472BE41EE8584EDC899AC7C743E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				487E8DC24B699D2301659C42BBC3621D /* GCCalendar.framework */,
-				83820066C88A1475385C8EF64C965F26 /* Pods_Planner.framework */,
-				0A336B8B28EA2DD09E2C18A8F661CDA4 /* Presentr.framework */,
-			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/ChromaColorPicker";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -212,10 +205,33 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				B5BA2B3B2A0D13B267C7A2A3FE69307F /* Pods */,
-				48646472BE41EE8584EDC899AC7C743E /* Products */,
+				957FD9D4D8B73E4782986121A09C5E8E /* Pods */,
+				FA2257D2231F8DE43BB8DAAF1B99C0AF /* Products */,
 				D2C2F28A4A380D37CBC064F1C1603E10 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		85A7553DE2D8DF020F8E5ED6FF87B20C /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				602767F1F4D89C0684546CEC3D2DBE70 /* SideMenuManager.swift */,
+				525006EEED7404636164CC03AFBD614A /* SideMenuTransition.swift */,
+				D8CFA5A1E39D0B7E5BDD486C0168C0E5 /* UISideMenuNavigationController.swift */,
+				A50E8CD93823F1FB8F7FB231F11615A4 /* UITableViewVibrantCell.swift */,
+				D76556BEFC7EBCEA2336936E739B160F /* Support Files */,
+			);
+			name = SideMenu;
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		957FD9D4D8B73E4782986121A09C5E8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FF8EBC619A954B3DFC615612B75A4D1 /* ChromaColorPicker */,
+				1172602E632C18BA1C819EAE0FE05CBF /* GCCalendar */,
+				85A7553DE2D8DF020F8E5ED6FF87B20C /* SideMenu */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		9FA1EF751F4005120C1D7345F2654D21 /* Pods-Planner */ = {
@@ -234,43 +250,6 @@
 			);
 			name = "Pods-Planner";
 			path = "Target Support Files/Pods-Planner";
-			sourceTree = "<group>";
-		};
-		B17B5E2587E7AAEC08C2F777FB5BF5EF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				84067CA5AE02DEB40E313841B5F69185 /* GCCalendar.modulemap */,
-				7EE3093BBA0E77133F84C445B3AA6665 /* GCCalendar.xcconfig */,
-				2AFF7BB8205A273CE424371CCC0D338B /* GCCalendar-dummy.m */,
-				6326BC71CD3E32C0193DC4B1C508B154 /* GCCalendar-prefix.pch */,
-				50C10B11435164F168DDA4F0B4B2C308 /* GCCalendar-umbrella.h */,
-				6F83C75C84190233DADC57E5367088F8 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/GCCalendar";
-			sourceTree = "<group>";
-		};
-		B342374F49BB8468EE4C91B90F9302DB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5CC7DB8E5C74E69F5802D9E7C3168D71 /* Info.plist */,
-				D106944113DE1DEAA2C465695CBB2149 /* Presentr.modulemap */,
-				52689DC63A499B8C2A8B336429314F31 /* Presentr.xcconfig */,
-				A54B9B2E18E9BB5EF6E19CBA2E697103 /* Presentr-dummy.m */,
-				671F65D730CDFA3D2AD1F4C5ADFC9600 /* Presentr-prefix.pch */,
-				C7B66D735E1E7EBB40D0EE24EAD79FCA /* Presentr-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Presentr";
-			sourceTree = "<group>";
-		};
-		B5BA2B3B2A0D13B267C7A2A3FE69307F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				202DC1F7FB1B08038E194C0375C9DCC3 /* GCCalendar */,
-				405B2BE8524F3C61EAEBE04A05132F40 /* Presentr */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -297,6 +276,45 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		D76556BEFC7EBCEA2336936E739B160F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA97937E88456DB529120A92CB32D5E7 /* Info.plist */,
+				8D647712BB3305541CB287F2C0DA7F28 /* SideMenu.modulemap */,
+				F6B51D9144E837254A86155E6D0840BF /* SideMenu.xcconfig */,
+				B56696A473F607941DDC15B0A7E6AD5C /* SideMenu-dummy.m */,
+				C2A01E6BA6DCEA7610DC21BFEA750F18 /* SideMenu-prefix.pch */,
+				0E3CBC6420226587E5409A1A1AD98C40 /* SideMenu-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SideMenu";
+			sourceTree = "<group>";
+		};
+		F93B77B917DB2C4AE7D33D29127FCB08 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				57091F582AFDA39CBBCBDD00F76818A5 /* GCCalendar.modulemap */,
+				42A120DC0F0CB618461CFB2EE1912C4D /* GCCalendar.xcconfig */,
+				79E1BADB142C44957670A20AFF8D19EB /* GCCalendar-dummy.m */,
+				0523600A9BCC6DC70248CAE585190021 /* GCCalendar-prefix.pch */,
+				A78F1ADAB8A9C5B4448698DD7E087D75 /* GCCalendar-umbrella.h */,
+				6FFB3A646D108BDAF51C0D8079AF3F12 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GCCalendar";
+			sourceTree = "<group>";
+		};
+		FA2257D2231F8DE43BB8DAAF1B99C0AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABE719F9730B17075EE84742457C9C8B /* ChromaColorPicker.framework */,
+				51B0BB49093BE610C22C924F7099549F /* GCCalendar.framework */,
+				A17FE088EE485334AAAC22903AB16407 /* Pods_Planner.framework */,
+				614543BFD01CABF5754AA136C90589B9 /* SideMenu.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -309,60 +327,86 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		37E7C028AFBC182B555A0E593D1F4907 /* Headers */ = {
+		537E3AFB9460117F3179E3397FA5A563 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52C5894C1E3C05FFCC740C8DA00DF719 /* Pods-Planner-umbrella.h in Headers */,
+				2CD7BD2F25A728501BCA2B2226271982 /* ChromaColorPicker-umbrella.h in Headers */,
+				2F6CDE3B2BA4DA36386508A448EB8C1D /* ChromaColorPicker.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D233C27D34B4D4FFF3E1C59CBDD2C959 /* Headers */ = {
+		93B2B8E10091EA0B46F3BB84D628EE0E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E99B5FA99C985C8EE23F8531D60E9EEC /* Presentr-umbrella.h in Headers */,
+				0F63FBEDADCC4AF6AECDEB622CE8A19B /* SideMenu-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3A65F686CAAB782D8BBFC40AB046A7E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B45DF428571CC8CEE441D91A9EDB3B /* Pods-Planner-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		026B805234C610BFAD67F27C2E8357FC /* Presentr */ = {
+		8996C11DE087FF9B55CA3FEFA7C9105A /* Pods-Planner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC8D966D40DFA2DBE27BBF9B2A30CF1F /* Build configuration list for PBXNativeTarget "Presentr" */;
+			buildConfigurationList = 817782744DA251EF0933BE2908859F54 /* Build configuration list for PBXNativeTarget "Pods-Planner" */;
 			buildPhases = (
-				E9EEC778D897D2A2CC9ACB10958F203E /* Sources */,
-				E6FA226D2D807B22A9D87DCA619844A1 /* Frameworks */,
-				947D5CA8938BAC98E7267FD80BD1BF91 /* Resources */,
-				D233C27D34B4D4FFF3E1C59CBDD2C959 /* Headers */,
+				D38B74D3BB2A74FC1F3E10702B19552A /* Sources */,
+				717E39038AB00C896EF464342B72C414 /* Frameworks */,
+				B3A65F686CAAB782D8BBFC40AB046A7E /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = Presentr;
-			productName = Presentr;
-			productReference = 0A336B8B28EA2DD09E2C18A8F661CDA4 /* Presentr.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A24E31B7D976E0915AAC0BDA7DFEB180 /* Pods-Planner */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FED704D7EF98466B5538071D5A64864B /* Build configuration list for PBXNativeTarget "Pods-Planner" */;
-			buildPhases = (
-				EC70F0F4F6096532FD4260DDE701FD5A /* Sources */,
-				78DBEBDDF1AA0D0F03E1D06CDD444DA8 /* Frameworks */,
-				37E7C028AFBC182B555A0E593D1F4907 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EA4176A1DF73B213DC37D691CD1E3542 /* PBXTargetDependency */,
-				ECE6EF1C0F9D75BF72466B15F8AE9A20 /* PBXTargetDependency */,
+				586C7D3BFD0FAC398D295D3C07760D40 /* PBXTargetDependency */,
+				2A4DDE18A0E854CA72DB6E11274F27C9 /* PBXTargetDependency */,
+				0C4E66514596906F68BE1698139B34F2 /* PBXTargetDependency */,
 			);
 			name = "Pods-Planner";
 			productName = "Pods-Planner";
-			productReference = 83820066C88A1475385C8EF64C965F26 /* Pods_Planner.framework */;
+			productReference = A17FE088EE485334AAAC22903AB16407 /* Pods_Planner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		99AA48135ECB557858428F797600458F /* ChromaColorPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 543A042E3FD27E013465D142854479E1 /* Build configuration list for PBXNativeTarget "ChromaColorPicker" */;
+			buildPhases = (
+				F57AD227BCEA188ED1CDF943F7DADE5E /* Sources */,
+				E4C778F22C161741FB18E99032D63B84 /* Frameworks */,
+				537E3AFB9460117F3179E3397FA5A563 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChromaColorPicker;
+			productName = ChromaColorPicker;
+			productReference = ABE719F9730B17075EE84742457C9C8B /* ChromaColorPicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D431F6EB07D8634101282F3A7AC0A1AA /* SideMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E77A2E559A4587B280AC02B91D2D44F /* Build configuration list for PBXNativeTarget "SideMenu" */;
+			buildPhases = (
+				5CD3C9A55F9B795C854609CC11C211ED /* Sources */,
+				BBDB2C31187B8ABCF84E6EFC9DBEF006 /* Frameworks */,
+				93B2B8E10091EA0B46F3BB84D628EE0E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SideMenu;
+			productName = SideMenu;
+			productReference = 614543BFD01CABF5754AA136C90589B9 /* SideMenu.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EB11F443CE4B3DDE0556E1D7A6169D9F /* GCCalendar */ = {
@@ -379,7 +423,7 @@
 			);
 			name = GCCalendar;
 			productName = GCCalendar;
-			productReference = 487E8DC24B699D2301659C42BBC3621D /* GCCalendar.framework */;
+			productReference = 51B0BB49093BE610C22C924F7099549F /* GCCalendar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -399,60 +443,50 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 48646472BE41EE8584EDC899AC7C743E /* Products */;
+			productRefGroup = FA2257D2231F8DE43BB8DAAF1B99C0AF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				99AA48135ECB557858428F797600458F /* ChromaColorPicker */,
 				EB11F443CE4B3DDE0556E1D7A6169D9F /* GCCalendar */,
-				A24E31B7D976E0915AAC0BDA7DFEB180 /* Pods-Planner */,
-				026B805234C610BFAD67F27C2E8357FC /* Presentr */,
+				8996C11DE087FF9B55CA3FEFA7C9105A /* Pods-Planner */,
+				D431F6EB07D8634101282F3A7AC0A1AA /* SideMenu */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		947D5CA8938BAC98E7267FD80BD1BF91 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A017E03D3AAC31B905777AA8D836F08B /* AlertViewController.xib in Resources */,
-				B55F8BE423C34DE72CF191327799758A /* Montserrat-Regular.ttf in Resources */,
-				8BE740C0B8736519AFCD273EDFFDA790 /* SourceSansPro-Regular.ttf in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		E9EEC778D897D2A2CC9ACB10958F203E /* Sources */ = {
+		5CD3C9A55F9B795C854609CC11C211ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2082126F909360518055664D234FA607 /* AlertViewController.swift in Sources */,
-				51838108D999784FC5C918EA2DF7EE46 /* BackgroundView.swift in Sources */,
-				CA71FF91F3E561C43675E25FE8F0CC45 /* CoverHorizontalAnimation.swift in Sources */,
-				D6CC04FA380AB25C1C3BFFCFF8A1D8B1 /* CoverVerticalAnimation.swift in Sources */,
-				B0796B1AFA1CBD697151DAB4FAC3FCD5 /* CoverVerticalFromTopAnimation.swift in Sources */,
-				3004473EE263824E3FE7D0DBE4FAC1AC /* CrossDissolveAnimation.swift in Sources */,
-				72FAF64FDE35D7D31052C197545F2675 /* KeyboardTranslation.swift in Sources */,
-				D5BD45344CE7DA7515E20292A956797F /* ModalCenterPosition.swift in Sources */,
-				7DBF144BB15F20EF0193DD95F1AFCFC5 /* ModalSize.swift in Sources */,
-				2B44754530989DE49F0B58BDC6F2BF01 /* PresentationType.swift in Sources */,
-				B62E1EC1F1C5F9105C0772D426600C13 /* Presentr+Equatable.swift in Sources */,
-				3B80CFCFF135DF748E59DFC79A426805 /* Presentr-dummy.m in Sources */,
-				15358B9A592F7A22CEB2D5BF0938B33A /* Presentr.swift in Sources */,
-				994EEC1F19689502F2661E87288A5D9F /* PresentrAnimation.swift in Sources */,
-				79280901D485BDF242F5450406002B5F /* PresentrController.swift in Sources */,
-				350D6211C54DBCFE6B6D390D0B38C1D0 /* PresentrShadow.swift in Sources */,
-				A936065991E5B204B6EEF9F1DC80EBF0 /* TransitionType.swift in Sources */,
+				96A4608F8906D981466E302B01BBB1C6 /* SideMenu-dummy.m in Sources */,
+				8D0BBEAE3C38E86B87BFB944823B105A /* SideMenuManager.swift in Sources */,
+				DB91D9BB2F00D211C7E64B1FC371A61D /* SideMenuTransition.swift in Sources */,
+				9B2E9D6DC6FC06780610E76323704936 /* UISideMenuNavigationController.swift in Sources */,
+				19C1C1F7147E20F1FD2EB9A8F98F4B6C /* UITableViewVibrantCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC70F0F4F6096532FD4260DDE701FD5A /* Sources */ = {
+		D38B74D3BB2A74FC1F3E10702B19552A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74F97319A3210FF392AFF16A5F5346F4 /* Pods-Planner-dummy.m in Sources */,
+				E3BDD0359FB8370930D632716756A079 /* Pods-Planner-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57AD227BCEA188ED1CDF943F7DADE5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46BE6075A78FD94B44FA92245C2486A4 /* ChromaAddButton.swift in Sources */,
+				40035A7E409B83DCFF7FEB781C2EED00 /* ChromaColorPicker-dummy.m in Sources */,
+				CF264CDB3100B4C274326F95F32BC88B /* ChromaColorPicker.swift in Sources */,
+				EB82E7DA872E98A1B0B1F66C7CE15702 /* ChromaHandle.swift in Sources */,
+				FB24018F9DFDC79925597D4878E12FD4 /* ChromaShadeSlider.swift in Sources */,
+				92F8161F4E07A53E57E3EB2E1FA62238 /* ColorModeToggleButton.swift in Sources */,
+				8C81A1CEF8720A2EEE2BE86779865157 /* UIColor+Utilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,24 +507,30 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EA4176A1DF73B213DC37D691CD1E3542 /* PBXTargetDependency */ = {
+		0C4E66514596906F68BE1698139B34F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SideMenu;
+			target = D431F6EB07D8634101282F3A7AC0A1AA /* SideMenu */;
+			targetProxy = FA24B35A1F4971ACF8BAF3C2FAC58105 /* PBXContainerItemProxy */;
+		};
+		2A4DDE18A0E854CA72DB6E11274F27C9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GCCalendar;
 			target = EB11F443CE4B3DDE0556E1D7A6169D9F /* GCCalendar */;
-			targetProxy = 93108464B41162B21D13E5519CAF501B /* PBXContainerItemProxy */;
+			targetProxy = D025E2CA288314B59F3DB83F4C44F52C /* PBXContainerItemProxy */;
 		};
-		ECE6EF1C0F9D75BF72466B15F8AE9A20 /* PBXTargetDependency */ = {
+		586C7D3BFD0FAC398D295D3C07760D40 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Presentr;
-			target = 026B805234C610BFAD67F27C2E8357FC /* Presentr */;
-			targetProxy = ADE67EFCA2033C2AB45FBEBDC1E3E9A6 /* PBXContainerItemProxy */;
+			name = ChromaColorPicker;
+			target = 99AA48135ECB557858428F797600458F /* ChromaColorPicker */;
+			targetProxy = 8F8563E9B9DD2F73AD62582DEB7C8BBC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		066BA102A4AFCBF1248A0DD9BD54258A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EE3093BBA0E77133F84C445B3AA6665 /* GCCalendar.xcconfig */;
+			baseConfigurationReference = 42A120DC0F0CB618461CFB2EE1912C4D /* GCCalendar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -518,6 +558,70 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		1BB7077B4C307BFBF28A86196AF5014B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6B51D9144E837254A86155E6D0840BF /* SideMenu.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SideMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
+				PRODUCT_NAME = SideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		206EFE5129D09FFB6113AC2563BBE1EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7226F3258CD23B2E7B5EDEFBF018A9C6 /* ChromaColorPicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ChromaColorPicker/ChromaColorPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ChromaColorPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ChromaColorPicker/ChromaColorPicker.modulemap";
+				PRODUCT_NAME = ChromaColorPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		323A24856F1A4871A780301AF5C02A2A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -584,7 +688,7 @@
 		};
 		3A97F4A08D8FBA1D5B260C7151C28FE2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EE3093BBA0E77133F84C445B3AA6665 /* GCCalendar.xcconfig */;
+			baseConfigurationReference = 42A120DC0F0CB618461CFB2EE1912C4D /* GCCalendar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -614,9 +718,9 @@
 			};
 			name = Release;
 		};
-		3BDFBE71BB631DF1BC80AE1428527FC1 /* Release */ = {
+		3DDBF0EADC62DEFFCCAB9AFA9F9C9809 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52689DC63A499B8C2A8B336429314F31 /* Presentr.xcconfig */;
+			baseConfigurationReference = F6B51D9144E837254A86155E6D0840BF /* SideMenu.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -627,45 +731,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Presentr/Presentr-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Presentr/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SideMenu/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Presentr/Presentr.modulemap";
-				PRODUCT_NAME = Presentr;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8DA8F73F3C9A4677C74DF57142D54D41 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52689DC63A499B8C2A8B336429314F31 /* Presentr.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Presentr/Presentr-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Presentr/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Presentr/Presentr.modulemap";
-				PRODUCT_NAME = Presentr;
+				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
+				PRODUCT_NAME = SideMenu;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -676,6 +748,72 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		4FE9CCD48174E19715DFA0C4E1C03274 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7226F3258CD23B2E7B5EDEFBF018A9C6 /* ChromaColorPicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ChromaColorPicker/ChromaColorPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ChromaColorPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ChromaColorPicker/ChromaColorPicker.modulemap";
+				PRODUCT_NAME = ChromaColorPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC1042FC2873CCD66C5198D36E8E8AA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00847315DE69C8C198E2F53AA55C196D /* Pods-Planner.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Planner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Planner/Pods-Planner.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Planner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		CA33F186435244FD0FD5B7325332656C /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -735,42 +873,7 @@
 			};
 			name = Release;
 		};
-		DBBFE1471E0E10A49434EC617B1981B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00847315DE69C8C198E2F53AA55C196D /* Pods-Planner.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Planner/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Planner/Pods-Planner.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Planner;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FE51F571FF10EB9DFC96B16C1DEE5B2E /* Debug */ = {
+		E79DC7561BDC88FE02C575FF3E21A992 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 160128278EBDB58226DBECE6445E4E76 /* Pods-Planner.debug.xcconfig */;
 			buildSettings = {
@@ -826,20 +929,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC8D966D40DFA2DBE27BBF9B2A30CF1F /* Build configuration list for PBXNativeTarget "Presentr" */ = {
+		2E77A2E559A4587B280AC02B91D2D44F /* Build configuration list for PBXNativeTarget "SideMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8DA8F73F3C9A4677C74DF57142D54D41 /* Debug */,
-				3BDFBE71BB631DF1BC80AE1428527FC1 /* Release */,
+				3DDBF0EADC62DEFFCCAB9AFA9F9C9809 /* Debug */,
+				1BB7077B4C307BFBF28A86196AF5014B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FED704D7EF98466B5538071D5A64864B /* Build configuration list for PBXNativeTarget "Pods-Planner" */ = {
+		543A042E3FD27E013465D142854479E1 /* Build configuration list for PBXNativeTarget "ChromaColorPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FE51F571FF10EB9DFC96B16C1DEE5B2E /* Debug */,
-				DBBFE1471E0E10A49434EC617B1981B4 /* Release */,
+				4FE9CCD48174E19715DFA0C4E1C03274 /* Debug */,
+				206EFE5129D09FFB6113AC2563BBE1EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		817782744DA251EF0933BE2908859F54 /* Build configuration list for PBXNativeTarget "Pods-Planner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E79DC7561BDC88FE02C575FF3E21A992 /* Debug */,
+				BC1042FC2873CCD66C5198D36E8E8AA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

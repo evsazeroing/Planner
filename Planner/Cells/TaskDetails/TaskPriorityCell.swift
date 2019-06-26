@@ -1,8 +1,10 @@
 
 import UIKit
 
+// ячейка для отображения приоритета задачи (редактирование/создание)
 class TaskPriorityCell: UITableViewCell {
 
+    @IBOutlet weak var labelTaskPriorityColor: UILabel!
     @IBOutlet weak var labelTaskPriority: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()

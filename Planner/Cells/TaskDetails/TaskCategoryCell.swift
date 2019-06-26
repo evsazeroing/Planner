@@ -1,6 +1,7 @@
 
 import UIKit
 
+// ячейка для отображения категории задачи (редактирование/создание)
 class TaskCategoryCell: UITableViewCell {
 
     @IBOutlet weak var labelTaskCategory: UILabel!

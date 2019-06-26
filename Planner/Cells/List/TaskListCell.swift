@@ -1,6 +1,7 @@
 
 import UIKit
 
+// ячейка для отображения данных задачи в списке
 class TaskListCell: UITableViewCell {
 
     @IBOutlet weak var labelTaskName: UILabel!

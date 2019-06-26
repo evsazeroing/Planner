@@ -4,7 +4,7 @@ import UIKit
 import Foundation
 
 // реализация DAO для работы с категориями
-class CategoryDaoDbImpl: CommonSearchDAO{
+class CategoryDaoDbImpl: DictDAO, CommonSearchDAO{
 
 
     // для наглядности - типы для generics (можно не указывать явно, т.к. компилятор автоматически получит их из методов)
@@ -14,7 +14,7 @@ class CategoryDaoDbImpl: CommonSearchDAO{
 
     // паттерн синглтон
     static let current = CategoryDaoDbImpl()
-    private init(){}
+    private init(){getAll(sortType: CategorySortType.name)}
 
 
 
@@ -22,6 +22,7 @@ class CategoryDaoDbImpl: CommonSearchDAO{
 
 
     // MARK: dao
+
 
     // получить все объекты
     func getAll(sortType:SortType?) -> [Item] {
@@ -44,41 +45,15 @@ class CategoryDaoDbImpl: CommonSearchDAO{
     }
 
 
-    // удаление объекта
-    func delete(_ item: Item) {
-        context.delete(item)
-        // удаление из коллекции происходит в контроллере, т.к. там легче удалять по индексу
-        save()
-    }
-
-
-
-    // добавление или обновление объекта (если объект существует - обновить, если нет - добавить)
-    func addOrUpdate(_ item:Item){
-
-        if !items.contains(item){
-            items.append(item)
-        }
-
-        save()
-
-    }
-
-
     // поиск по имени задачи
     func search(text: String, sortType:SortType?) -> [Item] {
 
         let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest() // объект-контейнер для выборки данных
 
-        var params = [Any]() // массив параметров любого типа
-
-        // прописываем только само условие (без where)
-        var sql = "name CONTAINS[c] %@" // начало запроса, [c] - case insensitive
-
-        params.append(text) // указываем значение параметра
-
         // объект-контейнер для добавления условий
-        var predicate = NSPredicate(format: sql, argumentArray: params) // добавляем параметры в sql
+        var predicate = NSPredicate(format: "name CONTAINS[c] %@", text) // [c] - case insensitive
+
+        fetchRequest.predicate = predicate // добавляем предикат в контейнер запроса
 
         fetchRequest.predicate = predicate // добавляем предикат в контейнер запроса
 

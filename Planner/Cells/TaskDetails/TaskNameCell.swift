@@ -1,6 +1,7 @@
 
 import UIKit
 
+// ячейка для отображения названия задачи (редактирование/создание)
 class TaskNameCell: UITableViewCell, UITextFieldDelegate {
 
     @IBOutlet weak var textTaskName: UITextField!

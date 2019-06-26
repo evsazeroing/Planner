@@ -1,6 +1,7 @@
 
 import UIKit
 
+// ячейка для отображения данных категории в списке
 class CategoryListCell: UITableViewCell {
 
     @IBOutlet weak var labelCategoryName: UILabel!

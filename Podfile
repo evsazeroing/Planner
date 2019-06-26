@@ -7,6 +7,9 @@ target 'Planner' do
 
   # Pods for Planner
 
-pod 'GCCalendar'
+pod 'GCCalendar' # календар для выбора даты
+pod 'SideMenu' # боковое меню
+pod 'ChromaColorPicker' # круговая палитра для выбора цвета
+
 
 end
