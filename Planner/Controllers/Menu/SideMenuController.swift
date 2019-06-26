@@ -68,7 +68,7 @@ class SideMenuController: UITableViewController {
         // "Поделиться с друзьями"
         if tableView.cellForRow(at: indexPath) === cellShare{
 
-            let shareController = UIActivityViewController(activityItems: [lsShareText], applicationActivities: nil)
+            let shareController = UIActivityViewController(activityItems: ["Создайте iOS приложение с нуля"], applicationActivities: nil)
 
             shareController.popoverPresentationController?.sourceView = self.view
 
@@ -88,11 +88,11 @@ class SideMenuController: UITableViewController {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case commonSection:
-            return lsMenuCommon
+            return "Общие"
         case dictionarySection:
-            return lsMenuDictionaries
+            return "Справочники"
         case helpSection:
-            return lsMenuHelp
+            return "Помощь"
         default:
             return ""
         }
@@ -132,7 +132,7 @@ class SideMenuController: UITableViewController {
             }
 
             controller.showMode = .edit // режим редактирования (чтобы были доступны. доп. действия)
-            controller.navigationTitle = lsEdit
+            controller.navigationTitle = "Редактирование"
 
         case "EditPriorities": // открываем контроллер для редактирования категорий
             guard let controller = segue.destination as? PriorityListController else {
@@ -140,7 +140,7 @@ class SideMenuController: UITableViewController {
             }
 
             controller.showMode = .edit // режим редактирования (чтобы были доступны. доп. действия)
-            controller.navigationTitle = lsEdit
+            controller.navigationTitle = "Редактирование"
         default:
             return
         }

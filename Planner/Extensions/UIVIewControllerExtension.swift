@@ -43,13 +43,13 @@ extension UIViewController{
             // указываем текст в зависимости от разницы в днях
             switch diff {
             case 0:
-                text = lsToday
+                text = "Сегодня" // TODO: локализация
             case 1:
-                text = lsTomorrow
+                text = "Завтра"
             case 1...:
-                text = "\(diff) \(lsDays)."
+                text = "\(diff) дн."
             case ..<0:
-                text = "\(diff) \(lsDays)."
+                text = "\(diff) дн."
                 label.textColor = .red
             default:
                 text = ""
@@ -64,7 +64,7 @@ extension UIViewController{
     // диалоговое окно для подтверждения действия
     func confirmAction(text:String, actionClosure:@escaping ()->Void){
         // объект диалогового окна
-        let dialogMessage = UIAlertController(title: lsConfirm, message: text, preferredStyle: .actionSheet)
+        let dialogMessage = UIAlertController(title: "Подтверждение", message: text, preferredStyle: .actionSheet)
 
         // создания объектов для действий (ок, отмена)
 
@@ -74,7 +74,7 @@ extension UIViewController{
         })
 
         // действие Отмена
-        let cancel = UIAlertAction(title: lsCancel, style: .cancel) { (action) -> Void in
+        let cancel = UIAlertAction(title: "Отмена", style: .cancel) { (action) -> Void in
         }
 
         // добавить действия в диалоговое окно
@@ -112,7 +112,7 @@ extension UIViewController{
             ))
 
             // при нажатии на Отмену - просто закрывается диалоговое окно
-            alert.addAction(UIAlertAction(title: lsCancel, style: .cancel, handler: nil))
+            alert.addAction(UIAlertAction(title: "Отмена", style: .cancel, handler: nil))
 
             // показать диалоговое окно
             self.present(alert, animated: true, completion: nil)
@@ -126,13 +126,13 @@ extension UIViewController{
 
         // короткая запись создания кнопки
         // реализацию cancel передаем в параметре
-        let buttonCancel = UIBarButtonItem(title: lsCancel, style: .plain, target: self, action: cancel)
+        let buttonCancel = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: cancel)
         navigationItem.leftBarButtonItem = buttonCancel // будет отображаться слева
 
 
         // короткая запись создания кнопки
         // реализацию save передаем в параметре
-        let buttonSave = UIBarButtonItem(title: lsSave, style: .plain, target: self, action: save)
+        let buttonSave = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: save)
         navigationItem.rightBarButtonItem = buttonSave // будет отображаться справа
 
 
@@ -144,7 +144,7 @@ extension UIViewController{
         let buttonClose = UIBarButtonItem()
         buttonClose.target = self
         buttonClose.action = close
-        buttonClose.title = lsClose
+        buttonClose.title = "Закрыть"
         navigationItem.leftBarButtonItem = buttonClose
 
         // короткая запись создания кнопки
@@ -158,7 +158,7 @@ extension UIViewController{
         let buttonClose = UIBarButtonItem()
         buttonClose.target = self
         buttonClose.action = close
-        buttonClose.title = lsClose
+        buttonClose.title = "Закрыть"
         navigationItem.leftBarButtonItem = buttonClose
 
         navigationItem.rightBarButtonItem = nil
@@ -202,7 +202,7 @@ extension UIViewController{
 
         }else{ // если нет записей
             tableView.separatorStyle = .none // чтобы не было пустых линий
-            tableView.backgroundView = createNoDataView(lsNoData) // показать сообщение, что нет данных в таблице
+            tableView.backgroundView = createNoDataView("Нет данных") // показать сообщение, что нет данных в таблице
         }
     }
 

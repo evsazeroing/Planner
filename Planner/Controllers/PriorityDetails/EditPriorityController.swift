@@ -95,7 +95,7 @@ class EditPriorityController: UITableViewController, UITextFieldDelegate {
         if priority ==  nil{ // если создаем новый объект (не режим редактирования)
             priority = Priority(context:priorityDAO.context) // создаем пустой task
 
-            priority?.index = Int32(priorityDAO.items.count+1) // увеличиваем индекс на 1
+            priority?.index = Int32(priorityDAO.items.count + 1) // получаем следующий индекс
         }
 
         // передаем обратно значение priority
@@ -104,7 +104,7 @@ class EditPriorityController: UITableViewController, UITextFieldDelegate {
             priority.color = colorPicker.currentColor // берем текущий выбранный цвет из палитры
 
             if isEmptyTrim(textPriorityName.text){
-                priority.name = lsNewPriority
+                priority.name = "Новый приоритет"
             }else{
                 priority.name = textPriorityName.text
             }
@@ -124,9 +124,9 @@ class EditPriorityController: UITableViewController, UITextFieldDelegate {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0:
-            return lsName
+            return "Название приоритета"
         case 1:
-            return lsSelectColor
+            return "Выберите цвет"
         default:
             return ""
         }

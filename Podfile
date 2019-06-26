@@ -13,9 +13,7 @@ pod 'ChromaColorPicker' # круговая палитра для выбора ц
 pod 'SwiftReorder' # перетаскивание строк таблицы для смены порядка
 pod 'SwiftIconFont' # шрифты-иконки
 pod 'Toaster' # вспылывающие сообщения
-pod 'L10n-swift' # локализация, переключение языка приложения "на лету"
-pod 'FlagKit' # картинки флагов стран
-pod 'SwiftyOnboard' # приветственные слайды
+
 
 
 end

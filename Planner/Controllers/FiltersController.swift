@@ -34,8 +34,6 @@ class FiltersController: UITableViewController {
         switchEmptyPriorities.isOn = switchEmptyPrioritiesInitValue
         switchCompleted.isOn = switchCompletedInitValue
         switchEmptyDates.isOn = switchEmptyDatesInitValue
-
-        title = lsFilter
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,7 +66,7 @@ class FiltersController: UITableViewController {
     // футер для секции с фильтрацией
     override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
         if section == filterSection{
-            return lsSelectedTasksWillShow
+            return "Включенные задачи будут отображаться в общем списке"
         }
 
         return ""
@@ -78,7 +76,7 @@ class FiltersController: UITableViewController {
     // заголовки секций
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == filterSection{
-            return lsSelectValue
+            return "Выберите значения"
         }
 
         return ""
