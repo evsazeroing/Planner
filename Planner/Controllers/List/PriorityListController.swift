@@ -1,8 +1,9 @@
 
 import UIKit
+import SwiftReorder
 
 // список приоритетов
-class PriorityListController: DictionaryController<PriorityDaoDbImpl>, ActionResultDelegate {
+class PriorityListController: DictionaryController<PriorityDaoDbImpl>, ActionResultDelegate, TableViewReorderDelegate {
 
     @IBOutlet weak var tableView: UITableView! // ссылка на компонент таблицы
 
@@ -18,6 +19,7 @@ class PriorityListController: DictionaryController<PriorityDaoDbImpl>, ActionRes
         super.tableViewDict = tableView
         super.labelHeaderTitleDict = labelHeaderTitle
 
+        tableView.reorder.delegate = self // обработка действий по перетаскиванию элементов списка
 
         dao = PriorityDaoDbImpl.current
 
@@ -50,7 +52,16 @@ class PriorityListController: DictionaryController<PriorityDaoDbImpl>, ActionRes
 
 
 
+        cell.labelTaskCount.text = "\(priority.tasks?.count ?? 0)"
+
+
         if showMode == .edit{
+            
+            // иконка перетаскивания
+            cell.labelMoveIcon.isHidden = false
+            cell.labelMoveIcon.font = UIFont.icon(from: .FontAwesome, ofSize: 17.0)
+            cell.labelMoveIcon.text = String.fontAwesomeIcon("arrows")
+            cell.labelMoveIcon.textColor = UIColor.lightGray
 
             buttonSelectDeselect.isHidden = false
 
@@ -71,6 +82,8 @@ class PriorityListController: DictionaryController<PriorityDaoDbImpl>, ActionRes
 
             // отображаем кол-во задач для данной категории (показывается только для этого режима showMode)
         }else if showMode == .select{
+
+            cell.labelMoveIcon.isHidden = true
 
             tableView.allowsMultipleSelection = false
 
@@ -144,6 +157,36 @@ class PriorityListController: DictionaryController<PriorityDaoDbImpl>, ActionRes
         return dao.search(text: text, sortType: PrioritySortType.index)
     }
 
+
+    // MARK: drag
+
+    // перетащили строку
+    func tableViewDidFinishReordering(_ tableView: UITableView, from initialSourceIndexPath: IndexPath, to finalDestinationIndexPath: IndexPath) {
+
+        let item = dao.items.remove(at: initialSourceIndexPath.row) // удаляем со старого места
+        dao.items.insert(item, at: finalDestinationIndexPath.row) // добавляем в новое место внутри коллекции
+
+        dao.updateIndexes() // актуализиируем индексы (т.к. после перестановки они сбились)
+        tableView.reloadData() // показываем обновленные данные
+
+    }
+
+
+
+
+
+    // можно ли передвигать строку
+    func tableView(_ tableView: UITableView, canReorderRowAt indexPath: IndexPath) -> Bool {
+        if showMode == .select || count<=1{
+            return false // нельзя переставлять строки
+        }
+
+        return true
+    }
+
+
+    func tableView(_ tableView: UITableView, reorderRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+    }
 
 
     // MARK: prepare

@@ -2,6 +2,7 @@
 import UIKit
 import CoreData
 import SideMenu
+import SwiftIconFont
 
 // контроллер для отображения списка задач
 class TaskListController: UITableViewController, ActionResultDelegate {
@@ -51,11 +52,9 @@ class TaskListController: UITableViewController, ActionResultDelegate {
 
         hideKeyboardWhenTappedAround() // скрывать клавиатуру, если нажать мимо нее
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        initIcons()
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+
     }
 
     
@@ -66,7 +65,7 @@ class TaskListController: UITableViewController, ActionResultDelegate {
 
 
 
-    // MARK: Side Menu
+    // MARK: init
 
     func initSlideMenu(){
         SideMenuManager.default.menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "SideMenu") as? UISideMenuNavigationController
@@ -81,6 +80,12 @@ class TaskListController: UITableViewController, ActionResultDelegate {
 
 
     }
+
+    func initIcons(){
+        navigationItem.rightBarButtonItem?.icon(from: .Themify, code: "plus", ofSize: 20)
+        navigationItem.leftBarButtonItem?.icon(from: .Themify, code: "menu", ofSize: 20)
+    }
+
 
 
 

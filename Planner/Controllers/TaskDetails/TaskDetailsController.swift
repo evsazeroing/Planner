@@ -1,10 +1,14 @@
 
 import UIKit
+import SwiftIconFont
 
 // контроллер для редактирования/создания задачи
 class TaskDetailsController: UIViewController, UITableViewDataSource, UITableViewDelegate, ActionResultDelegate {
 
     @IBOutlet weak var tableView: UITableView! // ссылка на компонент
+
+    @IBOutlet weak var buttonDelete: UIButton!
+    @IBOutlet weak var buttonComplete: UIButton!
 
     // текущая задача для редактирования (либо для создания новой задачи)
     var task:Task!
@@ -50,6 +54,8 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
         }
 
         hideKeyboardWhenTappedAround() // скрывать клавиатуру, если нажать мимо нее
+
+        initButtons()
     }
 
     // вызывается, если не хватает памяти (чтобы очистить ресурсы)
@@ -58,6 +64,20 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
         // Dispose of any resources that can be recreated.
     }
 
+
+    // MARK: init
+
+    func initButtons(){
+
+        // указываем иконки для кнопок (вместо текста)
+        buttonDelete.titleLabel?.font = UIFont.icon(from: .FontAwesome, ofSize: 18.0)
+        buttonDelete.titleLabel?.tintColor = UIColor.white
+        buttonDelete.setTitle(String.fontAwesomeIcon("trash"), for: .normal)
+
+        buttonComplete.titleLabel?.font = UIFont.icon(from: .FontAwesome, ofSize: 18.0)
+        buttonComplete.titleLabel?.tintColor = UIColor.white
+        buttonComplete.setTitle(String.fontAwesomeIcon("check"), for: .normal)
+    }
 
 
     // MARK: tableView

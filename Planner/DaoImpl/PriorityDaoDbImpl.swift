@@ -23,9 +23,7 @@ class PriorityDaoDbImpl : DictDAO, CommonSearchDAO{
 
     // MARK: dao
 
-
-    
-
+  
     // получить все объекты
     func getAll(sortType:SortType?) -> [Item] {
         let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest() // объект-контейнер для выборки данных
@@ -77,6 +75,22 @@ class PriorityDaoDbImpl : DictDAO, CommonSearchDAO{
 
 
     }
+
+
+    // MARK: util
+
+    // обновляет индексы у объектов в зависимости от расположения в массиве
+    func updateIndexes(){
+        for (index, item) in items.enumerated(){
+            item.index = Int32(index)
+        }
+
+        save()
+
+        items = getAll(sortType: .index)
+    }
+
+
 
  
 }

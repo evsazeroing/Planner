@@ -96,6 +96,7 @@ class EditPriorityController: UITableViewController, UITextFieldDelegate {
             priority = Priority(context:priorityDAO.context) // создаем пустой task
 
             priority?.index = Int32(priorityDAO.items.count + 1) // получаем следующий индекс
+
         }
 
         // передаем обратно значение priority

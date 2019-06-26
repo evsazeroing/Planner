@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220395362047B84100867D56 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220395352047B84100867D56 /* ViewExtension.swift */; };
+		220395372047BB9C00867D56 /* SwiftIconFont.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220395382047BB9C00867D56 /* SwiftIconFont.framework */; };
 		2208B9192043DC3300BA40BC /* Checkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208B9182043DC3300BA40BC /* Checkable.swift */; };
 		2208B91B2043DD7500BA40BC /* DictDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208B91A2043DD7500BA40BC /* DictDAO.swift */; };
 		220CD7DF201B5C97001B1D2D /* TaskExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CD7DE201B5C97001B1D2D /* TaskExtension.swift */; };
@@ -48,11 +50,14 @@
 		22CA32212032BA8B00752357 /* QuickTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA32202032BA8B00752357 /* QuickTaskCell.swift */; };
 		22DE177620453FC600F8BBD7 /* EditPriorityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DE177520453FC600F8BBD7 /* EditPriorityController.swift */; };
 		22DE17772045401800F8BBD7 /* ChromaColorPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DE17782045401800F8BBD7 /* ChromaColorPicker.framework */; };
+		22DE17792046A9BA00F8BBD7 /* SwiftReorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DE177A2046A9BA00F8BBD7 /* SwiftReorder.framework */; };
 		22E01EC82014C2FB004B5989 /* TaskListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E01EC72014C2FB004B5989 /* TaskListCell.swift */; };
 		22E92C751FE16FC3001F8493 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E92C741FE16FC3001F8493 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		220395352047B84100867D56 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		220395382047BB9C00867D56 /* SwiftIconFont.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftIconFont.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2208B9182043DC3300BA40BC /* Checkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkable.swift; sourceTree = "<group>"; };
 		2208B91A2043DD7500BA40BC /* DictDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictDAO.swift; sourceTree = "<group>"; };
 		220CD7DE201B5C97001B1D2D /* TaskExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskExtension.swift; sourceTree = "<group>"; };
@@ -96,6 +101,7 @@
 		22CA32202032BA8B00752357 /* QuickTaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickTaskCell.swift; sourceTree = "<group>"; };
 		22DE177520453FC600F8BBD7 /* EditPriorityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPriorityController.swift; sourceTree = "<group>"; };
 		22DE17782045401800F8BBD7 /* ChromaColorPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ChromaColorPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22DE177A2046A9BA00F8BBD7 /* SwiftReorder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftReorder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E01EC72014C2FB004B5989 /* TaskListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListCell.swift; sourceTree = "<group>"; };
 		22E92C741FE16FC3001F8493 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		295494373315A5A4CF980A13 /* Pods-Planner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planner.release.xcconfig"; path = "Pods/Target Support Files/Pods-Planner/Pods-Planner.release.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +113,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				220395372047BB9C00867D56 /* SwiftIconFont.framework in Frameworks */,
+				22DE17792046A9BA00F8BBD7 /* SwiftReorder.framework in Frameworks */,
 				22DE17772045401800F8BBD7 /* ChromaColorPicker.framework in Frameworks */,
 				22818A36203D9D2100A1EBBA /* SideMenu.framework in Frameworks */,
 				22879A132036B84F00D39C82 /* GCCalendar.framework in Frameworks */,
@@ -120,6 +128,8 @@
 		097E08353C79E1C83DFFCA0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				220395382047BB9C00867D56 /* SwiftIconFont.framework */,
+				22DE177A2046A9BA00F8BBD7 /* SwiftReorder.framework */,
 				22DE17782045401800F8BBD7 /* ChromaColorPicker.framework */,
 				22818A37203D9D2100A1EBBA /* SideMenu.framework */,
 				22879A142036B84F00D39C82 /* GCCalendar.framework */,
@@ -134,6 +144,7 @@
 				220CD7DE201B5C97001B1D2D /* TaskExtension.swift */,
 				220CD7E0201B5CDC001B1D2D /* DateExtension.swift */,
 				2228DA352036DF99002B624E /* UIVIewControllerExtension.swift */,
+				220395352047B84100867D56 /* ViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -444,12 +455,16 @@
 				"${BUILT_PRODUCTS_DIR}/ChromaColorPicker/ChromaColorPicker.framework",
 				"${BUILT_PRODUCTS_DIR}/GCCalendar/GCCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftIconFont/SwiftIconFont.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftReorder/SwiftReorder.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChromaColorPicker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftIconFont.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftReorder.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -471,6 +486,7 @@
 				22921257203EDF7500635313 /* TaskSearchDAO.swift in Sources */,
 				22A98BC52029A3820051183B /* ActionResultDelegate.swift in Sources */,
 				2228DA322036DC46002B624E /* DatetimePickerController.swift in Sources */,
+				220395362047B84100867D56 /* ViewExtension.swift in Sources */,
 				22A98B77202589400051183B /* Crud.swift in Sources */,
 				220CD7E1201B5CDC001B1D2D /* DateExtension.swift in Sources */,
 				22CA32212032BA8B00752357 /* QuickTaskCell.swift in Sources */,

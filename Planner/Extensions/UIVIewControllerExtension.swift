@@ -206,4 +206,7 @@ extension UIViewController{
         view.endEditing(true) // скрыть клавиатуру
     }
 
+
+
+   
 }

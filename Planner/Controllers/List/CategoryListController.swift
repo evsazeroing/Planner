@@ -36,6 +36,8 @@ class CategoryListController: DictionaryController<CategoryDaoDbImpl> {
 
         let category = dao.items[indexPath.row] // получаем каждую категорию по индексу из массива, чтобы отобразить название
 
+        cell.labelTaskCount.text = "\(category.tasks?.count ?? 0)" // кол-во задач для данного значения
+
         cell.labelCategoryName.text = category.name
 
         cell.selectionStyle = .none // чтобы не выделялась строка при нажатии (т.к. у нас будет включаться/выключаться иконка)
