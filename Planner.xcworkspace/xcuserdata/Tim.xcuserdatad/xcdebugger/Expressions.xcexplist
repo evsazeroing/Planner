@@ -11,22 +11,33 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "TaskInfoController.viewDidLoad():TaskInfoController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "taskInfoShowMode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "TaskListController.updateTable():TaskListController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "priorityDAO.checkedItems()">
+               value = "categoryDAO">
             </PersistentString>
             <PersistentString
                value = "priorityDAO">
             </PersistentString>
             <PersistentString
-               value = "categoryDAO">
+               value = "priorityDAO.checkedItems()">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "TaskListController.done(source:data:):TaskListController.swift">
          <PersistentStrings>
+            <PersistentString
+               value = "tableView.indexPathForSelectedRow">
+            </PersistentString>
             <PersistentString
                value = "task.priority.name">
             </PersistentString>
@@ -55,6 +66,17 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "DictDAO.checkedItems():DictDAO.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "items.filter(){$0.checked == true}">
+            </PersistentString>
+            <PersistentString
+               value = "items">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "DictionaryController.checkItem(_:):DictionaryController.swift">
          <PersistentStrings>
             <PersistentString
@@ -62,14 +84,6 @@
             </PersistentString>
             <PersistentString
                value = "selectedItem">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "DatetimePickerController.tapSave(_:):DatetimePickerController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "selectedDate">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -90,10 +104,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "CategoryListController.viewDidLoad():CategoryListController.swift">
+         contextName = "DatetimePickerController.tapSave(_:):DatetimePickerController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "CategoryDaoDbImpl.current">
+               value = "selectedDate">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -106,15 +120,15 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "DictDAO.checkedItems():DictDAO.swift">
+         contextName = "CategoryListController.viewDidLoad():CategoryListController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "items.filter(){$0.checked == true}">
-            </PersistentString>
-            <PersistentString
-               value = "items">
+               value = "CategoryDaoDbImpl.current">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TaskListController.taskWillShow(_:):TaskListController.swift">
       </ContextState>
       <ContextState
          contextName = "DictionaryController.addOrUpdateItem(_:):DictionaryController.swift">

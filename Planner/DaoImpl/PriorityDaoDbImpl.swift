@@ -23,7 +23,9 @@ class PriorityDaoDbImpl : DictDAO, CommonSearchDAO{
 
     // MARK: dao
 
-  
+
+   
+
     // получить все объекты
     func getAll(sortType:SortType?) -> [Item] {
         let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest() // объект-контейнер для выборки данных

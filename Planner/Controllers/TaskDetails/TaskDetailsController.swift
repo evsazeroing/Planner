@@ -28,6 +28,8 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
     let taskDeadlineSection = 3
     let taskInfoSection = 4
 
+    var mode:TaskDetailsMode!
+
     var dateFormatter:DateFormatter!
 
     var delegate:ActionResultDelegate! // нужен будет для уведомления и вызова функции из контроллера списка задач
@@ -210,10 +212,16 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
             // получаем ссылку на ячейку
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "cellTaskInfo", for: indexPath) as? TaskInfoCell else{
                 fatalError("cell type")
-            }
+            }            
 
             // заполняем компонент данными из задачи
-            cell.textviewTaskInfo.text = taskInfo
+            if taskInfo != nil{
+                cell.textviewTaskInfo.text = taskInfo
+                cell.textviewTaskInfo.textColor = UIColor.darkGray
+            }else{ // либо пишем подсказку
+                cell.textviewTaskInfo.text = "Нажмите для заполнения"
+                cell.textviewTaskInfo.textColor = UIColor.lightGray
+            }
 
             textviewTaskInfo = cell.textviewTaskInfo // чтобы можно было использовать компонент вне метода tableView и получать из него значение
 
@@ -371,6 +379,8 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
 
             }
 
+    
+
         case "SelectDatetime": // переходим в контроллер для выбора даты
 
             if let controller = segue.destination as?  DatetimePickerController{
@@ -409,6 +419,8 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
 
             textviewTaskInfo.text = taskInfo
 
+
+
         case is DatetimePickerController: // возвращаемся после редактирования даты
             taskDeadline = data as? Date
 
@@ -422,8 +434,10 @@ class TaskDetailsController: UIViewController, UITableViewDataSource, UITableVie
 
     }
 
-   
-   
-    
+}
+
+enum TaskDetailsMode{
+    case add
+    case update
 }
 

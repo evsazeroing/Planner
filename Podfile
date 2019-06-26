@@ -12,6 +12,8 @@ pod 'SideMenu' # боковое меню
 pod 'ChromaColorPicker' # круговая палитра для выбора цвета
 pod 'SwiftReorder' # перетаскивание строк таблицы для смены порядка
 pod 'SwiftIconFont' # шрифты-иконки
+pod 'Toaster' # вспылывающие сообщения
+
 
 
 end

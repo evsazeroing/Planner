@@ -152,6 +152,18 @@ extension UIViewController{
         navigationItem.rightBarButtonItem = buttonAdd
     }
 
+    // добавляет только 1 кнопку - Закрыть
+    func createCloseButtonOnly(close: Selector = #selector(cancel)){ // если не передавать параметр - по-умолчанию будет вызываться cancel
+
+        let buttonClose = UIBarButtonItem()
+        buttonClose.target = self
+        buttonClose.action = close
+        buttonClose.title = "Закрыть"
+        navigationItem.leftBarButtonItem = buttonClose
+
+        navigationItem.rightBarButtonItem = nil
+    }
+
     // по-умолчанию на cancel будет закрываться контроллер (если другой контроллер у себя не переопределит метод)
     @objc func cancel(){
         closeController()

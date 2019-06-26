@@ -24,7 +24,6 @@ class CategoryDaoDbImpl: DictDAO, CommonSearchDAO{
     // MARK: dao
 
   
-
     // получить все объекты
     func getAll(sortType:SortType?) -> [Item] {
 

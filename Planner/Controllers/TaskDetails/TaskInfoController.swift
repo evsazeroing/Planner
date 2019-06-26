@@ -14,14 +14,15 @@ class TaskInfoController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "Доп. инфо"
-
         // фокусируем на компоненте для открытии клавиатуры
         textviewTaskInfo.becomeFirstResponder()
 
-
         textviewTaskInfo.text = taskInfo
         // Do any additional setup after loading the view.
+
+
+
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,27 +31,18 @@ class TaskInfoController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    @IBAction func tapCancel(_ sender: UIBarButtonItem) {
-        closeController()
-
-    }
-
-    @IBAction func tapSave(_ sender: UIBarButtonItem) {
+    @objc func tapSave() {
 
         closeController()
 
         delegate?.done(source: self, data: textviewTaskInfo.text) // уведомить делегата и передать выбранное значение
 
     }
+
+
+
     
     
 }
+
+

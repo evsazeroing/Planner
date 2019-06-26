@@ -73,7 +73,6 @@ extension Crud{
         save()
     }
 
-
     // получить все объекты без сортировки
     func getAll() -> [Item] {
 

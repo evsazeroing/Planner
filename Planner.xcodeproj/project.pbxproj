@@ -47,6 +47,7 @@
 		22A98BB72028905D0051183B /* TaskInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A98BB62028905D0051183B /* TaskInfoCell.swift */; };
 		22A98BC52029A3820051183B /* ActionResultDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A98BC42029A3820051183B /* ActionResultDelegate.swift */; };
 		22AEC5D0202DB30600EEF0F6 /* TaskInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AEC5CF202DB30600EEF0F6 /* TaskInfoController.swift */; };
+		22C44FAA2047CB43009FF865 /* Toaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C44FAB2047CB43009FF865 /* Toaster.framework */; };
 		22CA32212032BA8B00752357 /* QuickTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CA32202032BA8B00752357 /* QuickTaskCell.swift */; };
 		22DE177620453FC600F8BBD7 /* EditPriorityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DE177520453FC600F8BBD7 /* EditPriorityController.swift */; };
 		22DE17772045401800F8BBD7 /* ChromaColorPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DE17782045401800F8BBD7 /* ChromaColorPicker.framework */; };
@@ -98,6 +99,7 @@
 		22A98BB62028905D0051183B /* TaskInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInfoCell.swift; sourceTree = "<group>"; };
 		22A98BC42029A3820051183B /* ActionResultDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionResultDelegate.swift; sourceTree = "<group>"; };
 		22AEC5CF202DB30600EEF0F6 /* TaskInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInfoController.swift; sourceTree = "<group>"; };
+		22C44FAB2047CB43009FF865 /* Toaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Toaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22CA32202032BA8B00752357 /* QuickTaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickTaskCell.swift; sourceTree = "<group>"; };
 		22DE177520453FC600F8BBD7 /* EditPriorityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPriorityController.swift; sourceTree = "<group>"; };
 		22DE17782045401800F8BBD7 /* ChromaColorPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ChromaColorPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C44FAA2047CB43009FF865 /* Toaster.framework in Frameworks */,
 				220395372047BB9C00867D56 /* SwiftIconFont.framework in Frameworks */,
 				22DE17792046A9BA00F8BBD7 /* SwiftReorder.framework in Frameworks */,
 				22DE17772045401800F8BBD7 /* ChromaColorPicker.framework in Frameworks */,
@@ -128,6 +131,7 @@
 		097E08353C79E1C83DFFCA0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22C44FAB2047CB43009FF865 /* Toaster.framework */,
 				220395382047BB9C00867D56 /* SwiftIconFont.framework */,
 				22DE177A2046A9BA00F8BBD7 /* SwiftReorder.framework */,
 				22DE17782045401800F8BBD7 /* ChromaColorPicker.framework */,
@@ -457,6 +461,7 @@
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftIconFont/SwiftIconFont.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftReorder/SwiftReorder.framework",
+				"${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -465,6 +470,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftIconFont.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftReorder.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toaster.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

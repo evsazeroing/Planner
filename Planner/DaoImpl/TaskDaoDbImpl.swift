@@ -25,8 +25,7 @@ class TaskDaoDbImpl: TaskSearchDAO{
 
     // MARK: dao
 
-
-  
+   
 
     // получить все объекты
     func getAll(sortType:SortType?) -> [Item] {
