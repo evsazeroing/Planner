@@ -272,7 +272,7 @@ class DictionaryController<T:DictDAO>: UIViewController, UITableViewDelegate, UI
 
             let indexPath = IndexPath(row: count-1, section: sectionList)
 
-            tableViewDict.insertRows(at: [indexPath], with: .top)
+             tableViewDict.insertRows(at: [indexPath], with: .top)
 
         }
 
@@ -319,9 +319,9 @@ class DictionaryController<T:DictDAO>: UIViewController, UITableViewDelegate, UI
 
         // если есть хотя бы 1 выбранная категория - показываем текст "Снять выделение"
         if dao.checkedItems().count>0{
-            newTitle = "Снять"
+            newTitle = lsDeselectAll
         }else{
-            newTitle = "Все"
+            newTitle = lsSelectAll
         }
 
         if self.buttonSelectDeselectDict.title(for: .normal) != newTitle{ // если название поменялось
@@ -393,7 +393,7 @@ class DictionaryController<T:DictDAO>: UIViewController, UITableViewDelegate, UI
         // для правильного отображения внутри таблицы, подробнее http://www.thomasdenney.co.uk/blog/2014/10/5/uisearchcontroller-and-definespresentationcontext/
         definesPresentationContext = true
 
-        searchBar.placeholder = "Начните набирать название"
+        searchBar.placeholder = lsStartTypingName
         searchBar.backgroundColor = .white
 
         // обработка действий поиска и работа с search bar - в этом же классе (без этих 2 строк не будет работать поиск)
@@ -466,9 +466,12 @@ class DictionaryController<T:DictDAO>: UIViewController, UITableViewDelegate, UI
 
 
     // каждое изменение текста
+    // в отличие от метода updateSearchResults, здесь пока пользователь не начнет набирать символы (или удалять их) - этот метод не сработает 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty{
-            searchBar.placeholder = "Начните набирать название"
+            searchBar.placeholder = lsStartTypingName
+            getAll() // этот метод должен быть реализован в дочернем классе
+            tableViewDict.reloadData()
         }
     }
 
@@ -477,7 +480,7 @@ class DictionaryController<T:DictDAO>: UIViewController, UITableViewDelegate, UI
         searchBarText = ""
         getAll() // этот метод должен быть реализован в дочернем классе
         tableViewDict.reloadData()
-        searchBar.placeholder = "Начните набирать название"
+        searchBar.placeholder = lsStartTypingName
     }
 
 

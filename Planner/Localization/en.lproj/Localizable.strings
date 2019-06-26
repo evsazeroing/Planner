@@ -1,0 +1,210 @@
+// общие слова и выражения
+// storyboards будут автоматически искать значения в этом файле
+
+planner = "Planner";
+
+searchByName = "Search by name";
+
+selectValue = "SelectValue";
+
+nodata = "No data";
+
+selectDate = "Select date";
+
+close = "Close";
+
+name = "Name";
+
+fillName = "Enter name";
+
+A_Z = "Alphabet";
+
+edit = "Edit";
+
+add = "Add";
+
+selectAll = "All";
+
+deselectAll = "None";
+
+startTypingName = "Start typing";
+
+cancel = "Cancel";
+
+save = "Save";
+
+tapToFill = "Tap to fill";
+
+confirm = "Confirm";
+
+date = "Date";
+
+shareText = "Free application Planner";
+
+deadline = "Deadline";
+
+today = "Today";
+
+tomorrow = "Tomorrow";
+
+days = "d";
+
+notSelected = "Not selected";
+
+info = "Additional info";
+
+selectColor = "Сolor";
+
+
+// категории
+
+newCategory = "New category";
+
+category = "Category";
+
+selectCategory = "Select category";
+
+noCategory = "No category";
+
+categories = "Categories";
+
+
+
+// задачи
+
+taskList = "Task list";
+
+newTask = "New task";
+
+quickTask = "Quick add task";
+
+confirmDeleteTask = "Delete task?";
+
+confirmCompleteTask = "Complete task?";
+
+
+//  пункты меню
+
+menu.settings = "Settings";
+
+menu.dictionaries = "Dictionaries";
+
+menu.help = "Help";
+
+menu.common = "Common";
+
+menu.filters = "Filters";
+
+menu.feedback = "Feedback";
+
+menu.share = "Share with friends";
+
+menu.categories = "Categories";
+
+menu.priorities = "Priorities";
+
+
+
+// для приоритета
+
+priority = "Priority";
+
+newPriority = "New priority";
+
+selectPriority = "Select priority for task";
+
+noPriority = "no priority";
+
+priorities = "Priorities";
+
+
+
+// фильтрация задач
+
+selectedTasksWillShow = "Selected tasks will show";
+
+tasksWithEmptyCategory = "Tasks with empty сategory";
+
+tasksWithEmptyPriority = "Tasks with empty priority";
+
+completedTasks = "Completed tasks";
+
+tasksWithoutDate = "Tasks with empty date";
+
+canFilter = "You can filter tasks";
+
+
+// сообщениея после создания/обновления задачи - если она не должна отображаться в общем списке
+
+notShowEmptyCategories = "not show empty categories";
+
+notShowEmptyPriorities = "not show empty priorities";
+
+notShowWithoutDate = "not show task without dates";
+
+notShowCategory = "not show category";
+
+notShowPriority = "not show priority";
+
+nameNotContains = "name not contains";
+
+taskAddedButNotShow = "Task added but not show:";
+
+taskUpdatedButNotShow = "Task updated but not show:";
+
+
+// язык
+
+lang = "Language";
+
+langChanged = "Language changed";
+
+selectLang = "Select language";
+
+
+
+
+// демо данные
+
+demoPriorityLow = "Low";
+demoPriorityNormal = "Normal";
+demoPriorityHigh = "High";
+
+demoCat1 = "Sport";
+demoCat2 = "Family";
+demoCat3 = "Work";
+demoCat4 = "Relax";
+demoCat5 = "Meeting";
+
+demoTask1 = "Go to the cinema";
+demoTask2 = "Play football with friends";
+demoTask3 = "Сomplete the project";
+demoTask4 = "Meet with David";
+demoTask5 = "Feed the dog";
+demoTask6 = "Buy oil";
+demoTask7 = "Get food";
+demoTask8 = "Childroom";
+demoTask9 = "Take money";
+demoTask10 = "Buy bread";
+
+
+demoInfo1 = "Search ya.ru";
+demoInfo4 = "Check documents first";
+demoInfo5 = "pedegree";
+demoInfo6 = "95";
+demoInfo9 = "900$";
+
+
+// intro
+
+next = "Next";
+skip = "Skip";
+begin = "Begin";
+
+introTaskList = "Task list with quick task";
+introFilter = "Filters";
+introSearch = "Search and sort";
+introDict = "Dictionaries";
+introColors = "Colors";
+
+

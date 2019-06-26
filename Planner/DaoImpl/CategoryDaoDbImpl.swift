@@ -21,10 +21,43 @@ class CategoryDaoDbImpl: DictDAO, CommonSearchDAO{
     var items:[Item]! // полученные из БД объекты
 
 
+    // MARK: demo data
+
+
+    func initDemoCategories(){
+        let cat1 = Category(context:context)
+        cat1.name = lsDemoCat1
+        cat1.checked = true
+
+        let cat2 = Category(context:context)
+        cat2.name = lsDemoCat2
+        cat2.checked = true
+
+        let cat3 = Category(context:context)
+        cat3.name = lsDemoCat3
+        cat3.checked = true
+
+        let cat4 = Category(context:context)
+        cat4.name = lsDemoCat4
+        cat4.checked = true
+
+        let cat5 = Category(context:context)
+        cat5.name = lsDemoCat5
+        cat5.checked = true
+
+        add(cat1)
+        add(cat2)
+        add(cat3)
+        add(cat4)
+        add(cat5)
+    }
+
+
+
     // MARK: dao
 
-  
-    // получить все объекты
+
+    // получить все объекты  с сортировкой
     func getAll(sortType:SortType?) -> [Item] {
 
         let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest() // объект-контейнер для выборки данных
@@ -55,11 +88,6 @@ class CategoryDaoDbImpl: DictDAO, CommonSearchDAO{
 
         fetchRequest.predicate = predicate // добавляем предикат в контейнер запроса
 
-        fetchRequest.predicate = predicate // добавляем предикат в контейнер запроса
-
-        // можно создавать предикаты динамически и использовать нужный
-
-
         // добавляем поле для сортировки
         if let sortType = sortType{
             fetchRequest.sortDescriptors = [sortType.getDescriptor(sortType)] // в зависимости от значения sortType - получаем нужное поле для сортировки
@@ -76,6 +104,9 @@ class CategoryDaoDbImpl: DictDAO, CommonSearchDAO{
 
 
     }
+
+   
+
 
 
 

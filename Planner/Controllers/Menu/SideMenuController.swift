@@ -5,6 +5,10 @@ import UIKit
 // контроллер для настройки отображения бокового меню (таблицы с пунктами)
 class SideMenuController: UITableViewController {
 
+    @IBOutlet weak var cellFeedback: UITableViewCell!
+    @IBOutlet weak var cellShare: UITableViewCell!
+
+
     // константы для секций (избегаем magic numbers)
     let commonSection = 0
     let dictionarySection = 1
@@ -13,12 +17,7 @@ class SideMenuController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-
+       
         tableView.backgroundColor = UIColor.darkGray // темный фон для меню
 
     }
@@ -47,16 +46,53 @@ class SideMenuController: UITableViewController {
 
     }
 
+    // действия при нажатии на пункты меню
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        tableView.isUserInteractionEnabled = false // защита от двойных нажатий (при новом показе контроллера значение isUserInteractionEnabled будет true)
+
+
+        // "Написать разработчику"
+        if tableView.cellForRow(at: indexPath) === cellFeedback{
+            let email = "zhenyasalov@mail.ru" // TODO: вынести адрес в plist
+            if let url = URL(string: "mailto:\(email)") {
+                UIApplication.shared.open(url)
+            }
+
+            tableView.isUserInteractionEnabled = true // возвращаем возможность нажимать на таблицу (требовалось для защиты от двойных нажатий)
+
+            return
+        }
+
+
+        // "Поделиться с друзьями"
+        if tableView.cellForRow(at: indexPath) === cellShare{
+
+            let shareController = UIActivityViewController(activityItems: [lsShareText], applicationActivities: nil)
+
+            shareController.popoverPresentationController?.sourceView = self.view
+
+            present(shareController, animated: true, completion: nil)
+
+            tableView.isUserInteractionEnabled = true // возвращаем возможность нажимать на таблицу (требовалось для защиты от двойных нажатий)
+
+            return
+        }
+
+
+    }
+
+
 
     // заголовки секций
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case commonSection:
-            return "Общие"
+            return lsMenuCommon
         case dictionarySection:
-            return "Справочники"
+            return lsMenuDictionaries
         case helpSection:
-            return "Помощь"
+            return lsMenuHelp
         default:
             return ""
         }
@@ -96,7 +132,7 @@ class SideMenuController: UITableViewController {
             }
 
             controller.showMode = .edit // режим редактирования (чтобы были доступны. доп. действия)
-            controller.navigationTitle = "Редактирование"
+            controller.navigationTitle = lsEdit
 
         case "EditPriorities": // открываем контроллер для редактирования категорий
             guard let controller = segue.destination as? PriorityListController else {
@@ -104,7 +140,7 @@ class SideMenuController: UITableViewController {
             }
 
             controller.showMode = .edit // режим редактирования (чтобы были доступны. доп. действия)
-            controller.navigationTitle = "Редактирование"
+            controller.navigationTitle = lsEdit
         default:
             return
         }

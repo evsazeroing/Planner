@@ -65,7 +65,7 @@ class PriorityListController: DictionaryController<PriorityDaoDbImpl>, ActionRes
 
             buttonSelectDeselect.isHidden = false
 
-            labelHeaderTitle.text = "Вы можете фильтровать задачи с помощью выбора галочек"
+            labelHeaderTitle.text = lsCanFilter
 
             // все выделенные ранее категории - проставить галочки
             if priority.checked{
@@ -89,7 +89,7 @@ class PriorityListController: DictionaryController<PriorityDaoDbImpl>, ActionRes
 
             buttonSelectDeselect.isHidden = true
 
-            labelHeaderTitle.text = "Выберите один приоритет для задачи"
+            labelHeaderTitle.text = lsSelectPriority
 
 
             // если категория задачи совпадает с текущей отображаемой категорией - показать зеленую иконку
@@ -199,7 +199,7 @@ class PriorityListController: DictionaryController<PriorityDaoDbImpl>, ActionRes
             }
 
             controller.priority = dao.items[tableView.indexPathForSelectedRow!.row] // какой элемент в данный момент редактируем
-            controller.navigationTitle = "Редактирование"
+            controller.navigationTitle = lsEdit
             controller.delegate = self
 
             return
@@ -213,7 +213,7 @@ class PriorityListController: DictionaryController<PriorityDaoDbImpl>, ActionRes
                 fatalError("error")
             }
 
-            controller.navigationTitle = "Новый приоритет"
+            controller.navigationTitle = lsNewPriority
 
             controller.delegate = self
 

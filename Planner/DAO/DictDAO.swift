@@ -11,6 +11,11 @@ protocol DictDAO: Crud where Item: Checkable{
 
 extension DictDAO{
 
+//    // все выделенные элементы из коллекции
+//    func checkedItems() -> [Item]{
+//        return getAll().filter(){$0.checked == true} // из всех справочных значений выбираем выбранные
+//    }
+
     // вернуть выбранные значения справочников (для сортировки списка задач)
     func checkedItems() -> [Item]{
 

@@ -49,7 +49,7 @@ class CategoryListController: DictionaryController<CategoryDaoDbImpl> {
             buttonSelectDeselect.isHidden = false
 
 
-            labelHeaderTitle.text = "Вы можете фильтровать задачи с помощью выбора галочек"
+            labelHeaderTitle.text = lsCanFilter
 
             // все выделенные ранее категории - проставить галочки
             if category.checked{
@@ -71,7 +71,7 @@ class CategoryListController: DictionaryController<CategoryDaoDbImpl> {
 
             buttonSelectDeselect.isHidden = true
 
-            labelHeaderTitle.text = "Выберите одну категорию для задачи"
+            labelHeaderTitle.text = lsSelectCategory
 
 
             // если категория задачи совпадает с текущей отображаемой категорией - показать зеленую иконку
@@ -133,12 +133,12 @@ class CategoryListController: DictionaryController<CategoryDaoDbImpl> {
     override func addItemAction() {
 
         // показываем диалоговое окно и реализуем замыкание, которое будет выполняться при нажатии на кнопку ОК
-        showDialog(title: "Новая категория", message: "Введите название", actionClosure: {name in
+        showDialog(title: lsNewCategory, message: lsFillName, actionClosure: {name in
 
             let cat = Category(context: self.dao.context)
 
             if self.isEmptyTrim(name){
-                cat.name = "Новая категория"
+                cat.name = lsNewCategory
             }else{
                 cat.name = name // имя получаем как параметр замыкания
             }
@@ -160,12 +160,12 @@ class CategoryListController: DictionaryController<CategoryDaoDbImpl> {
         let oldValue = currentItem.name
 
         // показываем диалоговое окно и реализуем замыкание, которое будет выполняться при нажатии на кнопку ОК
-        showDialog(title: "Редактирование", message: "Введите название", initValue: currentItem.name!, actionClosure: {name in
+        showDialog(title: lsEdit, message: lsFillName, initValue: currentItem.name!, actionClosure: {name in
 
             if !self.isEmptyTrim(name){ //значение name из текстового поля передается в замыкание
                 currentItem.name = name
             }else{
-                currentItem.name = "Новая категория"
+                currentItem.name = lsNewCategory
             }
 
             if currentItem.name != oldValue{

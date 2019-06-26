@@ -29,11 +29,11 @@ class TaskListController: UITableViewController, ActionResultDelegate {
 
     var textQuickTask:UITextField! // будет хранить ссылку на текстовый компонент для создания быстрой задачи
 
-
     // для сокращения кода
     var searchBar:UISearchBar{
         return searchController.searchBar
     }
+
 
     // для сокращения кода (необязательно)
     var taskCount:Int{
@@ -60,6 +60,9 @@ class TaskListController: UITableViewController, ActionResultDelegate {
 
         initIcons()
 
+        initContextListeners()
+
+        title = lsTaskList
 
     }
 
@@ -68,6 +71,51 @@ class TaskListController: UITableViewController, ActionResultDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+
+
+    // MARK: core data context listeners
+
+    // слушатели изменений контекста Core Data
+    func initContextListeners(){
+
+        NotificationCenter.default.addObserver(self, selector: #selector(contextObjectsDidChange(_:)), name: Notification.Name.NSManagedObjectContextObjectsDidChange, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(contextWillSave(_:)), name: Notification.Name.NSManagedObjectContextWillSave, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(contextDidSave(_:)), name: Notification.Name.NSManagedObjectContextDidSave, object: nil)
+    }
+
+    @objc func contextObjectsDidChange(_ notification: Notification) {
+        guard let userInfo = notification.userInfo else { return }
+
+        if let inserts = userInfo[NSInsertedObjectsKey] as? Set<NSManagedObject>, inserts.count > 0 {
+            print("--- INSERTS ---")
+            for insert in inserts {
+                print(insert.changedValues())
+            }
+        }
+
+        if let updates = userInfo[NSUpdatedObjectsKey] as? Set<NSManagedObject>, updates.count > 0 {
+            print("--- UPDATES ---")
+            for update in updates {
+                print(update.changedValues())
+            }
+        }
+
+        if let deletes = userInfo[NSDeletedObjectsKey] as? Set<NSManagedObject>, deletes.count > 0 {
+            print("--- DELETES ---")
+            print(deletes)
+        }
+
+    }
+
+    @objc func contextWillSave(_ notification: Notification) {
+        print(notification)
+    }
+
+    @objc func contextDidSave(_ notification: Notification) {
+        print(notification)
+    }
+
 
 
 
@@ -102,6 +150,11 @@ class TaskListController: UITableViewController, ActionResultDelegate {
 
     // сколько секций нужно отображать в таблице
     override func numberOfSections(in tableView: UITableView) -> Int {
+
+        if taskDAO.items.isEmpty{ // если нет задачи - не отображать секция для задач
+            return 1
+        }
+
         return sectionCount
     }
 
@@ -134,7 +187,7 @@ class TaskListController: UITableViewController, ActionResultDelegate {
             }
 
             textQuickTask = cell.textQuickTask
-            textQuickTask.placeholder = "Введите название задачи"
+            textQuickTask.placeholder = lsQuickTask
 
             return cell
 
@@ -149,7 +202,7 @@ class TaskListController: UITableViewController, ActionResultDelegate {
             cell.labelTaskName.text = task.name
 
 
-            cell.labelTaskCategory.text = (task.category?.name ?? "(без категории)")
+            cell.labelTaskCategory.text = (task.category?.name ?? "(\(lsNoCategory))")
             cell.labelTaskCategory.textColor = UIColor.lightGray
 
 
@@ -173,7 +226,7 @@ class TaskListController: UITableViewController, ActionResultDelegate {
 
             // текст и стиль для отображения разницы в днях
             handleDaysDiff(task.daysLeft(), label: cell.labelDeadline)
-          
+
 
 
             // стиль для завершенных задач
@@ -299,8 +352,6 @@ class TaskListController: UITableViewController, ActionResultDelegate {
     // при выполнении навигации этот метод будет выполнен автоматически
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
-        
-
         if let identificator = segue.identifier{ // если идентификатор на nil
 
             switch identificator { // сверяем название segue (с помощью какого segue происходит навигация)
@@ -321,7 +372,7 @@ class TaskListController: UITableViewController, ActionResultDelegate {
                     fatalError("error")
                 }
 
-                controller.title = "Редактирование" // меняем заголовок
+                controller.title = lsEdit // меняем заголовок
                 controller.task = selectedTask // передаем задачу в целевой контроллер
                 controller.delegate = self
                 controller.mode = TaskDetailsMode.update
@@ -334,10 +385,31 @@ class TaskListController: UITableViewController, ActionResultDelegate {
                     fatalError("error")
                 }
 
-                controller.title = "Новая задача" // меняем заголовок
-                controller.task = Task(context: taskDAO.context) // передаем задачу в целевой контроллер
+                controller.title = lsNewTask // меняем заголовок
+                controller.task = nil // объект будет создаваться только при его сохранении
                 controller.delegate = self
                 controller.mode = TaskDetailsMode.add
+
+            case "ShowTaskInfo": // переходим в контроллер для просмотра доп. инфо
+
+                // определить индекс строки таблицы для нажатой кнопки
+                let button = sender as! UIButton
+                let buttonPosition = button.convert(CGPoint.zero, to: self.tableView)
+                let indexPath = self.tableView.indexPathForRow(at: buttonPosition)!
+
+                // определяем задачу, для которой нажали на кнопку блокнота
+                let selectedTask = taskDAO.items[indexPath.row]
+
+
+                // получаем доступ к целевому контроллеру
+                guard let controller = segue.destination as? TaskInfoController else { // segue.destination - целевой контроллер
+                    fatalError("error")
+                }
+
+                controller.taskInfo = selectedTask.info // передаем текущее значение
+//                controller.delegate = self // для возврата результата действий
+                controller.navigationTitle = selectedTask.name
+                controller.taskInfoShowMode = .readOnly
 
 
             default:
@@ -450,7 +522,8 @@ class TaskListController: UITableViewController, ActionResultDelegate {
 
     @IBAction func quickTaskAdd(_ sender: UITextField) {
 
-        // если пусто - ничего не делаем (добавляем задачу, только если ввели название)
+
+        // если пусто - ничего не делаем
         if isEmptyTrim(textQuickTask.text){
             return
         }
@@ -481,6 +554,7 @@ class TaskListController: UITableViewController, ActionResultDelegate {
             tableView.deleteRows(at: [indexPath], with: .left)
         }
 
+        updateTableBackground(tableView, count: taskCount)
     }
 
     // завершить задачу
@@ -493,13 +567,13 @@ class TaskListController: UITableViewController, ActionResultDelegate {
 
         taskDAO.update(task)
 
-        tableView.reloadRows(at: [indexPath], with: .fade) // чтобы вызвать метод tableView для заполнения строки
+        tableView.reloadRows(at: [indexPath], with: .fade) // сделать строку серой (вызовется метод tableView, который заново заполнит нажатую строку)
 
 
-        // показать анимацию обновления строки с задержкой, и только затем скрыть строку (если необходимо)
+        // показать анимацию ухода строки с задержкой
         DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(400)) { // если пользователь будет быстро нажимать на разные завершения задач - все будет выполняться параллельно
 
-            if !PrefsManager.current.showCompletedTasks{ // если отключен показ завершенных задач
+            if !PrefsManager.current.showCompletedTasks{ // если отключен показ завершенных задач - только тогда выполнять анимацию (иначе строка просто останеся серой и не исчезнет)
 
                 // ВАЖНО! нужно одновременно удалять задачу из коллекции и из таблицы, чтобы было синхронизировано
 
@@ -511,9 +585,11 @@ class TaskListController: UITableViewController, ActionResultDelegate {
                 }else{
                     self.tableView.deleteRows(at: [indexPath], with: .top)
                 }
+
+                self.updateTableBackground(self.tableView, count:self.taskCount)
+
             }
         }
-
 
 
     }
@@ -522,7 +598,7 @@ class TaskListController: UITableViewController, ActionResultDelegate {
     func createTask(_ task:Task){
         taskDAO.add(task)
 
-        attemptUpdate(task, forceUpdate: false, text: "Задача добавлена, но не показывается \nиз-за фильтра:")
+        attemptUpdate(task, forceUpdate: false, text: lsTaskAddedButNotShow)
 
     }
 
@@ -530,14 +606,13 @@ class TaskListController: UITableViewController, ActionResultDelegate {
     func updateTask(_ task:Task){
         taskDAO.update(task)
 
-        attemptUpdate(task, forceUpdate: true, text: "Задача обновлена, но не показывается \nиз-за фильтра:")
-
+        attemptUpdate(task, forceUpdate: true, text: lsTaskUpdatedButNotShow)
 
     }
 
     // нужно обновлять таблицу или нет
     // Если новая/отредактированная задача не подпадает в текущий список (из-за фильтрации, поиска и пр.) - уведомить об этом пользователя (чтобы не паниковал, куда девалась  задача)
-    // прогоняем через все условия фильтра (можно было реализовать по-простому с помощью  items.contains(task) - но если массив будет большим - возможны "подвисания")
+    // прогоняем через все условия фильтра (можно было реализовать по-простому с помощью  items.contains - но если массив будет большим - возможны "подвисания")
     func attemptUpdate(_ task:Task, forceUpdate:Bool, text:String){ // forceUpdate - если в любом случае нужно обновить
 
         var willShow = true // задача будет отображаться в текущем списке
@@ -558,7 +633,7 @@ class TaskListController: UITableViewController, ActionResultDelegate {
                 // если НЕ показываем задачи без категории, а у задачи пустая категория
                 if !PrefsManager.current.showEmptyCategories && task.category == nil{
                     willShow = false
-                    text = text + "\"НЕ показывать задачи с пустыми категорями\""
+                    text = text + "\"\(lsNotShowEmptyCategories)\""
                 }
 
                 else
@@ -566,7 +641,7 @@ class TaskListController: UITableViewController, ActionResultDelegate {
                     // если НЕ показываем задачи без приоритета, а у задачи пустой приоритет
                     if !PrefsManager.current.showEmptyPriorities && task.priority == nil{
                         willShow = false
-                        text = text + "\"НЕ показывать задачи с пустыми приоритетами\""
+                        text = text + "\"\(lsNotShowEmptyPriorities)\""
                     }
 
                     else
@@ -574,7 +649,7 @@ class TaskListController: UITableViewController, ActionResultDelegate {
                         // если НЕ показываем задачи без даты, а у задачи пустая дата
                         if !PrefsManager.current.showTasksWithoutDate && task.deadline == nil{
                             willShow = false
-                            text = text + "\"НЕ показывать задачи без даты\""
+                            text = text + "\"\(lsNotShowWithoutDate)\""
                         }
 
 
@@ -583,7 +658,7 @@ class TaskListController: UITableViewController, ActionResultDelegate {
                             // если не проходит по фильтрации категорий
                             if let category = task.category, !self.categoryDAO.checkedItems().contains(category){
                                 willShow = false
-                                text = text + "\"НЕ показывать категорию \(category.name!)\""
+                                text = text + "\"\(lsNotShowCategory)\""
                             }
 
                             else
@@ -591,7 +666,7 @@ class TaskListController: UITableViewController, ActionResultDelegate {
                                 // если не проходит по фильтрации приоритетов
                                 if let priority = task.priority, !self.priorityDAO.checkedItems().contains(priority){
                                     willShow = false
-                                    text = text + "\"НЕ показывать приоритет \(priority.name!)\""
+                                    text = text + "\"\(lsNotShowPriority)\""
 
                                 }
 
@@ -601,7 +676,8 @@ class TaskListController: UITableViewController, ActionResultDelegate {
                                     // если открыт поиск, а имя задачи не содержит текст поиска
                                     if (self.searchBarActive && task.name?.lowercased().range(of:self.searchBar.text!.lowercased()) == nil) {
                                         willShow = false
-                                        text = text + "\"имя НЕ содержит \(self.searchBar.text!)\""
+                                        text = text + "\(lsNameNotContains) "+"\'\(self.searchBar.text!)\'"
+
 
 
             }
@@ -610,7 +686,7 @@ class TaskListController: UITableViewController, ActionResultDelegate {
                 self.updateTable()
             }else{
 
-                if forceUpdate{ // если все равно надо обновить (например, при обновлении)
+                if forceUpdate{ // если все равно надо обновить
                     self.updateTable()
                 }
 
@@ -689,10 +765,10 @@ extension TaskListController : UISearchBarDelegate {
         // для правильного отображения внутри таблицы, подробнее http://www.thomasdenney.co.uk/blog/2014/10/5/uisearchcontroller-and-definespresentationcontext/
         definesPresentationContext = true
 
-        searchBar.placeholder = "Поиск по названию"
+        searchBar.placeholder = lsSearchByName
         searchBar.backgroundColor = .white
 
-        searchBar.scopeButtonTitles = ["А-Я", "Приоритет", "Дата"] // добавляем scope buttons
+        searchBar.scopeButtonTitles = [lsAZ, lsPriority, lsDate] // добавляем scope buttons
         searchBar.selectedScopeButtonIndex = currentScopeIndex // выделяем выбранную кнопку
 
 
