@@ -390,11 +390,11 @@ class TaskListController: UITableViewController, ActionResultDelegate {
         // сохраняет новую задачу или обновляет измененную задачу
 
         switch controller.mode {
-        case .add:
+        case .add?:
             let task = data as! Task
 
             createTask(task) // создаем новую задачу
-        case .update:
+        case .update?:
             let task = data as! Task
 
             updateTask(task) // обновляем  задачу

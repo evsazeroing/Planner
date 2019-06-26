@@ -169,7 +169,7 @@ class DictionaryController<T:DictDAO>: UIViewController, UITableViewDelegate, UI
         let item = dao.items[indexPath.row]
 
         switch showMode {
-        case .select: // можно выбирать только одно значение - которое запишется для задачи
+        case .select?: // можно выбирать только одно значение - которое запишется для задачи
 
 
             if indexPath != currentCheckedIndexPath{ // если нажатая строка не была выделена до этого (не стояла галочка)
@@ -193,7 +193,7 @@ class DictionaryController<T:DictDAO>: UIViewController, UITableViewDelegate, UI
 
 
 
-        case .edit: // можно выбирать несколько значений (влияют на фильтрацию списка задач)
+        case .edit?: // можно выбирать несколько значений (влияют на фильтрацию списка задач)
 
             item.checked = !item.checked // инвертируем значение
 

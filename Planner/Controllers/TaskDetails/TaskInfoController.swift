@@ -27,7 +27,7 @@ class TaskInfoController: UIViewController {
         // Do any additional setup after loading the view.
 
         switch taskInfoShowMode {
-        case .readOnly:
+        case .readOnly?:
             textviewTaskInfo.isEditable = false
             
             // добавляем возможность обрабатывать нажатие на текстовое поле
@@ -36,7 +36,7 @@ class TaskInfoController: UIViewController {
             view.addGestureRecognizer(tap)
 
 
-        case .edit:
+        case .edit?:
 
             textviewTaskInfo.isEditable = true
             createSaveCancelButtons(save: #selector(tapSave))
