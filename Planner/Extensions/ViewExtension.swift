@@ -27,7 +27,7 @@ extension UITextView{
         let attr: NSDictionary = textView.textStyling(at:textPosition!, in: UITextStorageDirection.forward)! as NSDictionary
 
         // если нажали на URL в тексте - открыть в браузере системы
-        if let url: NSURL = attr[NSAttributedStringKey.link] as? NSURL {
+        if let url: NSURL = attr[NSAttributedString.Key.link] as? NSURL {
 
             if #available(iOS 10.0, *) {
                 UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
