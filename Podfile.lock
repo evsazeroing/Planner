@@ -1,5 +1,5 @@
 PODS:
-  - ChromaColorPicker (1.7)
+  - ChromaColorPicker (1.8.0)
   - FlagKit (2.0.1)
   - GCCalendar (2.3.1)
   - L10n-swift (5.1.0):
@@ -28,8 +28,20 @@ DEPENDENCIES:
   - SwiftyOnboard
   - Toaster
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ChromaColorPicker
+    - FlagKit
+    - GCCalendar
+    - L10n-swift
+    - SideMenu
+    - SwiftIconFont
+    - SwiftReorder
+    - SwiftyOnboard
+    - Toaster
+
 SPEC CHECKSUMS:
-  ChromaColorPicker: 33efa67b17cca51dd253689d18b83ac7e05642c2
+  ChromaColorPicker: 2e47f5acb805d53350fb7af1b511bc534b38ee31
   FlagKit: 75c64346179f254d1753bebdc5b1f9cbe7890748
   GCCalendar: 0f88ab4331bfbfbc185e55a2451b8981b73f07ae
   L10n-swift: 9b419297c2b3c1bc7496cb3379308f441d91325d
@@ -41,4 +53,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 21f73b1e31af6696ae800e37784a4fa6d851362e
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.7.2

@@ -130,6 +130,11 @@ open class ChromaColorPicker: UIControl {
         self.addSubview(colorToggleButton)
     }
     
+    open override func layoutSubviews() {
+        super.layoutSubviews()
+        layout()
+    }
+    
     override open func willMove(toSuperview newSuperview: UIView?) {
         /* Get the starting color */
         currentColor = colorOnWheelFromAngle(currentAngle)
@@ -201,13 +206,13 @@ open class ChromaColorPicker: UIControl {
   @objc func handleWasMoved(_ recognizer: UIPanGestureRecognizer) {
         switch(recognizer.state){
 
-        case UIGestureRecognizerState.changed:
+        case UIGestureRecognizer.State.changed:
             let touchPosition = recognizer.location(in: self)
             self.moveHandleTowardPoint(touchPosition)
             self.sendActions(for: .touchDragInside)
             break
         
-        case UIGestureRecognizerState.ended:
+        case UIGestureRecognizer.State.ended:
             /* Shrink Animation */
             self.executeHandleShrinkAnimation()
             break
@@ -386,7 +391,8 @@ open class ChromaColorPicker: UIControl {
     */
     func layoutHexLabel(){
         hexLabel.frame = CGRect(x: 0, y: 0, width: addButton.bounds.width*1.5, height: addButton.bounds.height/3)
-        hexLabel.center = CGPoint(x: self.bounds.midX, y: (addButton.frame.origin.y + (padding + handleView.frame.height/2 + stroke/2))/1.75) //Divided by 1.75 not 2 to make it a bit lower
+        hexLabel.center = CGPoint(x: self.bounds.midX,
+                                  y: (addButton.frame.origin.y + padding + (handleView.frame.height + stroke) / 2.0) / 1.75) //Divided by 1.75 not 2 to make it a bit lower
         hexLabel.font = UIFont(name: "Menlo-Regular", size: hexLabel.bounds.height)
     }
     
